@@ -9,7 +9,7 @@
     <script data-ad-client="ca-pub-3427355473051563" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="canonical" href="https://markdown.net.br/">
+    <link rel="canonical" href="https://markdown.net.br/folha-de-dicas/">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,12 +20,12 @@
     <meta name="description" content="Guia completo e grátis do Markdown para iniciantes com diversos exemplos de como usar a linguagem de marcação mais simples do mundo.">
     <meta name="twitter:card" content="summary">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://markdown.net.br/">
-    <meta property="og:title" content="Markdown - Guia completo para iniciantes">
+    <meta property="og:url" content="https://markdown.net.br/folha-de-dicas/">
+    <meta property="og:title" content="Folha de dicas do Markdown - Guia completo do Markdown para iniciantes">
     <meta property="og:description" content="Guia completo e grátis do Markdown para iniciantes com diversos exemplos de como usar a linguagem de marcação mais simples do mundo.">
     <meta property="og:image" content="https://markdown.net.br/assets/img/markdown.jpg">
 
-    <title>Markdown - Guia completo para iniciantes</title>
+    <title>Folha de dicas do Markdown - Guia completo do Markdown para iniciantes</title>
     <!-- Favicons-->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -100,8 +100,24 @@
           <div class="container">
             <div class="row" style="margin-bottom: 0;">
               <div class="col s12 m8 offset-m1 xl7 offset-xl1">
-                <h1 class="header">Guia completo do Markdown Para Iniciantes</h1>
-                <h4 class="light">Guia de referência gratuito que explica como usar o Markdown.</h4>
+                <h1 class="header">Folha de Dicas do Markdown</h1>
+                <h4 class="light">Uma referência rápida à sintaxe do Markdown.</h4>
+                <ol class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+                  <li itemprop="itemListElement" itemscope
+                      itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="https://markdown.net.br/">
+                        <span itemprop="name">Markdown</span></a>
+                    <meta itemprop="position" content="1" />
+                  </li>
+                  <li>
+                    <i class="fas fa-chevron-right chevron-separator"></i>
+                  </li>
+                  <li itemprop="itemListElement" itemscope
+                      itemtype="https://schema.org/ListItem">
+                    <span itemprop="name">Folha de dicas</span>
+                    <meta itemprop="position" content="2" />
+                  </li>
+                </ol>
               </div>
             </div>
           </div>
@@ -112,23 +128,143 @@
             <div class="section col s12 m8 offset-m1 xl7 offset-xl1">
               <div class="row scrollspy">
                 <div class="col s12">
-                  <h2 id="o-que-e-o-markdown" class="header">O que é o Markdown?</h2>
-                  <p>O <code class="language-markup">Markdown</code> é uma linguagem de marcação simples e fácil de usar que você pode formatar praticamente qualquer documento.</p>
-                </div>
-                <div class="col s12">
-                  <h2 id="aprenda-os-conceitos" class="header">Aprenda os conceitos.</h2>
-                  <p>Comece a usar o Markdown agora mesmo seguindo o guia <a href="/iniciando/">Iniciando</a>. Ele foi projetado para todos, até para iniciantes.</p>
-                </div>
+                  <h2 class="header" id="visao-geral">Visão geral</h2>
 
-                <div class="col s12">
-                  <h2 id="mergulhe-na-sintaxe" class="header">Mergulhe na sintaxe.</h2>
-                  <p>Seja você um iniciante no Markdown ou um profissional experiente, encontrará as respostas para suas perguntas de formatação na <a href="/sintaxe-basica/">página de sintaxe básica</a>.</p>
-                </div>
+                  <p>Esta folha de dicas do Markdown fornece uma visão geral rápida de todos os elementos que compõem a sintaxe da linguagem. O propósito da folha de dicas é cobrir as formatações e elementos mais utilizados, portanto, se você precisar de mais informações, consulte nossos guias de referência <a href="/sintaxe-basica/">sintaxe básica</a> e <a href="/sintaxe-estendida/">sintaxe estendida</a>.</p>
 
-                <div class="col s12">
-                  <h2 id="avancando-um-pouquinho" class="header">Avançando um pouquinho.</h2>
-                  <p>Torne seus documentos do Markdown impressionantes usando a <a href="/sintaxe-estendida/">sintaxe estendida</a> para criar tabelas, blocos de códigos, links automáticos e muito mais.</p>
-                </div>
+                  <h2 class="header" id="sintaxe-basica">Sintaxe básica</h2>
+
+                  <p>Esses são os elementos descritos no documento de design original de John Gruber. Todos os aplicativos Markdown suportam esses elementos.</p>
+
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Elemento</th>
+                        <th>Sintaxe do Markdown</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><a href="/sintaxe-basica/#titulo">Título</a></td>
+                        <td><code># H1<br />
+                  ## H2<br />
+                  ### H3</code></td>
+                      </tr>
+                      <tr>
+                        <td><a href="/sintaxe-basica/#negrito">Negrito</a></td>
+                        <td><code>**texto em negrito**</code></td>
+                      </tr>
+                      <tr>
+                        <td><a href="/sintaxe-basica/#italico">itálico</a></td>
+                        <td><code>*texto em itálico*</code></td>
+                      </tr>
+                      <tr>
+                        <td><a href="/sintaxe-basica/#bloco-citacao">Bloco de citação</a></td>
+                        <td><code>&gt; bloco de citação</code></td>
+                      </tr>
+                      <tr>
+                        <td><a href="/sintaxe-basica/#lista-ordenada">Lista ordenada</a></td>
+                        <td><code>
+                  1. Primeiro item<br />
+                  2. Segundo item<br />
+                  3. Terceiro item<br />
+                        </code></td>
+                      </tr>
+                      <tr>
+                        <td><a href="/sintaxe-basica/#lista-nao-ordenada">Lista não ordenada</a></td>
+                        <td>
+                          <code>
+                  - Primeiro item<br />
+                  - Segundo item<br />
+                  - Terceiro item<br />
+                          </code>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><a href="/sintaxe-basica/#codigo">Código</a></td>
+                        <td><code>`código`</code></td>
+                      </tr>
+                      <tr>
+                        <td><a href="/sintaxe-basica/#linha-horizontal">Linha horizontal</a></td>
+                        <td><code>---</code></td>
+                      </tr>
+                      <tr>
+                        <td><a href="/sintaxe-basica/#links">Link</a></td>
+                        <td><code>[título](https://markdown.net.br)</code></td>
+                      </tr>
+                      <tr>
+                        <td><a href="/sintaxe-basica/#imagem">Imagem</a></td>
+                        <td><code>![texto alternativo](imagem.jpg)</code></td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <h2 class="header" id="sintaxe-estendida">Sintaxe Estendida</h2>
+
+                  <p>Esses elementos estendem a sintaxe básica adicionando recursos a linguagem. Nem todos os aplicativos Markdown suportam esses elementos.</p>
+
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Elemento</th>
+                        <th>Sintaxe do Markdown</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><a href="/sintaxe-estendida/#tabelas">Tabela</a></td>
+                        <td><code>
+                  | Sintaxe     | Descrição |<br />
+                  | ----------- | --------- |<br />
+                  | Cabeçalho   | Título    |<br />
+                  | Parágrafo   | Texto     |
+                        </code></td>
+                      </tr>
+                      <tr>
+                        <td><a href="/sintaxe-estendida/#bloco-codigo-cercados">Bloco de código cercado</a></td>
+                        <td><code>```<br />
+                  {<br />
+                  &nbsp;&nbsp;"nome": "Robert",<br />
+                  &nbsp;&nbsp;"sobrenome": "Salles",<br />
+                  &nbsp;&nbsp;"idade": 25<br />
+                  }<br />
+                  ```
+                        </code></td>
+                      </tr>
+                      <tr>
+                        <td><a href="/sintaxe-estendida/#notas-rodape">Nota de rodapé</a></td>
+                        <td><code>
+                  Aqui está uma frase com uma nota de rodapé. [^1]<br /><br />
+
+                  [^1]: Esta é a nota de rodapé.
+                        </code></td>
+                      </tr>
+                      <tr>
+                        <td><a href="/sintaxe-estendida/#id-titulo">ID do título</a></td>
+                        <td><code>### Meu  título {#identificacao}</code></td>
+                      </tr>
+                      <tr>
+                        <td><a href="/sintaxe-estendida/#lista-definicoes">Lista de definições</a></td>
+                        <td><code>
+                  termo<br />
+                  : definição
+                        </code></td>
+                      </tr>
+                      <tr>
+                        <td><a href="/sintaxe-estendida/#riscado">Riscado</a></td>
+                        <td><code>~~A terra é plana.~~</code></td>
+                      </tr>
+                      <tr>
+                        <td><a href="/sintaxe-estendida/#lista-tarefas">Lista de tarefas</a></td>
+                        <td><code>
+                  - [x] Escreva o comunicado de imprensa<br />
+                  - [ ] Atualize o site<br />
+                  - [ ] Entre em contato com a mídia
+                        </code></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div> <!-- FIM DO CONTEÚDO PRINCIPAL -->
               </div>
               <div class="col-12">
                 <ul class="collapsible">
@@ -136,22 +272,22 @@
                     <div class="collapsible-header grey lighten-4"><i class="material-icons">share</i>Compartilhar</div>
                     <div class="collapsible-body">
                       <div class="collection">
-                        <a href="#!" class="collection-item" data-sharer="twitter" data-title="Guia completo do Markdown para inciantes!" data-hashtags="markdown" data-url="https://markdown.net.br/">
+                        <a href="#!" class="collection-item" data-sharer="twitter" data-title="Folha de dicas do Markdown!" data-hashtags="markdown" data-url="https://markdown.net.br/folha-de-dicas/">
                           <i class="fab fa-twitter color-twitter"></i>&nbsp;&nbsp;Compartilhar no Twitter
                         </a>
-                        <a href="#!" class="collection-item" data-sharer="facebook" data-hashtag="markdown" data-url="https://markdown.net.br/">
+                        <a href="#!" class="collection-item" data-sharer="facebook" data-hashtag="markdown" data-url="https://markdown.net.br/folha-de-dicas/">
                           <i class="fab fa-facebook color-facebook"></i>&nbsp;&nbsp;Compartilhar no Facebook
                         </a>
-                        <a href="#!" class="collection-item" data-sharer="linkedin" data-url="https://markdown.net.br/">
+                        <a href="#!" class="collection-item" data-sharer="linkedin" data-url="https://markdown.net.br/folha-de-dicas/">
                           <i class="fab fa-linkedin color-linkedin"></i>&nbsp;&nbsp;Compartilhar no Linkedin
                         </a>
-                        <a href="#!" class="collection-item" data-sharer="email" data-title="Guia completo do Markdown para inciantes!" data-url="https://markdown.net.br/" data-subject="Olá! Tudo bem? Achei esse guia do Markdown bem fácil de acompanhar, dá uma olhadinha quando puder. Espero que seja útil, até mais." data-to="email@provedor.com.br">
+                        <a href="#!" class="collection-item" data-sharer="email" data-title="Folha de dicas do Markdown!" data-url="https://markdown.net.br/folha-de-dicas/" data-subject="Olá! Tudo bem? Achei esse guia do Markdown bem fácil de acompanhar, dá uma olhadinha quando puder. Espero que seja útil, até mais." data-to="email@provedor.com.br">
                           <i class="fas fa-envelope color-email"></i>&nbsp;&nbsp;Compartilhar por Email
                         </a>
-                        <a href="#!" class="collection-item" data-sharer="whatsapp" data-title="Guia completo do Markdown para inciantes!" data-url="https://markdown.net.br/">
+                        <a href="#!" class="collection-item" data-sharer="whatsapp" data-title="Folha de dicas do Markdown!" data-url="https://markdown.net.br/folha-de-dicas/">
                           <i class="fab fa-whatsapp color-whatsapp"></i>&nbsp;&nbsp;Compartilhar por Whatsapp
                         </a>
-                        <a href="#!" class="collection-item" data-sharer="telegram" data-title="Guia completo do Markdown para inciantes!" data-url="https://markdown.net.br/" data-to="(00) 99999-9999">
+                        <a href="#!" class="collection-item" data-sharer="telegram" data-title="Folha de dicas do Markdown!" data-url="https://markdown.net.br/folha-de-dicas/" data-to="(00) 99999-9999">
                           <i class="fab fa-telegram color-telegram"></i>&nbsp;&nbsp;Compartilhar por Telegram
                         </a>
                       </div>
@@ -193,7 +329,6 @@
     <script src="/assets/js/search.min.js"></script>
     <script>
       anchors.add("h2, h3");
-      $('#sticky-navigator').stickyNavigator();
     </script>
     <!-- Twitter Button -->
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
