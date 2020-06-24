@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-69958365-6"></script>
+    <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-69958365-6');
+    </script>
+    <!-- Auto ads - Google -->
+    <script data-ad-client="ca-pub-3427355473051563" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="canonical" href="https://markdown.net.br/ferramentas/bear/">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="author" content="Robert Salles">
+    <meta name="keywords" content="Markdown, Linguagem Markdown, Sintaxe Markdown, Guia Markdown, Referência Markdown, Ajuda Markdown, Tutorial Markdown, Aprender Markdown">
+    <meta name="description" content="O Bear é um aplicativo para macOS e iOS projetado para uma coisa: anotações. É como o Evernote, mas sem o inchaço.">
+    <meta name="twitter:card" content="summary">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://markdown.net.br/ferramentas/bear/">
+    <meta property="og:title" content="Referência do Uso do Markdown no Bear - Guia completo do Markdown para iniciantes">
+    <meta property="og:description" content="O Bear é um aplicativo para macOS e iOS projetado para uma coisa: anotações. É como o Evernote, mas sem o inchaço.">
+    <meta property="og:image" content="https://markdown.net.br/assets/img/markdown.jpg">
+
+    <title>Referência do Uso do Markdown no Bear - Guia completo do Markdown para iniciantes</title>
+    <!-- Favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2196f3">
+    <meta name="msapplication-TileColor" content="#2196f3">
+    <!--  Android 5 Chrome Color-->
+    <meta name="theme-color" content="#2196f3">
+    <!-- CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/bundle.min.css">
+  </head>
+  <body class="themes" cz-shortcut-listen="true">
+    <div id="layout-problem" style="display:none;position:fixed;bottom:20px;left:5px;right:5px;z-index:9999;border-radius:10px;"><div class="layout-problem__container" style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;position:relative;"><div class="layout-problem__msg" style="background-color:white;color:#222;padding:5px 35px;border-radius:10px;display:flex;align-items:center;border:2px solid #f44336;box-shadow:1px 4px 8px 4px #0000004a;position:relative;"><div style="color:#f44336;font-size:45px;font-weight:bold;background-color:white;border-radius:50px;margin-right:20px;">!</div><p style="font-size: 18px;">Foi detectado um <strong>problema</strong> com o layout do site!<br>É recomendável desabilitar o <span class="red-text"><strong>Ad-Blocker</strong></span><br>Ou qualquer extensão que bloqueie <strong>JavaScript</strong>.</p><div id="close-error-script-bt" style="position:absolute;top:3px;right:12px;cursor:pointer;">X</div></div></div></div>
+    <header>
+      <div class="container">
+        <a href="#" data-target="nav-mobile" class="top-nav sidenav-trigger waves-effect waves-light circle hide-on-large-only">
+        <i class="material-icons">menu</i>
+        </a>
+      </div>
+      <ul id="nav-mobile" class="sidenav sidenav-fixed" style="transform: translateX(0%);">
+        <li class="logo blue">
+          <a id="logo-container" href="https://markdown.net.br" class="brand-logo">
+          <img src="/assets/img/markdown-logo-transparent.svg" height="100">
+          </a>
+        </li>
+        <li class="push-it-down"></li>
+        <li class="search white">
+          <div class="search-wrapper">
+            <input id="search" placeholder="Buscar"><i class="material-icons">search</i>
+            <div class="search-results"></div>
+          </div>
+        </li>
+        <li class="bold white">
+          <a href="/introducao/" class="waves-effect waves-blue"><i class="tiny material-icons">child_care</i>Introdução</a>
+        </li>
+        <li class="bold white">
+          <a href="/sintaxe-basica/" class="waves-effect waves-blue"><i class="tiny material-icons">short_text</i>Sintaxe Básica</a>
+        </li>
+        <li class="bold white">
+          <a href="/sintaxe-estendida/" class="waves-effect waves-blue"><i class="tiny material-icons">format_align_left</i>Sintaxe Estendida</a>
+        </li>
+        <li class="bold white">
+          <a href="/referencia-rapida/" class="waves-effect waves-blue"><i class="tiny material-icons">help_outline</i>Referência Rápida</a>
+        </li>
+        <li class="bold white">
+          <a href="/ferramentas/" class="waves-effect waves-blue"><i class="tiny material-icons">card_travel</i>Ferramentas</a>
+        </li>
+        <li class="bold white">
+          <a href="/editor/" class="waves-effect waves-blue"><i class="tiny material-icons">code</i>Editor Online</a>
+        </li>
+      </ul>
+    </header>
+      <main>
+        <div class="section" id="index-banner">
+          <div class="container">
+            <div class="row" style="margin-bottom: 0;">
+              <div class="col s12 m8 offset-m1 xl7 offset-xl1">
+                <h1>Bear</h1>
+                <h4 class="light">O Bear é um aplicativo para macOS e iOS projetado para uma coisa: anotações. É como o Evernote, mas sem o inchaço.</h4>
+                <ol class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+                  <li itemprop="itemListElement" itemscope
+                      itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="https://markdown.net.br/">
+                        <span itemprop="name">Markdown</span></a>
+                    <meta itemprop="position" content="1" />
+                  </li>
+                  <li>
+                    <i class="fas fa-chevron-right chevron-separator"></i>
+                  </li>
+                  <li itemprop="itemListElement" itemscope
+                      itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="https://markdown.net.br/ferramentas/">
+                        <span itemprop="name">Ferramentas</span></a>
+                    <meta itemprop="position" content="2" />
+                  </li>
+                  <li>
+                    <i class="fas fa-chevron-right chevron-separator"></i>
+                  </li>
+                  <li itemprop="itemListElement" itemscope
+                      itemtype="https://schema.org/ListItem">
+                    <span itemprop="name">Bear</span>
+                    <meta itemprop="position" content="3" />
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <!--  Outer row  -->
+          <div class="row">
+            <div class="section col s12 m8 offset-m1 xl7 offset-xl1">
+              <div class="row scrollspy">
+                <div class="col s12">
+                  <div class="image-container mt-60">
+                    <img src="/assets/img/bear-window.png" class="materialboxed" alt="Janela do aplicativo Bear com alguns comandos do Markdown!">
+                  </div>
+
+                  <h2id="visao-geral">Visão geral</h2>
+
+                  <p>Não há muitos recursos de whizbang no Bear. Em vez disso, o Bear cumpre consistentemente todas as suas promessas. Tags, pesquisa e sincronização funcionam perfeitamente. O aplicativo é bem intuitivo para o usuário, esse é um dos pontos fortes da ferramenta.</p>
+
+                  <p><strong>Site</strong>: <a href="https://bear.app/" target="_blank">https://bear.app/</a></p>
+
+                  <h2id="suporte-markdown">Markdown no aplicativo Bear</h2>
+
+                  <p>O Bear não habilita automaticamente o suporte para Markdown, você deve fazer isso nas preferências. O aplicativo possui um editor em tempo real híbrido e um editor de texto - você pode ver a sintaxe do Markdown e a maneira como a formatação altera o texto. Demora um pouco para se acostumar, mas é útil se você está apenas começando com o Markdown.</p>
+
+                  <h3id="habilitando-markdown">Habilitando o suporte de Markdown</h3>
+
+                  <p>Para ativar o suporte ao Markdown no Bear, abra a janela de preferências. Na guia <em>General</em>, ative a configuração <em>Markdown compatibility mode</em>.</p>
+
+                  <p><strong>Dica</strong>: se você estiver usando o Bear em mais de um dispositivo, será necessário ativar a configuração do modo de compatibilidade com o Markdown em todos os seus dispositivos.</p>
+
+                  <h2id="compatibilidade">Compatibilidade do Bear com Markdown</h2>
+
+                  <p>O Bear fornece suporte para os seguintes elementos Markdown.</p>
+
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Elemento</th>
+                        <th>Suporte</th>
+                        <th>Obs</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><a href="/sintaxe-basica/#titulos">Títulos</a></td>
+                        <td class="yellow lighten-3">Parcial</td>
+                        <td>Não é compatível com a <a href="/sintaxe-basica/#sintaxe-alternativa">sintaxe alternativa</a></td>
+                      </tr>
+                      <tr>
+                        <td><a href="/sintaxe-basica/#paragrafos">Parágrafos</a></td>
+                        <td class="green lighten-4">Sim</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td><a href="/sintaxe-basica/#quebra-linha">Quebras de linha</a></td>
+                        <td class="yellow lighten-3">Parcial</td>
+                        <td>Não há compatibilidade com a sintaxe Markdown de quebra de linha com um espaço em branco à direita, mas você pode pressionar o enter uma vez para obter o mesmo resultado.</td>
+                      </tr>
+                      <tr>
+                        <td><a href="/sintaxe-basica/#negrito">Negrito</a></td>
+                        <td class="green lighten-4">Sim</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td><a href="/sintaxe-basica/#italico">Itálico</a></td>
+                        <td class="green lighten-4">Sim</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td><a href="/sintaxe-basica/#bloco-citacao">Bloco de citação</a></td>
+                        <td class="yellow lighten-3">Parcial</td>
+                        <td><a href="/sintaxe-basica/#bloco-citacao-aninhado">Blocos de citação aninhados</a> não são suportados.</td>
+                      </tr>
+                      <tr>
+                        <td><a href="/sintaxe-basica/#listas-ordenadas">Listas ordenadas</a></td>
+                        <td class="green lighten-4">Sim</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td><a href="/sintaxe-basica/#listas-nao-ordenadas">Listas não ordenadas</a></td>
+                        <td class="green lighten-4">Sim</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td><a href="/sintaxe-basica/#codigo">Código</a></td>
+                        <td class="green lighten-4">Sim</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td><a href="/sintaxe-basica/#linhas-horizontais">Linhas horizontais</a></td>
+                        <td class="green lighten-4">Sim</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td><a href="/sintaxe-basica/#links">Links</a></td>
+                        <td class="green lighten-4">Sim</td>
+                        <td>Você pode criar uma vinculação colocando o nome da nota entre dois colchetes (exemplo, <code class="lang-plaintext">[[nome-da-nota]]</code>).</td>
+                      </tr>
+                      <tr>
+                        <td><a href="/sintaxe-basica/#imagens">Imagens</a></td>
+                        <td class="red lighten-3">Não</td>
+                        <td>A sintaxe Markdown não é suportada, mas você ainda pode arrastar e soltar imagens em uma anotação.</td>
+                      </tr>
+                      <tr>
+                        <td><a href="/sintaxe-estendida/#tabelas">Tabelas</a></td>
+                        <td class="red lighten-3">Não</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td><a href="/sintaxe-estendida/#bloco-codigo-cercado">Blocos de código cercado</a></td>
+                        <td class="green lighten-4">Sim</td>
+                        <td>O realce da sintaxe também é suportado.</td>
+                      </tr>
+                      <tr>
+                        <td><a href="/sintaxe-estendida/#notas-rodape">Notas de rodapé</a></td>
+                        <td class="red lighten-3">Não</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td><a href="/sintaxe-estendida/#id-titulo">Id de títulos</a></td>
+                        <td class="yellow lighten-3">Parcial</td>
+                        <td>Gerado automaticamente. Não há como definir identificadores de títulos personalizados. Você pode copiar um link para um cabeçalho clicando no símbolo <strong>H#</strong> próximo ao título rente a margem e selecionar <strong>Copy Link to Here</strong>. Veja o a <a href="https://bear.app/faq/Tags%20&amp;%20Linking/How%20to%20link%20notes%20together/">documentação</a> para mais informações.</td>
+                      </tr>
+                      <tr>
+                        <td><a href="/sintaxe-estendida/#lista-definicoes">Listas de definições</a></td>
+                        <td class="red lighten-3">Não</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td><a href="/sintaxe-estendida/#riscado">Riscado</a></td>
+                        <td class="green lighten-4">Sim</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td><a href="/sintaxe-estendida/#lista-tarefas">Listas de tarefas</a></td>
+                        <td class="green lighten-4">Sim</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td><a href="/sintaxe-estendida/#emojis">Emoji (copiar e colar)</a></td>
+                        <td class="green lighten-4">Sim</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td><a href="/sintaxe-estendida/#usando-codigo-emoji">Emoji (códigos de acesso)</a></td>
+                        <td class="green lighten-4">Sim</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td><a href="/sintaxe-estendida/#link-automatico-url">Link automático de URL</a></td>
+                        <td class="green lighten-4">Sim</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td><a href="/sintaxe-estendida/#desativando-link-automatico">Desativar o link automático de URL</a></td>
+                        <td class="green lighten-4">Sim</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td><a href="/sintaxe-basica/#html">HTML</a></td>
+                        <td class="yellow lighten-3">Parcial</td>
+                        <td>O HTML não é renderizado nas notas do Bear, mas aparentemente é renderizado na hora da exportação.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <h2id="elementos-adicionais">Suporte para elementos de sintaxe adicionais</h2>
+
+                  <p>O Bear também é compatível com alguns elementos obscuros.</p>
+
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Elemento</th>
+                        <th>Markdown</th>
+                        <th>Saída renderizada</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Realçar</td>
+                        <td><code>::palavra ou frase::</code></td>
+                        <td><mark>palavra ou frase</mark></td>
+                      </tr>
+                      <tr>
+                        <td>Sublinhado</td>
+                        <td><code>~palavra ou frase~</code></td>
+                        <td><u>palavra ou frase</u></td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <h2id="veja-tambem">Veja também</h2>
+
+                  <p><a href="https://bear.app/faq/Markup%20:%20Markdown/Markdown%20compatibility%20mode/" target="_blank">Modo de compatibilidade Bear Markdown</a></p>
+                </div> <!-- Fim do conteúdo principal -->
+
+              </div>
+              <div class="col-12">
+                <ul class="collapsible">
+                  <li class="active">
+                    <div class="collapsible-header grey lighten-4"><i class="material-icons">share</i>Compartilhar</div>
+                    <div class="collapsible-body">
+                      <div class="collection">
+                        <a href="#!" class="collection-item" data-sharer="twitter" data-title="Referência do Uso do Markdown no Bear!" data-hashtags="markdown" data-url="https://markdown.net.br/ferramentas/bear/">
+                          <i class="fab fa-twitter color-twitter"></i>&nbsp;&nbsp;Compartilhar no Twitter
+                        </a>
+                        <a href="#!" class="collection-item" data-sharer="facebook" data-hashtag="markdown" data-url="https://markdown.net.br/ferramentas/bear/">
+                          <i class="fab fa-facebook color-facebook"></i>&nbsp;&nbsp;Compartilhar no Facebook
+                        </a>
+                        <a href="#!" class="collection-item" data-sharer="linkedin" data-url="https://markdown.net.br/ferramentas/bear/">
+                          <i class="fab fa-linkedin color-linkedin"></i>&nbsp;&nbsp;Compartilhar no Linkedin
+                        </a>
+                        <a href="#!" class="collection-item" data-sharer="email" data-title="Referência do Uso do Markdown no Bear!" data-url="https://markdown.net.br/ferramentas/bear/" data-subject="Olá! Tudo bem? Achei esse guia do Markdown bem fácil de acompanhar, dá uma olhadinha quando puder. Espero que seja útil, até mais." data-to="email@provedor.com.br">
+                          <i class="fas fa-envelope color-email"></i>&nbsp;&nbsp;Compartilhar por Email
+                        </a>
+                        <a href="#!" class="collection-item" data-sharer="whatsapp" data-title="Referência do Uso do Markdown no Bear!" data-url="https://markdown.net.br/ferramentas/bear/">
+                          <i class="fab fa-whatsapp color-whatsapp"></i>&nbsp;&nbsp;Compartilhar por Whatsapp
+                        </a>
+                        <a href="#!" class="collection-item" data-sharer="telegram" data-title="Referência do Uso do Markdown no Bear!" data-url="https://markdown.net.br/ferramentas/bear/" data-to="(00) 99999-9999">
+                          <i class="fab fa-telegram color-telegram"></i>&nbsp;&nbsp;Compartilhar por Telegram
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Table of contents -->
+            <div class="col hide-on-small-only m3 xl3 offset-xl1">
+              <div class="toc-wrapper" id="sticky-navigator">
+              </div>
+            </div>
+            <!-- Table of contents -->
+          </div>
+        </div>
+      </main>
+
+    <footer class="page-footer docs-footer">
+      <div class="container">
+        <div class="row" style="margin-bottom: 0;">
+          <div class="col s12 m10 offset-m1">
+            <div class="row">
+              <div class="col l4 s12" style="overflow: hidden;">
+                <a href="https://twitter.com/CodigoNetwork" class="twitter-follow-button" data-show-count="true" data-size="large" data-dnt="true">Seguir @CodigoNetwork</a>
+              </div>
+            </div>
+            <div class="footer-copyright">
+              <div>
+                &copy;&nbsp;<noscript>2020</noscript><script type="text/javascript">document.write(new Date().getFullYear());</script> <a href="https://codigo.net.br" target="_blank">Código Network</a>, Todos os direitos reservados.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--  Scripts-->
+    <script src="/assets/js/bundle.min.js"></script>
+    <script src="/assets/js/search.min.js"></script>
+    <script>
+      $(document).ready(function(){
+         $('.materialboxed').materialbox();
+       });
+      anchors.add("h2, h3");
+      $('#sticky-navigator').stickyNavigator();
+    </script>
+    <!-- Twitter Button -->
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    <div class="sidenav-overlay" style="display: none; opacity: 0;"></div>
+    <div class="drag-target"></div>
+  </body>
+</html>

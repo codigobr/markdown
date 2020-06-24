@@ -165,6 +165,7 @@
 
  h1, h2, h3, h4, h5, h6 {
    color: #222;
+   font-weight: 300;
  }
 
  .header {
@@ -216,11 +217,21 @@
  }
 
 
- /*helpers*/
+/*helpers*/
 
- .mt-0 {
-   margin-top: 0!important;
- }
+.mt-0 {
+ margin-top: 0!important;
+}
+
+.mt-60 {
+ margin-top: 60px!important;
+}
+
+/*margem vertical*/
+.mv-30 {
+  margin-top: 30px!important;
+  margin-bottom: 30px!important;
+}
 
 
  #nav-mobile li.search .search-wrapper.focused .search-results:not(:empty) {
@@ -230,6 +241,7 @@
 
  #nav-mobile li.search .search-results a {
    font-size: 11px;
+   color: #555;
  }
 
  #nav-mobile li.search .search-results a:hover {
@@ -308,4 +320,8 @@
    direction: ltr;
    -webkit-font-feature-settings: 'liga';
    -webkit-font-smoothing: antialiased;
+ }
+
+ a.sidenav-trigger.top-nav {
+  color: #555;
  }

@@ -67,7 +67,7 @@
           <a href="/sintaxe-basica/" class="waves-effect waves-blue"><i class="tiny material-icons">short_text</i>Sintaxe Básica</a>
         </li>
         <li class="bold white">
-          <a href="/sintaxe-basica/" class="waves-effect waves-blue"><i class="tiny material-icons">format_align_left</i>Sintaxe Estendida</a>
+          <a href="/sintaxe-estendida/" class="waves-effect waves-blue"><i class="tiny material-icons">format_align_left</i>Sintaxe Estendida</a>
         </li>
         <li class="bold white">
           <a href="/referencia-rapida/" class="waves-effect waves-blue"><i class="tiny material-icons">help_outline</i>Referência Rápida</a>
@@ -85,7 +85,7 @@
           <div class="container">
             <div class="row" style="margin-bottom: 0;">
               <div class="col s12 m8 offset-m1 xl7 offset-xl1">
-                <h1 class="header">Sintaxe básica do Markdown</h1>
+                <h1>Sintaxe básica do Markdown</h1>
                 <h4 class="light">Aprenda os conceitos básicos do markdown</h4>
                 <ol class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
                   <li itemprop="itemListElement" itemscope
@@ -113,11 +113,11 @@
             <div class="section col s12 m8 offset-m1 xl7 offset-xl1">
               <div class="row scrollspy">
                 <div class="col s12">
-                  <h2 class="header" id="visao-geral">Visão geral</h2>
+                  <h2 id="visao-geral">Visão geral</h2>
 
                   <p>Quase todos os aplicativos Markdown suportam a sintaxe básica descrita no documento de design original de John Gruber. Existem pequenas variações e discrepâncias entre os processadores Markdown - essas são anotadas em linha sempre que possível.</p>
 
-                  <h2 class="header" id="titulos">Títulos</h2>
+                  <h2 id="titulos">Títulos</h2>
 
                   <p>Para criar um título, adicione a hash (<code class="lang-markdown">#</code>) na frente de uma palavra ou frase. O número de sinais numéricos que você usa deve corresponder ao nível do título. Por exemplo, para criar um nível de título três (<code class="lang-markdown">&lt;h3&gt;</code>), use três sinais numéricos (hashes) (por exemplo, <code class="lang-markdown">### Meu título</code>).</p>
 
@@ -462,15 +462,15 @@
                   </tr>
                   </tbody>
                   </table>
-                  <h2 id="citacoes-bloco">Citações em bloco</h2>
-                  <p>Para criar uma citação em bloco, adicione um <code class="lang-markdown">&gt;</code> na frente de um parágrafo.</p>
+                  <h2 id="bloco-citacao">Bloco de citação</h2>
+                  <p>Para criar um bloco de citação, adicione um <code class="lang-markdown">&gt;</code> na frente de um parágrafo.</p>
                   <pre class="lang-markdown"><code>&gt; Dorothy a seguiu pelos aposentos de seu castelo.</code></pre>
                   <p>Assim seria o resultado:</p>
                   <blockquote>
                     <p>Dorothy a seguiu pelos aposentos de seu castelo.</p>
                   </blockquote>
-                  <h3 id="citacoes-bloco-varios-paragrafos">Citações de bloco com vários parágrafos</h3>
-                  <p>As citações em bloco podem conter vários parágrafos. Adicione um <code class="lang-markdown">&gt;</code> nas linhas em branco entre os parágrafos.</p>
+                  <h3 id="bloco-citacao-varios-paragrafos">Bloco de citação com vários parágrafos</h3>
+                  <p>Os blocos de citação podem conter vários parágrafos. Adicione um <code class="lang-markdown">&gt;</code> nas linhas em branco entre os parágrafos.</p>
                     <pre class="lang-markdown"><code>&gt; Dorothy a seguiu pelos aposentos de seu castelo.
 &gt;
 &gt; A Bruxa ordenou que ela limpasse as panelas e chaleiras, varrer o chão e manter o fogo alimentado com lenha.</code></pre>
@@ -480,8 +480,8 @@
                     <p>Dorothy a seguiu pelos aposentos de seu castelo.</p>
                     <p>A Bruxa ordenou que ela limpasse as panelas e chaleiras, varrer o chão e manter o fogo alimentado com lenha.</p>
                   </blockquote>
-                  <h3 id="citacoes-bloco-aninhados">Citações de blocos aninhadas</h3>
-                  <p>As citações em bloco podem ser aninhadas. Adicione um <code class="lang-markdown">&gt;&gt;</code> na frente do parágrafo que você deseja aninhar.</p>
+                  <h3 id="bloco-citacao-aninhado">Blocos de citação aninhados</h3>
+                  <p>Os blocos de citação podem ser aninhados. Adicione um <code class="lang-markdown">&gt;&gt;</code> na frente do parágrafo que você deseja aninhar.</p>
                   <pre class="lang-markdown"><code>&gt; Dorothy a seguiu pelos aposentos de seu castelo.
 &gt;
 &gt;&gt; A Bruxa ordenou que ela limpasse as panelas e chaleiras, varrer o chão e manter o fogo alimentado com lenha.</code></pre>
@@ -493,7 +493,7 @@
                    </blockquote>
                   </blockquote>
 
-                  <h3 id="citacoes-bloco-outros-elementos">Citações em bloco com outros elementos</h3>
+                  <h3 id="bloco-citacao-outros-elementos">Bloco de citação com outros elementos</h3>
                   <p>As citações de bloco podem conter outros elementos no formato Markdown. Nem todos os elementos podem ser usados. Você precisará experimentar para ver quais funcionam.</p>
                   <pre class="lang-markdown"><code>&gt; #### Os resultados trimestrais estão ótimos!
 &gt;
@@ -775,11 +775,11 @@ Preciso adicionar outro parágrafo abaixo do segundo item da lista.
                    </li>
                    <li>E aqui está o terceiro item da lista.</li>
                   </ul>
-                  <h4 id="listas-citacoes-bloco">Citações em bloco</h4>
+                  <h4 id="listas-bloco-citacao">Bloco de citação</h4>
                   <pre class="lang-markdown"><code>*   Este é o primeiro item da lista.
 *   Aqui está o segundo item da lista.
 
-&gt; Uma citação em bloco ficaria ótima abaixo do segundo item da lista.
+&gt; um bloco de citação ficaria ótimo abaixo do segundo item da lista.
 
 *   E aqui está o terceiro item da lista.</code></pre>
 
@@ -789,7 +789,7 @@ Preciso adicionar outro parágrafo abaixo do segundo item da lista.
                     <li>
                      <p>Aqui está o segundo item da lista.</p>
                      <blockquote>
-                      <p>Uma citação em bloco ficaria ótima abaixo do segundo item da lista.</p>
+                      <p>um bloco de citação ficaria ótimo abaixo do segundo item da lista.</p>
                     </blockquote>
                   </li>
                   <li>E aqui está o terceiro item da lista.</li>
