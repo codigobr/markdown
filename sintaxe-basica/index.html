@@ -119,7 +119,7 @@
 
                   <h2 id="titulos">Títulos</h2>
 
-                  <p>Para criar um título, adicione a hash (<code class="lang-markdown">#</code>) na frente de uma palavra ou frase. O número de sinais numéricos que você usa deve corresponder ao nível do título. Por exemplo, para criar um nível de título três (<code class="lang-markdown">&lt;h3&gt;</code>), use três sinais numéricos (hashes) (por exemplo, <code class="lang-markdown">### Meu título</code>).</p>
+                  <p>Para criar um título, adicione a hash (<code class="lang-markdown">#</code>) na frente de uma palavra ou frase. O número de sinais numéricos que você usa deve corresponder ao nível do título. Por exemplo, para criar um nível de título três (<code class="lang-markdown">&lt;h3&gt;</code>), use três sinais numéricos (cerquilhas) (por exemplo, <code class="lang-markdown">### Meu título</code>).</p>
 
                   <table>
                     <thead>
@@ -187,7 +187,7 @@
                     </tbody>
                   </table>
                   <h3 id="titulos-melhores-praticas">Práticas recomendadas para o uso de títulos em Markdown</h3>
-                  <p>Os aplicativos de Markdown não concordam em como lidar com um espaço ausente entre as hashes (<code class="lang-markdown">#</code>) e o nome do título. Para compatibilidade, sempre coloque um espaço entre os sinais numéricos e o nome do título.</p>
+                  <p>Os aplicativos de Markdown não concordam em como lidar com um espaço ausente entre a cerquilha (<code class="lang-markdown">#</code>) e o título. Para compatibilidade, sempre coloque um espaço entre os sinais numéricos e o título.</p>
                   <table>
                     <thead>
                       <tr>
@@ -219,7 +219,7 @@
                             Acho que vou usá-lo para formatar todos os meus documentos a partir de agora.
                         </td>
                         <td>&lt;p&gt;Eu realmente gosto de usar o Markdown.&lt;/p&gt;<br><br>
-
+                          &lt;p&gt;Acho que vou us&aacute;-lo para formatar todos os meus documentos a partir de agora.&lt;p&gt;
                         </td>
                         <td>
                           <p>Eu realmente gosto de usar o Markdown.</p>
@@ -228,7 +228,7 @@
                       </tr>
                     </tbody>
                   </table>
-                  <h3 id="paragrafos-melhores-praticas">Melhores práticas para usar parágrafo em Markdown</h3>
+                  <h3 id="paragrafos-melhores-praticas">Melhores práticas para usar parágrafos em Markdown</h3>
                   <p>A menos que o <a href="#paragrafos">parágrafo esteja em uma lista</a>, não recue os parágrafos com espaços ou tabulações.</p>
                   <table>
                     <thead>
@@ -251,7 +251,7 @@
                     </tbody>
                   </table>
                   <h2 id="quebra-linha">Quebras de linha</h2>
-                  <p>Para criar uma quebra de linha (<code class="lang-markdown">&lt;br&gt;</code>), finalize uma linha com dois ou mais espaços e digite enter.</p>
+                  <p>Para criar uma quebra de linha (<code class="lang-markdown">&lt;br&gt;</code>), finalize uma linha com dois ou mais espaços e pressione o <code class="lang-plaintext">Enter</code>.</p>
                   <table>
                     <thead>
                       <tr>
@@ -281,12 +281,12 @@
                   <h3 id="quebra-linha-melhores-praticas">Melhores práticas para o uso de quebra de linhas em Markdown</h3>
                   <p>Você pode usar dois ou mais espaços (chamados de "espaço em branco à direita") para quebras de linha em quase todos os aplicativos Markdown, mas isso é controverso. É difícil ver os espaços em branco em um editor e muitas pessoas acidentalmente ou intencionalmente colocam dois espaços após cada frase. Por esse motivo, convém usar algo diferente de espaço em branco à direita para quebras de linha. Felizmente, há outra opção suportada por quase todos os aplicativos Markdown: a tag <code class="lang-markdown">&lt;br&gt;</code> do HTML.</p>
                   <p>Para compatibilidade, use espaço em branco à direita ou a tag <code class="lang-markdown">&lt;br&gt;</code> do HTML no final da linha.</p>
-                  <p>Existem duas outras opções que não recomendo. O CommonMark e algumas outras linguagens de marcação leves permitem digitar uma barra invertida (<code class="lang-markdown">\</code>) no final da linha, mas nem todos os aplicativos Markdown suportam isso, portanto, não é uma ótima opção do ponto de vista de compatibilidade. E pelo menos algumas linguagens de marcação leves não exigem nada no final da linha - basta digitar return e elas criarão uma quebra de linha.</p>
+                  <p>Existem duas outras opções que não recomendo. O CommonMark e algumas outras linguagens de marcação leves permitem digitar uma barra invertida (<code class="lang-markdown">\</code>) no final da linha, mas nem todos os aplicativos Markdown suportam isso, portanto, não é uma boa opção do ponto de vista de compatibilidade. E pelo menos algumas linguagens de marcação leves não exigem nada no final da linha - basta pressionar o <code class="lang-plaintext">Enter</code> e elas criarão uma quebra de linha.</p>
                   <table>
                     <thead>
                      <tr>
                       <th class="green-text"><i class="fas fa-thumbs-up"></i>&nbsp; Faça isso</th>
-                      <th class="red-text"><i class="fas fa-thumbs-down"></i>&nbsp; Don't Faça isso</th>
+                      <th class="red-text"><i class="fas fa-thumbs-down"></i>&nbsp; Não Faça isso</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -342,7 +342,7 @@
                     <thead>
                      <tr>
                       <th class="green-text"><i class="fas fa-thumbs-up"></i>&nbsp; Faça isso</th>
-                      <th class="red-text"><i class="fas fa-thumbs-down"></i>&nbsp; Don't Faça isso</th>
+                      <th class="red-text"><i class="fas fa-thumbs-down"></i>&nbsp; Não Faça isso</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -357,7 +357,7 @@
                   </tbody>
                   </table>
                   <h3 id="italico">Itálico</h3>
-                  <p>Para colocar o texto em itálico, adicione um asterisco ou sublinhado antes e depois de uma palavra ou frase. Para colocar em itálico o meio de uma palavra para enfatizar, adicione um asterisco sem espaços ao redor das letras.</p>
+                  <p>Para colocar o texto em itálico, adicione um asterisco ou sublinhado antes e depois de uma palavra ou frase. Para formatar em itálico o meio de uma palavra, adicione um asterisco sem espaços ao redor das letras.</p>
                   <table>
                     <thead>
                      <tr>
@@ -385,12 +385,12 @@
                   </tbody>
                   </table>
                   <h4 id="italico-melhores-praticas">Práticas recomendadas para uso do itálico em Markdown</h4>
-                  <p>Os aplicativos de Markdown não concordam em como lidar com sublinhados no meio de uma palavra. Para compatibilidade, use asteriscos para colocar em itálico o meio de uma palavra para enfatizar.</p>
+                  <p>Os aplicativos de Markdown não concordam em como lidar com sublinhados no meio de uma palavra. Para compatibilidade, use asteriscos (<code class="lang-plaintext">*</code>) para enfatizar usando itálico.</p>
                   <table>
                     <thead>
                      <tr>
                       <th class="green-text"><i class="fas fa-thumbs-up"></i>&nbsp; Faça isso</th>
-                      <th class="red-text"><i class="fas fa-thumbs-down"></i>&nbsp; Don't Faça isso</th>
+                      <th class="red-text"><i class="fas fa-thumbs-down"></i>&nbsp; Não Faça isso</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -443,12 +443,12 @@
                   </tbody>
                   </table>
                   <h4 id="negrito-italico-melhores-praticas">Melhores práticas para uso do negrito e itálico em Markdown</h4>
-                  <p>Os aplicativos de Markdown não concordam em como lidar com sublinhados no meio de uma palavra. Para compatibilidade, use asteriscos para negrito e itálico no meio de uma palavra para enfatizar.</p>
+                  <p>Os aplicativos de Markdown não concordam em como lidar com sublinhados no meio de uma palavra. Para compatibilidade, use asteriscos para negrito e itálico no meio de uma palavra.</p>
                   <table>
                     <thead>
                      <tr>
                       <th class="green-text"><i class="fas fa-thumbs-up"></i>&nbsp; Faça isso</th>
-                      <th class="red-text"><i class="fas fa-thumbs-down"></i>&nbsp; Don't Faça isso</th>
+                      <th class="red-text"><i class="fas fa-thumbs-down"></i>&nbsp; Não Faça isso</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -463,33 +463,33 @@
                   </tbody>
                   </table>
                   <h2 id="bloco-citacao">Bloco de citação</h2>
-                  <p>Para criar um bloco de citação, adicione um <code class="lang-markdown">&gt;</code> na frente de um parágrafo.</p>
+                  <p>Para criar um bloco de citação, adicione um sinal de <strong>maior que</strong> <code class="lang-markdown">&gt;</code> na frente de um parágrafo.</p>
                   <pre class="lang-markdown"><code>&gt; Dorothy a seguiu pelos aposentos de seu castelo.</code></pre>
                   <p>Assim seria o resultado:</p>
                   <blockquote>
                     <p>Dorothy a seguiu pelos aposentos de seu castelo.</p>
                   </blockquote>
                   <h3 id="bloco-citacao-varios-paragrafos">Bloco de citação com vários parágrafos</h3>
-                  <p>Os blocos de citação podem conter vários parágrafos. Adicione um <code class="lang-markdown">&gt;</code> nas linhas em branco entre os parágrafos.</p>
+                  <p>Os blocos de citação podem conter vários parágrafos. Adicione um sinal de <strong>maior que</strong> <code class="lang-markdown">&gt;</code> nas linhas em branco entre os parágrafos.</p>
                     <pre class="lang-markdown"><code>&gt; Dorothy a seguiu pelos aposentos de seu castelo.
 &gt;
-&gt; A Bruxa ordenou que ela limpasse as panelas e chaleiras, varrer o chão e manter o fogo alimentado com lenha.</code></pre>
+&gt; A Bruxa ordenou que ela limpasse as panelas e chaleiras, varresse o chão e mantivesse o fogo alimentado com lenha.</code></pre>
 
                   <p>E assim seria o resultado:</p>
                   <blockquote>
                     <p>Dorothy a seguiu pelos aposentos de seu castelo.</p>
-                    <p>A Bruxa ordenou que ela limpasse as panelas e chaleiras, varrer o chão e manter o fogo alimentado com lenha.</p>
+                    <p>A Bruxa ordenou que ela limpasse as panelas e chaleiras, varresse o chão e mantivesse o fogo alimentado com lenha.</p>
                   </blockquote>
                   <h3 id="bloco-citacao-aninhado">Blocos de citação aninhados</h3>
-                  <p>Os blocos de citação podem ser aninhados. Adicione um <code class="lang-markdown">&gt;&gt;</code> na frente do parágrafo que você deseja aninhar.</p>
+                  <p>Os blocos de citação podem ser aninhados. Adicione dois sinais de <code class="plain-text">maior que</code> <code class="lang-markdown">&gt;&gt;</code> na frente do parágrafo que você deseja aninhar.</p>
                   <pre class="lang-markdown"><code>&gt; Dorothy a seguiu pelos aposentos de seu castelo.
 &gt;
-&gt;&gt; A Bruxa ordenou que ela limpasse as panelas e chaleiras, varrer o chão e manter o fogo alimentado com lenha.</code></pre>
+&gt;&gt; A Bruxa ordenou que ela limpasse as panelas e chaleiras, varresse o chão e mantivesse o fogo alimentado com lenha.</code></pre>
                   <p>O resultado seria esse:</p>
                   <blockquote>
                     <p>Dorothy a seguiu pelos aposentos de seu castelo.</p>
                     <blockquote>
-                     <p>A Bruxa ordenou que ela limpasse as panelas e chaleiras, varrer o chão e manter o fogo alimentado com lenha.</p>
+                     <p>A Bruxa ordenou que ela limpasse as panelas e chaleiras, varresse o chão e mantivesse o fogo alimentado com lenha.</p>
                    </blockquote>
                   </blockquote>
 
@@ -513,7 +513,7 @@
                   <h2 id="listas">Listas</h2>
                   <p>Você pode organizar itens em listas ordenadas e não ordenadas.</p>
                   <h3 id="listas-ordenadas">Listas ordenadas</h3>
-                  <p>Para criar uma lista ordenada, adicione itens de linha com números seguidos por pontos. Os números não precisam estar em ordem numérica, mas a lista deve começar com o número um.</p>
+                  <p>Para criar uma lista ordenada, comece com um <stron>número</stron> seguido por um <strong>ponto</strong> e o <strong>conteúdo</strong> do elemento. Os números não precisam estar em ordem numérica, mas a lista deve começar com o número <strong>um</strong>.</p>
                   <table>
                     <thead>
                      <tr>
@@ -635,7 +635,7 @@
                   </tbody>
                   </table>
                   <h3 id="listas-nao-ordenadas">Listas não ordenadas</h3>
-                  <p>Para criar uma lista não ordenada, adicione traços (<code class="lang-markdown">-</code>), asteriscos (<code class="lang-markdown">*</code>), ou sinais de adição (<code class="lang-markdown">+</code>) na frente dos itens de linha. Recue um ou mais itens para criar uma lista aninhada.</p>
+                  <p>Para criar uma lista não ordenada, adicione traços (<code class="lang-markdown">-</code>), asteriscos (<code class="lang-markdown">*</code>), ou sinais de adição (<code class="lang-markdown">+</code>) na frente dos elementos da lista. Recue um ou mais itens para criar uma lista aninhada.</p>
                   <table>
                     <thead>
                      <tr>
@@ -801,10 +801,10 @@ Preciso adicionar outro parágrafo abaixo do segundo item da lista.
                      <pre class="lang-markdown"><code>1.  Abra o arquivo
 2.  Encontre o seguinte bloco de código na linha 21:
 
-&lt;html&gt;
-&lt;head&gt;
-&lt;title&gt;Teste&lt;/title&gt;
-&lt;/head&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+        &lt;title&gt;Teste&lt;/title&gt;
+        &lt;/head&gt;
 
 3.  Atualize o título para corresponder ao nome do seu site.</code></pre>
                   </div>
@@ -814,14 +814,10 @@ Preciso adicionar outro parágrafo abaixo do segundo item da lista.
                     <li>Abra o arquivo.</li>
                     <li>
                      <p>Encontre o seguinte bloco de código na linha 21:</p>
-                     <div class="language-text highlighter-rouge">
-                      <div class="highlight">
-                       <pre class="lang-markdown"><code>&lt;html&gt;
+                       <pre class="lang-html"><code>&lt;html&gt;
 &lt;head&gt;
-&lt;title&gt;Teste&lt;/title&gt;
+  &lt;title&gt;Teste&lt;/title&gt;
 &lt;/head&gt;</code></pre>
-                    </div>
-                  </div>
                   </li>
                   <li>Atualize o título para corresponder ao nome do seu site.</li>
                   </ol>
@@ -885,20 +881,16 @@ Preciso adicionar outro parágrafo abaixo do segundo item da lista.
                   <div class="language-text highlighter-rouge">
                     <div class="highlight">
                      <pre class="lang-markdown"><code>    &lt;html&gt;
-&lt;head&gt;
-&lt;/head&gt;
-&lt;/html&gt;</code></pre>
+    &lt;head&gt;
+    &lt;/head&gt;
+    &lt;/html&gt;</code></pre>
                   </div>
                   </div>
                   <p>O resultado:</p>
-                  <div class="language-text highlighter-rouge">
-                    <div class="highlight">
-                     <pre class="lang-markdown"><code>&lt;html&gt;
+                  <pre class="lang-html"><code>&lt;html&gt;
 &lt;head&gt;
 &lt;/head&gt;
 &lt;/html&gt;</code></pre>
-                  </div>
-                  </div>
                   <p><strong>Obs:</strong> Para criar blocos de código sem recuar linhas, use <a href="/sintaxe-basica/#bloco-codigo-cercado">blocos de código cercados</a>.</p>
                   <h2 id="linhas-horizontais">Linhas horizontais</h2>
                   <p>Para criar uma linha horizontal, use três ou mais asteriscos (<code class="lang-markdown">***</code>), traços (<code class="lang-markdown">---</code>), ou sublinhados (<code class="lang-markdown">___</code>) em uma linha contendo apenas esse caracteres.</p>
@@ -916,7 +908,7 @@ _________________</code></pre>
                     <thead>
                      <tr>
                       <th class="green-text"><i class="fas fa-thumbs-up"></i>&nbsp; Faça isso</th>
-                      <th class="red-text"><i class="fas fa-thumbs-down"></i>&nbsp; Don't Faça isso</th>
+                      <th class="red-text"><i class="fas fa-thumbs-down"></i>&nbsp; Não Faça isso</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -940,12 +932,12 @@ _________________</code></pre>
                   <p>O Resultado fica assim:</p>
                   <p>Meu mecanismo de pesquisa favorito é o <a href="https://duckduckgo.com/" target="_blank">Duck Duck Go</a>.</p>
                   <h3 id="links-adicionando-titulos">Adicionando títulos</h3>
-                  <p>Opcionalmente, você pode adicionar um título para um link. Isso aparecerá como uma dica de ferramenta quando o usuário passar o mouse sobre o link. Para adicionar um título, coloque-o entre parênteses após o URL.</p>
+                  <p>Opcionalmente, você pode adicionar um título para um link. Isso aparecerá como uma dica de ferramenta quando o usuário passar o mouse sobre o link. Para adicionar um título, coloque-o entre aspas após a URL.</p>
                   <pre class="language-markdown"><code>Meu mecanismo de pesquisa favorito é o [Duck Duck Go](https://duckduckgo.com "O melhor mecanismo de pesquisa quando o assunto é privacidade").</code></pre>
                   <p>O Resultado fica assim:</p>
                   <p>Meu mecanismo de pesquisa favorito é o <a href="https://duckduckgo.com/" target="_blank" title="O melhor mecanismo de pesquisa quando o assunto é privacidade privacidade">Duck Duck Go</a>.</p>
                   <h3 id="urls-email">URLs e endereços de email</h3>
-                  <p>Para transformar rapidamente um URL ou endereço de email em um link, coloque-os entre parênteses angulares (sinal de "maior que" e "menor que").</p>
+                  <p>Para transformar rapidamente uma URL ou endereço de email em um link, coloque-os entre parênteses angulares <code class="lang-plaintext">&lt;&gt;</code> (sinal de "maior que" e "menor que").</p>
                   <pre class="lang-markdown"><code>&lt;https://markdown.net.br&gt;
 &lt;email@exemplo.com.br&gt;</code></pre>
                   <p>O Resultado fica assim:</p>
@@ -954,21 +946,21 @@ _________________</code></pre>
                   </p>
                   <h3 id="links-formatando">Formatando links</h3>
                   <p>Para <a href="#enfase">realçar</a> links, adicione asteriscos antes e depois dos colchetes e parênteses. Para indicar links como <a href="#codigo">código</a>, adicione crases nos parênteses.</p>
-                  <pre class="lang-markdown"><code>Eu adoro apoiar o **[EFF](https://eff.org)**.
-Esse é o *[tabulação do Markdown](https://markdown.net.br)*.
-Veja a seção em [`código`](#code).</code></pre>
+                  <pre class="lang-markdown"><code>Eu apoio o **[EFF](https://eff.org)**.
+Esse é o *[Guia Completo do Markdown](https://markdown.net.br)*.
+Pule para a seção [`código`](#code).</code></pre>
 
                   <p>O Resultado fica assim:</p>
-                  <p>Eu amo apoiar o <strong><a href="https://eff.org/">EFF</a></strong>.<br>
-                    Esse é o <em><a href="https://markdown.net.br/">tabulação do Markdown</a></em>.<br>
-                    Veja a seção em <a href="#codigo"><code class="lang-markdown">código</code></a>.
+                  <p>Eu apoio o <strong><a href="https://eff.org/">EFF</a></strong>.<br>
+                    Esse é o <em><a href="https://markdown.net.br/">Guia Completo do Markdown</a></em>.<br>
+                    Pule para a seção <a href="#codigo"><code class="lang-markdown">código</code></a>.
                   </p>
                   <h3 id="links-estilo-referencia">Links de estilo de referência</h3>
-                  <p>Os links de estilo de referência são um tipo especial de link que facilita a exibição e a leitura de URLs no Markdown. Os links no estilo de referência são construídos em duas partes: a parte que você mantém alinhada com o texto e a parte que você armazena em outro lugar no arquivo para manter a leitura fácil do texto.</p>
+                  <p>Os links de estilo de referência são um tipo especial de link que facilita a exibição e a leitura de URLs no Markdown. Os links no estilo de referência são construídos em duas partes: a parte que você mantém alinhada com o texto e a parte que você armazena em outro lugar no arquivo para manter a leitura do texto mais fácil.</p>
                   <h4 id="links-formatando-primeira-parte">Formatando a primeira parte do link</h4>
                   <p>A primeira parte de um link no estilo de referência é formatada com dois conjuntos de colchetes. O primeiro conjunto de colchetes envolve o texto que deve aparecer vinculado. O segundo conjunto de colchetes exibe um rótulo usado para apontar para o link que você está armazenando em outro local do documento.</p>
                   <p>Embora não seja necessário, você pode incluir um espaço entre o primeiro e o segundo conjunto de colchetes. O rótulo no segundo conjunto de colchetes não diferencia maiúsculas de minúsculas e pode incluir letras, números, espaços ou pontuação.</p>
-                  <p>Isso significa que os seguintes exemplos de formato são aproximadamente equivalentes para a primeira parte do link:</p>
+                  <p>Isso significa que os seguintes exemplos de formato são equivalentes para a primeira parte do link:</p>
                   <ul>
                     <li><code class="lang-markdown">[casa-do-hobbit][1]</code></li>
                     <li><code class="lang-markdown">[casa-do-hobbit] [1]</code></li>
@@ -976,11 +968,11 @@ Veja a seção em [`código`](#code).</code></pre>
                   <h4 id="links-formatando-segunda-parte">Formatando a segunda parte do link</h4>
                   <p>A segunda parte de um link de estilo de referência é formatada com os seguintes atributos:</p>
                   <ol>
-                    <li>O rótulo, entre parênteses, seguido imediatamente por dois pontos e pelo menos um espaço (por exemplo, <code class="lang-markdown">[rótulo]: </code>).</li>
-                    <li>O endereço do link, que você pode opcionalmente colocar entre parênteses angulares.</li>
-                    <li>O título opcional para o link, que pode ser colocado entre aspas duplas, aspas simples ou parênteses.</li>
+                    <li>O rótulo, entre colchetes, seguido imediatamente por dois pontos e pelo menos um espaço (por exemplo, <code class="lang-markdown">[rótulo]: </code>).</li>
+                    <li>O endereço do link, que você pode opcionalmente colocar entre parênteses angulares <code class="lang-plaintext">&lt;&gt;</code>.</li>
+                    <li>O título opcional para o link, que pode ser colocado entre aspas duplas <code class="lang-plaintext">""</code>, aspas simples <code class="lang-plaintext">''</code> ou parênteses <code class="lang-plaintext">()</code>.</li>
                   </ol>
-                  <p>Isso significa que os seguintes exemplos de formatos são aproximadamente equivalentes para formatar a segunda parte do link:</p>
+                  <p>Os seguintes exemplos de formatos são equivalentes para formatar a segunda parte do link:</p>
                   <ul>
                     <li><code class="lang-markdown">[1]: https://pt.wikipedia.org/wiki/Hobbit</code></li>
                     <li><code class="lang-markdown">[1]: https://pt.wikipedia.org/wiki/Hobbit "Aprendendo sobre os Hobbits"</code></li>
@@ -993,38 +985,36 @@ Veja a seção em [`código`](#code).</code></pre>
                   <p>Você pode colocar essa segunda parte do link em qualquer lugar do seu documento Markdown. Algumas pessoas as colocam imediatamente após o parágrafo em que aparecem, enquanto outras as colocam no final do documento (como notas de rodapé).</p>
                   <h4 id="juntando-todas-pecas">Juntando todas as peças</h4>
                   <p>Digamos que você adicione um endereço a um parágrafo como um <a href="#links">link de URL padrão</a> ficando assim em Markdown:</p>
-                  <pre class="lang-markdown"><code>Em um buraco no chão, vivia um hobbit. Não é um buraco desagradável, sujo e úmido, cheio de vermes e um cheiro estranho, menos ainda um buraco seco e arenoso, sem nada para sentar ou comer: era uma [casa-de-hobbit](https://pt.wikipedia.org/wiki/Hobbit "Aprendento sobre os Hobbits"), e isso significa conforto.</code></pre>
+                  <pre class="lang-markdown"><code>Em um buraco no chão, vivia um hobbit. Não é um buraco desagradável, sujo e úmido, cheio de vermes e com um cheiro estranho, menos ainda um buraco seco e arenoso, sem nada para sentar ou comer: era uma [casa-de-hobbit](https://pt.wikipedia.org/wiki/Hobbit "Aprendento sobre os Hobbits"), e isso significa conforto.</code></pre>
 
                   <p>Embora possa apontar para informações adicionais interessantes, o URL exibido realmente não adiciona muito ao texto bruto existente, além de dificultar a leitura. Para corrigir isso, você pode formatar o URL dessa maneira:</p>
-
-                    <pre class="lang-markdown"><code>Em um buraco no chão, vivia um hobbit. Não é um buraco desagradável, sujo e úmido, cheio de vermes e um cheiro estranho, menos ainda um buraco seco e arenoso, sem nada para sentar ou comer: era uma [casa-de-hobbit](https://pt.wikipedia.org/wiki/Hobbit Aprendento sobre os Hobbits"), e isso significa conforto.</code></pre>
-                    <pre class="lang-markdown"><code>Em um buraco no chão, vivia um hobbit. Não é um buraco desagradável, sujo e úmido, cheio de vermes e um cheiro estranho, menos ainda um buraco seco e arenoso, sem nada para sentar ou comer: era uma [casa-de-hobbit][1], e isso significa conforto.
+                  <pre class="lang-markdown"><code>Em um buraco no chão, vivia um hobbit. Não é um buraco desagradável, sujo e úmido, cheio de vermes e com um cheiro estranho, menos ainda um buraco seco e arenoso, sem nada para sentar ou comer: era uma [casa-de-hobbit][1], e isso significa conforto.
 
 [1]: &lt;https://pt.wikipedia.org/wiki/Hobbit&gt; "Aprendento sobre os Hobbits"</code></pre>
 
                   <p>Nos dois casos acima, o resultado seria idêntico:</p>
                   <blockquote>
-                    <p>Em um buraco no chão, vivia um hobbit. Não é um buraco desagradável, sujo e úmido, cheio de vermes e um cheiro estranho, menos ainda um buraco seco e arenoso, sem nada para sentar ou comer: era uma <a href="https://pt.wikipedia.org/wiki/Hobbit" title="Aprendento sobre os Hobbits">casa-de-hobbit</a>, e isso significa conforto.</p>
+                    <p>Em um buraco no chão, vivia um hobbit. Não é um buraco desagradável, sujo e úmido, cheio de vermes e com um cheiro estranho, menos ainda um buraco seco e arenoso, sem nada para sentar ou comer: era uma <a href="https://pt.wikipedia.org/wiki/Hobbit" title="Aprendento sobre os Hobbits">casa-de-hobbit</a>, e isso significa conforto.</p>
                   </blockquote>
                   <p>e o HTML para o link seria:</p>
-                  <pre class="lang-markdown"><code>&lt;a href="https://pt.wikipedia.org/wiki/Hobbit" title="Aprendento sobre os Hobbits"&gt;casa-de-hobbit&lt;/a&gt;</code></pre>
+                  <pre class="lang-html"><code>&lt;a href="https://pt.wikipedia.org/wiki/Hobbit" title="Aprendento sobre os Hobbits"&gt;casa-de-hobbit&lt;/a&gt;</code></pre>
 
                   <h3 id="links-melhores-praticas">Práticas recomendadas para o uso de links em Markdown</h3>
-                  <p>Os aplicativos de Markdown não concordam em como lidar com espaços no meio de um URL. Para compatibilidade, tente codificar espaços da URL com o código <code class="lang-markdown">%20</code>.</p>
+                  <p>Os aplicativos de Markdown não concordam em como lidar com espaços no meio de uma URL. Por questão de compatibilidade, tente codificar espaços da URL com o código <code class="lang-markdown">%20</code>.</p>
                   <table>
                     <thead>
                      <tr>
                       <th class="green-text"><i class="fas fa-thumbs-up"></i>&nbsp; Faça isso</th>
-                      <th class="red-text"><i class="fas fa-thumbs-down"></i>&nbsp; Don't Faça isso</th>
+                      <th class="red-text"><i class="fas fa-thumbs-down"></i>&nbsp; Não Faça isso</th>
                     </tr>
                   </thead>
                   <tbody>
                    <tr>
                     <td>
-                       [link](https://www.exemplo.com.br/minha%20otima%20pagina)
+                       [link](https://exemplo.com/minha%20pagina)
                    </td>
                    <td>
-                       [link](https://www.exemplo.com.br/minha ótima página)
+                       [link](https://exemplo.com/minha página)
                    </td>
                   </tr>
                   </tbody>
@@ -1111,7 +1101,7 @@ Veja a seção em [`código`](#code).</code></pre>
                   </tr>
                   <tr>
                     <td>|</td>
-                    <td>barra vertical/pipe (veja também <a href="/sintaxe-basica/#escapando-barras-verticais">escapando barras verticais em tabelas</a>)</td>
+                    <td>barra vertical/pipe (veja também <a href="/sintaxe-estendida/#escapando-barras-verticais">escapando barras verticais em tabelas</a>)</td>
                   </tr>
                   </tbody>
                   </table>
