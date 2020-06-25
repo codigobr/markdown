@@ -101,7 +101,7 @@
             <div class="row" style="margin-bottom: 0;">
               <div class="col s12 m8 offset-m1 xl7 offset-xl1">
                 <h1>Sintaxe Estendida</h1>
-                <h4 class="light">Recursos avançados que se baseiam na sintaxe básica do Markdown.</h4>
+                <h4 class="light">Recursos avançados que se baseiam nos fundamentos do Markdown.</h4>
                 <ol class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
                   <li itemprop="itemListElement" itemscope
                       itemtype="https://schema.org/ListItem">
@@ -132,11 +132,11 @@
 
                   <p>A sintaxe básica descrita no documento de design original de John Gruber adicionou muitos dos elementos necessários no dia a dia, mas não foi suficiente para algumas pessoas. É aí que entra a sintaxe estendida.</p>
 
-                  <p>Vários indivíduos e organizações decidiram estender a sintaxe básica adicionando mais elementos, como tabelas, blocos de código, realce de sintaxe, vinculação automática de URL e notas de rodapé. Esses elementos podem ser ativados usando uma linguagem de marcação leve que se baseia na sintaxe básica do Markdown ou adicionando uma extensão a um processador Markdown compatível.</p>
+                  <p>Vários indivíduos e organizações decidiram estender a <a href="/sintaxe-basica/">sintaxe básica</a> adicionando mais elementos, como tabelas, blocos de código, realce de sintaxe, vinculação automática de URL e notas de rodapé. Esses elementos podem ser ativados usando uma linguagem de marcação leve baseada na sintaxe do Markdown ou adicionando uma extensão a um processador Markdown compatível.</p>
 
                   <h2 id="disponibilidade">Disponibilidade</h2>
 
-                  <p>Nem todos os aplicativos Markdown suportam elementos de sintaxe estendidos. Você precisará verificar se a linguagem de marcação leve que seu aplicativo está usando suporta os elementos de sintaxe estendida que você deseja usar. Caso contrário, ainda será possível ativar extensões no seu processador Markdown.</p>
+                  <p>Nem todos os aplicativos Markdown suportam elementos de sintaxe estendidos. Você precisará verificar se a linguagem de marcação leve que seu aplicativo está usando suporta os elementos adicionais que você deseja usar. Caso contrário, ainda será possível ativar extensões no seu processador Markdown.</p>
 
                   <h2 id="linguagens-marcacao-leves">Linguagens de marcação leves</h2>
 
@@ -154,14 +154,14 @@
 
                   <h2 id="tabelas">Tabelas</h2>
 
-                  <p>Para adicionar uma tabela, use três ou mais hifens <code class="lang-markdown">---</code> para criar o cabeçalho de cada coluna e use a barra vertical <code class="lang-markdown">|</code> para separar cada coluna. Como opção, você pode adicionar barras invertidas nas duas extremidades da tabela.</p>
+                  <p>Para adicionar uma tabela, use três ou mais hifens <code class="lang-markdown">---</code> para criar o cabeçalho e use a barra vertical <code class="lang-markdown">|</code> para separar cada coluna. Como opção, você pode adicionar barras invertidas nas duas extremidades da tabela.</p>
 
-                  <pre class="lang-markdown"><code>| Sintaxe     | Descrição   |
+                  <p><pre class="lang-markdown"><code>| Sintaxe     | Descrição   |
 | ----------- | ----------- |
 | Cabeçalho   | Título      |
-| Parágrafo   | Texto       |</code></pre>
+| Parágrafo   | Texto       |</code></pre></p>
 
-                  <strong>A saída renderizada fica assim:</strong>
+                  <p><strong>A saída renderizada fica assim:</strong></p>
 
                   <table class="table table-bordered">
                     <thead>
@@ -193,14 +193,14 @@
 
                   <h3 id="alinhamento">Alinhamento</h3>
 
-                  <p>Você pode alinhar o texto nas colunas à esquerda, direita ou centro adicionando dois pontos <code>:</code> à esquerda, direita ou nos dois lados dos hifens na linha do cabeçalho.</p>
+                  <p>O texto das colunas pode ser alinhado à esquerda, direita ou centro adicionando dois pontos <code class="lang-plaintext">:</code> à esquerda, direita ou nos dois lados dos hifens na linha do cabeçalho.</p>
 
                   <pre class="lang-markdown"><code>| Sintaxe      | Descrição | Texto teste |
 | :---         |  :----:   |        ---: |
 | Cabeçalho    | Título    | Aqui está   |
 | Parágrafo    | Texto     | E mais      |</code></pre>
 
-                  <strong>A saída renderizada fica assim:</strong>
+                  <p><strong>A saída renderizada fica assim:</strong></p>
 
                   <table class="table table-bordered">
                     <thead>
@@ -214,7 +214,7 @@
                       <tr>
                         <td style="text-align: left">Cabeçalho</td>
                         <td style="text-align: center">Título</td>
-                        <td style="text-align: right">Aqui esta</td>
+                        <td style="text-align: right">Aqui está</td>
                       </tr>
                       <tr>
                         <td style="text-align: left">Parágrafo</td>
@@ -226,21 +226,21 @@
 
                   <h3 id="formatacao-texto-tabelas">Formatação de texto em tabelas</h3>
 
-                  <p>Você pode formatar o texto nas tabelas. Por exemplo, você pode adicionar links, código (palavras ou frases entre crases <code>`</code> somente, não blocos de código) e ênfase.</p>
+                  <p>Você pode formatar o texto nas tabelas. Por exemplo, você pode adicionar links, dar <a href="/sintaxe-basica/#enfase">ênfase</a>, adicionar código (palavras ou frases entre crases <code class="lang-plaintext">`</code> somente, não é possível adicionar <a href="#bloco-codigo-cercado">blocos de código</a>).</p>
 
-                  <p>Você não pode adicionar títulos, citações de bloco, listas, regras horizontais, imagens ou tags HTML.</p>
+                  <p>Você não pode adicionar títulos, blocos de citação, listas, linhas horizontais, imagens ou tags HTML.</p>
 
                   <h3 id="escapando-barras-verticais">Escapando barras verticais em tabelas</h3>
 
-                  <p>Você pode exibir um caractere de barra vertical <code class="lang-markdown">|</code> em uma tabela usando o código em HTML (<code class="lang-html">&amp;#124;</code>).</p>
+                  <p>Você pode exibir um caractere de barra vertical <code class="lang-markdown">|</code> em uma tabela usando o código HTML (<code class="lang-html">&amp;#124;</code>).</p>
 
                   <h2 id="bloco-codigo-cercado">Bloco de código cercado</h2>
 
-                  <p>A sintaxe básica do Markdown permite criar blocos de código recuando linhas por quatro espaços ou uma tabulação. Se você achar isso inconveniente, tente usar blocos de códigos cercados. Dependendo do seu processador ou editor do Markdown, você usará três crases (<code class="lang-markdown">```</code>) ou três tiles (<code class="lang-markdown">~~~</code>) nas linhas antes e depois do bloco de código. A melhor parte? Você não precisa recuar nenhuma linha!</p>
+                  <p>A <a href="/sintaxe-basica/">sintaxe básica</a> do Markdown permite criar <a href="/sintaxe-basica/#bloco-codigo">blocos de código</a> recuando linhas em quatro espaços ou uma tabulação. Se você achar isso inconveniente, tente usar blocos de códigos cercados. Dependendo do seu processador ou editor Markdown, você usará três crases (<code class="lang-markdown">```</code>) ou três tiles (<code class="lang-markdown">~~~</code>) nas linhas antes e depois do bloco de código. A melhor parte? Você não precisa recuar nenhuma linha!</p>
 
                   <pre class="lang-markdown"><code>```
 {
-  "primeiroNome": "Robert",
+  "nome": "Robert",
   "sobrenome": "Salles",
   "idade": 25
 }
@@ -249,20 +249,20 @@
                   <strong>A saída renderizada fica assim:</strong>
 
                   <pre class="lang-javascript"><code>{
-  "primeiroNome": "Robert",
+  "nome": "Robert",
   "sobrenome": "Salles",
   "idade": 25
 }</code></pre>
 
-                  <p><strong>Dica</strong>: Precisa exibir crases dentro de um bloco de código? Veja esta seção para aprender como escapar deles.</p>
+                  <p><strong>Dica</strong>: Precisa exibir crases dentro de um bloco de código? <a href="/sintaxe-basica/#escapando-crases">Clique aqui</a> para aprender como escapá-las.</p>
 
                   <h2 id="realce-sintaxe">Realce de sintaxe</h2>
 
-                  <p>Muitos processadores Markdown oferecem suporte a realce de sintaxe para blocos de código cercados. Esse recurso permite adicionar realce de cores para qualquer idioma em que seu código foi escrito. Para adicionar realce de sintaxe, especifique um idioma ao lado das crases antes do bloco de código cercado.</p>
+                  <p>Muitos processadores Markdown oferecem suporte a realce de sintaxe para blocos de código cercados. Esse recurso permite adicionar realce de cores para qualquer linguagem de programação em que o seu código foi escrito. Para adicionar realce de sintaxe, especifique o nome da linguagem ao lado das crases antes do bloco de código cercado.</p>
 
                   <pre class="lang-markdown"><code>```json
 {
-  "primeiroNome": "Robert",
+  "nome": "Robert",
   "sobrenome": "Salles",
   "idade": 25
 }
@@ -271,24 +271,24 @@
                   <p>A saída renderizada fica assim:</p>
 
                   <pre class="lang-javascript"><code>{
-  "primeiroNome": "Robert",
+  "nome": "Robert",
   "sobrenome": "Salles",
   "idade": 25
 }</code></pre>
 
                   <h2 id="notas-rodape">Notas de rodapé</h2>
 
-                  <p>As notas de rodapé permitem adicionar notas e referências sem sobrecarregar o corpo do documento. Quando você cria uma nota de rodapé, um número sobrescrito com um link aparece onde você adicionou a referência da nota de rodapé. Os leitores podem clicar no link para ir para o conteúdo da nota de rodapé na parte inferior da página.</p>
+                  <p>As notas de rodapé permitem adicionar notas e referências sem sobrecarregar o corpo do documento. Quando você cria uma nota de rodapé, um número sobrescrito com um link aparece onde você adicionou a referência da nota. Os leitores podem clicar no link e ir diretamente para o conteúdo de referência na parte inferior da página.</p>
 
-                  <p>Para criar uma referência de nota de rodapé, adicione um sinal de intercalação e um identificador entre colchetes (<code class="lang-markdown">[^1]</code>). Identificadores podem ser números ou palavras, mas não podem conter espaços ou tabulações. Os identificadores correlacionam apenas a referência da nota de rodapé com a própria nota de rodapé - na saída, as notas de rodapé são numeradas sequencialmente.</p>
+                  <p>Para criar uma referência de nota de rodapé, adicione um acento circunflexo e um identificador entre colchetes (<code class="lang-markdown">[^1]</code>). Identificadores podem ser números ou palavras, mas não podem conter espaços ou tabulações. Os identificadores correlacionam apenas a referência da nota de rodapé com a própria nota - na saída renderizada, as notas de rodapé são numeradas sequencialmente.</p>
 
-                  <p>Adicione a nota de rodapé usando outro sinal de intercalação e o número entre colchetes com dois pontos e texto (<code class="lang-markdown">[^1]: Minha nota de rodapé.</code>). Você não precisa colocar notas de rodapé no final do documento. Você pode colocá-los em qualquer lugar, exceto dentro de outros elementos, como listas, citações de bloco e tabelas.</p>
+                  <p>Adicione a nota de rodapé usando outro acento circunflexo e o número entre colchetes com dois pontos e texto (<code class="lang-markdown">[^1]: Minha nota de rodapé.</code>). Você não precisa colocar notas de rodapé no final do documento. Você pode colocá-los em qualquer lugar, exceto dentro de outros elementos, como listas, blocos de citação e tabelas.</p>
 
-                  <pre class="lang-markdown"><code>Aqui está uma nota de rodapé simples,[^1] e aqui está um mais longo.[^bignote]
+                  <pre class="lang-markdown"><code>Aqui está uma nota de rodapé simples,[^1] e aqui está uma mais longa.[^bignote]
 
 [^1]: Esta é a primeira nota de rodapé.
 
-[^bignote]: Aqui está um com vários parágrafos e código.
+[^bignote]: Aqui está uma com vários parágrafos e código.
 
     Recuar parágrafos para incluí-los na nota de rodapé.
 
@@ -298,38 +298,38 @@
 
                   <p>A saída renderizada fica assim:</p>
 
-                  <p>Aqui está uma nota de rodapé simples,<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote">1</a></sup> e aqui está um mais longo.<sup id="fnref:bignote" role="doc-noteref"><a href="#fn:bignote" class="footnote">2</a></sup></p>
+                  <p>Aqui está uma nota de rodapé simples,<sup id="fnref:1" role="doc-noteref"><a href="#fn:1">1</a></sup> e aqui está uma mais longa.<sup id="fnref:bignote"><a href="#fn:bignote">2</a></sup></p>
 
-                  <div class="footnotes" role="doc-endnotes">
+                  <div class="footnotes">
                     <ol>
-                      <li id="fn:1" role="doc-endnote">
-                        <p>Esta é a primeira nota de rodapé. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+                      <li id="fn:1">
+                        <p>Esta é a primeira nota de rodapé. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
                       </li>
-                      <li id="fn:bignote" role="doc-endnote">
+                      <li id="fn:bignote">
                         <p>Aqui está um com vários parágrafos e código.</p>
 
                         <p>Recuar parágrafos para incluí-los na nota de rodapé.</p>
 
-                        <p><code class="language-plaintext highlighter-rouge">{ meu código }</code></p>
+                        <p><code class="language-plaintext">{ meu código }</code></p>
 
-                        <p>Adicione quantos parágrafos desejar. <a href="#fnref:bignote" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+                        <p>Adicione quantos parágrafos desejar. <a href="#fnref:bignote">&#8617;</a></p>
                       </li>
                     </ol>
                   </div>
 
                   <h2 id="id-titulo">IDs do título</h2>
 
-                  <p>Muitos processadores Markdown suportam IDs personalizados para títulos - alguns processadores Markdown os adicionam automaticamente. Adicionar IDs personalizados permite vincular diretamente aos títulos e modificá-los com CSS. Para adicionar um ID de título personalizado, coloque-o entre chaves na mesma linha que o título.</p>
+                  <p>Muitos processadores Markdown suportam IDs personalizados para títulos - alguns processadores Markdown os adicionam automaticamente. Adicionar IDs personalizados permite que você crie vinculação diretamente com os títulos e os modifique usando CSS. Para adicionar um ID de título personalizado, coloque-o entre chaves na mesma linha, logo após o conteúdo do título.</p>
 
                   <pre class="lang-markdown"><code>### Meu título {#identificacao}</code></pre>
 
-                  O HTML fica assim:
+                  <p>O HTML fica assim:</p>
 
                   <pre class="lang-html"><code>&lt;h3 id="identificacao"&gt;Meu título&lt;/h3&gt;</code></pre>
 
                   <h3 id="vinculando-codigos-cabecalho">Vinculando a códigos de cabeçalho</h3>
 
-                  <p>Você pode vincular a títulos com IDs personalizados no arquivo, criando um link padrão com um sinal de número (<code class="lang-markdown">#</code>) seguido pelo ID do título personalizado.</p>
+                  <p>Você pode criar um vinculo com um título dentro do seu documento usando a sintaxe padrão de link, porém dentro dos parenteses preceda a identificação com um sinal de número/cerquilha (<code class="lang-plaintext">#</code>).</p>
 
                   <table class="table table-bordered">
                     <thead class="thead-light">
@@ -348,11 +348,11 @@
                     </tbody>
                   </table>
 
-                  <p>Outros sites podem se vincular ao cabeçalho adicionando o ID do cabeçalho personalizado ao URL completo da página da web (por exemplo, <code class="lang-markdown">[IDs de cabeçalho](https://markdown.net.br/sintaxe-estendida#id-titulo)</code>).</p>
+                  <p>Para vincular a um ID de título vindo de outra página adicione o link complete seguido da cerquilha e a identificação do título (exemplo: <code class="lang-markdown">[IDs de cabeçalho](https://markdown.net.br/sintaxe-estendida#id-titulo)</code>).</p>.
 
                   <h2 id="lista-definicoes">Lista de definições</h2>
 
-                  <p>Alguns processadores Markdown permitem criar listas de termos e suas definições correspondentes. Para criar uma lista de definições, digite o termo na primeira linha. Na próxima linha, digite dois pontos seguidos por um espaço e a definição.</p>
+                  <p>Alguns processadores Markdown permitem criar listas de termos e suas definições correspondentes. Para criar uma lista de definições, digite o termo na primeira linha, insira uma quebra com <code class="lang-plaintext">Enter</code>, digite dois pontos seguidos por um espaço e a definição.</p>
 
                   <pre class="lang-markdown"><code>Primeiro termo
 : Esta é a definição do primeiro termo.
@@ -383,25 +383,23 @@ Segundo termo
 
                   <h2 id="riscado">Riscado</h2>
 
-                  <p>Você pode tachar palavras colocando uma linha horizontal no centro delas. O resultado é <del>assim</del>. Esse recurso permite que você indique que certas palavras são um erro que não se destina à inclusão no documento. Para tachar palavras, use dois símbolos de til (<code class="lang-markdown">~~</code>) antes e depois das palavras.</p>
+                  <p>Você pode tachar ou riscar palavras, ou seja, colocar uma linha horizontal no centro delas. <del>Dessa</del> forma. Esse recurso permite que você indique que certas palavras são um erro que não se destina à inclusão no documento. Para riscar palavras, use dois símbolos de tiles (<code class="lang-markdown">~~</code>) antes e depois do conteúdo.</p>
 
-                  <pre class="lang-markdown"><code>~~A terra é plana.~~ Agora sabemos que a terra é redonda.</code></pre>
+                  <pre class="lang-markdown"><code>~~A terra é plana.~~ Agora sabemos que a terra é ~~redonda~~ um geóide.</code></pre>
 
                   <p><strong>A saída renderizada fica assim:</strong></p>
 
-                  <p><del>A terra é plana</del>. Agora sabemos que a terra é redonda.</p>
+                  <p><del>A terra é plana</del>. Agora sabemos que a terra é <del>redonda</del> um geóide.</p>
 
                   <h2 id="lista-tarefas">Listas de tarefas</h2>
 
-                  <p>As listas de tarefas permitem criar uma lista de itens com caixas de seleção. Nos aplicativos Markdown compatíveis com listas de tarefas, as caixas de seleção serão exibidas ao lado do conteúdo. Para criar uma lista de tarefas, adicione traços (<code class="lang-markdown">-</code>) e colchetes com um espaço (<code class="lang-markdown">[ ]</code>) na frente dos itens da lista de tarefas. Para selecionar uma caixa de seleção, adicione um <code class="lang-markdown">x</code> entre colchetes (<code class="lang-markdown">[x]</code>).</p>
+                  <p>As listas de tarefas permitem criar uma lista de itens com caixas de seleção. Nos aplicativos Markdown compatíveis com listas de tarefas, as caixas de seleção serão exibidas ao lado do conteúdo. Para criar uma lista de tarefas, adicione traços (<code class="lang-markdown">-</code>) e colchetes com um espaço (<code class="lang-markdown">[ ]</code>) na frente dos itens da lista de tarefas. Para selecionar uma caixa de seleção, adicione um <code class="lang-markdown">x</code> entre os colchetes (<code class="lang-markdown">[x]</code>).</p>
 
                   <pre class="lang-markdown"><code>- [x] Write the press release
 - [ ] Update the website
 - [ ] Contact the media</code></pre>
 
                   <p><code>A saída renderizada fica assim:</code></p>
-
-                  Lista de tarefas do Markdown
 
                   <div class="image-container">
                     <img src="https://d33wubrfki0l68.cloudfront.net/54914727add678921954b094b9cca57f63bd6e2e/666d3/assets/images/tasklist.png" class="materialboxed" alt="Markdown task list">
@@ -419,7 +417,7 @@ Segundo termo
 
                   <h3 id="usando-codigo-emoji">Usando códigos de acesso Emoji</h3>
 
-                  <p>Alguns aplicativos Markdown permitem inserir emoticons digitando códigos de acesso emoji. Eles começam e terminam com dois pontos e incluem o nome de um emoji.</p>
+                  <p>Alguns aplicativos Markdown permitem inserir emoticons digitando códigos de acesso emoji. Eles começam e terminam com dois pontos <code class="lang-plaintext">:</code> e incluem o nome de um emoji.</p>
 
                   <pre class="lang-markdown"><code>Fui acampar! :tent: Volto em breve.
 
@@ -431,11 +429,11 @@ Isso é tão engraçado! :joy:</code></pre>
 
                   <p>Isso é tão engraçado! 😂</p>
 
-                  <p><strong>Nota</strong>: Você pode usar esta lista de códigos de acesso emoji, mas lembre-se de que os códigos de emoji variam de aplicativo para aplicativo. Consulte a documentação do seu aplicativo Markdown para obter mais informações.</p>
+                  <p><strong>Obs</strong>: Você pode usar <a href="https://gist.github.com/rxaviers/7360908" target="_blank">esta lista</a> de códigos de acesso emoji, mas lembre-se de que os códigos de emoji variam de aplicativo para aplicativo. Consulte a documentação do seu aplicativo Markdown para obter mais informações.</p>
 
                   <h2 id="link-automatico-url">Link automático de URL</h2>
 
-                  <p>Muitos processadores Markdown transformam URLs automaticamente em links. Isso significa que, se você digitar https://markdown.net.br, o processador Markdown o transformará automaticamente em um link, mesmo que você não tenha usado colchetes.</p>
+                  <p>Muitos processadores Markdown transformam URLs automaticamente em links. Isso significa que, se você digitar <code class="lang-plaintext">https://markdown.net.br</code>, o processador Markdown o transformará automaticamente em um link, mesmo que você não tenha usado colchetes.</p>
 
                   <pre class="lang-markdown"><code>https://markdown.net.br</code></pre>
 
