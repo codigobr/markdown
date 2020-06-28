@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-br">
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -43,347 +43,334 @@
     <div id="layout-problem" style="display:none;position:fixed;bottom:20px;left:5px;right:5px;z-index:9999;border-radius:10px;"><div class="layout-problem__container" style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;position:relative;"><div class="layout-problem__msg" style="background-color:white;color:#222;padding:5px 35px;border-radius:10px;display:flex;align-items:center;border:2px solid #f44336;box-shadow:1px 4px 8px 4px #0000004a;position:relative;"><div style="color:#f44336;font-size:45px;font-weight:bold;background-color:white;border-radius:50px;margin-right:20px;">!</div><p style="font-size: 18px;">Foi detectado um <strong>problema</strong> com o layout do site!<br>É recomendável desabilitar o <span class="red-text"><strong>Ad-Blocker</strong></span><br>Ou qualquer extensão que bloqueie <strong>JavaScript</strong>.</p><div id="close-error-script-bt" style="position:absolute;top:3px;right:12px;cursor:pointer;">X</div></div></div></div>
     <header>
       <div class="container">
-        <a href="#" data-target="nav-mobile" class="top-nav sidenav-trigger waves-effect waves-light circle hide-on-large-only">
-        <i class="material-icons">menu</i>
-        </a>
-      </div>
-      <ul id="nav-mobile" class="sidenav sidenav-fixed" style="transform: translateX(0%);">
-        <li class="logo blue">
-          <a id="logo-container" href="https://markdown.net.br" class="brand-logo">
-          <img src="/assets/img/markdown-logo-transparent.svg" height="100">
-          </a>
-        </li>
-        <li class="push-it-down"></li>
-        <li class="search white">
-          <div class="search-wrapper">
-            <input id="search" placeholder="Buscar"><i class="material-icons">search</i>
-            <div class="search-results"></div>
-          </div>
-        </li>
-        <li class="bold white">
-          <a href="/introducao/" class="waves-effect waves-blue"><i class="tiny material-icons">child_care</i>Introdução</a>
-        </li>
-        <li class="bold white">
-          <a href="/sintaxe-basica/" class="waves-effect waves-blue"><i class="tiny material-icons">short_text</i>Sintaxe Básica</a>
-        </li>
-        <li class="bold white">
-          <a href="/sintaxe-estendida/" class="waves-effect waves-blue"><i class="tiny material-icons">format_align_left</i>Sintaxe Estendida</a>
-        </li>
-        <li class="bold white">
-          <a href="/referencia-rapida/" class="waves-effect waves-blue"><i class="tiny material-icons">help_outline</i>Referência Rápida</a>
-        </li>
-        <li class="bold white">
-          <a href="/ferramentas/" class="waves-effect waves-blue"><i class="tiny material-icons">card_travel</i>Ferramentas</a>
-        </li>
-        <li class="bold white">
-          <a href="/editor/" class="waves-effect waves-blue"><i class="tiny material-icons">code</i>Editor Online</a>
-        </li>
-      </ul>
-      <!-- Sidebar BSA-->
-      <script src="/index_files/monetization.js.download" type="text/javascript"></script>
-      <div class="bsa-cpc"></div>
-      <script>
-        (function(){
-          if(typeof _bsa !== 'undefined' && _bsa) {
-          _bsa.init('default', 'CKYD55QM', 'placement:materializecsscom', {
-            target: '.bsa-cpc',
-            align: 'horizontal',
-            disable_css: 'true'
-          });
-            }
-        })();
-      </script>
-      <div class="patreon-ad"><a href="https://www.patreon.com/materialize" target="_blank" class="waves-effect">Become a Patron</a></div>
+  <a href="#" data-target="nav-mobile" class="top-nav sidenav-trigger waves-effect waves-light circle hide-on-large-only">
+  <i class="material-icons">menu</i>
+  </a>
+</div>
+<ul id="nav-mobile" class="sidenav sidenav-fixed" style="transform: translateX(0%);">
+  <li class="logo blue">
+    <a id="logo-container" href="https://markdown.net.br" class="brand-logo">
+    <img src="/assets/img/markdown-logo-transparent.svg" height="100">
+    </a>
+  </li>
+  <li class="push-it-down"></li>
+  <li class="search white">
+    <div class="search-wrapper">
+      <input id="search" placeholder="Buscar"><i class="material-icons">search</i>
+      <div class="search-results"></div>
+    </div>
+  </li>
+  <li class="bold white">
+    <a href="/introducao/" class="waves-effect waves-blue"><i class="tiny material-icons">child_care</i>Introdução</a>
+  </li>
+  <li class="bold white">
+    <a href="/sintaxe-basica/" class="waves-effect waves-blue"><i class="tiny material-icons">short_text</i>Sintaxe Básica</a>
+  </li>
+  <li class="bold white">
+    <a href="/sintaxe-estendida/" class="waves-effect waves-blue"><i class="tiny material-icons">format_align_left</i>Sintaxe Estendida</a>
+  </li>
+  <li class="bold white">
+    <a href="/referencia-rapida/" class="waves-effect waves-blue"><i class="tiny material-icons">help_outline</i>Referência Rápida</a>
+  </li>
+  <li class="bold white">
+    <a href="/ferramentas/" class="waves-effect waves-blue"><i class="tiny material-icons">card_travel</i>Ferramentas</a>
+  </li>
+  <li class="bold white">
+    <a href="/editor/" class="waves-effect waves-blue"><i class="tiny material-icons">code</i>Editor Online</a>
+  </li>
+  <li class="bold white">
+    <a href="/sabores/" class="waves-effect waves-blue"><i class="fas fa-ice-cream"></i>Sabores</a>
+  </li>
+</ul>
     </header>
-      <main>
-        <div class="section" id="index-banner">
-          <div class="container">
-            <div class="row" style="margin-bottom: 0;">
-              <div class="col s12 m8 offset-m1 xl7 offset-xl1">
-                <h1>Introdução</h1>
-                <h4 class="light">Uma visão geral do Markdown, como ele funciona e o que você pode fazer com ele.</h4>
-                <ol class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
-                  <li itemprop="itemListElement" itemscope
-                      itemtype="https://schema.org/ListItem">
-                    <a itemprop="item" href="https://markdown.net.br/">
-                        <span itemprop="name">Markdown</span></a>
-                    <meta itemprop="position" content="1" />
-                  </li>
-                  <li>
-                    <i class="fas fa-chevron-right chevron-separator"></i>
-                  </li>
-                  <li itemprop="itemListElement" itemscope
-                      itemtype="https://schema.org/ListItem">
-                    <span itemprop="name">Introdução</span>
-                    <meta itemprop="position" content="2" />
-                  </li>
-                </ol>
-              </div>
-            </div>
-          </div>
-        </div>
+    <main>
+      <div class="section" id="index-banner">
         <div class="container">
-          <!--  Outer row  -->
-          <div class="row">
-            <div class="section col s12 m8 offset-m1 xl7 offset-xl1">
-              <div class="row scrollspy">
-                <div class="col s12">
-                  <h2 id="markdown">O que é o Markdown?</h2>
-
-                  <p>Markdown é uma linguagem de marcação leve que você pode usar para adicionar elementos de formatação a documentos de texto. Criado por <a href="https://daringfireball.net/projects/markdown/" target="_blank">John Gruber</a> em 2004, o Markdown agora é uma das linguagens de marcação mais populares do mundo.</p>
-
-                  <p>O uso do Markdown é diferente do uso de um editor <a href="https://en.wikipedia.org/wiki/WYSIWYG" target="_blank">WYSIWYG</a>. Em um aplicativo como o Microsoft Word, você clica nos botões para formatar palavras e frases, e as alterações são visíveis imediatamente. Markdown não é assim. Ao criar um arquivo em Markdown, você adiciona a sintaxe da linguagem ao texto para indicar quais palavras e frases devem ser formatadas.</p>
-
-                  <p>Por exemplo, para indicar um cabeçalho, você adiciona um sinal de número antes dele (<code class="lang-markdown"># Título Um</code>). Ou, para enfatizar uma frase com negrito, adicione dois asteriscos antes e depois do conteúdo (<code class="lang-markdown">**este texto está em negrito**</code>). Pode demorar um pouco para se acostumar com a sintaxe Markdown, especialmente se você sempre usou aplicativos WYSIWYG. A captura de tela abaixo mostra um arquivo Markdown exibido no editor de texto <a href="https://atom.io/" target="_blank">Atom</a>.</p>
-
-                  <div class="image-container">
-                    <img src="/assets/img/atom.png" class="materialboxed">
-                  </div>
-
-                  <p>Você pode formatar um arquivo em Markdown usando qualquer editor de texto simples. Ou você pode usar um dos muitos, digo, muitos aplicativos Markdown para os sistemas operacionais <strong>macOS</strong>, <strong>Windows</strong>, <strong>Linux</strong>, <strong>iOS</strong> e <strong>Android</strong>. Existem também várias ferramentas baseadas na Web projetadas especificamente para formatar texto usando a sintaxe do Markdown.</p>
-
-                  <p>Alguns editor de Markdown possuem um recurso que converte em tempo real as formatações do Markdown enquanto você digita, porém, mesmo que isso não aconteça, o documento ainda é extremamente legível, já que o MD foi projetado justamente pensando nisso.</p>
-
-                  <p>Nas palavras do criador:</p>
-
-                  <p><blockquote>O objetivo principal da sintaxe de formatação do Markdown é torná-lo o mais legível possível. A idéia é que um documento no formato Markdown seja publicável como está, sem parecer que foi marcado com tags ou instruções de formatação.</blockquote></p>
-
-                  <h2 id="por-que-usar-makdown">Por que usar o Markdown?</h2>
-
-                  <p>Você pode estar se perguntando por que as pessoas usam o Markdown em vez de um editor WYSIWYG (What You See Is What You Get). Por que escrever com o Markdown quando você pode pressionar botões em uma interface para formatar seu texto? Bom, existem algumas razões pelas quais as pessoas usam o Markdown em vez dos editores que oferecem formatação rich-text.</p>
-
-                  <ul class="collection">
-                    <li class="collection-item"><strong>Markdown pode ser usado para tudo</strong>. Você pode criar <a href="#website">sites</a>, <a href="#documentos">documentos</a>, <a href="#notas">notas</a>, <a href="#livros">livros</a>, <a href="#apresentacoes">apresentações</a>, <a href="#email">mensagens de e-mail</a> e <a href="#documentacao">documentação técnica</a>, etc.</li>
-                    <li class="collection-item"><strong>Markdown é portátil</strong>. Arquivos que contêm texto no formato Markdown que podem ser abertos usando praticamente qualquer aplicativo. Se você não gostar de um app, basta importar seus arquivos para outro. Isso contrasta fortemente com editores de  processamento de texto como o Microsoft Word que bloqueiam seu conteúdo em um formato de arquivo proprietário.</li>
-                    <li class="collection-item"><strong>O Markdown é independente de plataforma</strong>. Você pode criar texto no formato Markdown em qualquer dispositivo executando qualquer sistema operacional.</li>
-                    <li class="collection-item"><strong>Markdown é um formato independente</strong>. Mesmo que o seu editor pare de funcionar, você ainda poderá ler o texto no formato MD usando um programa de edição qualquer. Isso é algo a se considerar quando falamos sobre livros, teses universitárias e outros documentos importantes que precisam ser preservados indefinidamente.</li>
-                    <li class="collection-item"><strong>Markdown está em todo lugar</strong>. Sites como o <a href="/ferramentas/reddit/" target="_blank">Reddit</a> e o <a href="https://github.com/" target="_blank">GitHub</a> suportam o Markdown, inúmeros aplicativos, seja ele para web ou desktop, também são compatíveis com o Markdown.</li>
-                  </ul>
-
-                  <h2 id="pegando-no-tranco">Pegando no tranco</h2>
-
-                  <p>A melhor maneira de aprender Markdown é praticando. Na era da internet, isso é mais fácil do que nunca, graças a uma variedade de ferramentas gratuitas disponíveis online.</p>
-
-                  <p>Você nem precisa baixar nada. Basta acessar o site da ferramenta e começar a digitar. <a href="/ferramentas/dillinger/" target="_blank">Dillinger</a> é um dos melhores editores compatíveis com o Markdown. A ferramenta é dividida em dois painéis, a esquerda você entra com a marcação e a direita é uma pré-visualização do conteúdo renderizado em HTML.</p>
-
-                  <div class="image-container">
-                    <img src="/assets/img/dillinger.png" class="materialboxed">
-                  </div>
-
-                  <p>Se tiver dúvidas de qual editor escolher consulte a nossa seção de <a href="/ferramentas/">ferramentas</a> para mais informações.</p>
-
-                  <p>Para iniciar o aprendizado abra o nosso <a href="/editor/" target="_blank">editor online Markeditor</a> em outra aba do navegador, assim você aprende e pratica ao mesmo tempo.</p>
-
-                  <p>Posteriormente quando adquirir mais experiência editando documentos com Markdown baixe um aplicativo para o seu computador, celular ou tablet, claro, se isso for necessário.</p>
-
-                  <h2 id="como-funciona">Como funciona?</h2>
-
-                  <p>Mesmo que você esteja usando um editor com recurso de conversão em tempo real é importante entender o que acontece por trás das câmeras.</p>
-
-                  <p>Um documento em Markdown é apenas um texto simples, sem absolutamente nenhuma formatação, compilação ou criptografia, a única coisa que identifica o formato do seu arquivo é a extensão, nesse caso <code class="lang-markdown">.md</code> ou <code class="lang-markdown">.markdown</code>.</p>
-
-                  <p><em>Mas então como a mágica acontece? Como meu arquivo simples no formato Markdown é convertido em HTML? Ou até mesmo em um documento pronto para impressão?</em></p>
-
-                  <p>A resposta mais direta é que nós precisamos de um conversor, ou seja, uma ferramenta que transforme o nosso simples arquivo <code class="lang-plaintext">MD</code> em um documento <code class="lang-html">HTML</code>.</p>
-
-                  <p>Vale ressaltar que, a conversão para <code class="lang-plaintext">HTML</code> é interessante pois o seu documento poderá ser interpretado e apresentado em navegadores como o <strong>Google Chrome</strong>, <strong>Mozilla Firefox</strong> e o <strong>Microsoft Edge</strong>.</p>
-
-                  <h3 id="como-e-feita-a-conversao">Como é feita a conversão?</h3>
-                  <p>Os aplicativos Markdown possuem internamente um processador Markdown (também conhecido como "analisador" ou "implementação").</p>
-                  <p>Esse processador usa um <em>Parser</em> para vasculhar o seu documento a procura de marcações compatíveis com o Markdown.</p>
-                  <p>Quando uma marcação é encontrada o processador relaciona a formatação Markdown com a formatação HTML (exemplo: <code class="lang-markdown"># Meu Título</code> <i class="fas fa-arrow-right"></i> <code class="lang-html">&lt;h1&gt;Meu T&iacute;tulo&lt;/h1&gt;</code></p>
-
-                  <p>Nesse ponto, seu documento pode ser visualizado em um navegador da Web ou combinado com uma folha de estilos e impresso.</p>
-
-                  <p>Abaixo você confere uma representação gráfica de todo o processo.</p>
-
-                  <p><blockquote><strong>Obs</strong>: O <strong>aplicativo</strong> e o <strong>processador Markdown</strong> são dois componentes separados. Por questão de simplicidade, eu os combinei em um elemento, representado por <code class="lang-plaintext">Markdown App</code> na figura abaixo.</blockquote></p>
-
-                  <div class="image-container">
-                    <img src="/assets/img/process.png" class="materialboxed">
-                  </div>
-
-                  <p>Em resumo, esse é um processo dividido em quatro etapas:</p>
-
-                  <ul class="collection">
-                    <li class="collection-item">Crie um documento <strong>Markdown</strong> usando um editor de texto ou um aplicativo <strong>Markdown dedicado</strong>. O arquivo deve ter uma extensão <code class="lang-plaintext">.md</code> ou <code class="lang-plaintext">.markdown</code>.</li>
-                    <li class="collection-item">Abra o arquivo em um aplicativo Markdown.</li>
-                    <li class="collection-item">Use o aplicativo Markdown para converter o arquivo de <code class="lang-plaintext">md</code> para <code class="lang-plaintext">HTML</code>.</li>
-                    <li class="collection-item">Visualize o arquivo HTML em um navegador da Web ou use o aplicativo Markdown para convertê-lo em outro formato de arquivo, como <code class="lang-plaintext">PDF</code>.</li>
-                  </ul>
-
-                  <p>É claro que esse processo pode variar um pouco dependendo da ferramenta usada. Por exemplo, o <a href="/ferramentas/dillinger/">Dillinger</a> combina essencialmente as etapas 1, 2 e 3 em uma interface única e integrada - tudo o que você precisa fazer é digitar no painel esquerdo e a saída renderizada magicamente aparece no painel direito. Mas se você usar outras ferramentas, como um editor de texto com um gerador de site estático, verá que as etapas de conversão são bem mais explicitas.</p>
-
-                  <h2 id="para-que-serve-markdown">Para que serve o Markdown?</h2>
-
-                  <p>O Markdown se sobressai pela simplicidade, facilidade é a palavra-chave aqui, seja para fazer anotações, criar conteúdo para um site ou produzir documentos prontos para impressão, essa linguagem de marcação é imbatível.</p>
-
-                  <p>Não leva muito tempo para aprender a sintaxe, e depois que você souber como usá-la, poderá desenvolver qualquer documento usando o MD. O uso mais comum do Markdown é para criar <em>web content</em>, ou seja, conteúdo para a <em>web</em>, mas o Markdown é bom para formatar tudo, desde mensagens de e-mail até lista de compras.</p>
-
-                  <p>Abaixo segue uma lista de exemplos do que podemos fazer com o <strong>Markdown</strong>.</p>
-
-                  <h3 id="website">Websites</h3>
-
-                  <p>O Markdown foi desenvolvido para a internet, portanto, não é surpresa que existam muitos aplicativos projetados <strong>especificamente</strong> para a criação de conteúdo <strong>web</strong>.</p>
-
-                  <p>Se você está procurando a maneira mais simples possível de criar um site com arquivos Markdown, consulte <a href="https://blot.im/" target="_blank">blot.im</a> e <a href="https://smallvictori.es/" target="_blank">smallvictori.es</a>. Depois de se inscrever em um desses serviços, eles criam uma pasta Dropbox no seu computador. Basta arrastar e soltar seus arquivos do Markdown na pasta e - puf! - eles estão no seu site. Mamão com açúcar.</p>
-
-                  <p>Se você tem familiaridade com HTML, CSS e versionamento, confira o <a href="/ferramentas/jekyll/" target="_blank">Jekyll</a>, um gerador de site estático extremamente popular que pega arquivos do Markdown e cria um site em HTML. Uma vantagem dessa abordagem é que o <a href="/ferramentas/github-pages/">GitHub Pages</a> (Páginas do GitHub) fornece hospedagem gratuita para sites gerados através do Jekyll. Não curtiu o Jekyll? Opções não faltam, dá uma olhadinha nessa lista de <a href="https://www.staticgen.com/" target="_blank">geradores de sites estáticos</a>.</p>
-
-                  <p>Se você deseja usar um sistema de gerenciamento de conteúdo (CMS) para alimentar seu site, confere o <a href="/ferramentas/ghost/">Ghost</a>. É uma plataforma de blog gratuito e de código aberto com um bom editor de Markdown. Se você é adepto do WordPress, ficará feliz em saber que há <a href="https://en.support.wordpress.com/markdown/" target="_blank">suporte</a> ao Markdown para sites hospedados no WordPress.com. Sites WordPress auto-hospedados podem usar o plugin <a href="https://jetpack.com/support/markdown/" target="_blank">Jetpack</a>.</p>
-
-                  <h3 id="documentos">Documentos</h3>
-
-                  <p>O Markdown não possui todos os enfeites de natal de um processador de texto como o Microsoft Word, mas é bom o suficiente para criar documentos básicos, como uma lista de tarefas ou uma carta de amor <i class="fas fa-heart red-text"></i>.</p>
-                  <p>O documento em formato <code class="lang-plaintext">md</code> pode ser convertido para, basicamente, qualquer formato, basta ter a ferramenta ou o utilitário correto.</p>
-
-                  <p>Abaixo segue uma lista de aplicativos de criação de documentos do Markdown que eu recomendo:</p>
-
-                  <ul class="collection">
-                    <li class="collection-item"><strong>Mac</strong>: <a href="/ferramentas/macdown/" target="_blank">MacDown</a>, <a href="/ferramentas/ia-writer/" target="_blank">iA Writer</a> ou <a href="https://marked2app.com/" target="_blank">Marked</a></li>
-                    <li class="collection-item"><strong>iOS / Android</strong>: <a href="/ferramentas/ia-writer/" target="_blank">iA Writer</a></li>
-                    <li class="collection-item"><strong>Windows</strong>: <a href="https://wereturtle.github.io/ghostwriter/" target="_blank">ghostwriter</a> ou <a href="https://markdownmonster.west-wind.com/" target="_blank">Markdown Monster</a></li>
-                    <li class="collection-item"><strong>Linux</strong>: <a href="https://github.com/retext-project/retext" target="_blank">ReText</a> ou <a href="https://wereturtle.github.io/ghostwriter/" target="_blank">ghostwriter</a></li>
-                    <li class="collection-item"><strong>Web</strong>: <a href="/ferramentas/dillinger/">Dillinger</a> ou <a href="/editor/" target="_blank">Markeditor</a></li>
-                  </ul>
-
-                  <p><blockquote><strong>Dica</strong>: O <a href="https://ia.net/writer/templates/" target="_blank">iA Writer</a> fornece modelos para visualizar, imprimir e exportar documentos no formato Markdown. Por exemplo, o modelo "Academic - MLA Style" recua parágrafos e adiciona espaçamento entre frases duplas.</blockquote></p>
-
-                  <h3 id="notas">Notas</h3>
-
-                  <p>Em quase todos os aspectos, o Markdown é a sintaxe ideal para fazer anotações. Infelizmente, o <a href="https://evernote.com/" target="_blank">Evernote</a> e o <a href="https://www.onenote.com/" target="_blank">OneNote</a>, dois dos aplicativos de anotação mais populares, bota populares nisso, atualmente não oferecem suporte ao Markdown.</p>
-
-                  <p>Em contrapartida, não faltam aplicações compatíveis com o Markdown, segue a lista:</p>
-
-                  <ul class="collection">
-                    <li class="collection-item"><a href="/ferramentas/simplenote/">Simplenote</a> é um aplicativo gratuito de anotações bem simples disponível para todas as plataformas.</li>
-                    <li class="collection-item"><a href="/ferramentas/notable/">Notable</a> é um aplicativo de anotações que pode ser executado em uma variedade de plataformas.</li>
-                    <li class="collection-item">O <a href="/ferramentas/bear/">Bear</a> é um aplicativo semelhante ao Evernote disponível para dispositivos Mac e iOS. Ele não usa o Markdown por padrão, mas você pode ativar o modo de compatibilidade, e, <em>voila</em>!.</li>
-                    <li class="collection-item">O <a href="/ferramentas/boostnote/">Boostnote</a> se autodenomina como um "aplicativo de anotações de código aberto desenvolvido para programadores".</li>
-                  </ul>
-
-                  <p>Se você não pode dar adeus ao Evernote, consulte o <a href="https://marxi.co/" target="_blank">Marxico</a>, um editor de Markdown <strong>PAGO</strong> compatível com o Evernote ou use o <a href="/ferramentas/markdown-here/">Markdown Here</a> com o site do Evernote.</p>
-
-                  <p>Quer mais aplicativos? Se esparrame na nossa seção de <a href="/ferramentas/">ferramentas</a>.</p>
-
-                  <h3 id="livros">Livros</h3>
-
-                  <p>Procurando publicar automaticamente um romance? Experimente o <a href="https://leanpub.com/" target="_blank">Leanpub</a>, um serviço que pega seus arquivos no formato Markdown e os transforma em um livro eletrônico. O Leanpub produz seu livro no formato de arquivo <strong>PDF</strong>, <strong>EPUB</strong> e <strong>MOBI</strong>. Agora, se você não é fã de e-Book ou precisa de cópias físicas, bom, basta carregar o arquivo PDF em um outro serviço, como por exemplo o <a href="https://kdp.amazon.com/" target="_blank">Kindle Direct Publishing</a>. Para saber mais sobre como escrever e publicar um livro usando o Markdown, leia <a href="https://medium.com/techspiration-ideas-making-it-happen/how-i-wrote-and-published-my-novel-using-only-open-source-tools-5cdfbd7c00ca" target="_blank" rel="nofollow">esta postagem</a> no Medium (em inglês).</p>
-
-                  <h3 id="apresentacoes">Apresentações</h3>
-
-                  <p>Acredite ou não, você pode gerar apresentações a partir de arquivos <code class="lang-plaintext">md</code>.</p>
-
-                  <p>A criação de apresentações em formato Markdown é um pouco esquisita no começo, mas depois que você pega o jeito, é muito mais rápido e fácil do que usar um aplicativo como o PowerPoint ou o Keynote.</p>
-
-                  <p>O <a href="https://remarkjs.com/" target="_blank">Remark</a> (<a href="https://github.com/gnab/remark" target="_blank">projeto no GitHub</a>) é uma ferramenta popular de apresentação de slides baseada em, adivinha?</p>
-
-                  <p>O <a href="https://jdan.github.io/cleaver/" target="_blank">Cleaver</a> (<a href="https://github.com/jdan/cleaver" target="_blank">projeto no GitHub</a>) também é interessante.</p>
-
-                  <p>Se você usa o Mac e prefere usar um aplicativo, consulte <a href="https://www.decksetapp.com/" target="_blank">Deckset</a> ou <a href="https://marked2app.com/" target="_blank">Marked</a>.</p>
-
-                  <h3 id="email">E-mail</h3>
-
-                  <p><em>Eu envio muitos e-mails e estou cansado dos controles de formatação disponíveis na maioria dos provedores.</em></p>
-
-                  <p>Que tal usarmos Markdown para criar nossos e-mails?</p>
-
-                  <p>O <a href="/ferramentas/markdown-here/">Markdown Here</a> é uma extensão de navegador gratuita e de código aberto que converte texto formatado em Markdown para HTML, e o melhor, pronto para o envio.</p>
-
-                  <h3 id="documentacao">Documentação</h3>
-
-                  <p>Markdown e documentação técnica, o casamento perfeito. Empresas como o GitHub estão cada vez mais migrando para o Markdown para gerar suas documentações - confira esse <a href="https://github.com/blog/1939-how-github-uses-github-to-document-github" target="_blank">post</a> (em inglês) no blog deles de como migraram sua documentação no formato Markdown para o <a href="/ferramentas/jekyll/">Jekyll</a>.</p>
-                  <p>Se você precisa desenvolver documentações para produtos e/ou serviços, as ferramentas abaixo podem te ajudar:</p>
-
-                  <ul class="collection">
-                    <li class="collection-item"><a href="https://readthedocs.org/" target="_blank">Read The Docs</a> pode gerar um site de documentação a partir dos seus arquivos Markdown. Basta conectar seu repositório GitHub ao serviço e dar um <em>push</em> - <strong>Read the Docs</strong> faz o resto. Eles também têm um <a href="https://readthedocs.com/" target="_blank">serviço</a> para entidades comerciais.</li>
-                    <li class="collection-item">O <a href="/ferramentas/mkdocs/" target="_blank">MkDocs</a> é um gerador de site estático simples e rápido. Os arquivos de origem são formatados em Markdown, a configuração fica em um documento YAML. O MkDocs possui vários <a href="https://www.mkdocs.org/user-guide/styling-your-docs/" target="_blank">temas</a> disponíveis por padrão, incluindo uma adaptação do tema do <a href="https://readthedocs.org/" target="_blank">Read The Docs</a> para usar com o MkDocs. Um dos temas mais usados é o <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank">MkDocs Material</a>.</li>
-                    <li class="collection-item">O <a href="/tools/docusaurus/" target="_blank">Docusaurus</a> é um gerador de site estático projetado exclusivamente para criar sites de documentação. Ele suporta traduções, pesquisa e controle de versão, vale dizer que foi desenvolvido pela galera do Facebook.</li>
-                    <li class="collection-item">O <a href="https://vuepress.vuejs.org/" target="_blank">VuePress</a> é um gerador de site estático desenvolvido com o <a href="https://vuejs.org/" target="_blank">Vue</a> e otimizado para escrever documentação técnica.</li>
-                    <li class="collection-item"><a href="/ferramentas/jekyll/">Jekyll</a> foi mencionado anteriormente na seção website, mas também é uma boa opção para gerar um site de documentação a partir de arquivos Markdown. Se você seguir esse caminho, verifique o <a href="https://idratherbewriting.com/documentation-theme-jekyll/" target="_blank">tema da documentação</a> do <a href="https://idratherbewriting.com/documentation-theme-jekyll/" target="_blank">Jekyll</a>.</li>
-                  </ul>
-
-                  <h2 id="sabores-markdown">Sabores do Markdown</h2>
-
-                  <p>Um dos aspectos mais confusos do uso do Markdown é que praticamente todos os aplicativos que são compatíveis com o <code class="lang-plaintext">md</code> implementam uma versão ligeiramente diferente em relação a sintaxe da linguagem. Essas variantes do Markdown são comumente chamadas de sabores.</p>
-
-                  <p>Para entender o conceito de sabores do Markdown, pode ser útil pensar neles como dialetos linguísticos. As pessoas em Ciudad Juárez falam espanhol, assim como as pessoas em Barcelona, mas há diferenças substanciais entre os dialetos usados nas duas cidades. O mesmo vale para pessoas que usam diferentes aplicativos Markdown. Usar o <a href="/ferramentas/dillinger/">Dillinger</a> para escrever com Markdown é uma experiência muito diferente do que usar <a href="/ferramentas/ulysses/">Ulysses</a>.</p>
-
-                  <p>E agora? Quando um aplicativo dá <strong>suporte ao Markdown</strong> ele é compatível apenas com os <a href="/sintaxe-basica/">elementos básicos da sintaxe</a>, ou com os elementos básicos e também os <a href="/sintaxe-estendida/">estendidos</a>? Ou é uma combinação arbitrária? Pra resolver isso nós podemos consultar a documentação do programa, ou usar a boa e velha tática da tentativa e erro.</p>
-
-                  <p>Se você está apenas começando, o melhor conselho que posso dar é escolher um <a href="/editor/">aplicativo</a> com um bom suporte ao Markdown, como esse <a href="/editor/">aqui</a>. Isso ajudará muito a manter a portabilidade dos seus arquivos.</p>
-                  <p>Você pode usar o nosso diretório de <a href="/ferramentas/">ferramentas</a> para encontrar um aplicativo que atenda às suas necessidades.</p>
-
-                  <h2 id="recursos-adicionais">Recursos adicionais</h2>
-
-                  <p>Existem muitos recursos que você pode usar para aprender o Markdown. Segue a lista abaixo:</p>
-
-                  <ul class="collection">
-                    <li class="collection-item"><a href="https://daringfireball.net/projects/markdown/" target="_blank">Documentação do Markdown de John Gruber</a>. O guia original escrito pelo criador do Markdown (<strong>em inglês</strong>).</li>
-                    <li class="collection-item"><a href="https://www.markdowntutorial.com/" target="_blank">Tutorial do Markdown</a>. Um site de código fonte aberto que permite aprender o Markdown de forma interativa no seu navegador (<strong>em inglês</strong>).</li>
-                    <li class="collection-item"><a href="https://github.com/mundimark/awesome-markdown" target="_blank">Awesome Markdown</a>. Uma lista de ferramentas Markdown e recursos de aprendizado (<strong>em inglês</strong>).</li>
-                    <li class="collection-item"><a href="https://dave.autonoma.ca/blog/2019/05/22/typesetting-markdown-part-1" target="_blank">Typesetting Markdown</a>. Uma série de várias partes que descreve um ecossistema para a criação de documentos Markdown usando <a href="https://pandoc.org/" target="_blank">pandoc</a> e <a href="https://www.contextgarden.net/" target="_blank">ConTeXt</a> (<strong>em inglês</strong>).</li>
-                  </ul>
-                </div> <!-- FIM DO CONTEÚDO PRINCIPAL -->
-              </div>
-              <div class="col-12">
-                <ul class="collapsible">
-                  <li class="active">
-                    <div class="collapsible-header grey lighten-4"><i class="material-icons">share</i>Compartilhar</div>
-                    <div class="collapsible-body">
-                      <div class="collection">
-                        <a href="#!" class="collection-item" data-sharer="twitter" data-title="Introdução ao Markdown!" data-hashtags="markdown" data-url="https://markdown.net.br/introducao/">
-                          <i class="fab fa-twitter color-twitter"></i>&nbsp;&nbsp;Compartilhar no Twitter
-                        </a>
-                        <a href="#!" class="collection-item" data-sharer="facebook" data-hashtag="markdown" data-url="https://markdown.net.br/introducao/">
-                          <i class="fab fa-facebook color-facebook"></i>&nbsp;&nbsp;Compartilhar no Facebook
-                        </a>
-                        <a href="#!" class="collection-item" data-sharer="linkedin" data-url="https://markdown.net.br/introducao/">
-                          <i class="fab fa-linkedin color-linkedin"></i>&nbsp;&nbsp;Compartilhar no Linkedin
-                        </a>
-                        <a href="#!" class="collection-item" data-sharer="email" data-title="Introdução ao Markdown!" data-url="https://markdown.net.br/introducao/" data-subject="Olá! Tudo bem? Achei esse guia do Markdown bem fácil de acompanhar, dá uma olhadinha quando puder. Espero que seja útil, até mais." data-to="email@provedor.com.br">
-                          <i class="fas fa-envelope color-email"></i>&nbsp;&nbsp;Compartilhar por Email
-                        </a>
-                        <a href="#!" class="collection-item" data-sharer="whatsapp" data-title="Introdução ao Markdown!" data-url="https://markdown.net.br/introducao/">
-                          <i class="fab fa-whatsapp color-whatsapp"></i>&nbsp;&nbsp;Compartilhar por Whatsapp
-                        </a>
-                        <a href="#!" class="collection-item" data-sharer="telegram" data-title="Introdução ao Markdown!" data-url="https://markdown.net.br/introducao/" data-to="(00) 99999-9999">
-                          <i class="fab fa-telegram color-telegram"></i>&nbsp;&nbsp;Compartilhar por Telegram
-                        </a>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <!-- Table of contents -->
-            <div class="col hide-on-small-only m3 xl3 offset-xl1">
-              <div class="toc-wrapper" id="sticky-navigator">
-              </div>
-            </div>
-            <!-- Table of contents -->
-          </div>
-        </div>
-      </main>
-
-    <footer class="page-footer docs-footer">
-      <div class="container">
-        <div class="row" style="margin-bottom: 0;">
-          <div class="col s12 m10 offset-m1">
-            <div class="row">
-              <div class="col l4 s12" style="overflow: hidden;">
-                <a href="https://twitter.com/CodigoNetwork" class="twitter-follow-button" data-show-count="true" data-size="large" data-dnt="true">Seguir @CodigoNetwork</a>
-              </div>
-            </div>
-            <div class="footer-copyright">
-              <div>
-                &copy;&nbsp;<noscript>2020</noscript><script type="text/javascript">document.write(new Date().getFullYear());</script> <a href="https://codigo.net.br" target="_blank">Código Network</a>, Todos os direitos reservados.
-              </div>
+          <div class="row" style="margin-bottom: 0;">
+            <div class="col s12 m8 offset-m1 xl7 offset-xl1">
+              <h1>Introdução</h1>
+              <h4 class="light">Uma visão geral do Markdown, como ele funciona e o que você pode fazer com ele.</h4>
+              <ol class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem">
+                  <a itemprop="item" href="https://markdown.net.br/">
+                      <span itemprop="name">Markdown</span></a>
+                  <meta itemprop="position" content="1" />
+                </li>
+                <li>
+<i class="fas fa-chevron-right chevron-separator"></i>
+</li>
+<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+<span itemprop="name">Introdução</span>
+<meta itemprop="position" content="2" />
+</li>
+
+              </ol>
             </div>
           </div>
         </div>
       </div>
-    </footer>
+      <div class="container">
+        <!--  Outer row  -->
+        <div class="row">
+          <div class="section col s12 m8 offset-m1 xl7 offset-xl1">
+            <div class="row scrollspy">
+  <div class="col s12">
+    <h2 id="markdown">O que é o Markdown?</h2>
+
+    <p>Markdown é uma linguagem de marcação leve que você pode usar para adicionar elementos de formatação a documentos de texto. Criado por <a href="https://daringfireball.net/projects/markdown/" target="_blank">John Gruber</a> em 2004, o Markdown agora é uma das linguagens de marcação mais populares do mundo.</p>
+
+    <p>O uso do Markdown é diferente do uso de um editor <a href="https://en.wikipedia.org/wiki/WYSIWYG" target="_blank">WYSIWYG</a>. Em um aplicativo como o Microsoft Word, você clica nos botões para formatar palavras e frases, e as alterações são visíveis imediatamente. Markdown não é assim. Ao criar um arquivo em Markdown, você adiciona a sintaxe da linguagem ao texto para indicar quais palavras e frases devem ser formatadas.</p>
+
+    <p>Por exemplo, para indicar um cabeçalho, você adiciona um sinal de número antes dele (<code class="lang-markdown"># Título Um</code>). Ou, para enfatizar uma frase com negrito, adicione dois asteriscos antes e depois do conteúdo (<code class="lang-markdown">**este texto está em negrito**</code>). Pode demorar um pouco para se acostumar com a sintaxe Markdown, especialmente se você sempre usou aplicativos WYSIWYG. A captura de tela abaixo mostra um arquivo Markdown exibido no editor de texto <a href="https://atom.io/" target="_blank">Atom</a>.</p>
+
+    <div class="image-container">
+      <img src="/assets/img/atom.png" class="materialboxed">
+    </div>
+
+    <p>Você pode formatar um arquivo em Markdown usando qualquer editor de texto simples. Ou você pode usar um dos muitos, digo, muitos aplicativos Markdown para os sistemas operacionais <strong>macOS</strong>, <strong>Windows</strong>, <strong>Linux</strong>, <strong>iOS</strong> e <strong>Android</strong>. Existem também várias ferramentas baseadas na Web projetadas especificamente para formatar texto usando a sintaxe do Markdown.</p>
+
+    <p>Alguns editor de Markdown possuem um recurso que converte em tempo real as formatações do Markdown enquanto você digita, porém, mesmo que isso não aconteça, o documento ainda é extremamente legível, já que o MD foi projetado justamente pensando nisso.</p>
+
+    <p>Nas palavras do criador:</p>
+
+    <p><blockquote>O objetivo principal da sintaxe de formatação do Markdown é torná-lo o mais legível possível. A idéia é que um documento no formato Markdown seja publicável como está, sem parecer que foi marcado com tags ou instruções de formatação.</blockquote></p>
+
+    <h2 id="por-que-usar-makdown">Por que usar o Markdown?</h2>
+
+    <p>Você pode estar se perguntando por que as pessoas usam o Markdown em vez de um editor WYSIWYG (What You See Is What You Get). Por que escrever com o Markdown quando você pode pressionar botões em uma interface para formatar seu texto? Bom, existem algumas razões pelas quais as pessoas usam o Markdown em vez dos editores que oferecem formatação rich-text.</p>
+
+    <ul class="collection">
+      <li class="collection-item"><strong>Markdown pode ser usado para tudo</strong>. Você pode criar <a href="#website">sites</a>, <a href="#documentos">documentos</a>, <a href="#notas">notas</a>, <a href="#livros">livros</a>, <a href="#apresentacoes">apresentações</a>, <a href="#email">mensagens de e-mail</a> e <a href="#documentacao">documentação técnica</a>, etc.</li>
+      <li class="collection-item"><strong>Markdown é portátil</strong>. Arquivos que contêm texto no formato Markdown que podem ser abertos usando praticamente qualquer aplicativo. Se você não gostar de um app, basta importar seus arquivos para outro. Isso contrasta fortemente com editores de  processamento de texto como o Microsoft Word que bloqueiam seu conteúdo em um formato de arquivo proprietário.</li>
+      <li class="collection-item"><strong>O Markdown é independente de plataforma</strong>. Você pode criar texto no formato Markdown em qualquer dispositivo executando qualquer sistema operacional.</li>
+      <li class="collection-item"><strong>Markdown é um formato independente</strong>. Mesmo que o seu editor pare de funcionar, você ainda poderá ler o texto no formato MD usando um programa de edição qualquer. Isso é algo a se considerar quando falamos sobre livros, teses universitárias e outros documentos importantes que precisam ser preservados indefinidamente.</li>
+      <li class="collection-item"><strong>Markdown está em todo lugar</strong>. Sites como o <a href="/ferramentas/reddit/" target="_blank">Reddit</a> e o <a href="https://github.com/" target="_blank">GitHub</a> suportam o Markdown, inúmeros aplicativos, seja ele para web ou desktop, também são compatíveis com o Markdown.</li>
+    </ul>
+
+    <h2 id="pegando-no-tranco">Pegando no tranco</h2>
+
+    <p>A melhor maneira de aprender Markdown é praticando. Na era da internet, isso é mais fácil do que nunca, graças a uma variedade de ferramentas gratuitas disponíveis online.</p>
+
+    <p>Você nem precisa baixar nada. Basta acessar o site da ferramenta e começar a digitar. <a href="/ferramentas/dillinger/" target="_blank">Dillinger</a> é um dos melhores editores compatíveis com o Markdown. A ferramenta é dividida em dois painéis, a esquerda você entra com a marcação e a direita é uma pré-visualização do conteúdo renderizado em HTML.</p>
+
+    <div class="image-container">
+      <img src="/assets/img/dillinger.png" class="materialboxed">
+    </div>
+
+    <p>Se tiver dúvidas de qual editor escolher consulte a nossa seção de <a href="/ferramentas/">ferramentas</a> para mais informações.</p>
+
+    <p>Para iniciar o aprendizado abra o nosso <a href="/editor/" target="_blank">editor online Markeditor</a> em outra aba do navegador, assim você aprende e pratica ao mesmo tempo.</p>
+
+    <p>Posteriormente quando adquirir mais experiência editando documentos com Markdown baixe um aplicativo para o seu computador, celular ou tablet, claro, se isso for necessário.</p>
+
+    <h2 id="como-funciona">Como funciona?</h2>
+
+    <p>Mesmo que você esteja usando um editor com recurso de conversão em tempo real é importante entender o que acontece por trás das câmeras.</p>
+
+    <p>Um documento em Markdown é apenas um texto simples, sem absolutamente nenhuma formatação, compilação ou criptografia, a única coisa que identifica o formato do seu arquivo é a extensão, nesse caso <code class="lang-markdown">.md</code> ou <code class="lang-markdown">.markdown</code>.</p>
+
+    <p><em>Mas então como a mágica acontece? Como meu arquivo simples no formato Markdown é convertido em HTML? Ou até mesmo em um documento pronto para impressão?</em></p>
+
+    <p>A resposta mais direta é que nós precisamos de um conversor, ou seja, uma ferramenta que transforme o nosso simples arquivo <code class="lang-plaintext">MD</code> em um documento <code class="lang-html">HTML</code>.</p>
+
+    <p>Vale ressaltar que, a conversão para <code class="lang-plaintext">HTML</code> é interessante pois o seu documento poderá ser interpretado e apresentado em navegadores como o <strong>Google Chrome</strong>, <strong>Mozilla Firefox</strong> e o <strong>Microsoft Edge</strong>.</p>
+
+    <h3 id="como-e-feita-a-conversao">Como é feita a conversão?</h3>
+    <p>Os aplicativos Markdown possuem internamente um processador Markdown (também conhecido como "analisador" ou "implementação").</p>
+    <p>Esse processador usa um <em>Parser</em> para vasculhar o seu documento a procura de marcações compatíveis com o Markdown.</p>
+    <p>Quando uma marcação é encontrada o processador relaciona a formatação Markdown com a formatação HTML (exemplo: <code class="lang-markdown"># Meu Título</code> <i class="fas fa-arrow-right"></i> <code class="lang-html">&lt;h1&gt;Meu T&iacute;tulo&lt;/h1&gt;</code></p>
+
+    <p>Nesse ponto, seu documento pode ser visualizado em um navegador da Web ou combinado com uma folha de estilos e impresso.</p>
+
+    <p>Abaixo você confere uma representação gráfica de todo o processo.</p>
+
+    <p><blockquote><strong>Obs</strong>: O <strong>aplicativo</strong> e o <strong>processador Markdown</strong> são dois componentes separados. Por questão de simplicidade, eu os combinei em um elemento, representado por <code class="lang-plaintext">Markdown App</code> na figura abaixo.</blockquote></p>
+
+    <div class="image-container">
+      <img src="/assets/img/process.png" class="materialboxed">
+    </div>
+
+    <p>Em resumo, esse é um processo dividido em quatro etapas:</p>
+
+    <ul class="collection">
+      <li class="collection-item">Crie um documento <strong>Markdown</strong> usando um editor de texto ou um aplicativo <strong>Markdown dedicado</strong>. O arquivo deve ter uma extensão <code class="lang-plaintext">.md</code> ou <code class="lang-plaintext">.markdown</code>.</li>
+      <li class="collection-item">Abra o arquivo em um aplicativo Markdown.</li>
+      <li class="collection-item">Use o aplicativo Markdown para converter o arquivo de <code class="lang-plaintext">md</code> para <code class="lang-plaintext">HTML</code>.</li>
+      <li class="collection-item">Visualize o arquivo HTML em um navegador da Web ou use o aplicativo Markdown para convertê-lo em outro formato de arquivo, como <code class="lang-plaintext">PDF</code>.</li>
+    </ul>
+
+    <p>É claro que esse processo pode variar um pouco dependendo da ferramenta usada. Por exemplo, o <a href="/ferramentas/dillinger/">Dillinger</a> combina essencialmente as etapas 1, 2 e 3 em uma interface única e integrada - tudo o que você precisa fazer é digitar no painel esquerdo e a saída renderizada magicamente aparece no painel direito. Mas se você usar outras ferramentas, como um editor de texto com um gerador de site estático, verá que as etapas de conversão são bem mais explicitas.</p>
+
+    <h2 id="para-que-serve-markdown">Para que serve o Markdown?</h2>
+
+    <p>O Markdown se sobressai pela simplicidade, facilidade é a palavra-chave aqui, seja para fazer anotações, criar conteúdo para um site ou produzir documentos prontos para impressão, essa linguagem de marcação é imbatível.</p>
+
+    <p>Não leva muito tempo para aprender a sintaxe, e depois que você souber como usá-la, poderá desenvolver qualquer documento usando o MD. O uso mais comum do Markdown é para criar <em>web content</em>, ou seja, conteúdo para a <em>web</em>, mas o Markdown é bom para formatar tudo, desde mensagens de e-mail até lista de compras.</p>
+
+    <p>Abaixo segue uma lista de exemplos do que podemos fazer com o <strong>Markdown</strong>.</p>
+
+    <h3 id="website">Websites</h3>
+
+    <p>O Markdown foi desenvolvido para a internet, portanto, não é surpresa que existam muitos aplicativos projetados <strong>especificamente</strong> para a criação de conteúdo <strong>web</strong>.</p>
+
+    <p>Se você está procurando a maneira mais simples possível de criar um site com arquivos Markdown, consulte <a href="https://blot.im/" target="_blank">blot.im</a> e <a href="https://smallvictori.es/" target="_blank">smallvictori.es</a>. Depois de se inscrever em um desses serviços, eles criam uma pasta Dropbox no seu computador. Basta arrastar e soltar seus arquivos do Markdown na pasta e - puf! - eles estão no seu site. Mamão com açúcar.</p>
+
+    <p>Se você tem familiaridade com HTML, CSS e versionamento, confira o <a href="/ferramentas/jekyll/" target="_blank">Jekyll</a>, um gerador de site estático extremamente popular que pega arquivos do Markdown e cria um site em HTML. Uma vantagem dessa abordagem é que o <a href="/ferramentas/github-pages/">GitHub Pages</a> (Páginas do GitHub) fornece hospedagem gratuita para sites gerados através do Jekyll. Não curtiu o Jekyll? Opções não faltam, dá uma olhadinha nessa lista de <a href="https://www.staticgen.com/" target="_blank">geradores de sites estáticos</a>.</p>
+
+    <p>Se você deseja usar um sistema de gerenciamento de conteúdo (CMS) para alimentar seu site, confere o <a href="/ferramentas/ghost/">Ghost</a>. É uma plataforma de blog gratuito e de código aberto com um bom editor de Markdown. Se você é adepto do WordPress, ficará feliz em saber que há <a href="https://en.support.wordpress.com/markdown/" target="_blank">suporte</a> ao Markdown para sites hospedados no WordPress.com. Sites WordPress auto-hospedados podem usar o plugin <a href="https://jetpack.com/support/markdown/" target="_blank">Jetpack</a>.</p>
+
+    <h3 id="documentos">Documentos</h3>
+
+    <p>O Markdown não possui todos os enfeites de natal de um processador de texto como o Microsoft Word, mas é bom o suficiente para criar documentos básicos, como uma lista de tarefas ou uma carta de amor <i class="fas fa-heart red-text"></i>.</p>
+    <p>O documento em formato <code class="lang-plaintext">md</code> pode ser convertido para, basicamente, qualquer formato, basta ter a ferramenta ou o utilitário correto.</p>
+
+    <p>Abaixo segue uma lista de aplicativos de criação de documentos do Markdown que eu recomendo:</p>
+
+    <ul class="collection">
+      <li class="collection-item"><strong>Mac</strong>: <a href="/ferramentas/macdown/" target="_blank">MacDown</a>, <a href="/ferramentas/ia-writer/" target="_blank">iA Writer</a> ou <a href="https://marked2app.com/" target="_blank">Marked</a></li>
+      <li class="collection-item"><strong>iOS / Android</strong>: <a href="/ferramentas/ia-writer/" target="_blank">iA Writer</a></li>
+      <li class="collection-item"><strong>Windows</strong>: <a href="https://wereturtle.github.io/ghostwriter/" target="_blank">ghostwriter</a> ou <a href="https://markdownmonster.west-wind.com/" target="_blank">Markdown Monster</a></li>
+      <li class="collection-item"><strong>Linux</strong>: <a href="https://github.com/retext-project/retext" target="_blank">ReText</a> ou <a href="https://wereturtle.github.io/ghostwriter/" target="_blank">ghostwriter</a></li>
+      <li class="collection-item"><strong>Web</strong>: <a href="/ferramentas/dillinger/">Dillinger</a> ou <a href="/editor/" target="_blank">Markeditor</a></li>
+    </ul>
+
+    <p><blockquote><strong>Dica</strong>: O <a href="https://ia.net/writer/templates/" target="_blank">iA Writer</a> fornece modelos para visualizar, imprimir e exportar documentos no formato Markdown. Por exemplo, o modelo "Academic - MLA Style" recua parágrafos e adiciona espaçamento entre frases duplas.</blockquote></p>
+
+    <h3 id="notas">Notas</h3>
+
+    <p>Em quase todos os aspectos, o Markdown é a sintaxe ideal para fazer anotações. Infelizmente, o <a href="https://evernote.com/" target="_blank">Evernote</a> e o <a href="https://www.onenote.com/" target="_blank">OneNote</a>, dois dos aplicativos de anotação mais populares, bota populares nisso, atualmente não oferecem suporte ao Markdown.</p>
+
+    <p>Em contrapartida, não faltam aplicações compatíveis com o Markdown, segue a lista:</p>
+
+    <ul class="collection">
+      <li class="collection-item"><a href="/ferramentas/simplenote/">Simplenote</a> é um aplicativo gratuito de anotações bem simples disponível para todas as plataformas.</li>
+      <li class="collection-item"><a href="/ferramentas/notable/">Notable</a> é um aplicativo de anotações que pode ser executado em uma variedade de plataformas.</li>
+      <li class="collection-item">O <a href="/ferramentas/bear/">Bear</a> é um aplicativo semelhante ao Evernote disponível para dispositivos Mac e iOS. Ele não usa o Markdown por padrão, mas você pode ativar o modo de compatibilidade, e, <em>voila</em>!.</li>
+      <li class="collection-item">O <a href="/ferramentas/boostnote/">Boostnote</a> se autodenomina como um "aplicativo de anotações de código aberto desenvolvido para programadores".</li>
+    </ul>
+
+    <p>Se você não pode dar adeus ao Evernote, consulte o <a href="https://marxi.co/" target="_blank">Marxico</a>, um editor de Markdown <strong>PAGO</strong> compatível com o Evernote ou use o <a href="/ferramentas/markdown-here/">Markdown Here</a> com o site do Evernote.</p>
+
+    <p>Quer mais aplicativos? Se esparrame na nossa seção de <a href="/ferramentas/">ferramentas</a>.</p>
+
+    <h3 id="livros">Livros</h3>
+
+    <p>Procurando publicar automaticamente um romance? Experimente o <a href="https://leanpub.com/" target="_blank">Leanpub</a>, um serviço que pega seus arquivos no formato Markdown e os transforma em um livro eletrônico. O Leanpub produz seu livro no formato de arquivo <strong>PDF</strong>, <strong>EPUB</strong> e <strong>MOBI</strong>. Agora, se você não é fã de e-Book ou precisa de cópias físicas, bom, basta carregar o arquivo PDF em um outro serviço, como por exemplo o <a href="https://kdp.amazon.com/" target="_blank">Kindle Direct Publishing</a>. Para saber mais sobre como escrever e publicar um livro usando o Markdown, leia <a href="https://medium.com/techspiration-ideas-making-it-happen/how-i-wrote-and-published-my-novel-using-only-open-source-tools-5cdfbd7c00ca" target="_blank" rel="nofollow">esta postagem</a> no Medium (em inglês).</p>
+
+    <h3 id="apresentacoes">Apresentações</h3>
+
+    <p>Acredite ou não, você pode gerar apresentações a partir de arquivos <code class="lang-plaintext">md</code>.</p>
+
+    <p>A criação de apresentações em formato Markdown é um pouco esquisita no começo, mas depois que você pega o jeito, é muito mais rápido e fácil do que usar um aplicativo como o PowerPoint ou o Keynote.</p>
+
+    <p>O <a href="https://remarkjs.com/" target="_blank">Remark</a> (<a href="https://github.com/gnab/remark" target="_blank">projeto no GitHub</a>) é uma ferramenta popular de apresentação de slides baseada em, adivinha?</p>
+
+    <p>O <a href="https://jdan.github.io/cleaver/" target="_blank">Cleaver</a> (<a href="https://github.com/jdan/cleaver" target="_blank">projeto no GitHub</a>) também é interessante.</p>
+
+    <p>Se você usa o Mac e prefere usar um aplicativo, consulte <a href="https://www.decksetapp.com/" target="_blank">Deckset</a> ou <a href="https://marked2app.com/" target="_blank">Marked</a>.</p>
+
+    <h3 id="email">E-mail</h3>
+
+    <p><em>Eu envio muitos e-mails e estou cansado dos controles de formatação disponíveis na maioria dos provedores.</em></p>
+
+    <p>Que tal usarmos Markdown para criar nossos e-mails?</p>
+
+    <p>O <a href="/ferramentas/markdown-here/">Markdown Here</a> é uma extensão de navegador gratuita e de código aberto que converte texto formatado em Markdown para HTML, e o melhor, pronto para o envio.</p>
+
+    <h3 id="documentacao">Documentação</h3>
+
+    <p>Markdown e documentação técnica, o casamento perfeito. Empresas como o GitHub estão cada vez mais migrando para o Markdown para gerar suas documentações - confira esse <a href="https://github.com/blog/1939-how-github-uses-github-to-document-github" target="_blank">post</a> (em inglês) no blog deles de como migraram sua documentação no formato Markdown para o <a href="/ferramentas/jekyll/">Jekyll</a>.</p>
+    <p>Se você precisa desenvolver documentações para produtos e/ou serviços, as ferramentas abaixo podem te ajudar:</p>
+
+    <ul class="collection">
+      <li class="collection-item"><a href="https://readthedocs.org/" target="_blank">Read The Docs</a> pode gerar um site de documentação a partir dos seus arquivos Markdown. Basta conectar seu repositório GitHub ao serviço e dar um <em>push</em> - <strong>Read the Docs</strong> faz o resto. Eles também têm um <a href="https://readthedocs.com/" target="_blank">serviço</a> para entidades comerciais.</li>
+      <li class="collection-item">O <a href="/ferramentas/mkdocs/" target="_blank">MkDocs</a> é um gerador de site estático simples e rápido. Os arquivos de origem são formatados em Markdown, a configuração fica em um documento YAML. O MkDocs possui vários <a href="https://www.mkdocs.org/user-guide/styling-your-docs/" target="_blank">temas</a> disponíveis por padrão, incluindo uma adaptação do tema do <a href="https://readthedocs.org/" target="_blank">Read The Docs</a> para usar com o MkDocs. Um dos temas mais usados é o <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank">MkDocs Material</a>.</li>
+      <li class="collection-item">O <a href="/tools/docusaurus/" target="_blank">Docusaurus</a> é um gerador de site estático projetado exclusivamente para criar sites de documentação. Ele suporta traduções, pesquisa e controle de versão, vale dizer que foi desenvolvido pela galera do Facebook.</li>
+      <li class="collection-item">O <a href="https://vuepress.vuejs.org/" target="_blank">VuePress</a> é um gerador de site estático desenvolvido com o <a href="https://vuejs.org/" target="_blank">Vue</a> e otimizado para escrever documentação técnica.</li>
+      <li class="collection-item"><a href="/ferramentas/jekyll/">Jekyll</a> foi mencionado anteriormente na seção website, mas também é uma boa opção para gerar um site de documentação a partir de arquivos Markdown. Se você seguir esse caminho, verifique o <a href="https://idratherbewriting.com/documentation-theme-jekyll/" target="_blank">tema da documentação</a> do <a href="https://idratherbewriting.com/documentation-theme-jekyll/" target="_blank">Jekyll</a>.</li>
+    </ul>
+
+    <h2 id="sabores-markdown">Sabores do Markdown</h2>
+
+    <p>Um dos aspectos mais confusos do uso do Markdown é que praticamente todos os aplicativos que são compatíveis com o <code class="lang-plaintext">md</code> implementam uma versão ligeiramente diferente em relação a sintaxe da linguagem. Essas variantes do Markdown são comumente chamadas de sabores.</p>
+
+    <p>Para entender o conceito de sabores do Markdown, pode ser útil pensar neles como dialetos linguísticos. As pessoas em Ciudad Juárez falam espanhol, assim como as pessoas em Barcelona, mas há diferenças substanciais entre os dialetos usados nas duas cidades. O mesmo vale para pessoas que usam diferentes aplicativos Markdown. Usar o <a href="/ferramentas/dillinger/">Dillinger</a> para escrever com Markdown é uma experiência muito diferente do que usar <a href="/ferramentas/ulysses/">Ulysses</a>.</p>
+
+    <p>E agora? Quando um aplicativo dá <strong>suporte ao Markdown</strong> ele é compatível apenas com os <a href="/sintaxe-basica/">elementos básicos da sintaxe</a>, ou com os elementos básicos e também os <a href="/sintaxe-estendida/">estendidos</a>? Ou é uma combinação arbitrária? Pra resolver isso nós podemos consultar a documentação do programa, ou usar a boa e velha tática da tentativa e erro.</p>
+
+    <p>Se você está apenas começando, o melhor conselho que posso dar é escolher um <a href="/editor/">aplicativo</a> com um bom suporte ao Markdown, como esse <a href="/editor/">aqui</a>. Isso ajudará muito a manter a portabilidade dos seus arquivos.</p>
+    <p>Você pode usar o nosso diretório de <a href="/ferramentas/">ferramentas</a> para encontrar um aplicativo que atenda às suas necessidades.</p>
+
+    <h2 id="recursos-adicionais">Recursos adicionais</h2>
+
+    <p>Existem muitos recursos que você pode usar para aprender o Markdown. Segue a lista abaixo:</p>
+
+    <ul class="collection">
+      <li class="collection-item"><a href="https://daringfireball.net/projects/markdown/" target="_blank">Documentação do Markdown de John Gruber</a>. O guia original escrito pelo criador do Markdown (<strong>em inglês</strong>).</li>
+      <li class="collection-item"><a href="https://www.markdowntutorial.com/" target="_blank">Tutorial do Markdown</a>. Um site de código fonte aberto que permite aprender o Markdown de forma interativa no seu navegador (<strong>em inglês</strong>).</li>
+      <li class="collection-item"><a href="https://github.com/mundimark/awesome-markdown" target="_blank">Awesome Markdown</a>. Uma lista de ferramentas Markdown e recursos de aprendizado (<strong>em inglês</strong>).</li>
+      <li class="collection-item"><a href="https://dave.autonoma.ca/blog/2019/05/22/typesetting-markdown-part-1" target="_blank">Typesetting Markdown</a>. Uma série de várias partes que descreve um ecossistema para a criação de documentos Markdown usando <a href="https://pandoc.org/" target="_blank">pandoc</a> e <a href="https://www.contextgarden.net/" target="_blank">ConTeXt</a> (<strong>em inglês</strong>).</li>
+    </ul>
+  </div> <!-- FIM DO CONTEÚDO PRINCIPAL -->
+</div>
+            <div class="col-12">
+  <ul class="collapsible">
+    <li class="active">
+      <div class="collapsible-header grey lighten-4"><i class="material-icons">share</i>Compartilhar</div>
+      <div class="collapsible-body">
+        <div class="collection">
+          <a href="#!" class="collection-item" data-sharer="twitter" data-title="Introdução ao Markdown - Guia completo do Markdown para iniciantes" data-hashtags="markdown" data-url="https://markdown.net.br/introducao/">
+            <i class="fab fa-twitter color-twitter"></i>&nbsp;&nbsp;Compartilhar no Twitter
+          </a>
+          <a href="#!" class="collection-item" data-sharer="facebook" data-hashtag="markdown" data-url="https://markdown.net.br/introducao/">
+            <i class="fab fa-facebook color-facebook"></i>&nbsp;&nbsp;Compartilhar no Facebook
+          </a>
+          <a href="#!" class="collection-item" data-sharer="linkedin" data-url="https://markdown.net.br/introducao/">
+            <i class="fab fa-linkedin color-linkedin"></i>&nbsp;&nbsp;Compartilhar no Linkedin
+          </a>
+          <a href="#!" class="collection-item" data-sharer="email" data-title="Introdução ao Markdown - Guia completo do Markdown para iniciantes" data-url="https://markdown.net.br/introducao/" data-subject="Olá! Tudo bem? Achei esse guia do Markdown bem fácil de acompanhar, dá uma olhadinha quando puder. Espero que seja útil, até mais." data-to="email@provedor.com.br">
+            <i class="fas fa-envelope color-email"></i>&nbsp;&nbsp;Compartilhar por Email
+          </a>
+          <a href="#!" class="collection-item" data-sharer="whatsapp" data-title="Introdução ao Markdown - Guia completo do Markdown para iniciantes" data-url="https://markdown.net.br/introducao/">
+            <i class="fab fa-whatsapp color-whatsapp"></i>&nbsp;&nbsp;Compartilhar por Whatsapp
+          </a>
+          <a href="#!" class="collection-item" data-sharer="telegram" data-title="Introdução ao Markdown - Guia completo do Markdown para iniciantes" data-url="https://markdown.net.br/introducao/" data-to="(00) 99999-9999">
+            <i class="fab fa-telegram color-telegram"></i>&nbsp;&nbsp;Compartilhar por Telegram
+          </a>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+          </div>
+          <!-- Table of contents -->
+          <div class="col hide-on-small-only m3 xl3 offset-xl1">
+            <div class="toc-wrapper" id="sticky-navigator">
+            </div>
+          </div>
+          <!-- Table of contents -->
+        </div>
+      </div>
+    </main>
+    <footer class="page-footer docs-footer">
+  <div class="container">
+    <div class="row" style="margin-bottom: 0;">
+      <div class="col s12 m10 offset-m1">
+        <div class="row">
+          <div class="col l4 s12" style="overflow: hidden;">
+            <a href="https://twitter.com/CodigoNetwork" class="twitter-follow-button" data-show-count="true" data-size="large" data-dnt="true">Seguir @CodigoNetwork</a>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div>
+            &copy;&nbsp;<noscript>2020</noscript><script type="text/javascript">document.write(new Date().getFullYear());</script> <a href="https://codigo.net.br" target="_blank">Código Network</a>, Todos os direitos reservados.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
     <!--  Scripts-->
     <script src="/assets/js/bundle.min.js"></script>
     <script src="/assets/js/search.min.js"></script>
@@ -392,12 +379,10 @@
       $(document).ready(function(){
          $('.materialboxed').materialbox();
        });
-      anchors.add("h2, h3");
+      anchors.add("h2, h3, h5");
       $('#sticky-navigator').stickyNavigator();
     </script>
     <!-- Twitter Button -->
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-    <div class="sidenav-overlay" style="display: none; opacity: 0;"></div>
-    <div class="drag-target"></div>
   </body>
 </html>
