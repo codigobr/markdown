@@ -17,15 +17,15 @@
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="author" content="Robert Salles">
     <meta name="keywords" content="Markdown, Linguagem Markdown, Sintaxe Markdown, Guia Markdown, Referência Markdown, Ajuda Markdown, Tutorial Markdown, Aprender Markdown">
-    <meta name="description" content="Esta especificação formal é baseada no CommonMark Spec de John MacFarlane e licenciada sob Creative Commons BY-SA">
+    <meta name="description" content="Aprenda como formatar o conteúdo do Github com Markdown. Esta especificação formal é baseada no CommonMark Spec de John MacFarlane e contém mais de 600 exemplos do uso do Markdown no Github">
     <meta name="twitter:card" content="summary">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://markdown.net.br/sabores/gfm/">
-    <meta property="og:title" content="Especificação de Markdown com sabor do GitHub">
-    <meta property="og:description" content="Esta especificação formal é baseada no CommonMark Spec de John MacFarlane e licenciada sob Creative Commons BY-SA">
+    <meta property="og:title" content="Sintaxe Completa de Formatação Markdown no GitHub">
+    <meta property="og:description" content="Aprenda como formatar o conteúdo do Github com Markdown. Esta especificação formal é baseada no CommonMark Spec de John MacFarlane e contém mais de 600 exemplos do uso do Markdown no Github">
     <meta property="og:image" content="https://markdown.net.br/assets/img/markdown.jpg">
 
-    <title>Especificação de Markdown com sabor do GitHub</title>
+    <title>Sintaxe Completa de Formatação Markdown no GitHub</title>
     <!-- Favicons-->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -89,7 +89,7 @@
         <div class="container">
           <div class="row" style="margin-bottom: 0;">
             <div class="col s12 m8 offset-m1 xl7 offset-xl1">
-              <h1>GFM</h1>
+              <h1>Sintaxe Completa de Formatação Markdown no GitHub</h1>
               <h4 class="light">Esta especificação formal é baseada no CommonMark Spec de John MacFarlane e licenciada sob Creative Commons BY-SA.</h4>
               <ol class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
                 <li itemprop="itemListElement" itemscope
@@ -111,7 +111,7 @@
 <i class="fas fa-chevron-right chevron-separator"></i>
 </li>
 <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-<span itemprop="name">GFM</span>
+<span itemprop="name">Sintaxe Completa de Formatação Markdown no GitHub</span>
 <meta itemprop="position" content="3" />
 </li>
 
@@ -1311,32 +1311,43 @@ bar
 <pre><code class="lang-html">&lt;pre&gt;&lt;code&gt;foo  
 &lt;/code&gt;&lt;/pre&gt;</code></pre>
 
-<h3>Blocos de código protegidos</h3>
+<h3>Blocos de código cercados</h3>
 
-<p>Uma cerca de código é uma sequência de pelo menos três caracteres consecutivos de backtick (`) ou tildes (~). (Tildes e backticks não podem ser misturados.) Um bloco de código cercado começa com uma cerca de código, recuada não mais que três espaços.</p>
+<p>Um bloco de código cercado é uma sequência de pelo menos três crases consecutivas (<code class="lang-plaintext">`</code>) ou tiles (<code class="lang-plaintext">~</code>). (Tiles e crases não podem ser misturados.) Um bloco de código cercado começa com uma cerca de código, recuada não mais que três espaços.</p>
 
-<p>A linha com a cerca do código de abertura pode opcionalmente conter algum texto após a cerca do código; isso é aparado com espaços em branco à esquerda e à direita e chamado de cadeia de informações . Se a sequência de informações vier após uma barreira de backtick, ela pode não conter nenhum caractere de backtick. (O motivo dessa restrição é que, caso contrário, algum código embutido seria interpretado incorretamente como o início de um bloco de código protegido.)</p>
+<p>A linha com a cerca do código de abertura pode opcionalmente conter algum texto após a cerca do código; isso é aparado com espaços em branco à esquerda e à direita e chamado de sequência de informações.</p>
 
-<p>O conteúdo do bloco de código consiste em todas as linhas subseqüentes, até que uma cerca de código de fechamento do mesmo tipo que o bloco de código tenha começado com (backticks ou tildes) e com pelo menos tantos backticks ou tildes quanto a cerca de código de abertura. Se a cerca do código à esquerda for N espaços recuados, até N espaços de recuo serão removidos de cada linha do conteúdo (se houver). (Se uma linha de conteúdo não for recuada, ela será preservada inalterada. Se for recuada menos de N espaços, todo o recuo será removido.)</p>
+<p>Se a sequência de informações vier após uma barreira de crases, ela não pode conter nenhum caractere de crase. (O motivo dessa restrição é que, caso contrário, algum código embutido seria interpretado incorretamente como o início de um bloco de código cercado.)</p>
 
-<p>A cerca do código de fechamento pode ser recuada até três espaços e pode ser seguida apenas por espaços que são ignorados. Se o final do bloco (ou documento) contido for alcançado e nenhuma barreira de fechamento for encontrada, o bloco de código conterá todas as linhas após a abertura do código até o final do bloco (ou documento). (Uma especificação alternativa exigiria um retorno no caso de uma cerca de código de fechamento não ser encontrada. Mas isso torna a análise muito menos eficiente e parece não haver um lado negativo no comportamento descrito aqui.)</p>
+<p>O conteúdo do bloco de código consiste em todas as linhas subseqüentes, até que uma cerca de código de fechamento do mesmo tipo que o bloco de código tenha começado com (crases ou tiles) e com a mesma quantidade de crases ou tiles da cerca de abertura.</p>
+
+<p>Se a cerca do código à esquerda for N espaços recuados, até N espaços de recuo serão removidos de cada linha do conteúdo (se houver). (Se uma linha de conteúdo não for recuada, ela será preservada inalterada. Se for recuada menos de N espaços, todo o recuo será removido.)</p>
+
+<p>A cerca do código de fechamento pode ser recuada até três espaços e pode ser seguida apenas por espaços que são ignorados.</p>
+
+<p>Se o final do bloco (ou documento) contido for alcançado e nenhuma barreira de fechamento for encontrada, o bloco de código conterá todas as linhas após a abertura do código até o final do bloco (ou documento). (Uma especificação alternativa exigiria uma análise de que, a cerca de código de fechamento não foi encontrada. Mas isso torna a análise muito menos eficiente e parece não haver um lado negativo no comportamento descrito aqui.)</p>
 
 <p>Um bloco de código protegido pode interromper um parágrafo e não requer uma linha em branco antes ou depois.</p>
 
-<p>O conteúdo de uma cerca de código é tratado como texto literal, não analisado como linhas. A primeira palavra da cadeia de informações é normalmente usada para especificar o idioma da amostra de código e renderizada no class atributo da codemarca. No entanto, essa especificação não exige nenhum tratamento específico da cadeia de informações .</p>
+<p>O conteúdo de uma cerca de código é tratado como texto literal e não é analisado como linhas.</p>
 
-    Aqui está um exemplo simples com backticks:
+<p>A primeira palavra da cadeia de informações é normalmente usada para especificar a linguagem de programação da amostra de código e renderizada no atributo <code class="lang-plaintext">class</code> da tag <code class="lang-plaintext">code</code>.
+
+<p>No entanto, essa especificação não exige nenhum tratamento específico da cadeia de informações .</p>
+
+<p>Aqui está um exemplo simples com crases:</p>
 
 <h5>Exemplo 89</h5>
-    ```
-    <
-     >
-    ```
+<pre><code class="lang-markdown">```
+<
+ >
+```</code></pre>
 
-    &lt;pre&gt;&lt;code&gt;&lt;
-     &gt;
-    &lt;/code&gt;&lt;/pre&gt;
-    Com tildes:
+<pre><code class="lang-html">&lt;pre&gt;&lt;code&gt;&amp;lt;
+ &amp;gt;
+&lt;/code&gt;&lt;/pre&gt;</code></pre>
+
+<p>Com tiles:</p>
 
 <h5>Exemplo 90</h5>
     ~~~
@@ -1582,7 +1593,7 @@ bar
     ````
 
     &lt;pre&gt;&lt;code class=&quot;language-;&quot;&gt;&lt;/code&gt;&lt;/pre&gt;
-<p>As seqüências de informações para blocos de códigos de backtick não podem conter backticks:</p>
+<p>As seqüências de informações para blocos de códigos de crase não podem conter crases:</p>
 
 <h5>Exemplo 115</h5>
     ``` aa ```
@@ -4311,7 +4322,7 @@ bar
     `hi`lo`
 
     &lt;p&gt;&lt;code&gt;hi&lt;/code&gt;lo`&lt;/p&gt;
-<p>hi é analisado como código, deixando o backtick no final como um backtick literal.</p>
+<p>hi é analisado como código, deixando o crase no final como um crase literal.</p>
 
     <h3>Escapes de barra invertida</h3>
 <p>Qualquer caractere de pontuação ASCII pode ter uma barra invertida:</p>
@@ -4528,19 +4539,19 @@ bar
 
     &lt;p&gt;[a](url &quot;tit&quot;)&lt;/p&gt;
     <h3>Extensão de código</h3>
-<p>Uma string de backtick é uma string de um ou mais caracteres de backtick (`) que não é precedida nem seguida por um backtick.</p>
+<p>Uma string de crase é uma string de um ou mais caracteres de crase (`) que não é precedida nem seguida por um crase.</p>
 
-<p>Um período de código começa com uma sequência de backtick e termina com uma sequência de backtick de igual comprimento. O conteúdo do período de código são os caracteres entre as duas cadeias de backtick, normalizadas das seguintes maneiras:</p>
+<p>Um período de código começa com uma sequência de crase e termina com uma sequência de crase de igual comprimento. O conteúdo do período de código são os caracteres entre as duas cadeias de crase, normalizadas das seguintes maneiras:</p>
 
     Primeiro, as terminações de linha são convertidas em espaços .
-<p>Se a sequência resultante começar e terminar com um caractere de espaço , mas não consistir inteiramente em caracteres de espaço , um único caractere de espaço será removido da frente e de trás. Isso permite incluir o código que começa ou termina com caracteres de backtick, que devem ser separados por espaço em branco das seqüências de abertura ou fechamento de backtick.</p>
+<p>Se a sequência resultante começar e terminar com um caractere de espaço , mas não consistir inteiramente em caracteres de espaço , um único caractere de espaço será removido da frente e de trás. Isso permite incluir o código que começa ou termina com caracteres de crase, que devem ser separados por espaço em branco das seqüências de abertura ou fechamento de crase.</p>
     Este é um período de código simples:
 
 <h5>Exemplo 338</h5>
     `foo`
 
     &lt;p&gt;&lt;code&gt;foo&lt;/code&gt;&lt;/p&gt;
-<p>Aqui, dois backticks são usados, porque o código contém um backtick. Este exemplo também ilustra a remoção de um único espaço inicial e final:</p>
+<p>Aqui, dois crases são usados, porque o código contém um crase. Este exemplo também ilustra a remoção de um único espaço inicial e final:</p>
 
 <h5>Exemplo 339</h5>
     `` foo ` bar ``
@@ -4610,7 +4621,7 @@ bar
     `foo\`bar`
 
     &lt;p&gt;&lt;code&gt;foo\&lt;/code&gt;bar`&lt;/p&gt;
-<p>Escapes de barra invertida nunca são necessários, porque sempre é possível escolher uma sequência de n caracteres backtick como delimitadores, em que o código não contém nenhuma sequência de exatamente n caracteres backtick.</p>
+<p>Escapes de barra invertida nunca são necessários, porque sempre é possível escolher uma sequência de n caracteres crase como delimitadores, em que o código não contém nenhuma sequência de exatamente n caracteres crase.</p>
 
 <h5>Exemplo 349</h5>
     ``foo`bar``
@@ -4620,7 +4631,7 @@ bar
     ` foo `` bar `
 
     &lt;p&gt;&lt;code&gt;foo `` bar&lt;/code&gt;&lt;/p&gt;
-<p>Os backticks de extensão de código têm maior precedência do que qualquer outra construção em linha, exceto tags HTML e links automáticos. Assim, por exemplo, isso não é analisado como texto enfatizado, pois o segundo *faz parte de um período de código:</p>
+<p>Os crases de extensão de código têm maior precedência do que qualquer outra construção em linha, exceto tags HTML e links automáticos. Assim, por exemplo, isso não é analisado como texto enfatizado, pois o segundo *faz parte de um período de código:</p>
 
 <h5>Exemplo 351</h5>
     *foo`*`
@@ -4656,7 +4667,7 @@ bar
     <http://foo.bar.`baz>`
 
 <p>&lt;p&gt;&lt;a href=&quot;http://foo.bar.%60baz&quot;&gt;http://foo.bar.`baz&amp;lt;/a&amp;gt;`&amp;lt;/p&amp;gt;&lt;/p&gt;
-<p>Quando uma string de backtick não é fechada por uma string de backtick correspondente, temos apenas backticks literais:</p>
+<p>Quando uma string de crase não é fechada por uma string de crase correspondente, temos apenas crases literais:</p>
 
 <h5>Exemplo 357</h5>
     ```foo``
@@ -4666,7 +4677,7 @@ bar
     `foo
 
     &lt;p&gt;`foo&lt;/p&gt;
-<p>O caso a seguir também ilustra a necessidade de abrir e fechar as cordas de backtick com o mesmo comprimento:</p>
+<p>O caso a seguir também ilustra a necessidade de abrir e fechar as cordas de crase com o mesmo comprimento:</p>
 
 <h5>Exemplo 359</h5>
     `foo``bar``
@@ -5472,7 +5483,7 @@ bar
 
 <p>Brackets are allowed in the link text only if (a) they are backslash-escaped or (b) they appear as a matched pair of brackets, with an open bracket [, a sequence of zero or more inlines, and a close bracket ].</p>
 
-<p>Backtick code spans, autolinks, and raw HTML tags bind more tightly than the brackets in link text. Thus, for example, [foo`]` could not be a link text, since the second ] is part of a code span.</p>
+<p>crase code spans, autolinks, and raw HTML tags bind more tightly than the brackets in link text. Thus, for example, [foo`]` could not be a link text, since the second ] is part of a code span.</p>
 
 <p>The brackets in link text bind more tightly than markers for emphasis and strong emphasis. Thus, for example, *[foo*](url) is a link.</p>
 
@@ -7002,7 +7013,7 @@ bar
       <div class="collapsible-header grey lighten-4"><i class="material-icons">share</i>Compartilhar</div>
       <div class="collapsible-body">
         <div class="collection">
-          <a href="#!" class="collection-item" data-sharer="twitter" data-title="Especificação de Markdown com sabor do GitHub" data-hashtags="markdown" data-url="https://markdown.net.br/sabores/gfm/">
+          <a href="#!" class="collection-item" data-sharer="twitter" data-title="Sintaxe Completa de Formatação Markdown no GitHub" data-hashtags="markdown" data-url="https://markdown.net.br/sabores/gfm/">
             <i class="fab fa-twitter color-twitter"></i>&nbsp;&nbsp;Compartilhar no Twitter
           </a>
           <a href="#!" class="collection-item" data-sharer="facebook" data-hashtag="markdown" data-url="https://markdown.net.br/sabores/gfm/">
@@ -7011,13 +7022,13 @@ bar
           <a href="#!" class="collection-item" data-sharer="linkedin" data-url="https://markdown.net.br/sabores/gfm/">
             <i class="fab fa-linkedin color-linkedin"></i>&nbsp;&nbsp;Compartilhar no Linkedin
           </a>
-          <a href="#!" class="collection-item" data-sharer="email" data-title="Especificação de Markdown com sabor do GitHub" data-url="https://markdown.net.br/sabores/gfm/" data-subject="Olá! Tudo bem? Achei esse guia do Markdown bem fácil de acompanhar, dá uma olhadinha quando puder. Espero que seja útil, até mais." data-to="email@provedor.com.br">
+          <a href="#!" class="collection-item" data-sharer="email" data-title="Sintaxe Completa de Formatação Markdown no GitHub" data-url="https://markdown.net.br/sabores/gfm/" data-subject="Olá! Tudo bem? Achei esse guia do Markdown bem fácil de acompanhar, dá uma olhadinha quando puder. Espero que seja útil, até mais." data-to="email@provedor.com.br">
             <i class="fas fa-envelope color-email"></i>&nbsp;&nbsp;Compartilhar por Email
           </a>
-          <a href="#!" class="collection-item" data-sharer="whatsapp" data-title="Especificação de Markdown com sabor do GitHub" data-url="https://markdown.net.br/sabores/gfm/">
+          <a href="#!" class="collection-item" data-sharer="whatsapp" data-title="Sintaxe Completa de Formatação Markdown no GitHub" data-url="https://markdown.net.br/sabores/gfm/">
             <i class="fab fa-whatsapp color-whatsapp"></i>&nbsp;&nbsp;Compartilhar por Whatsapp
           </a>
-          <a href="#!" class="collection-item" data-sharer="telegram" data-title="Especificação de Markdown com sabor do GitHub" data-url="https://markdown.net.br/sabores/gfm/" data-to="(00) 99999-9999">
+          <a href="#!" class="collection-item" data-sharer="telegram" data-title="Sintaxe Completa de Formatação Markdown no GitHub" data-url="https://markdown.net.br/sabores/gfm/" data-to="(00) 99999-9999">
             <i class="fab fa-telegram color-telegram"></i>&nbsp;&nbsp;Compartilhar por Telegram
           </a>
         </div>
