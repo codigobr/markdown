@@ -1327,13 +1327,13 @@ bar
 
 <p>Se o final do bloco (ou documento) contido for alcançado e nenhuma barreira de fechamento for encontrada, o bloco de código conterá todas as linhas após a abertura do código até o final do bloco (ou documento). (Uma especificação alternativa exigiria uma análise de que, a cerca de código de fechamento não foi encontrada. Mas isso torna a análise muito menos eficiente e parece não haver um lado negativo no comportamento descrito aqui.)</p>
 
-<p>Um bloco de código protegido pode interromper um parágrafo e não requer uma linha em branco antes ou depois.</p>
+<p>Um bloco de código cercado pode interromper um parágrafo e não requer uma linha em branco antes ou depois.</p>
 
 <p>O conteúdo de uma cerca de código é tratado como texto literal e não é analisado como linhas.</p>
 
 <p>A primeira palavra da cadeia de informações é normalmente usada para especificar a linguagem de programação da amostra de código e renderizada no atributo <code class="lang-plaintext">class</code> da tag <code class="lang-plaintext">code</code>.
 
-<p>No entanto, essa especificação não exige nenhum tratamento específico da cadeia de informações .</p>
+<p>No entanto, essa especificação não exige nenhum tratamento específico da cadeia de informações.</p>
 
 <p>Aqui está um exemplo simples com crases:</p>
 
@@ -1350,276 +1350,307 @@ bar
 <p>Com tiles:</p>
 
 <h5>Exemplo 90</h5>
-    ~~~
-    <
-     >
-    ~~~
+<pre><code class="lang-markdown">~~~
+<
+ >
+~~~</code></pre>
 
-    &lt;pre&gt;&lt;code&gt;&lt;
-     &gt;
-    &lt;/code&gt;&lt;/pre&gt;
-    Menos de três reticentes não são suficientes:
+<pre><code class="lang-html">&lt;pre&gt;&lt;code&gt;&amp;lt;
+ &amp;gt;
+&lt;/code&gt;&lt;/pre&gt;</code></pre>
+
+<p>Menos de três crases não são suficientes:</p>
 
 <h5>Exemplo 91</h5>
-    ``
-    foo
-    ``
+<pre><code class="lang-markdown">``
+foo
+``</code></pre>
 
-    &lt;p&gt;&lt;code&gt;foo&lt;/code&gt;&lt;/p&gt;
+<pre><code class="lang-html">&lt;p&gt;&lt;code&gt;foo&lt;/code&gt;&lt;/p&gt;</code></pre>
+
 <p>A cerca do código de fechamento deve usar o mesmo caractere da cerca de abertura:</p>
 
 <h5>Exemplo 92</h5>
-    ```
-    aaa
-    ~~~
-    ```
+<pre><code class="lang-markdown">```
+aaa
+~~~
+```</code></pre>
 
-    &lt;pre&gt;&lt;code&gt;aaa
-    ~~~
-    &lt;/code&gt;&lt;/pre&gt;
+<pre><code class="lang-html">&lt;pre&gt;&lt;code&gt;aaa
+~~~
+&lt;/code&gt;&lt;/pre&gt;</code></pre>
+
 <h5>Exemplo 93</h5>
-    ~~~
-    aaa
-    ```
-    ~~~
+<pre><code class="lang-markdown">~~~
+aaa
+```
+~~~</code></pre>
 
-    &lt;pre&gt;&lt;code&gt;aaa
-    ```
-    &lt;/code&gt;&lt;/pre&gt;
+<pre><code class="lang-html">&lt;pre&gt;&lt;code&gt;aaa
+```
+&lt;/code&gt;&lt;/pre&gt;</code></pre>
+
 <p>A cerca do código de fechamento deve ter pelo menos o comprimento da cerca de abertura:</p>
 
 <h5>Exemplo 94</h5>
-    ````
-    aaa
-    ```
-    ``````
+<pre><code class="lang-markdown">````
+aaa
+```
+``````</code></pre>
 
-    &lt;pre&gt;&lt;code&gt;aaa
-    ```
-    &lt;/code&gt;&lt;/pre&gt;
+<pre><code class="lang-html">&lt;pre&gt;&lt;code&gt;aaa
+```
+&lt;/code&gt;&lt;/pre&gt;</code></pre>
+
 <h5>Exemplo 95</h5>
-    ~~~~
-    aaa
-    ~~~
-    ~~~~
+<pre><code class="lang-markdown">~~~~
+aaa
+~~~
+~~~~</code></pre>
 
-    &lt;pre&gt;&lt;code&gt;aaa
-    ~~~
-    &lt;/code&gt;&lt;/pre&gt;
-<p>Os blocos de código não fechados são fechados no final do documento (ou a cotação do bloco ou item de lista ):</p>
+<pre><code class="lang-html">&lt;pre&gt;&lt;code&gt;aaa
+~~~
+&lt;/code&gt;&lt;/pre&gt;</code></pre>
+
+<p>Os blocos de código abertos são fechados no final do documento (ou no final do bloco de citação ou do elemento da lista ):</p>
 
 <h5>Exemplo 96</h5>
-    ```
+<pre><code class="lang-markdown">```</code></pre>
 
-    &lt;pre&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;
+<pre><code class="lang-html">&lt;pre&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;</code></pre>
+
 <h5>Exemplo 97</h5>
-    `````
+<pre><code class="lang-markdown">`````
 
-    ```
-    aaa
+```
+aaa</code></pre>
 
-    &lt;pre&gt;&lt;code&gt;
-    ```
-    aaa
-    &lt;/code&gt;&lt;/pre&gt;
+<pre><code class="lang-html">&lt;pre&gt;&lt;code&gt;
+```
+aaa
+&lt;/code&gt;&lt;/pre&gt;</code></pre>
+
 <h5>Exemplo 98</h5>
-    > ```
-    > aaa
+<pre><code class="lang-markdown">> ```
+> aaa
 
-    bbb
+bbb</code></pre>
 
-    &lt;blockquote&gt;
-    &lt;pre&gt;&lt;code&gt;aaa
-    &lt;/code&gt;&lt;/pre&gt;
-    &lt;/blockquote&gt;
-    &lt;p&gt;bbb&lt;/p&gt;
+<pre><code class="lang-html">&lt;blockquote&gt;
+&lt;pre&gt;&lt;code&gt;aaa
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;bbb&lt;/p&gt;</code></pre>
+
 <p>Um bloco de código pode ter todas as linhas vazias como seu conteúdo:</p>
 
 <h5>Exemplo 99</h5>
-    ```
+<pre><code class="lang-markdown">```
 
+  
+```</code></pre>
 
-    ```
+<pre><code class="lang-html">&lt;pre&gt;&lt;code&gt;
+  
+&lt;/code&gt;&lt;/pre&gt;</code></pre>
 
-    &lt;pre&gt;&lt;code&gt;
-
-    &lt;/code&gt;&lt;/pre&gt;
-    Um bloco de código pode estar vazio:
+<p>Um bloco de código pode estar vazio:</p>
 
 <h5>Exemplo 100</h5>
-    ```
-    ```
+<pre><code class="lang-markdown">```
+```</code></pre>
 
-    &lt;pre&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;
-<p>Cercas podem ser recuadas. Se a tabulação de abertura for recuada, as linhas de conteúdo terão o recuo de abertura equivalente removido, se presente:</p>
+<pre><code class="lang-html">&lt;pre&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;</code></pre>
+
+<p>Cercas podem ser recuadas. Se a cerca de abertura for recuada, as linhas de conteúdo terão o recuo de abertura equivalente removido, se presente:</p>
 
 <h5>Exemplo 101</h5>
-     ```
-     aaa
-    aaa
-    ```
+<pre><code class="lang-markdown"> ```
+ aaa
+aaa
+```</code></pre>
 
-    &lt;pre&gt;&lt;code&gt;aaa
-    aaa
-    &lt;/code&gt;&lt;/pre&gt;
+<pre><code class="lang-html">&lt;pre&gt;&lt;code&gt;aaa
+aaa
+&lt;/code&gt;&lt;/pre&gt;</code></pre>
+
 <h5>Exemplo 102</h5>
-      ```
-    aaa
-      aaa
-    aaa
-      ```
+<pre><code class="lang-markdown">  ```
+aaa
+  aaa
+aaa
+  ```</code></pre>
 
-    &lt;pre&gt;&lt;code&gt;aaa
-    aaa
-    aaa
-    &lt;/code&gt;&lt;/pre&gt;
+<pre><code class="lang-html">&lt;pre&gt;&lt;code&gt;aaa
+aaa
+aaa
+&lt;/code&gt;&lt;/pre&gt;</code></pre>
+
 <h5>Exemplo 103</h5>
-       ```
-       aaa
-        aaa
-      aaa
-       ```
-
-    &lt;pre&gt;&lt;code&gt;aaa
-     aaa
+<pre><code class="lang-markdown">   ```
+   aaa
     aaa
-    &lt;/code&gt;&lt;/pre&gt;
-    O recuo de quatro espaços produz um bloco de código recuado:
+  aaa
+   ```</code></pre>
+
+<pre><code class="lang-html">&lt;pre&gt;&lt;code&gt;aaa
+ aaa
+aaa
+&lt;/code&gt;&lt;/pre&gt;</code></pre>
+
+<p>O recuo de quatro espaços produz um bloco de código recuado:</p>
 
 <h5>Exemplo 104</h5>
-        ```
-        aaa
-        ```
-
-    &lt;pre&gt;&lt;code&gt;```
+<pre><code class="lang-markdown">    ```
     aaa
-    ```
-    &lt;/code&gt;&lt;/pre&gt;
-<p>As cercas de fechamento podem ser recuadas por 0-3 espaços, e sua reentrância não precisa coincidir com a da cerca de abertura:</p>
+    ```</code></pre>
+
+<pre><code class="lang-html">&lt;pre&gt;&lt;code&gt;```
+aaa
+```
+&lt;/code&gt;&lt;/pre&gt;</code></pre>
+
+<p>As cercas de fechamento podem ser recuadas por 0-3 espaços, e o seu recuo não precisa coincidir com a da cerca de abertura:</p>
 
 <h5>Exemplo 105</h5>
-    ```
-    aaa
-      ```
+<pre><code class="lang-markdown">```
+aaa
+  ```</code></pre>
 
-    &lt;pre&gt;&lt;code&gt;aaa
-    &lt;/code&gt;&lt;/pre&gt;
+<pre><code class="lang-html">&lt;pre&gt;&lt;code&gt;aaa
+&lt;/code&gt;&lt;/pre&gt;</code></pre>
+
 <h5>Exemplo 106</h5>
-       ```
-    aaa
-      ```
+<pre><code class="lang-markdown">   ```
+aaa
+  ```</code></pre>
 
-    &lt;pre&gt;&lt;code&gt;aaa
-    &lt;/code&gt;&lt;/pre&gt;
+<pre><code class="lang-html">&lt;pre&gt;&lt;code&gt;aaa
+&lt;/code&gt;&lt;/pre&gt;</code></pre>
+
 <p>Esta não é uma cerca de fechamento, porque possui quatro espaços recuados:</p>
 
 <h5>Exemplo 107</h5>
-    ```
-    aaa
-        ```
+<pre><code class="lang-markdown">```
+aaa
+    ```</code></pre>
 
-    &lt;pre&gt;&lt;code&gt;aaa
-        ```
-    &lt;/code&gt;&lt;/pre&gt;
+<pre><code class="lang-html">&lt;pre&gt;&lt;code&gt;aaa
+    ```
+&lt;/code&gt;&lt;/pre&gt;</code></pre>
+
 <p>As cercas de código (abertura e fechamento) não podem conter espaços internos:</p>
 
 <h5>Exemplo 108</h5>
-    ``` ```
-    aaa
+<pre><code class="lang-markdown">``` ```
+aaa</code></pre>
 
-    &lt;p&gt;&lt;code&gt; &lt;/code&gt;
-    aaa&lt;/p&gt;
+<pre><code class="lang-html">&lt;p&gt;&lt;code&gt; &lt;/code&gt;
+aaa&lt;/p&gt;</code></pre>
+
 <h5>Exemplo 109</h5>
-    ~~~~~~
-    aaa
-    ~~~ ~~
+<pre><code class="lang-markdown">~~~~~~
+aaa
+~~~ ~~</code></pre>
 
-    &lt;pre&gt;&lt;code&gt;aaa
-    ~~~ ~~
-    &lt;/code&gt;&lt;/pre&gt;
-<p>Blocos de código protegido podem interromper parágrafos e podem ser seguidos diretamente por parágrafos, sem uma linha em branco entre:</p>
+<pre><code class="lang-html">&lt;pre&gt;&lt;code&gt;aaa
+~~~ ~~
+&lt;/code&gt;&lt;/pre&gt;</code></pre>
+
+<p>Blocos de código cercado podem interromper parágrafos e podem ser seguidos diretamente por parágrafos, sem uma linha em branco entre:</p>
 
 <h5>Exemplo 110</h5>
-    foo
-    ```
-    bar
-    ```
-    baz
+<pre><code class="lang-markdown">foo
+```
+bar
+```
+baz</code></pre>
 
-    &lt;p&gt;foo&lt;/p&gt;
-    &lt;pre&gt;&lt;code&gt;bar
-    &lt;/code&gt;&lt;/pre&gt;
-    &lt;p&gt;baz&lt;/p&gt;
+<pre><code class="lang-html">&lt;p&gt;foo&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;bar
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;baz&lt;/p&gt;</code></pre>
+
 <p>Outros blocos também podem ocorrer antes e depois dos blocos de código cercados sem uma linha em branco intermediária:</p>
 
 <h5>Exemplo 111</h5>
-    foo
-    ---
-    ~~~
-    bar
-    ~~~
-    # baz
+<pre><code class="lang-markdown">foo
+---
+~~~
+bar
+~~~
+# baz</code></pre>
 
-    &lt;h2&gt;foo&lt;/h2&gt;
-    &lt;pre&gt;&lt;code&gt;bar
-    &lt;/code&gt;&lt;/pre&gt;
-    &lt;h1&gt;baz&lt;/h1&gt;
-<p>Uma sequência de informações pode ser fornecida após a cerca do código de abertura. Embora essa especificação não exija nenhum tratamento específico da cadeia de informações, a primeira palavra é normalmente usada para especificar o idioma do bloco de código. Na saída HTML, o idioma é normalmente indicado adicionando uma classe ao codeelemento que consiste em language-seguido pelo nome do idioma.</p>
+<pre><code class="lang-html">&lt;h2&gt;foo&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;bar
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1&gt;baz&lt;/h1&gt;</code></pre>
+
+<p>Uma sequência de informações pode ser fornecida após a cerca do código de abertura.</p>
+<p>Embora essa especificação não exija nenhum tratamento específico da cadeia de informações, a primeira palavra é normalmente usada para especificar a linguagem de progração do bloco de código.
+<p>Na saída HTML, a linguagem é normalmente indicada adicionando uma parâmetro <em>class</em> ao elemento <em>code</em> com o conteúdo <code class="lang-plaintext">language-</code> seguido pelo nome da linguagem (ex: <code class="lang-plaintext">language-javascript</code>, <code class="lang-plaintext">language-python</code>, <code class="lang-plaintext">language-php</code>).</p>
 
 <h5>Exemplo 112</h5>
-    ```ruby
-    def foo(x)
-      return 3
-    end
-    ```
+<pre><code class="lang-markdown">```ruby
+def foo(x)
+  return 3
+end
+```</code></pre>
 
-    &lt;pre&gt;&lt;code class=&quot;language-ruby&quot;&gt;def foo(x)
-      return 3
-    end
-    &lt;/code&gt;&lt;/pre&gt;
+<pre><code class="lang-html">&lt;pre&gt;&lt;code class=&quot;language-ruby&quot;&gt;def foo(x)
+  return 3
+end
+&lt;/code&gt;&lt;/pre&gt;</code></pre>
+
 <h5>Exemplo 113</h5>
-    ~~~~    ruby startline=3 $%@#$
-    def foo(x)
-      return 3
-    end
-    ~~~~~~~
+<pre><code class="lang-markdown">~~~~    ruby startline=3 $%@#$
+def foo(x)
+  return 3
+end
+~~~~~~~</code></pre>
 
-    &lt;pre&gt;&lt;code class=&quot;language-ruby&quot;&gt;def foo(x)
-      return 3
-    end
-    &lt;/code&gt;&lt;/pre&gt;
+<pre><code class="lang-html">&lt;pre&gt;&lt;code class=&quot;language-ruby&quot;&gt;def foo(x)
+  return 3
+end
+&lt;/code&gt;&lt;/pre&gt;</code></pre>
+
 <h5>Exemplo 114</h5>
-    ````;
-    ````
+<pre><code class="lang-markdown">````;
+````</code></pre>
 
-    &lt;pre&gt;&lt;code class=&quot;language-;&quot;&gt;&lt;/code&gt;&lt;/pre&gt;
-<p>As seqüências de informações para blocos de códigos de crase não podem conter crases:</p>
+<pre><code class="lang-html">&lt;pre&gt;&lt;code class=&quot;language-;&quot;&gt;&lt;/code&gt;&lt;/pre&gt;</code></pre>
+
+<p>As seqüências de informações para blocos de códigos cercado por crase não podem conter <strong>crases</strong>:</p>
 
 <h5>Exemplo 115</h5>
-    ``` aa ```
-    foo
+<pre><code class="lang-markdown">``` aa ```
+foo</code></pre>
 
-    &lt;p&gt;&lt;code&gt;aa&lt;/code&gt;
-    foo&lt;/p&gt;
-<p>As seqüências de informações para blocos de códigos til podem conter reticulares e tildes:</p>
+<pre><code class="lang-html">&lt;p&gt;&lt;code&gt;aa&lt;/code&gt;
+foo&lt;/p&gt;</code></pre>
+
+<p>As seqüências de informações para blocos de códigos cercado por tiles podem conter crases nem tiles:</p>
 
 <h5>Exemplo 116</h5>
-    ~~~ aa ``` ~~~
-    foo
-    ~~~
+<pre><code class="lang-markdown">~~~ aa ``` ~~~
+foo
+~~~</code></pre>
 
-    &lt;pre&gt;&lt;code class=&quot;language-aa&quot;&gt;foo
-    &lt;/code&gt;&lt;/pre&gt;
-<p>As cercas de código de fechamento não podem ter cadeias de informações :</p>
+<pre><code class="lang-html">&lt;pre&gt;&lt;code class=&quot;language-aa&quot;&gt;foo
+&lt;/code&gt;&lt;/pre&gt;</code></pre>
+
+<p>As cercas de código de fechamento não podem ter cadeias de informações:</p>
 
 <h5>Exemplo 117</h5>
-    ```
-    ``` aaa
-    ```
+<pre><code class="lang-markdown">```
+``` aaa
+```</code></pre>
 
-    &lt;pre&gt;&lt;code&gt;``` aaa
-    &lt;/code&gt;&lt;/pre&gt;
-    <h3>blocos HTML</h3>
+<pre><code class="lang-html">&lt;pre&gt;&lt;code&gt;``` aaa
+&lt;/code&gt;&lt;/pre&gt;</code></pre>
+
+<h3>Blocos HTML</h3>
+
 <p>Um bloco HTML é um grupo de linhas que é tratado como HTML bruto (e não será escapado na saída HTML).</p>
 
 <p>Existem sete tipos de bloco HTML , que podem ser definidos por suas condições de início e fim. O bloco começa com uma linha que atende a uma condição de início (após um recuo opcional de até três espaços). Ele termina com a primeira linha subsequente que atende a uma condição final correspondente , ou a última linha do documento ou a última linha do bloco de contêiner que contém o bloco HTML atual, se nenhuma linha for encontrada que atenda à condição final . Se a primeira linha atender às condições inicial e final , o bloco conterá exatamente essa linha.</p>
@@ -4473,7 +4504,7 @@ bar
     &MadeUpEntity;
 
     &lt;p&gt;&amp;MadeUpEntity;&lt;/p&gt;
-<p>As referências de entidade e caracteres numéricos são reconhecidas em qualquer contexto, além de extensões de código ou blocos de código, incluindo URLs, títulos de links e cadeias de informações de bloco de código protegido :</p>
+<p>As referências de entidade e caracteres numéricos são reconhecidas em qualquer contexto, além de extensões de código ou blocos de código, incluindo URLs, títulos de links e cadeias de informações de bloco de código cercado :</p>
 
 <h5>Exemplo 327</h5>
     &lt;a href=&quot;&amp;ouml;&amp;ouml;.html&quot;&gt;
