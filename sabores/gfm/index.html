@@ -124,7 +124,7 @@
         <!--  Outer row  -->
         <div class="row">
           <div class="section col s12 m8 offset-m1 xl7 offset-xl1">
-            <!-- Parei na linha 1188 -->
+            <!-- Parei na linha 1579 -->
 
 
 
@@ -1653,32 +1653,56 @@ foo
 
 <p>Um bloco HTML é um grupo de linhas que é tratado como HTML bruto (e não será escapado na saída HTML).</p>
 
-<p>Existem sete tipos de bloco HTML , que podem ser definidos por suas condições de início e fim. O bloco começa com uma linha que atende a uma condição de início (após um recuo opcional de até três espaços). Ele termina com a primeira linha subsequente que atende a uma condição final correspondente , ou a última linha do documento ou a última linha do bloco de contêiner que contém o bloco HTML atual, se nenhuma linha for encontrada que atenda à condição final . Se a primeira linha atender às condições inicial e final , o bloco conterá exatamente essa linha.</p>
+<p>Existem sete tipos de bloco HTML, que podem ser definidos por suas condições de início e fim.
 
-<p>Condição inicial: a linha começa com a sequência &lt;script, &lt;pre ou &lt;style (sem distinção entre maiúsculas e minúsculas), seguida de espaço em branco, sequência >ou final da linha.</p>
-<p>Condição final: linha contém uma marca de fim &lt;/script&gt;, &lt;/pre&gt;ou &lt;/style&gt;(maiúsculas e minúsculas, que não precisa de coincidir com a marca de início).</p>
+<p>O bloco começa com uma linha que atende a uma condição de início (após um recuo opcional de até três espaços).</p>
 
-    Condição inicial: a linha começa com a sequência &lt;!--.
-    Condição final: linha contém a sequência --&gt;.
+<p>Ele termina com a primeira linha subsequente que atende a uma condição final correspondente, ou a última linha do documento ou a última linha do bloco de contêiner que contém o bloco HTML atual, se nenhuma linha for encontrada que atenda à condição final.</p>
 
-    Condição inicial: a linha começa com a sequência &lt;?.
-    Condição final: linha contém a sequência ?&gt;.
+<p>Se a primeira linha atender às condições inicial e final, o bloco conterá exatamente essa linha.</p>
 
-<p>Condição inicial: a linha começa com a sequência &lt;! seguida por uma letra ASCII maiúscula.</p>
-    Condição final: linha contém o caractere >.
+<ul class="collection">
+	<li class="collection-item">
+		<h6><strong>Condição 1</strong></h6>
+		<p><strong>Condição inicial</strong>: a linha começa com a sequência <code class="lang-plaintext">&lt;script</code>, <code class="lang-plaintext">&lt;pre</code> ou <code class="lang-plaintext">&lt;style</code> (sem distinção entre maiúsculas e minúsculas), seguida de espaço em branco, o caractere <code class="lang-plaintext">></code> ou o final da linha.</p>
+		<p><strong>Condição final</strong>: linha contém uma tag de fechamento <code class="lang-plaintext">&lt;/script&gt;</code>, <code class="lang-plaintext">&lt;/pre&gt;</code> ou <code class="lang-plaintext">&lt;/style&gt;</code> (sem distinção entre maiúsculas e minúsculas e não precisa coincidir com a tag de abertura).</p>
+	</li>
+	<li class="collection-item">
+		<h6><strong>Condição 2</strong></h6>
+	    <p><strong>Condição inicial</strong>: a linha começa com a sequência <code class="lang-plaintext">&lt;!--</code>.</p>
+	    <p><strong>Condição final</strong>: linha contém a sequência <code class="lang-plaintext">--&gt;</code>.</p>
+	</li>
+	<li class="collection-item">
+		<h6><strong>Condição 3</strong></h6>
+	    <p><strong>Condição inicial</strong>: a linha começa com a sequência <code class="lang-plaintext">&lt;?</code>.</p>
+	    <p><strong>Condição final</strong>: linha contém a sequência <code class="lang-plaintext">?&gt;</code>.</p>
+	</li>
+	<li class="collection-item">
+		<h6><strong>Condição 4</strong></h6>
+		<p><strong>Condição inicial</strong>: a linha começa com a sequência <code class="lang-plaintext">&lt;!</code> seguida por uma letra ASCII maiúscula.</p>
+	    <p><strong>Condição final</strong>: linha contém o caractere <code class="lang-plaintext">></code>.</p>
+	</li>
+	<li class="collection-item">
+		<h6><strong>Condição 5</strong></h6>
+	    <p><strong>Condição inicial</strong>: a linha começa com a sequência <code class="lang-plaintext">&lt;![CDATA[</code>.</p>
+	    <p><strong>Condição final</strong>: linha contém a sequência <code class="lang-plaintext">]]&gt;</code>.</p>
+	</li>
+	<li class="collection-item">
+		<h6><strong>Condição 6</strong></h6>
+		<p><strong>Condição inicial</strong>: a linha começa com a string <code class="lang-plaintext">&lt;</code> ou <code class="lang-plaintext">&lt;/</code> seguida por uma das tags (sem distinção entre maiúsculas e minúsculas) <code class="lang-plaintext">address</code>, <code class="lang-plaintext">article</code>, <code class="lang-plaintext">aside</code>, <code class="lang-plaintext">base</code>, <code class="lang-plaintext">basefont</code>, <code class="lang-plaintext">blockquote</code>, <code class="lang-plaintext">body</code>, <code class="lang-plaintext">caption</code>, <code class="lang-plaintext">center</code>, <code class="lang-plaintext">col</code>, <code class="lang-plaintext">colgroup</code>, <code class="lang-plaintext">dd</code>, <code class="lang-plaintext">details</code>, <code class="lang-plaintext">dialog</code>, <code class="lang-plaintext">dir</code>, <code class="lang-plaintext">div</code>, <code class="lang-plaintext">dl</code>, <code class="lang-plaintext">dt</code>, <code class="lang-plaintext">fieldset</code>, <code class="lang-plaintext">figcaption</code>, <code class="lang-plaintext">figure</code>, <code class="lang-plaintext">footer</code>, <code class="lang-plaintext">form</code>, <code class="lang-plaintext">frame</code>, <code class="lang-plaintext">frameset</code>, <code class="lang-plaintext">h1</code>, <code class="lang-plaintext">h2</code>, <code class="lang-plaintext">h3</code>, <code class="lang-plaintext">h4</code>, <code class="lang-plaintext">h5</code>, <code class="lang-plaintext">h6</code>, <code class="lang-plaintext">head</code>, <code class="lang-plaintext">header</code>, <code class="lang-plaintext">hr</code>, <code class="lang-plaintext">html</code>, <code class="lang-plaintext">iframe</code>, <code class="lang-plaintext">legend</code>, <code class="lang-plaintext">li</code>, <code class="lang-plaintext">link</code>, <code class="lang-plaintext">main</code>, <code class="lang-plaintext">menu</code>, <code class="lang-plaintext">menuitem</code>, <code class="lang-plaintext">nav</code>, <code class="lang-plaintext">noframes</code>, <code class="lang-plaintext">ol</code>, <code class="lang-plaintext">optgroup</code>, <code class="lang-plaintext">option</code>, <code class="lang-plaintext">p</code>, <code class="lang-plaintext">param</code>, <code class="lang-plaintext">section</code>, <code class="lang-plaintext">source</code>, <code class="lang-plaintext">summary</code>, <code class="lang-plaintext">table</code>, <code class="lang-plaintext">tbody</code>, <code class="lang-plaintext">td</code>, <code class="lang-plaintext">tfoot</code>, <code class="lang-plaintext">th</code>, <code class="lang-plaintext">thead</code>, <code class="lang-plaintext">title</code>, <code class="lang-plaintext">tr</code>, <code class="lang-plaintext">track</code>, <code class="lang-plaintext">ul</code>, seguida por espaços em branco, o fim da linha, o caractere <code class="lang-plaintext">></code>, ou a string <code class="lang-plaintext">/></code>.</p>
+		<p><strong>Condição final</strong>: a linha é seguida por uma linha em branco.</p>	
+	</li>
+	<li class="collection-item">
+		<h6><strong>Condição 7</strong></h6>
+		<p><strong>Condição de início</strong>: a linha começa com uma tag completamente aberta (com qualquer nome de tag diferente de <code class="lang-plaintext">script</code>, <code class="lang-plaintext">style</code> ou <code class="lang-plaintext">pre</code>) ou uma tag completa de fechamento, seguida apenas por espaços em branco ou o fim da linha.</p>
+		<p><strong>Condição final</strong>: a linha é seguida por uma linha em branco.</p>
+	</li>
+</ul>
 
-    Condição inicial: a linha começa com a sequência &lt;![CDATA[ .
-    Condição final: linha contém a sequência ]]&gt;.
+<p>Os blocos HTML continuam até que sejam fechados pelas respectivas condições finais ou pela última linha do documento ou outro bloco de contêiner.</p>
+<p>Isso significa que qualquer HTML dentro de um bloco HTML que possa ser reconhecido como uma condição inicial será ignorado pelo analisador e transmitido como está, sem alterar o estado do analisador.</p>
 
-<p>Condição de início: linha começa a cadeia &lt; ou &lt;/ seguido por uma das cordas (maiúsculas e minúsculas) address, article, aside, base, basefont, blockquote, body, caption, center, col, colgroup, dd, details, dialog, dir, div, dl, dt, fieldset, figcaption, figure, footer, form, frame, frameset, h1, h2, h3, h4, h5, h6, head, header, hr, html, iframe, legend, li, link, main, menu, menuitem, nav, noframes, ol, optgroup, option,p, param, section, source, summary, table, tbody, td, tfoot, th, thead, title, tr, track, ul, Seguido por espaços em branco , o fim da linha, o fio >, ou a corda />.</p>
-    Condição final: a linha é seguida por uma linha em branco .
-
-<p>Condição de início: linha inicia-se com uma completa marcação aberto (com qualquer nome de marca diferente do script, styleou pre) ou uma completa marca de fechamento , seguido apenas por espaços em branco ou a extremidade da linha.</p>
-    Condição final: a linha é seguida por uma linha em branco .
-
-<p>Os blocos HTML continuam até que sejam fechados pelos respectivos condição final ou pela última linha do documento ou outro bloco de contêiner . Isso significa que qualquer HTML dentro de um bloco HTML que possa ser reconhecido como uma condição inicial será ignorado pelo analisador e transmitido como está, sem alterar o estado do analisador.</p>
-
-<p>Por exemplo, &lt;pre&gt; dentro de um bloco HTML iniciado por &lt;table&gt;não afetará o estado do analisador; como o bloco HTML foi iniciado pela condição inicial 6, ele terminará em qualquer linha em branco. Isso pode ser surpreendente:</p>
+<p>Por exemplo, &lt;pre&gt; dentro de um bloco HTML iniciado por &lt;table&gt;não afetará o estado do analisador; como o bloco HTML foi iniciado pela condição inicial 6, ele terminará em qualquer linha em branco. Isso pode te pegar de surpresa:</p>
 
 <h5>Exemplo 118</h5>
     &lt;table&gt;&lt;tr&gt;&lt;td&gt;
