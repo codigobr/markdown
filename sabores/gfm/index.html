@@ -1705,399 +1705,436 @@ foo
 <p>Por exemplo, &lt;pre&gt; dentro de um bloco HTML iniciado por &lt;table&gt;não afetará o estado do analisador; como o bloco HTML foi iniciado pela condição inicial 6, ele terminará em qualquer linha em branco. Isso pode te pegar de surpresa:</p>
 
 <h5>Exemplo 118</h5>
-    &lt;table&gt;&lt;tr&gt;&lt;td&gt;
-    &lt;pre&gt;
-    **Hello**,
+<pre><code class="lang-markdown">&lt;table&gt;&lt;tr&gt;&lt;td&gt;
+&lt;pre&gt;
+**Olá**,
 
-    _world_.
-    &lt;/pre&gt;
-    &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+_mundo_.
+&lt;/pre&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</code></pre>
 
-    &lt;table&gt;&lt;tr&gt;&lt;td&gt;
-    &lt;pre&gt;
-    **Hello**,
-    &lt;p&gt;&lt;em&gt;world&lt;/em&gt;.
-    &lt;/pre&gt;&lt;/p&gt;
-    &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-<p>Nesse caso, o bloco HTML é finalizado pela nova linha - o **Hello** texto permanece literalmente - e a análise regular é retomada, com um parágrafo, enfatizada worlde embutida e bloqueia o seguinte HTML.</p>
+<pre><code class="lang-html">&lt;table&gt;&lt;tr&gt;&lt;td&gt;
+&lt;pre&gt;
+**Olá**,
+&lt;p&gt;&lt;em&gt;mundo&lt;/em&gt;.
+&lt;/pre&gt;&lt;/p&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</code></pre>
+
+<p>Nesse caso, o bloco HTML é finalizado pela nova linha - o texto <code class="lang-plaintext">**Olá**</code> permanece em sua forma literal - e a análise regular é retomada, com um parágrafo, a palavra <code class="lang-plaintext">mundo</code> enfatizada e embutida além do bloco HTML seguinte.</p>
 
 <p>Todos os tipos de blocos HTML, exceto o tipo 7, podem interromper um parágrafo. Blocos do tipo 7 não podem interromper um parágrafo. (Essa restrição tem como objetivo impedir a interpretação indesejada de tags longas dentro de um parágrafo agrupado como iniciando blocos HTML).</p>
 
 <p>Alguns exemplos simples seguem. Aqui estão alguns blocos HTML básicos do tipo 6:</p>
 
 <h5>Exemplo 119</h5>
-    &lt;table&gt;
-      &lt;tr&gt;
-        &lt;td&gt;
-               hi
-        &lt;/td&gt;
-      &lt;/tr&gt;
-    &lt;/table&gt;
+<pre><code class="lang-markdown">&lt;table&gt;
+  &lt;tr&gt;
+    &lt;td&gt;
+           oi
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
 
-    okay.
+okay.</code></pre>
 
-    &lt;table&gt;
-      &lt;tr&gt;
-        &lt;td&gt;
-               hi
-        &lt;/td&gt;
-      &lt;/tr&gt;
-    &lt;/table&gt;
-    &lt;p&gt;okay.&lt;/p&gt;
+<pre><code class="lang-html">&lt;table&gt;
+  &lt;tr&gt;
+    &lt;td&gt;
+           oi
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+&lt;p&gt;okay.&lt;/p&gt;</code></pre>
+
 <h5>Exemplo 120</h5>
-     &lt;div&gt;
-      *hello*
-             &lt;foo&gt;&lt;a&gt;
+<pre><code class="lang-markdown"> &lt;div&gt;
+  *olá*
+         &lt;foo&gt;&lt;a&gt;</code></pre>
 
-     &lt;div&gt;
-      *hello*
-             &lt;foo&gt;&lt;a&gt;
-    Um bloco também pode começar com uma tag de fechamento:
+<pre><code class="lang-html"> &lt;div&gt;
+  *olá*
+         &lt;foo&gt;&lt;a&gt;</code></pre>
+
+<p>Um bloco também pode começar com uma tag de fechamento:</p>
 
 <h5>Exemplo 121</h5>
-    &lt;/div&gt;
-    *foo*
+<pre><code class="lang-markdown">&lt;/div&gt;
+*foo*</code></pre>
 
-    &lt;/div&gt;
-    *foo*
+<pre><code class="lang-html">&lt;/div&gt;
+*foo*</code></pre>
+
 <p>Aqui temos dois blocos HTML com um parágrafo Markdown entre eles:</p>
 
 <h5>Exemplo 122</h5>
-    &lt;DIV CLASS=&quot;foo&quot;&gt;
+<pre><code class="lang-markdown">&lt;DIV CLASS=&quot;foo&quot;&gt;
 
-    *Markdown*
+*Markdown*
 
-    &lt;/DIV&gt;
+&lt;/DIV&gt;</code></pre>
 
-    &lt;DIV CLASS=&quot;foo&quot;&gt;
-    &lt;p&gt;&lt;em&gt;Markdown&lt;/em&gt;&lt;/p&gt;
-    &lt;/DIV&gt;
+<pre><code class="lang-markdown">&lt;DIV CLASS=&quot;foo&quot;&gt;
+&lt;p&gt;&lt;em&gt;Markdown&lt;/em&gt;&lt;/p&gt;
+&lt;/DIV&gt;</code></pre>
+
 <p>A tag na primeira linha pode ser parcial, desde que esteja dividida onde haveria espaço em branco:</p>
 
 <h5>Exemplo 123</h5>
-    &lt;div id=&quot;foo&quot;
-      class=&quot;bar&quot;&gt;
-    &amp;lt;/div&amp;gt;
+<pre><code class="lang-markdown">&lt;div id=&quot;foo&quot;
+  class=&quot;bar&quot;&gt;
+&amp;lt;/div&amp;gt;</code></pre>
 
-    &lt;div id=&quot;foo&quot;
-      class=&quot;bar&quot;&gt;
-    &amp;lt;/div&amp;gt;
+<pre><code class="lang-html">&lt;div id=&quot;foo&quot;
+  class=&quot;bar&quot;&gt;
+&amp;lt;/div&amp;gt;</code></pre>
+
 <h5>Exemplo 124</h5>
-    &lt;div id=&quot;foo&quot; class=&quot;bar
-      baz&quot;&gt;
-    &amp;lt;/div&amp;gt;
+<pre><code class="lang-markdown">&lt;div id=&quot;foo&quot; class=&quot;bar
+  baz&quot;&gt;
+&amp;lt;/div&amp;gt;</code></pre>
 
-    &lt;div id=&quot;foo&quot; class=&quot;bar
-      baz&quot;&gt;
-    &amp;lt;/div&amp;gt;
-    Uma tag aberta não precisa ser fechada:
+<pre><code class="lang-html">&lt;div id=&quot;foo&quot; class=&quot;bar
+  baz&quot;&gt;
+&amp;lt;/div&amp;gt;</code></pre>
+
+<p>Uma tag aberta não precisa ser fechada:</p>
 
 <h5>Exemplo 125</h5>
-    &lt;div&gt;
-    *foo*
+<pre><code class="lang-markdown">&lt;div&gt;
+*foo*
 
-    *bar*
+*bar*</code></pre>
 
-    &lt;div&gt;
-    *foo*
-    &lt;p&gt;&lt;em&gt;bar&lt;/em&gt;&lt;/p&gt;
-<p>Uma tag parcial nem precisa ser concluída (entrada e saída de lixo):</p>
+<pre><code class="lang-html">&lt;div&gt;
+*foo*
+&lt;p&gt;&lt;em&gt;bar&lt;/em&gt;&lt;/p&gt;</code></pre>
+
+<p>Uma tag parcial nem precisa ser concluída:</p>
 
 <h5>Exemplo 126</h5>
-    &lt;div id=&quot;foo&quot;
-    *hi*
+<pre><code class="lang-markdown">&lt;div id=&quot;foo&quot;
+*oi*</code></pre>
 
-    &lt;div id=&quot;foo&quot;
-    *hi*
+<pre><code class="lang-html">&lt;div id=&quot;foo&quot;
+*oi*</code></pre>
+
 <h5>Exemplo 127</h5>
-    &lt;div class
-    foo
+<pre><code class="lang-markdown">&lt;div class
+foo</code></pre>
 
-    &lt;div class
-    foo
-    A tag inicial nem precisa ser v&aacute;lida, desde que comece como uma:
+<pre><code class="lang-html">&lt;div class
+foo</code></pre>
+
+<p>A tag inicial nem precisa ser v&aacute;lida, desde que comece como uma:</p>
 
 <h5>Exemplo 128</h5>
-    &lt;div *???-&amp;&amp;&amp;-&lt;---
-    *foo*
+<pre><code class="lang-markdown">&lt;div *???-&amp;&amp;&amp;-&lt;---
+*foo*</code></pre>
 
-    &lt;div *???-&amp;&amp;&amp;-&lt;---
-    *foo*
+<pre><code class="lang-html">&lt;div *???-&amp;&amp;&amp;-&lt;---
+*foo*</code></pre>
+
 <p>Nos blocos do tipo 6, a tag inicial não precisa estar em uma linha sozinha:</p>
 
 <h5>Exemplo 129</h5>
-    &lt;div&gt;&lt;a href=&quot;bar&quot;&gt;*foo*&lt;/a&gt;&lt;/div&gt;
+<pre><code class="lang-markdown">&lt;div&gt;&lt;a href=&quot;bar&quot;&gt;*foo*&lt;/a&gt;&lt;/div&gt;</code></pre>
 
-    &lt;div&gt;&lt;a href=&quot;bar&quot;&gt;*foo*&lt;/a&gt;&lt;/div&gt;
+<pre><code class="lang-html">&lt;div&gt;&lt;a href=&quot;bar&quot;&gt;*foo*&lt;/a&gt;&lt;/div&gt;</code></pre>
+
 <h5>Exemplo 130</h5>
-    &lt;table&gt;&lt;tr&gt;&lt;td&gt;
-    foo
-    &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+<pre><code class="lang-markdown">&lt;table&gt;&lt;tr&gt;&lt;td&gt;
+foo
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</code></pre>
 
-    &lt;table&gt;&lt;tr&gt;&lt;td&gt;
-    foo
-    &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+<pre><code class="lang-html">&lt;table&gt;&lt;tr&gt;&lt;td&gt;
+foo
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</code></pre>
+
 <p>Tudo até a próxima linha em branco ou final do documento ser incluída no bloco HTML. Portanto, no exemplo a seguir, o que parece um bloco de código Markdown é realmente parte do bloco HTML, que continua até que uma linha em branco ou o final do documento seja atingido:</p>
 
 <h5>Exemplo 131</h5>
-    &lt;div&gt;&lt;/div&gt;
-    ``` c
-    int x = 33;
-    ```
+<pre><code class="lang-markdown">&lt;div&gt;&lt;/div&gt;
+``` c
+int x = 33;
+```</code></pre>
 
-    &lt;div&gt;&lt;/div&gt;
-    ``` c
-    int x = 33;
-    ```
-<p>Para iniciar um bloco HTML com uma marca que não está na lista de marcas no nível do bloco em (6), você deve colocar a marca sozinha na primeira linha (e deve estar completa):</p>
+<pre><code class="lang-html">&lt;div&gt;&lt;/div&gt;
+``` c
+int x = 33;
+```</code></pre>
+
+<p>Para iniciar um bloco HTML com uma tag que não está na lista de tags no nível do bloco em (6), você deve colocar a tag sozinha na primeira linha (e deve estar completa):</p>
 
 <h5>Exemplo 132</h5>
-    &lt;a href=&quot;foo&quot;&gt;
-    *bar*
-    &lt;/a&gt;
+<pre><code class="lang-markdown">&lt;a href=&quot;foo&quot;&gt;
+*bar*
+&lt;/a&gt;</code></pre>
 
-    &lt;a href=&quot;foo&quot;&gt;
-    *bar*
-    &lt;/a&gt;
-    Nos blocos do tipo 7, o nome da tag pode ser qualquer coisa:
+<pre><code class="lang-html">&lt;a href=&quot;foo&quot;&gt;
+*bar*
+&lt;/a&gt;</code></pre>
+
+<p>Nos blocos do tipo 7, o nome da tag pode ser qualquer coisa:</p>
 
 <h5>Exemplo 133</h5>
-    &lt;Warning&gt;
-    *bar*
-    &lt;/Warning&gt;
+<pre><code class="lang-markdown">&lt;Warning&gt;
+*bar*
+&lt;/Warning&gt;</code></pre>
 
-    &lt;Warning&gt;
-    *bar*
-    &lt;/Warning&gt;
+<pre><code class="lang-html">&lt;Warning&gt;
+*bar*
+&lt;/Warning&gt;</code></pre>
+
 <h5>Exemplo 134</h5>
-    &lt;i class=&quot;foo&quot;&gt;
-    *bar*
-    &lt;/i&gt;
+<pre><code class="lang-markdown">&lt;i class=&quot;foo&quot;&gt;
+*bar*
+&lt;/i&gt;</code></pre>
 
-    &lt;i class=&quot;foo&quot;&gt;
-    *bar*
-    &lt;/i&gt;
+<pre><code class="lang-html">&lt;i class=&quot;foo&quot;&gt;
+*bar*
+&lt;/i&gt;</code></pre>
+
 <h5>Exemplo 135</h5>
-    &lt;/ins&gt;
-    *bar*
+<pre><code class="lang-markdown">&lt;/ins&gt;
+*bar*</code></pre>
 
-    &lt;/ins&gt;
-    *bar*
-<p>Essas regras foram criadas para nos permitir trabalhar com tags que podem funcionar como tags em nível de bloco ou em linha. A &lt;del&gt;tag é um bom exemplo. Podemos cercar o conteúdo com &lt;del&gt;tags de três maneiras diferentes. Nesse caso, obtemos um bloco HTML bruto, porque o&lt;del&gt; tag está em uma linha por si só:</p>
+<pre><code class="lang-html">&lt;/ins&gt;
+*bar*</code></pre>
+
+<p>Essas regras foram criadas para nos permitir trabalhar com tags que podem funcionar como tags em nível de bloco ou em linha. A tag <code class="lang-plaintext">&lt;del&gt;</code> é um bom exemplo. Podemos cercar o conteúdo com tags <code class="lang-plaintext">&lt;del&gt;</code> de três maneiras diferentes. Nesse caso, obtemos um bloco HTML bruto, porque a tag <code class="lang-plaintext">&lt;del&gt;</code> está em uma linha por si só:</p>
 
 <h5>Exemplo 136</h5>
-    &lt;del&gt;
-    *foo*
-    &lt;/del&gt;
+<pre><code class="lang-markdown">&lt;del&gt;
+*foo*
+&lt;/del&gt;</code></pre>
 
-    &lt;del&gt;
-    *foo*
-    &lt;/del&gt;
-<p>Nesse caso, obtemos um bloco HTML bruto que inclui apenas a &lt;del&gt;tag (porque termina com a seguinte linha em branco). Portanto, o conteúdo é interpretado como CommonMark:</p>
+<pre><code class="lang-html">&lt;del&gt;
+*foo*
+&lt;/del&gt;</code></pre>
+
+<p>Nesse caso, obtemos um bloco de HTML bruto que inclui apenas a tag &lt;del&gt; (porque termina com a linha a seguir em branco). Portanto, o conteúdo é interpretado como CommonMark:</p>
 
 <h5>Exemplo 137</h5>
-    &lt;del&gt;
+<pre><code class="lang-markdown">&lt;del&gt;
 
-    *foo*
+*foo*
 
-    &lt;/del&gt;
+&lt;/del&gt;</code></pre>
 
-    &lt;del&gt;
-    &lt;p&gt;&lt;em&gt;foo&lt;/em&gt;&lt;/p&gt;
-    &lt;/del&gt;
-<p>Finalmente, nesse caso, as &lt;del&gt;tags são interpretadas como HTML bruto dentro do parágrafo CommonMark. (Como a tag não está em uma linha por si só, obtemos HTML embutido em vez de um bloco HTML ).</p>
+<pre><code class="lang-html">&lt;del&gt;
+&lt;p&gt;&lt;em&gt;foo&lt;/em&gt;&lt;/p&gt;
+&lt;/del&gt;</code></pre>
+
+<p>Finalmente, nesse caso, as tags <code class="lang-plaintext">&lt;del&gt;</code> são interpretadas como HTML bruto dentro do parágrafo CommonMark. (Como a tag não está em uma linha por si só, obtemos HTML embutido em vez de um bloco HTML ).</p>
 
 <h5>Exemplo 138</h5>
-    &lt;del&gt;*foo*&lt;/del&gt;
+<pre><code class="lang-markdown">&lt;del&gt;*foo*&lt;/del&gt;</code></pre>
 
-<p>&lt;p&gt;&lt;del&gt;&lt;em&gt;foo&lt;/em&gt;&lt;/del&gt;&lt;/p&gt;</p>
-<p>Tags HTML concebidos para conter conteúdo literal (script, style, pre), comentários, instruções de processamento e declarações são tratados um pouco diferente. Em vez de terminar na primeira linha em branco, esses blocos terminam na primeira linha que contém uma tag final correspondente. Como resultado, esses blocos podem conter linhas em branco:</p>
+<pre><code class="lang-html">&lt;p&gt;&lt;del&gt;&lt;em&gt;foo&lt;/em&gt;&lt;/del&gt;&lt;/p&gt;</code></pre>
 
-    Uma pré tag (tipo 1):
+<p>Tags HTML concebidos para conter conteúdo literal (script, style, pre), comentários, instruções de processamento e declarações são tratadas um pouco diferente.</p>
+
+<p>Em vez de terminar na primeira linha em branco, esses blocos terminam na primeira linha que contém uma tag final correspondente. Como resultado, esses blocos podem conter linhas em branco:</p>
+
+<p>Uma pré tag (tipo 1):</p>
 
 <h5>Exemplo 139</h5>
-    &lt;pre language="haskell">&lt;code&gt;
-    import Text.HTML.TagSoup
+<pre><code class="lang-markdown">&lt;pre language="haskell">&lt;code&gt;
+import Text.HTML.TagSoup
 
-    main :: IO ()
-    main = print $ parseTags tags
-    &lt;/code&gt;&lt;/pre&gt;
-    okay
+main :: IO ()
+main = print $ parseTags tags
+&lt;/code&gt;&lt;/pre&gt;
+okay</code></pre>
 
-    &lt;pre language="haskell">&lt;code&gt;
-    import Text.HTML.TagSoup
+<pre><code class="lang-html">&lt;pre language="haskell">&lt;code&gt;
+import Text.HTML.TagSoup
 
-    main :: IO ()
-    main = print $ parseTags tags
-    &lt;/code&gt;&lt;/pre&gt;
-    &lt;p&gt;okay&lt;/p&gt;
-    Uma tag de script (tipo 1):
+main :: IO ()
+main = print $ parseTags tags
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;okay&lt;/p&gt;</code></pre>
+
+<p>Uma tag de script (tipo 1):</p>
 
 <h5>Exemplo 140</h5>
-    &lt;script type="text/javascript">
-    // JavaScript example
+<pre><code class="lang-markdown">&lt;script type="text/javascript">
+// Exemplo com JavaScript
 
-    document.getElementById("demo").innerHTML = "Hello JavaScript!";
-    &lt;/script&gt;
-    okay
+document.getElementById("demo").innerHTML = "Olá JavaScript!";
+&lt;/script&gt;
+okay</code></pre>
 
-    &lt;script type="text/javascript">
-    // JavaScript example
+<pre><code class="lang-html">&lt;script type="text/javascript">
+// Exemplo com JavaScript
 
-    document.getElementById("demo").innerHTML = "Hello JavaScript!";
-    &lt;/script&gt;
-    &lt;p&gt;okay&lt;/p&gt;
-    Uma tag de estilo (tipo 1):
+document.getElementById("demo").innerHTML = "Olá JavaScript!";
+&lt;/script&gt;
+&lt;p&gt;okay&lt;/p&gt;</code></pre>
+
+<p>Uma tag de estilo (tipo 1):</p>
 
 <h5>Exemplo 141</h5>
-    &lt;style
-      type="text/css">
-    h1 {color:red;}
+<pre><code class="lang-markdown">&lt;style
+  type="text/css">
+h1 {color:red;}
 
-    p {color:blue;}
-    &lt;/style&gt;
-    okay
+p {color:blue;}
+&lt;/style&gt;
+okay</code></pre>
 
-    &lt;style
-      type="text/css">
-    h1 {color:red;}
+<pre><code class="lang-html">&lt;style
+  type="text/css">
+h1 {color:red;}
 
-    p {color:blue;}
-    &lt;/style&gt;
-    &lt;p&gt;okay&lt;/p&gt;
-<p>Se não houver uma tag final correspondente, o bloco terminará no final do documento (ou na cotação do bloco ou item da lista ):</p>
+p {color:blue;}
+&lt;/style&gt;
+&lt;p&gt;okay&lt;/p&gt;</code></pre>
+
+<p>Se não houver uma tag final correspondente, o bloco terminará no final do documento (ou no fechamento do bloco de citação ou no elemento de lista ):</p>
 
 <h5>Exemplo 142</h5>
-    &lt;style
-      type="text/css">
+<pre><code class="lang-markdown">&lt;style
+  type="text/css">
 
-    foo
+foo</code></pre>
 
-    &lt;style
-      type="text/css">
+<pre><code class="lang-html">&lt;style
+  type="text/css">
 
-    foo
+foo</code></pre>
+
 <h5>Exemplo 143</h5>
-    > &lt;div&gt;
-    > foo
+<pre><code class="lang-markdown">> &lt;div&gt;
+> foo
 
-    bar
+bar</code></pre>
 
-    &lt;blockquote&gt;
-    &lt;div&gt;
-    foo
-    &lt;/blockquote&gt;
-    &lt;p&gt;bar&lt;/p&gt;
+<pre><code class="lang-html">&lt;blockquote&gt;
+&lt;div&gt;
+foo
+&lt;/blockquote&gt;
+&lt;p&gt;bar&lt;/p&gt;</code></pre>
+
 <h5>Exemplo 144</h5>
-    - &lt;div&gt;
-    - foo
+<pre><code class="lang-markdown">- &lt;div&gt;
+- foo</code></pre>
 
-    &lt;ul&gt;
-    &lt;li&gt;
-    &lt;div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;foo&lt;/li&gt;
-    &lt;/ul&gt;
-    A tag final pode ocorrer na mesma linha da tag inicial:
+<pre><code class="lang-html">&lt;ul&gt;
+&lt;li&gt;
+&lt;div&gt;
+&lt;/li&gt;
+&lt;li&gt;foo&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+<p>A tag final pode ocorrer na mesma linha da tag inicial:</p>
 
 <h5>Exemplo 145</h5>
-    &lt;style&gt;p{color:red;}&lt;/style&gt;
-    *foo*
+<pre><code class="lang-markdown">&lt;style&gt;p{color:red;}&lt;/style&gt;
+*foo*</code></pre>
 
-    &lt;style&gt;p{color:red;}&lt;/style&gt;
-    &lt;p&gt;&lt;em&gt;foo&lt;/em&gt;&lt;/p&gt;
+<pre><code class="lang-html">&lt;style&gt;p{color:red;}&lt;/style&gt;
+&lt;p&gt;&lt;em&gt;foo&lt;/em&gt;&lt;/p&gt;</code></pre>
+
 <h5>Exemplo 146</h5>
-    &lt;!-- foo --&gt;*bar*
-    *baz*
+<pre><code class="lang-markdown">&lt;!-- foo --&gt;*bar*
+*baz*</code></pre>
 
-    &lt;!-- foo --&gt;*bar*
-    &lt;p&gt;&lt;em&gt;baz&lt;/em&gt;&lt;/p&gt;
+<pre><code class="lang-html">&lt;!-- foo --&gt;*bar*
+&lt;p&gt;&lt;em&gt;baz&lt;/em&gt;&lt;/p&gt;</code></pre>
+
 <p>Observe que qualquer coisa na última linha após a tag final será incluída no bloco HTML :</p>
 
 <h5>Exemplo 147</h5>
-    &lt;script&gt;
-    foo
-    &lt;/script&gt;1. *bar*
+<pre><code class="lang-markdown">&lt;script&gt;
+foo
+&lt;/script&gt;1. *bar*</code></pre>
 
-    &lt;script&gt;
-    foo
-    &lt;/script&gt;1. *bar*
-    Um comentário (tipo 2):
+<pre><code class="lang-html">&lt;script&gt;
+foo
+&lt;/script&gt;1. *bar*</code></pre>
+
+<p>Um comentário (tipo 2):</p>
 
 <h5>Exemplo 148</h5>
-    &lt;!-- Foo
+<pre><code class="lang-markdown">&lt;!-- Foo
 
-    bar
-       baz --&gt;
-    okay
+bar
+   baz --&gt;
+okay</code></pre>
 
-    &lt;!-- Foo
+<pre><code class="lang-html">&lt;!-- Foo
 
-    bar
-       baz --&gt;
-    &lt;p&gt;okay&lt;/p&gt;
-    Uma instrução de processamento (tipo 3):
+bar
+   baz --&gt;
+&lt;p&gt;okay&lt;/p&gt;</code></pre>
+
+<p>Uma instrução de processamento (tipo 3):</p>
 
 <h5>Exemplo 149</h5>
-    &lt;?php
+<pre><code class="lang-markdown">&lt;?php
 
-      echo '>';
+  echo '>';
 
-    ?&gt;
-    okay
+?&gt;
+okay</code></pre>
 
-    &lt;?php
+<pre><code class="lang-html">&lt;?php
 
-      echo '>';
+  echo '>';
 
-    ?&gt;
-    &lt;p&gt;okay&lt;/p&gt;
-    Uma declaração (tipo 4):
+?&gt;
+&lt;p&gt;okay&lt;/p&gt;</code></pre>
+
+<p>Uma declaração (tipo 4):</p>
 
 <h5>Exemplo 150</h5>
-    &lt;!DOCTYPE html>
+<pre><code class="lang-markdown">&lt;!DOCTYPE html></code></pre>
 
-    &lt;!DOCTYPE html>
-    CDATA (tipo 5):
+<pre><code class="lang-html">&lt;!DOCTYPE html></code></pre>
+
+<p>CDATA (tipo 5):</p>
 
 <h5>Exemplo 151</h5>
-    &lt;![CDATA[
-    function matchwo(a,b)
-    {
-      if (a &lt; b && a &lt; 0) then {
-        return 1;
+<pre><code class="lang-markdown">&lt;![CDATA[
+function matchwo(a,b)
+{
+  if (a &lt; b && a &lt; 0) then {
+    return 1;
 
-      } else {
+  } else {
 
-        return 0;
-      }
-    }
-    ]]&gt;
-    okay
+    return 0;
+  }
+}
+]]&gt;
+okay</code></pre>
 
-    &lt;![CDATA[
-    function matchwo(a,b)
-    {
-      if (a &lt; b && a &lt; 0) then {
-        return 1;
+<pre><code class="lang-html">&lt;![CDATA[
+function matchwo(a,b)
+{
+  if (a &lt; b && a &lt; 0) then {
+    return 1;
 
-      } else {
+  } else {
 
-        return 0;
-      }
-    }
-    ]]&gt;
-    &lt;p&gt;okay&lt;/p&gt;
-    A tag de abertura pode ser recuada de 1 a 3 espaços, mas não 4:
+    return 0;
+  }
+}
+]]&gt;
+&lt;p&gt;okay&lt;/p&gt;</code></pre>
+
+<p>A tag de abertura pode ser recuada de 1 a 3 espaços, mas não 4:</p>
 
 <h5>Exemplo 152</h5>
-      &lt;!-- foo --&gt;
+<pre><code class="lang-markdown">  &lt;!-- foo --&gt;
 
-        &lt;!-- foo --&gt;
+    &lt;!-- foo --&gt;</code></pre>
 
-      &lt;!-- foo --&gt;
-    &lt;pre&gt;&lt;code&gt;&lt;!-- foo --&gt;
-    &lt;/code&gt;&lt;/pre&gt;
+<pre><code class="lang-html">  &lt;!-- foo --&gt;
+&lt;pre&gt;&lt;code&gt;&lt;!-- foo --&gt;
+&lt;/code&gt;&lt;/pre&gt;</code></pre>
+    
 <h5>Exemplo 153</h5>
       &lt;div&gt;
 
