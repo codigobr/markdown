@@ -21,11 +21,11 @@
     <meta name="twitter:card" content="summary">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://markdown.net.br/ferramentas/github-pages/">
-    <meta property="og:title" content="Referência do Uso do Markdown no GitHub Pages - Guia completo do Markdown para iniciantes">
+    <meta property="og:title" content="Markdown no GitHub Pages: Guia Completo [Cheatsheet]">
     <meta property="og:description" content="Guia completo e grátis do Markdown para iniciantes com diversos exemplos de como usar a linguagem de marcação mais simples do mundo.">
     <meta property="og:image" content="https://markdown.net.br/assets/img/markdown.jpg">
 
-    <title>Referência do Uso do Markdown no GitHub Pages - Guia completo do Markdown para iniciantes</title>
+    <title>Markdown no GitHub Pages: Guia Completo [Cheatsheet]</title>
     <!-- Favicons-->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -39,6 +39,40 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css" href="/assets/css/bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/show-invisibles/prism-show-invisibles.min.css" integrity="sha256-nOfkEPu/TzBvIxN8D/vW8weOUczzDbxRjgik/hA2hBI=" crossorigin="anonymous" />
+    <style type="text/css">
+    	.mv-40 {
+    		margin-top: 40px;
+    		margin-bottom: 40px;
+    	}
+
+    	img[src=""],
+    	img:not([src]) {
+    	  visibility: hidden;
+    	}
+
+    	.caption {
+    	    display: flex;
+    	    justify-content: center;
+    	    align-items: center;
+    	    margin: 10px 0;
+    	    color: hsl(0deg 0% 33%);
+    	    font-style: italic;
+    	    font-size: 75%;
+    	}
+
+    	picture {
+    		display: block;
+    		position: relative;
+    	}
+
+    	.cover-link {
+    		position: absolute;
+    		top: 0;
+    		bottom: 0;
+    		left: 0;
+    		right: 0;
+    	}
+    </style>
   </head>
   <body class="themes" cz-shortcut-listen="true">
     <div id="layout-problem" style="display:none;position:fixed;bottom:20px;left:5px;right:5px;z-index:9999;border-radius:10px;"><div class="layout-problem__container" style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;position:relative;"><div class="layout-problem__msg" style="background-color:white;color:#222;padding:5px 35px;border-radius:10px;display:flex;align-items:center;border:2px solid #f44336;box-shadow:1px 4px 8px 4px #0000004a;position:relative;"><div style="color:#f44336;font-size:45px;font-weight:bold;background-color:white;border-radius:50px;margin-right:20px;">!</div><p style="font-size: 18px;">Foi detectado um <strong>problema</strong> com o layout do site!<br>É recomendável desabilitar o <span class="red-text"><strong>Ad-Blocker</strong></span><br>Ou qualquer extensão que bloqueie <strong>JavaScript</strong>.</p><div id="close-error-script-bt" style="position:absolute;top:3px;right:12px;cursor:pointer;">X</div></div></div></div>
@@ -77,10 +111,7 @@
     <a href="/ferramentas/" class="waves-effect waves-blue"><i class="tiny material-icons">card_travel</i>Ferramentas</a>
   </li>
   <li class="bold white">
-    <a href="/editor/" class="waves-effect waves-blue"><i class="tiny material-icons">code</i>Editor Online</a>
-  </li>
-  <li class="bold white">
-    <a href="/sabores/" class="waves-effect waves-blue"><i class="fas fa-ice-cream"></i>Sabores</a>
+    <a href="/faq/" class="waves-effect waves-blue"><i class="tiny material-icons">question_answer</i>Perguntas e Respostas</a>
   </li>
 </ul>
     </header>
@@ -90,7 +121,7 @@
           <div class="row" style="margin-bottom: 0;">
             <div class="col s12 m8 offset-m1 xl7 offset-xl1">
               <h1>GitHub Pages</h1>
-              <h4 class="light">O GitHub Pages é um serviço que transforma arquivos Markdown em um site e os hospeda gratuitamente na internet.</h4>
+              <h4 class="light">O GitHub Pages é um serviço da Web que permite que o usuário hospede um site gratuitamente criado a partir de arquivos Markdown.</h4>
               <ol class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
                 <li itemprop="itemListElement" itemscope
                     itemtype="https://schema.org/ListItem">
@@ -103,7 +134,7 @@
 </li>
 <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
 <a itemprop="item" href="/ferramentas/">
-<span itemprop="name">Ferramentas</span>
+<span itemprop="name">Editores Markdown</span>
 </a>
 <meta itemprop="position" content="2" />
 </li>
@@ -132,20 +163,33 @@
 
     <h2 id="visao-geral">Visão geral</h2>
 
-    <p>Se você sabe usar o GitHub e precisa criar uma página da Web simples, uma boa opção é usar as páginas do GitHub. Basta criar um novo repositório, confirmar os arquivos do Markdown e ativar o recurso Páginas do GitHub.</p>
+    <p>Se você já tem experiência com o GitHub e precisa hospedar um site na internet, você pode usar diretamente o serviço de armazenamento GitHub Pages ou Páginas do GitHub.</p>
 
-    <p>O GitHub Pages usa o gerador de site estático <a href="/ferramentas/jekyll/">Jekyll</a> para criar seu site, e o suporte ao Markdown é excelente. Você pode escolher um dos temas pré-criados pelo próprio GitHub, usar um tema do Jekyll ou seu próprio CSS personalizado. Abaixo, é mostrada uma página da Web de exemplo usando um dos temas pré-criados pelo GitHub.</p>
+    <p>Vale ressaltar que as páginas hospedadas no GitHub Pages são páginas simples, como páginas em HTML, não existe servidor para você rodar PHP, Python ou Ruby e nem Banco de dados.</p>
 
-    <p>Vamos complicar um pouco, o GHP processa o Markdown de maneira diferente do próprio...GitHub. O GitHub usa seu próprio processador Markdown já o GitHub Pages, erh, usa o <a href="https://github.com/github/jekyll-commonmark-ghpages" target="_blank">jekyll-commonmark</a>. E o que isso significa? Bom, que seu arquivo <code class="lang-markdown">README.md</code> terá uma aparência diferente no site do GitHub e no site do GitHub Pages. Por exemplo, os emoticons são renderizados no site do GitHub, mas não nos sites gerados usando as páginas do GitHub.</p>
+    <p>Para hospedar um site basta criar um novo repositório, inserir os seus arquivos formatados em Markdown e ativar o recurso do GitHub Pages.</p>
 
-    <p>Confuso?</p>
+    <p>Provavelmente uma das ferramentas com maior compatibilidade com o Markdown, o GitHub Pages utilizada como base o gerador de sites estático <a href="/ferramentas/jekyll/">Jekyll</a>.</p>
 
-    <p><strong>Site</strong>: <a href="https://pages.github.com/" target="_blank">https://pages.github.com/</a></p>
+    <p>A ferramenta oferece, ainda, temas que o usuário pode escolher para compor o seu site.</p>
 
-    <h2 id="suporte-markdown">Suporte do Markdown no GitHub Pages</h2>
+    <p>Claro que, você pode criar um site e formatá-lo usando o seu próprio CSS.</p>
 
-    <p>O GitHub Pages fornece suporte para os seguintes elementos Markdown.</p>
-    <table>
+    <p>Abaixo, você confere uma página da Web construída com um dos temas oferecido pelo GitHub Pages.</p>
+
+    <p>Só como curiosidade, o GitHub Pages e o GitHub utilizam processadores Markdown diferentes. O GitHub possui um processador Markdown próprio enquanto o GitHub Pages usa o <a href="https://github.com/github/jekyll-commonmark-ghpages" target="_blank">jekyll-commonmark&nbsp;<sup><i class="fas fa-external-link-alt"></i></sup></a>.</p>
+
+    <p>Com essa diferença entre os processadores Markdown, algumas formatações podem aparecer de formas diferente no seu arquivo README.md.</p>
+
+    <p>O mais notório seria o uso de emoticons, no site do GitHub seria renderizado e no site gerado pelo GitHub Pages não.</p>
+
+    <p><a href="https://pages.github.com/" target="_blank">https://pages.github.com/&nbsp;<sup><i class="fas fa-external-link-alt"></i></sup></a> é o site oficial do GitHub Pages.</p>
+
+    <h2 id="suporte-markdown">Suporte ao Markdown no GitHub Pages</h2>
+
+    <p>Na <a href="#tabela-1-1">Tabela 1.1</a> são apresentados os elementos Markdown compatíveis com o GitHub Pages.</p>
+
+    <table class="responsive-table" id="tabela-1-1">
       <thead>
         <tr>
           <th>Elemento</th>
@@ -222,7 +266,7 @@
         <tr>
           <td><a href="/sintaxe-estendida/#bloco-codigo-cercado">Blocos de código cercado</a></td>
           <td class="green lighten-4">Sim</td>
-          <td>O realce da sintaxe também é suportado. Certifique-se de que a opção <code>syntax_highlighter: rouge</code> esteja na seção <code>kramdown</code> do arquivo <code>_config.yml</code></td>
+          <td>Você consegue realçar o código do bloco, mas para isso é necessário verificar se a opção <code class="lang-plaintext">syntax_highlighter: rouge</code> se encontra dentro do arquivo de configuração <code class="lang-plaintext">_config.yml</code>, essa opção fica localizada na seção <code class="lang-plaintext">kramdown</code>.</td>
         </tr>
         <tr>
           <td><a href="/sintaxe-estendida/#notas-rodape">Notas de rodapé</a></td>
@@ -242,7 +286,7 @@
         <tr>
           <td><a href="/sintaxe-estendida/#riscado">Riscado</a></td>
           <td class="green lighten-4">Sim</td>
-          <td>Você pode usar dois tiles (~~palavra~~) ou um til (~palavra~) - ambos funcionam.</td>
+          <td>O GitHub Pages fornece suporte as sintaxes com dois tiles <code class="lang-plaintext">~~palavra~~</code> ou apenas um til <code class="lang-plaintext">~palavra~</code>, ambas funcionam.</td>
         </tr>
         <tr>
           <td><a href="/sintaxe-estendida/#lista-tarefas">Listas de tarefas</a></td>
@@ -279,9 +323,9 @@
 
     <h2 id="elementos-adicionais">Suporte para elementos de sintaxe adicionais</h2>
 
-    <p>O GitHub Pages também é compatível com alguns elementos obscuros.</p>
+    <p>A <a href="#tabela-1-2">Tabela 1.2</a> mostra elementos não tão familiares aos usuários do Markdown que possuem suporte no GitHub Pages.</p>
 
-    <table>
+    <table class="responsive-table" id="tabela-1-2">
       <thead>
         <tr>
           <th>Elemento</th>
@@ -311,7 +355,7 @@
       <div class="collapsible-header grey lighten-4"><i class="material-icons">share</i>Compartilhar</div>
       <div class="collapsible-body">
         <div class="collection">
-          <a href="#!" class="collection-item" data-sharer="twitter" data-title="Referência do Uso do Markdown no GitHub Pages - Guia completo do Markdown para iniciantes" data-hashtags="markdown" data-url="https://markdown.net.br/ferramentas/github-pages/">
+          <a href="#!" class="collection-item" data-sharer="twitter" data-title="Markdown no GitHub Pages: Guia Completo [Cheatsheet]" data-hashtags="markdown" data-url="https://markdown.net.br/ferramentas/github-pages/">
             <i class="fab fa-twitter color-twitter"></i>&nbsp;&nbsp;Compartilhar no Twitter
           </a>
           <a href="#!" class="collection-item" data-sharer="facebook" data-hashtag="markdown" data-url="https://markdown.net.br/ferramentas/github-pages/">
@@ -320,13 +364,13 @@
           <a href="#!" class="collection-item" data-sharer="linkedin" data-url="https://markdown.net.br/ferramentas/github-pages/">
             <i class="fab fa-linkedin color-linkedin"></i>&nbsp;&nbsp;Compartilhar no Linkedin
           </a>
-          <a href="#!" class="collection-item" data-sharer="email" data-title="Referência do Uso do Markdown no GitHub Pages - Guia completo do Markdown para iniciantes" data-url="https://markdown.net.br/ferramentas/github-pages/" data-subject="Olá! Tudo bem? Achei esse guia do Markdown bem fácil de acompanhar, dá uma olhadinha quando puder. Espero que seja útil, até mais." data-to="email@provedor.com.br">
+          <a href="#!" class="collection-item" data-sharer="email" data-title="Markdown no GitHub Pages: Guia Completo [Cheatsheet]" data-url="https://markdown.net.br/ferramentas/github-pages/" data-subject="Olá! Tudo bem? Achei esse guia do Markdown bem fácil de acompanhar, dá uma olhadinha quando puder. Espero que seja útil, até mais." data-to="email@provedor.com.br">
             <i class="fas fa-envelope color-email"></i>&nbsp;&nbsp;Compartilhar por Email
           </a>
-          <a href="#!" class="collection-item" data-sharer="whatsapp" data-title="Referência do Uso do Markdown no GitHub Pages - Guia completo do Markdown para iniciantes" data-url="https://markdown.net.br/ferramentas/github-pages/">
+          <a href="#!" class="collection-item" data-sharer="whatsapp" data-title="Markdown no GitHub Pages: Guia Completo [Cheatsheet]" data-url="https://markdown.net.br/ferramentas/github-pages/">
             <i class="fab fa-whatsapp color-whatsapp"></i>&nbsp;&nbsp;Compartilhar por Whatsapp
           </a>
-          <a href="#!" class="collection-item" data-sharer="telegram" data-title="Referência do Uso do Markdown no GitHub Pages - Guia completo do Markdown para iniciantes" data-url="https://markdown.net.br/ferramentas/github-pages/" data-to="(00) 99999-9999">
+          <a href="#!" class="collection-item" data-sharer="telegram" data-title="Markdown no GitHub Pages: Guia Completo [Cheatsheet]" data-url="https://markdown.net.br/ferramentas/github-pages/" data-to="(00) 99999-9999">
             <i class="fab fa-telegram color-telegram"></i>&nbsp;&nbsp;Compartilhar por Telegram
           </a>
         </div>
@@ -364,14 +408,30 @@
 </footer>
     <!--  Scripts-->
     <script src="/assets/js/bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/show-invisibles/prism-show-invisibles.min.js" integrity="sha256-1baFoczEXwdtWBiZ6gbu7W1kn6XfPgKY4LkQQYNHTkM=" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/show-invisibles/prism-show-invisibles.min.js" integrity="sha256-1baFoczEXwdtWBiZ6gbu7W1kn6XfPgKY4LkQQYNHTkM=" crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/components/prism-asciidoc.min.js" integrity="sha256-Z6qgXS53J00CrN9qHl3CxGqX2A3qs6HwGi96bnk2e4w=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/components/prism-markdown.min.js" integrity="sha256-LVbOCHxYsNr9pF5KGdB2NphtO2FKM92SGFxRkWc9Ovg=" crossorigin="anonymous"></script>
     <script src="/assets/js/search.min.js"></script>
+
+    <script src="/assets/js/vendor/jquery.lazy@1.7.9/jquery.lazy.min.js"></script>
+    <script src="/assets/js/vendor/jquery.lazy@1.7.9/jquery.lazy.youtube.min.js"></script>
+    <script src="/assets/js/vendor/jquery.lazy@1.7.9/jquery.lazy.picture.min.js"></script>
     <!-- Lightbox das imagens -->
     <script>
       $(document).ready(function(){
          $('.materialboxed').materialbox();
+
+         $('picture.lazy-img.unloaded, img.lazy-img, iframe.lazy-yt.unloaded').Lazy({
+             effect: 'fadeIn',
+             effectTime: 1000
+             // called after an element was successfully handled
+             // afterLoad: function(element) {
+             // // Remove a animação do loader da imagem
+             //     // element.height(element.closest('.img-lazy-container').find('.image-placeholder').height());
+
+             //     element.removeClass('unloaded');
+             // }
+         });
        });
       anchors.add("h2, h3, h5");
       $('#sticky-navigator').stickyNavigator();

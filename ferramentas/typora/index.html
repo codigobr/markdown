@@ -21,11 +21,11 @@
     <meta name="twitter:card" content="summary">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://markdown.net.br/ferramentas/typora/">
-    <meta property="og:title" content="Referência do Uso do Markdown no Typora - Guia completo do Markdown para iniciantes">
+    <meta property="og:title" content="Markdown no Typora - Guia Completo | Markdown">
     <meta property="og:description" content="Guia completo e grátis do Markdown para iniciantes com diversos exemplos de como usar a linguagem de marcação mais simples do mundo.">
     <meta property="og:image" content="https://markdown.net.br/assets/img/markdown.jpg">
 
-    <title>Referência do Uso do Markdown no Typora - Guia completo do Markdown para iniciantes</title>
+    <title>Markdown no Typora - Guia Completo | Markdown</title>
     <!-- Favicons-->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -39,6 +39,40 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css" href="/assets/css/bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/show-invisibles/prism-show-invisibles.min.css" integrity="sha256-nOfkEPu/TzBvIxN8D/vW8weOUczzDbxRjgik/hA2hBI=" crossorigin="anonymous" />
+    <style type="text/css">
+    	.mv-40 {
+    		margin-top: 40px;
+    		margin-bottom: 40px;
+    	}
+
+    	img[src=""],
+    	img:not([src]) {
+    	  visibility: hidden;
+    	}
+
+    	.caption {
+    	    display: flex;
+    	    justify-content: center;
+    	    align-items: center;
+    	    margin: 10px 0;
+    	    color: hsl(0deg 0% 33%);
+    	    font-style: italic;
+    	    font-size: 75%;
+    	}
+
+    	picture {
+    		display: block;
+    		position: relative;
+    	}
+
+    	.cover-link {
+    		position: absolute;
+    		top: 0;
+    		bottom: 0;
+    		left: 0;
+    		right: 0;
+    	}
+    </style>
   </head>
   <body class="themes" cz-shortcut-listen="true">
     <div id="layout-problem" style="display:none;position:fixed;bottom:20px;left:5px;right:5px;z-index:9999;border-radius:10px;"><div class="layout-problem__container" style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;position:relative;"><div class="layout-problem__msg" style="background-color:white;color:#222;padding:5px 35px;border-radius:10px;display:flex;align-items:center;border:2px solid #f44336;box-shadow:1px 4px 8px 4px #0000004a;position:relative;"><div style="color:#f44336;font-size:45px;font-weight:bold;background-color:white;border-radius:50px;margin-right:20px;">!</div><p style="font-size: 18px;">Foi detectado um <strong>problema</strong> com o layout do site!<br>É recomendável desabilitar o <span class="red-text"><strong>Ad-Blocker</strong></span><br>Ou qualquer extensão que bloqueie <strong>JavaScript</strong>.</p><div id="close-error-script-bt" style="position:absolute;top:3px;right:12px;cursor:pointer;">X</div></div></div></div>
@@ -77,10 +111,7 @@
     <a href="/ferramentas/" class="waves-effect waves-blue"><i class="tiny material-icons">card_travel</i>Ferramentas</a>
   </li>
   <li class="bold white">
-    <a href="/editor/" class="waves-effect waves-blue"><i class="tiny material-icons">code</i>Editor Online</a>
-  </li>
-  <li class="bold white">
-    <a href="/sabores/" class="waves-effect waves-blue"><i class="fas fa-ice-cream"></i>Sabores</a>
+    <a href="/faq/" class="waves-effect waves-blue"><i class="tiny material-icons">question_answer</i>Perguntas e Respostas</a>
   </li>
 </ul>
     </header>
@@ -90,7 +121,7 @@
           <div class="row" style="margin-bottom: 0;">
             <div class="col s12 m8 offset-m1 xl7 offset-xl1">
               <h1>Typora</h1>
-              <h4 class="light">Typora é um editor de documentos simples e configurável que oferece excelente suporte ao Markdown.</h4>
+              <h4 class="light">O Typora é um editor de texto simples com excelente suporte ao Markdown.</h4>
               <ol class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
                 <li itemprop="itemListElement" itemscope
                     itemtype="https://schema.org/ListItem">
@@ -103,7 +134,7 @@
 </li>
 <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
 <a itemprop="item" href="/ferramentas/">
-<span itemprop="name">Ferramentas</span>
+<span itemprop="name">Editores Markdown</span>
 </a>
 <meta itemprop="position" content="2" />
 </li>
@@ -128,24 +159,55 @@
   <div class="col s12">
     <h2 id="visao-geral">Visão geral</h2>
 
-    <p>Esta aplicação é ideal para estudantes e profissionais que precisam escrever redações e relatórios. Pode ser difícil usar o Typora em projetos com vários arquivos ou na publicação de sites.</p>
-
-    <p>O Typora se destaca por oferecer uma variedade de configurações sem sacrificar a simplicidade de uma interface limpa. Os novatos do Markdown podem apreciar os atalhos de teclado para opções de formatação, bem como o editor em tempo real e intuitivo que oculta a sintaxe de formatação do Markdown após a digitação.</p>
-
-    <p>Veja a referência do <a href="https://support.typora.io/Markdown-Reference/" target="_blank">Markdown no Typora</a>.</p>
-
-    <p>A documentação do Typora indica que o aplicativo geralmente usa o GitHub Flavored Markdown (GFM).</p>
+    <p>O Typora é um editor de texto com suporte ao Markdown mais voltado para a edição de redações e relatórios. O uso da ferramenta para construir sites com diversos arquivos, não é o ideal.</p>
 
     <div class="image-container mv-30">
       <img src="/assets/img/typora-editor-exemplo.png" class="materialboxed" alt="Janela do aplicativo Typora">
     </div>
 
-    <p><strong>Site</strong>: <a href="https://typora.io/" target="_blank">https://typora.io/</a></p>
+    <p>O programa conta com uma interface bem simples e limpa, mas não se engane, mesmo com toda simplicidade aparente, o app conta com uma enorme variedade de configurações.</p>
 
-    <h2 id="suporte-markdown">Suporte do Markdown no Typora</h2>
+    <p>Alguns recursos interessantes da ferramenta são: usar atalhos do teclado para inserir formatação Markdown; editor em tempo real que oculta a formatação enquanto o usuário digita; interface intuitiva e fácil de usar.</p>
 
-    <p>O Typora fornece suporte para os seguintes elementos Markdown.</p>
-    <table>
+    <p>O sabor do Markdown usado na ferramenta é o GFM (GitHub-flavored Markdown).</p>
+
+    <p>Mais informações sobre o Typora podem ser obtidas no site oficial (em inglês) <a href="https://typora.io/" target="_blank">https://typora.io/&nbsp;<sup><i class="fas fa-external-link-alt"></i></sup></a>.</p>
+
+    <h2 id="temas">Temas no Typora</h2>
+
+    <p>Quando for exportar os seus documentos usando o Typora, você pode escolher entre uma variedade enorme de temas fornecidos pela ferramenta.</p>
+
+    <p>Além disso, você ainda conta com a opção de personalizar os temas do Typora usando CSS.</p>
+
+    <p>Acesse o painel <code class="lang-plaintext">Preferences > Appearance > Themes</code> para visualizar as configurações dos temas.</p>
+
+    <h2 id="modo-restrito">Modo Restrito no Typora</h2>
+
+    <p>As configurações de strict mode no Typora permitem ao usuário impor certas restrições a formatação Markdown.</p>
+
+    <p>Através do menu <code class="lang-plaintext">Preferences > Markdown > Syntax Preference</code> você pode, por exemplo, indicar que, uma lista ordenada deve usar somente traços - e não asteriscos * na construção de elementos.</p>
+
+
+    <h2 id="modo-codigo-fonte">Modo Código Fonte</h2>
+
+    <p>Às vezes o editor em tempo real do programa pode desagradar usuários mais experientes que preferem visualizar a simbologia Markdown diretamente no documento.</p>
+
+    <p>Para ativar o modo código fonte (source code mode) no Typora abra o painel <code class="lang-plaintext">View</code> e selecione a opção <code class="lang-plaintext">Source Code Mode</code>. Com isso, toda a formatação Markdown será mostrada ao usuário.</p>
+
+    <h2 id="opcoes-de-exportacao">Opções de exportação</h2>
+
+    <p>Ao final da edição do documento Markdown, nós temos a opção de compartilhá-lo da maneira que ele se encontra, ou seja, com os símbolos de marcação, ou exportá-lo para um outro formato.</p>
+
+    <p>O Typora oferece diversas opções para exportar o seu arquivo Markdown. Essas opções incluem o HTML, o PDF, o DOCX (Microsoft Word) e até o LaTeX.</p>
+
+    <p>Para exportar um documento Markdown no Typora navegue até o menu <code class="lang-plaintext">File</code> e clique na opção <code class="lang-plaintext">Export</code>. Opções de exportação como DOCX do Microsoft Word e o LaTeX requerem o <a href="https://pandoc.org/" target="_blank">pandoc&nbsp;<sup><i class="fas fa-external-link-alt"></i></sup></a> instalado no seu computador.</p>
+
+
+    <h2 id="suporte-markdown">Suporte ao Markdown no Typora</h2>
+
+    <p>A <a href="#tabela-1-1">Tabela 1.1</a> apresenta os elementos Markdown compatíveis com o Typora, além de informações importantes sobre o uso desses elementos.</p>
+
+    <table class="responsive-table" id="tabela-1-1">
       <thead>
         <tr>
           <th>Elemento</th>
@@ -162,12 +224,12 @@
         <tr>
           <td><a href="/sintaxe-basica/#paragrafos">Parágrafos</a></td>
           <td class="green lighten-4">Sim</td>
-          <td>Por padrão, você precisa pressionar a tecla <code class="lang-plaintext">Enter</code> só uma vez (não duas). Consulte a <a href="https://support.typora.io/Line-Break/" target="_blank">documentação do Typora</a> para obter mais informações.</td>
+          <td>No Typora a construção do parágrafo em Markdown é feita pressionando a tecla <code class="lang-plaintext">Enter</code> apenas uma vez ao invés de duas.</td>
         </tr>
         <tr>
           <td><a href="/sintaxe-basica/#quebra-linha">Quebras de linha</a></td>
           <td class="green lighten-4">Sim</td>
-          <td>Por padrão, você precisa pressionar <code class="lang-plaintext">Command</code>+<code class="lang-plaintext">Shift</code>+<code class="lang-plaintext">Enter</code>. Consulte a <a href="https://support.typora.io/Line-Break/" target="_blank">documentação do Typora</a> para obter mais informações.</td>
+          <td>Para quebrar uma linha no Typora pressione a combinação de teclas <code class="lang-plaintext">CTRL+Shift+Enter</code> no Windows ou <code class="lang-plaintext">Command+Shift+Enter</code> no Mac.</td>
         </tr>
         <tr>
           <td><a href="/sintaxe-basica/#negrito">Negrito</a></td>
@@ -207,12 +269,12 @@
         <tr>
           <td><a href="/sintaxe-basica/#links">Links</a></td>
           <td class="green lighten-4">Sim</td>
-          <td>Consulte a <a href="https://support.typora.io/Links/" target="_blank">documentação do Typora</a> para obter instruções sobre como vincular arquivos no seu computador.</td>
+          <td></td>
         </tr>
         <tr>
           <td><a href="/sintaxe-basica/#imagens">Imagens</a></td>
           <td class="green lighten-4">Sim</td>
-          <td>Para inserir imagens do seu computador, use as opções encontradas em <strong>Format > Images</strong>.</td>
+          <td>Usando o menu <code class="lang-plaintext">Format > Images</code> você consegue inserir imagens do seu computador no documento Markdown.</td>
         </tr>
         <tr>
           <td><a href="/sintaxe-estendida/#tabelas">Tabelas</a></td>
@@ -222,7 +284,7 @@
         <tr>
           <td><a href="/sintaxe-estendida/#bloco-codigo-cercado">Blocos de código cercado</a></td>
           <td class="green lighten-4">Sim</td>
-          <td>O realce da sintaxe também é suportado. Veja a <a href="https://support.typora.io/Code-Fences-Language-Support/" target="_blank">lista</a> de linguagens compatíveis.</td>
+          <td>O Typora também é compativel com o realce do conteúdo do bloco, <a href="https://support.typora.io/Code-Fences-Language-Support/" target="_blank">clique aqui para conferir (em inglês)&nbsp;<sup><i class="fas fa-external-link-alt"></i></sup></a> uma lista de linguagens compatíveis.</td>
         </tr>
         <tr>
           <td><a href="/sintaxe-estendida/#notas-rodape">Notas de rodapé</a></td>
@@ -232,7 +294,7 @@
         <tr>
           <td><a href="/sintaxe-estendida/#id-titulo">Id de títulos</a></td>
           <td class="yellow lighten-4">Parcial</td>
-          <td>Gerado automaticamente. Por exemplo, se você tiver um título chamado <code class="lang-plaintext">Meu Título</code>, poderá criar um vínculo com ele usando o seguinte formato <code class="lang-markdown">[link](#meu-titulo)</code>. Aparentemente, não há como definir códigos de cabeçalho personalizados. Não está claro o que acontece quando há dois títulos idênticos.</td>
+          <td>O Typora gera ids de título automaticamente, por exemplo: se você possuir um título chamado Meu Título poderá criar um vínculo direto usando a formatação <code class="lang-plaintext">[link](#meu-titulo)</code>. Supostamente a ferramenta não permite criar identificações personalizadas. Também não se sabe o que acontece quando temos dois títulos iguais, teremos dois ids idênticos?</td>
         </tr>
         <tr>
           <td><a href="/sintaxe-estendida/#lista-definicoes">Listas de definições</a></td>
@@ -272,18 +334,22 @@
         <tr>
           <td><a href="/sintaxe-basica/#html">HTML</a></td>
           <td class="yellow lighten-4">Parcial</td>
-          <td>Consulte a <a href="https://support.typora.io/HTML/" target="_blank">documentação do Typora</a> para obter informações sobre quais elementos HTML são suportados.</td>
+          <td></td>
         </tr>
       </tbody>
     </table>
 
-    <h2 id="elementos-adicionais">Suporte para elementos de sintaxe adicionais</h2>
+    <h2 id="elementos-adicionais">Elementos Markdown adicionais que podem ser usados no Typora.</h2>
 
-    <p>O Typora também é compatível com alguns elementos obscuros, incluindo diagramas e matemática em linha.</p>
+    <p>O Typora é compatível com diversos elementos não tão comuns no Markdown como o realçar em linha, subscrito e sobrescrito. </p>
 
-    <p>A maioria desses elementos está desativada por padrão. Para habilitá-los, abra a janela <em>Preferences</em> e modifique as configurações em <em>Markdown > Syntax Support</em>. Consulte a <a href="https://support.typora.io/Markdown-Reference/" target="_blank">referência do Markdown no Typora</a> para obter informações adicionais.</p>
+    <p>É importante ressaltar que a maioria desses elementos estão desabilitados por padrão na ferramenta.</p>
 
-    <table class="table table-bordered" style="font-size: 14px">
+    <p>Para habilitá-los, abra o painel Preferences e ative o elemento desejado na aba <code class="lang-plaintext">Markdown > Syntax Support</code>.</p>
+
+    <p>A <a href="#tabela-1-2">Tabela 1.2</a> mostra os elemetos obscuros do Markdown suportados pelo Typora.</p>
+
+    <table class="responsive-table" id="tabela-1-2">
       <thead class="thead-light">
         <tr>
           <th>Elemento</th>
@@ -310,27 +376,9 @@
       </tbody>
     </table>
 
-    <h2 id="temas">Temas</h2>
-
-    <p>O Typora fornece uma variedade de temas para você exportar os seus documentos.</p>
-    <p>Você pode personalizar os temas usando CSS.</p>
-    <p>Abra a janela <em>Preferences</em> e veja as configurações em <em>Appearance > Themes</em>.</p>
-
-    <h2 id="modo-restrito">Modo Restrito</h2>
-
-    <p>O Typora fornece configurações de <em>strict mode</em> para usuários que desejam impor limitações de sintaxe a cabeçalhos, listas ordenadas e listas não ordenadas. Por exemplo, você pode indicar que listas não ordenadas devem usar somente hífens e não asteriscos. Essas configurações ficam localizadas em <em>Preferences > Markdown > Syntax Preference</em>. Consulte a <a href="https://support.typora.io/Strict-Mode/" target="_blank">documentação do Typora</a> para obter informações adicionais.</p>
-
-    <h2 id="modo-codigo-fonte">Modo Código Fonte</h2>
-
-    <p>Você pode desativar o editor em tempo real do Typora selecionando <em>View > Source Code Mode</em>. Isso revelará toda a formatação Markdown.</p>
-
-    <h2 id="opcoes-de-exportacao">Opções de exportação</h2>
-
-    <p>O Typora fornece uma ampla variedade de opções de exportação em <em>File > Export</em>. Algumas opções de exportação, como o Microsoft Word e o formato LaTeX, requerem o <a href="https://pandoc.org/" target="_blank">Pandoc</a>.</p>
-
     <h2 id="veja-tambem">Veja também</h2>
 
-    <p><a href="https://support.typora.io/" target="_blank">Ajuda com o Typora</a></p>
+    <p><a href="https://support.typora.io/" target="_blank">Ajuda com o Typora (em inglês)&nbsp;<sup><i class="fas fa-external-link-alt"></i></sup></a></p>
   </div> <!-- Fim do conteúdo principal -->
 
 </div>
@@ -340,7 +388,7 @@
       <div class="collapsible-header grey lighten-4"><i class="material-icons">share</i>Compartilhar</div>
       <div class="collapsible-body">
         <div class="collection">
-          <a href="#!" class="collection-item" data-sharer="twitter" data-title="Referência do Uso do Markdown no Typora - Guia completo do Markdown para iniciantes" data-hashtags="markdown" data-url="https://markdown.net.br/ferramentas/typora/">
+          <a href="#!" class="collection-item" data-sharer="twitter" data-title="Markdown no Typora - Guia Completo | Markdown" data-hashtags="markdown" data-url="https://markdown.net.br/ferramentas/typora/">
             <i class="fab fa-twitter color-twitter"></i>&nbsp;&nbsp;Compartilhar no Twitter
           </a>
           <a href="#!" class="collection-item" data-sharer="facebook" data-hashtag="markdown" data-url="https://markdown.net.br/ferramentas/typora/">
@@ -349,13 +397,13 @@
           <a href="#!" class="collection-item" data-sharer="linkedin" data-url="https://markdown.net.br/ferramentas/typora/">
             <i class="fab fa-linkedin color-linkedin"></i>&nbsp;&nbsp;Compartilhar no Linkedin
           </a>
-          <a href="#!" class="collection-item" data-sharer="email" data-title="Referência do Uso do Markdown no Typora - Guia completo do Markdown para iniciantes" data-url="https://markdown.net.br/ferramentas/typora/" data-subject="Olá! Tudo bem? Achei esse guia do Markdown bem fácil de acompanhar, dá uma olhadinha quando puder. Espero que seja útil, até mais." data-to="email@provedor.com.br">
+          <a href="#!" class="collection-item" data-sharer="email" data-title="Markdown no Typora - Guia Completo | Markdown" data-url="https://markdown.net.br/ferramentas/typora/" data-subject="Olá! Tudo bem? Achei esse guia do Markdown bem fácil de acompanhar, dá uma olhadinha quando puder. Espero que seja útil, até mais." data-to="email@provedor.com.br">
             <i class="fas fa-envelope color-email"></i>&nbsp;&nbsp;Compartilhar por Email
           </a>
-          <a href="#!" class="collection-item" data-sharer="whatsapp" data-title="Referência do Uso do Markdown no Typora - Guia completo do Markdown para iniciantes" data-url="https://markdown.net.br/ferramentas/typora/">
+          <a href="#!" class="collection-item" data-sharer="whatsapp" data-title="Markdown no Typora - Guia Completo | Markdown" data-url="https://markdown.net.br/ferramentas/typora/">
             <i class="fab fa-whatsapp color-whatsapp"></i>&nbsp;&nbsp;Compartilhar por Whatsapp
           </a>
-          <a href="#!" class="collection-item" data-sharer="telegram" data-title="Referência do Uso do Markdown no Typora - Guia completo do Markdown para iniciantes" data-url="https://markdown.net.br/ferramentas/typora/" data-to="(00) 99999-9999">
+          <a href="#!" class="collection-item" data-sharer="telegram" data-title="Markdown no Typora - Guia Completo | Markdown" data-url="https://markdown.net.br/ferramentas/typora/" data-to="(00) 99999-9999">
             <i class="fab fa-telegram color-telegram"></i>&nbsp;&nbsp;Compartilhar por Telegram
           </a>
         </div>
@@ -393,14 +441,30 @@
 </footer>
     <!--  Scripts-->
     <script src="/assets/js/bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/show-invisibles/prism-show-invisibles.min.js" integrity="sha256-1baFoczEXwdtWBiZ6gbu7W1kn6XfPgKY4LkQQYNHTkM=" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/show-invisibles/prism-show-invisibles.min.js" integrity="sha256-1baFoczEXwdtWBiZ6gbu7W1kn6XfPgKY4LkQQYNHTkM=" crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/components/prism-asciidoc.min.js" integrity="sha256-Z6qgXS53J00CrN9qHl3CxGqX2A3qs6HwGi96bnk2e4w=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/components/prism-markdown.min.js" integrity="sha256-LVbOCHxYsNr9pF5KGdB2NphtO2FKM92SGFxRkWc9Ovg=" crossorigin="anonymous"></script>
     <script src="/assets/js/search.min.js"></script>
+
+    <script src="/assets/js/vendor/jquery.lazy@1.7.9/jquery.lazy.min.js"></script>
+    <script src="/assets/js/vendor/jquery.lazy@1.7.9/jquery.lazy.youtube.min.js"></script>
+    <script src="/assets/js/vendor/jquery.lazy@1.7.9/jquery.lazy.picture.min.js"></script>
     <!-- Lightbox das imagens -->
     <script>
       $(document).ready(function(){
          $('.materialboxed').materialbox();
+
+         $('picture.lazy-img.unloaded, img.lazy-img, iframe.lazy-yt.unloaded').Lazy({
+             effect: 'fadeIn',
+             effectTime: 1000
+             // called after an element was successfully handled
+             // afterLoad: function(element) {
+             // // Remove a animação do loader da imagem
+             //     // element.height(element.closest('.img-lazy-container').find('.image-placeholder').height());
+
+             //     element.removeClass('unloaded');
+             // }
+         });
        });
       anchors.add("h2, h3, h5");
       $('#sticky-navigator').stickyNavigator();

@@ -39,6 +39,40 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css" href="/assets/css/bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/show-invisibles/prism-show-invisibles.min.css" integrity="sha256-nOfkEPu/TzBvIxN8D/vW8weOUczzDbxRjgik/hA2hBI=" crossorigin="anonymous" />
+    <style type="text/css">
+    	.mv-40 {
+    		margin-top: 40px;
+    		margin-bottom: 40px;
+    	}
+
+    	img[src=""],
+    	img:not([src]) {
+    	  visibility: hidden;
+    	}
+
+    	.caption {
+    	    display: flex;
+    	    justify-content: center;
+    	    align-items: center;
+    	    margin: 10px 0;
+    	    color: hsl(0deg 0% 33%);
+    	    font-style: italic;
+    	    font-size: 75%;
+    	}
+
+    	picture {
+    		display: block;
+    		position: relative;
+    	}
+
+    	.cover-link {
+    		position: absolute;
+    		top: 0;
+    		bottom: 0;
+    		left: 0;
+    		right: 0;
+    	}
+    </style>
   </head>
   <body class="themes" cz-shortcut-listen="true">
     <div id="layout-problem" style="display:none;position:fixed;bottom:20px;left:5px;right:5px;z-index:9999;border-radius:10px;"><div class="layout-problem__container" style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;position:relative;"><div class="layout-problem__msg" style="background-color:white;color:#222;padding:5px 35px;border-radius:10px;display:flex;align-items:center;border:2px solid #f44336;box-shadow:1px 4px 8px 4px #0000004a;position:relative;"><div style="color:#f44336;font-size:45px;font-weight:bold;background-color:white;border-radius:50px;margin-right:20px;">!</div><p style="font-size: 18px;">Foi detectado um <strong>problema</strong> com o layout do site!<br>É recomendável desabilitar o <span class="red-text"><strong>Ad-Blocker</strong></span><br>Ou qualquer extensão que bloqueie <strong>JavaScript</strong>.</p><div id="close-error-script-bt" style="position:absolute;top:3px;right:12px;cursor:pointer;">X</div></div></div></div>
@@ -77,10 +111,7 @@
     <a href="/ferramentas/" class="waves-effect waves-blue"><i class="tiny material-icons">card_travel</i>Ferramentas</a>
   </li>
   <li class="bold white">
-    <a href="/editor/" class="waves-effect waves-blue"><i class="tiny material-icons">code</i>Editor Online</a>
-  </li>
-  <li class="bold white">
-    <a href="/sabores/" class="waves-effect waves-blue"><i class="fas fa-ice-cream"></i>Sabores</a>
+    <a href="/faq/" class="waves-effect waves-blue"><i class="tiny material-icons">question_answer</i>Perguntas e Respostas</a>
   </li>
 </ul>
     </header>
@@ -90,7 +121,7 @@
           <div class="row" style="margin-bottom: 0;">
             <div class="col s12 m8 offset-m1 xl7 offset-xl1">
               <h1>Ghost</h1>
-              <h4 class="light">O Ghost é um sistema de gerenciamento de conteúdo (CMS) relativamente novo para blogs que concorre com produtos CMS mais antigos e estabelecidos, como WordPress e Drupal.</h4>
+              <h4 class="light">O Ghost é uma ferramenta poderosa para blogueiros que concorre diretamente com o WordPress e com o Drupal.</h4>
               <ol class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
                 <li itemprop="itemListElement" itemscope
                     itemtype="https://schema.org/ListItem">
@@ -103,7 +134,7 @@
 </li>
 <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
 <a itemprop="item" href="/ferramentas/">
-<span itemprop="name">Ferramentas</span>
+<span itemprop="name">Editores Markdown</span>
 </a>
 <meta itemprop="position" content="2" />
 </li>
@@ -132,14 +163,22 @@
 
     <h2 id="visao-geral">Visão geral</h2>
 
-    <p>Existem alguns pequenos problemas de compatibilidade mencionados abaixo, mas, de um modo geral, o Ghost tem um suporte sólido ao Markdown. O editor em tempo real é bastante intuitivo e parece ser uma boa escolha para os blogueiros. Copiar e colar texto no formato Markdown no editor funciona da maneira que você espera.</p>
+    <p>O Ghost é um CMS (Content Management System) bem robusto que faz frente a ferramentas mais consagradas no mercado, como o Drupal e até o WordPress.</p>
 
-    <p><strong>Site</strong>: <a href="https://ghost.org/" target="_blank">https://ghost.org/</a></p>
+    <p>O suporte ao uso do Markdown é excelente, claro que, como quase todas as ferramentas desse tipo, existem alguns problemas de compatibilidade com certos elementos.</p>
 
-    <h2 id="suporte-markdown">Suporte do Markdown no Ghost</h2>
+    <p>O Ghost também conta com um editor em tempo real que apresenta a formatação Markdown convertida enquanto você digita.</p>
 
-    <p>O Ghost fornece suporte para os seguintes elementos Markdown.</p>
-    <table>
+    <p>O aplicativo ainda oferece a opção de copiar e colar o seu conteúdo formatado em Markdown diretamente para dentro do programa.</p>
+
+    <p>Visite o site oficial do Ghost no endereço <a href="https://ghost.org/" target="_blank">https://ghost.org/&nbsp;<sup><i class="fas fa-external-link-alt"></i></sup></a>.</p>
+
+
+    <h2 id="suporte-markdown">Suporte ao Markdown no Ghost</h2>
+
+    <p>Na <a href="#tabela-1-1">Tabela 1.1</a> você confere os elementos Markdown compatíveis com o Ghost.</p>
+
+    <table class="responsive-table" id="tabela-1-1">
       <thead>
         <tr>
           <th>Elemento</th>
@@ -161,7 +200,7 @@
         <tr>
           <td><a href="/sintaxe-basica/#quebra-linha">Quebras de linha</a></td>
           <td class="green lighten-4">Sim</td>
-          <td>Você pode usar uma barra invertida (\) em vez de espaço em branco à direita.</td>
+          <td>A barra invertida <code class="lang-plaintext">\</code> é uma opção para quebrar a linha no Ghost, você pode usá-la no lugar do espaço em branco a direita do conteúdo.</td>
         </tr>
         <tr>
           <td><a href="/sintaxe-basica/#negrito">Negrito</a></td>
@@ -176,17 +215,17 @@
         <tr>
           <td><a href="/sintaxe-basica/#bloco-citacao">Bloco de citação</a></td>
           <td class="yellow lighten-4">Parcial</td>
-          <td><a href="/sintaxe-basica/#bloco-citacao-aninhado">Blocos de citação aninhados</a> não são suportados.</td>
+          <td>Infelizmente os <a href="/sintaxe-basica/#bloco-citacao-aninhado">blocos de citação aninhados</a> não possuem suporte no Ghost.</td>
         </tr>
         <tr>
           <td><a href="/sintaxe-basica/#listas-ordenadas">Listas ordenadas</a></td>
           <td class="yellow lighten-4">Parcial</td>
-          <td>Listas aninhadas não são suportadas.</td>
+          <td>Com o suporte parcial à criação de listas, o Ghost não formata corretamente listas aninhadas.</td>
         </tr>
         <tr>
           <td><a href="/sintaxe-basica/#listas-nao-ordenadas">Listas não ordenadas</a></td>
           <td class="yellow lighten-4">Parcial</td>
-          <td>Listas aninhadas não são suportadas.</td>
+          <td>O mesmo problema anterior, listas aninhadas não são suportadas pela ferramenta.</td>
         </tr>
         <tr>
           <td><a href="/sintaxe-basica/#codigo">Código</a></td>
@@ -216,7 +255,7 @@
         <tr>
           <td><a href="/sintaxe-estendida/#bloco-codigo-cercado">Blocos de código cercado</a></td>
           <td class="green lighten-4">Sim</td>
-          <td>O realce da sintaxe também é suportado.</td>
+          <td>É possível destacar o código de acordo com a linguagem de programação do bloco.</td>
         </tr>
         <tr>
           <td><a href="/sintaxe-estendida/#notas-rodape">Notas de rodapé</a></td>
@@ -226,7 +265,7 @@
         <tr>
           <td><a href="/sintaxe-estendida/#id-titulo">Id de títulos</a></td>
           <td class="yellow lighten-4">Parcial</td>
-          <td>Gerado automaticamente. Não há como definir códigos de cabeçalho personalizados.</td>
+          <td>O Ghost gera automaticamente as identificações de títulos, não é possível que o usuário crie um id personalizado.</td>
         </tr>
         <tr>
           <td><a href="/sintaxe-estendida/#lista-definicoes">Listas de definições</a></td>
@@ -271,11 +310,13 @@
       </tbody>
     </table>
 
-    <h2 id="elementos-adicionais">Suporte para elementos de sintaxe adicionais</h2>
+    <h2 id="elementos-adicionais">Elementos obscuros</h2>
 
-    <p>O Ghost também é compatível com alguns elementos obscuros.</p>
+    <p>O Ghost fornece compatibilidade com elementos mais desconhecidos do Markdown.</p>
 
-    <table>
+	<p>Na <a href="#tabela-1-2">Tabela 1.2</a> esses elementos e suas sintaxes são apresentados.</p>
+
+    <table class="responsive-table" id="tabela-1-2">
       <thead>
         <tr>
           <th>Elemento</th>
@@ -361,14 +402,30 @@
 </footer>
     <!--  Scripts-->
     <script src="/assets/js/bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/show-invisibles/prism-show-invisibles.min.js" integrity="sha256-1baFoczEXwdtWBiZ6gbu7W1kn6XfPgKY4LkQQYNHTkM=" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/show-invisibles/prism-show-invisibles.min.js" integrity="sha256-1baFoczEXwdtWBiZ6gbu7W1kn6XfPgKY4LkQQYNHTkM=" crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/components/prism-asciidoc.min.js" integrity="sha256-Z6qgXS53J00CrN9qHl3CxGqX2A3qs6HwGi96bnk2e4w=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/components/prism-markdown.min.js" integrity="sha256-LVbOCHxYsNr9pF5KGdB2NphtO2FKM92SGFxRkWc9Ovg=" crossorigin="anonymous"></script>
     <script src="/assets/js/search.min.js"></script>
+
+    <script src="/assets/js/vendor/jquery.lazy@1.7.9/jquery.lazy.min.js"></script>
+    <script src="/assets/js/vendor/jquery.lazy@1.7.9/jquery.lazy.youtube.min.js"></script>
+    <script src="/assets/js/vendor/jquery.lazy@1.7.9/jquery.lazy.picture.min.js"></script>
     <!-- Lightbox das imagens -->
     <script>
       $(document).ready(function(){
          $('.materialboxed').materialbox();
+
+         $('picture.lazy-img.unloaded, img.lazy-img, iframe.lazy-yt.unloaded').Lazy({
+             effect: 'fadeIn',
+             effectTime: 1000
+             // called after an element was successfully handled
+             // afterLoad: function(element) {
+             // // Remove a animação do loader da imagem
+             //     // element.height(element.closest('.img-lazy-container').find('.image-placeholder').height());
+
+             //     element.removeClass('unloaded');
+             // }
+         });
        });
       anchors.add("h2, h3, h5");
       $('#sticky-navigator').stickyNavigator();

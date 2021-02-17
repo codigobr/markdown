@@ -39,6 +39,40 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css" href="/assets/css/bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/show-invisibles/prism-show-invisibles.min.css" integrity="sha256-nOfkEPu/TzBvIxN8D/vW8weOUczzDbxRjgik/hA2hBI=" crossorigin="anonymous" />
+    <style type="text/css">
+    	.mv-40 {
+    		margin-top: 40px;
+    		margin-bottom: 40px;
+    	}
+
+    	img[src=""],
+    	img:not([src]) {
+    	  visibility: hidden;
+    	}
+
+    	.caption {
+    	    display: flex;
+    	    justify-content: center;
+    	    align-items: center;
+    	    margin: 10px 0;
+    	    color: hsl(0deg 0% 33%);
+    	    font-style: italic;
+    	    font-size: 75%;
+    	}
+
+    	picture {
+    		display: block;
+    		position: relative;
+    	}
+
+    	.cover-link {
+    		position: absolute;
+    		top: 0;
+    		bottom: 0;
+    		left: 0;
+    		right: 0;
+    	}
+    </style>
   </head>
   <body class="themes" cz-shortcut-listen="true">
     <div id="layout-problem" style="display:none;position:fixed;bottom:20px;left:5px;right:5px;z-index:9999;border-radius:10px;"><div class="layout-problem__container" style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;position:relative;"><div class="layout-problem__msg" style="background-color:white;color:#222;padding:5px 35px;border-radius:10px;display:flex;align-items:center;border:2px solid #f44336;box-shadow:1px 4px 8px 4px #0000004a;position:relative;"><div style="color:#f44336;font-size:45px;font-weight:bold;background-color:white;border-radius:50px;margin-right:20px;">!</div><p style="font-size: 18px;">Foi detectado um <strong>problema</strong> com o layout do site!<br>É recomendável desabilitar o <span class="red-text"><strong>Ad-Blocker</strong></span><br>Ou qualquer extensão que bloqueie <strong>JavaScript</strong>.</p><div id="close-error-script-bt" style="position:absolute;top:3px;right:12px;cursor:pointer;">X</div></div></div></div>
@@ -77,10 +111,7 @@
     <a href="/ferramentas/" class="waves-effect waves-blue"><i class="tiny material-icons">card_travel</i>Ferramentas</a>
   </li>
   <li class="bold white">
-    <a href="/editor/" class="waves-effect waves-blue"><i class="tiny material-icons">code</i>Editor Online</a>
-  </li>
-  <li class="bold white">
-    <a href="/sabores/" class="waves-effect waves-blue"><i class="fas fa-ice-cream"></i>Sabores</a>
+    <a href="/faq/" class="waves-effect waves-blue"><i class="tiny material-icons">question_answer</i>Perguntas e Respostas</a>
   </li>
 </ul>
     </header>
@@ -90,7 +121,7 @@
           <div class="row" style="margin-bottom: 0;">
             <div class="col s12 m8 offset-m1 xl7 offset-xl1">
               <h1>Notion</h1>
-              <h4 class="light">O Notion é um aplicativo inovador que se apresenta como uma solução tudo-em-um, um gerenciador de bases de conhecimento para indivíduos e equipes.</h4>
+              <h4 class="light">O Notion é uma ferramenta tudo-em-um usada para gerenciar bases de conhecimento, fazer anotação, rastrear tarefas e muito mais.</h4>
               <ol class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
                 <li itemprop="itemListElement" itemscope
                     itemtype="https://schema.org/ListItem">
@@ -103,7 +134,7 @@
 </li>
 <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
 <a itemprop="item" href="/ferramentas/">
-<span itemprop="name">Ferramentas</span>
+<span itemprop="name">Editores Markdown</span>
 </a>
 <meta itemprop="position" content="2" />
 </li>
@@ -132,18 +163,32 @@
 
     <h2 id="visao-geral">Visão geral</h2>
 
-    <p>Imagina o Notion como um aplicativo de anotações ou um wiki, porém essa descrições é um pouco simplória para a ferramenta. Você realmente precisa usá-la para ter uma noção melhor do que ela é capaz. Algumas organizações usam o Notion para gerenciamento de projetos e rastreamento de tarefas, entre outras coisas. O aplicativo pode até ser utilizado como um tipo de banco de dados.</p>
+    <p>O Notion é uma ferramenta bem versátil, algumas empresas usam para anotações, outras para gerir uma base de conhecido e várias para rastrear projetos.</p>
 
-    <p>O Notion está disponível para dispositivos móveis e também para desktop, além de uma interface baseada na Web. Usando uma conta online você pode sincronizar os seus documentos com os servidores do Notion.</p>
+    <p>O programa tem certa similaridade com o sistema do wiki, mas somente usando o aplicativo para ter uma melhor ideia do que se trata.</p>
 
-    <p>O suporte ao Markdown do Notion é meio controverso. Copiar e colar texto no formato Markdown para dentro do Notion geralmente funciona da maneira que você espera, mas usar o editor em tempo real para escrever em Markdown, erh, nem sempre funciona. Você pode, por exemplo, usar asteriscos para fazer o texto ficar em negrito, mas usar colchetes para criar um link ou barras verticais para criar uma tabela <strong>não funciona</strong> - o que é estranho considerando que esse mesmos elementos de sintaxe funcionam quando você, ao invés de digitar, copia e cola na ferramenta. Outro problema é que, é bem difícil editar o texto no formato Markdown que você copiou e colou no Notion.</p>
+    <p>A compatibilidade do Notion é muito boa, a ferramenta conta com versões para web, dispositivos moveis e também para o desktop.</p>
 
-    <p><strong>Site</strong>: <a href="https://www.notion.so/" target="_blank">https://www.notion.so/</a></p>
+    <p>Com a versão online é possível trabalhar com sincronização de documentos.</p>
 
-    <h2 id="suporte-markdown">Suporte do Markdown no Notion</h2>
+    <p>Quando falamos em suporte ao Markdown no Notion, as coisas ficam um pouco cinzentas.</p>
 
-    <p>O Notion fornece suporte para os seguintes elementos Markdown.</p>
-    <table>
+    <p>A questão é que, se você copiar um conteúdo formatado em Markdown para dentro do editor da ferramenta as coisas, normalmente, funcionam do jeito esperado.</p>
+
+    <p>Já usar o editor do próprio programa para construir arquivos Markdown nem sempre funciona. O uso de asteriscos, por exemplo, para formatar em negrito funciona perfeitamente, agora, usar colchetes para criar links nem pensar.</p>
+
+    <p>O que pode confundir os usuários, já que, copiar e colar um link no formato Markdown, usando os mesmos colchetes “proibidos”, para dentro do editor, funciona!</p>
+
+    <p>Outro ponto a ser notado é a dificuldade para editar o documento Markdown que você colou no programa, mesmo funcionando, a ferramenta não parece ter sido desenvolvida para isso.</p>
+
+    <p>Mais informações (em inglês) sobre o Notion em <a href="https://www.notion.so/" target="_blank">https://www.notion.so/&nbsp;<sup><i class="fas fa-external-link-alt"></i></sup></a>.</p>
+
+
+    <h2 id="suporte-markdown">Suporte ao Markdown no Notion</h2>
+
+    <p>A <a href="#tabela-1-1">Tabela 1.1</a> mostra os elementos Markdown compatíveis com o Notion.</p>
+
+    <table class="responsive-table" id="tabela-1-1">
       <thead>
         <tr>
           <th>Elemento</th>
@@ -165,7 +210,7 @@
         <tr>
           <td><a href="/sintaxe-basica/#quebra-linha">Quebras de linha</a></td>
           <td class="green lighten-4">Sim</td>
-          <td>Se você copiou e colou o texto dentro do Notion, você pode usar a barra (<code class="lang-plaintext">\</code>) ou pressionar o <code class="lang-plaintext">Enter</code> uma vez para obter o mesmo resultado. Agora, se você estiver digitando diretamente na ferramenta, pressione <code class="lang-plaintext">Shift+Enter</code>.</td>
+          <td>Aqui temos duas situações: primeira, se o conteúdo foi colado dentro do editor use a barra invertida <code class="lang-plaintext">\</code> ou pressione o <code class="lang-plaintext">Enter</code> para quebrar a linha, segunda: você está digitando o documento Markdown diretamente dentro da ferramenta, nesse caso, utilize a combinação de teclas <code class="lang-plaintext">Shift</code>+<code class="lang-plaintext">Enter</code> para quebrar a linha.</td>
         </tr>
         <tr>
           <td><a href="/sintaxe-basica/#negrito">Negrito</a></td>
@@ -180,7 +225,7 @@
         <tr>
           <td><a href="/sintaxe-basica/#bloco-citacao">Bloco de citação</a></td>
           <td class="yellow lighten-4">Parcial</td>
-          <td>Blocos de citação aninhados não são suportados.</td>
+          <td>O Notion não oferece suporte aos blocos de citação aninhados.</td>
         </tr>
         <tr>
           <td><a href="/sintaxe-basica/#listas-ordenadas">Listas ordenadas</a></td>
@@ -205,22 +250,22 @@
         <tr>
           <td><a href="/sintaxe-basica/#links">Links</a></td>
           <td class="yellow lighten-4">Parcial</td>
-          <td>Copiar e colar um link formatado em Markdown para dentro do Notion <strong>functiona</strong>! Porém, você não pode digitá-los diretamente dentro do aplicativo, ao invés disso, use o comando <code class="lang-plaintext">/link</code>.</td>
+          <td>O Notion permite que você copie e cole um link formatado em Markdown para dentro do programa, agora, para construir um link diretamente no editor, utilize o comando <code class="lang-plaintext">/link</code>.</td>
         </tr>
         <tr>
           <td><a href="/sintaxe-basica/#imagens">Imagens</a></td>
           <td class="yellow lighten-4">Parcial</td>
-          <td>Copiar e colar uma imagem em formatado Markdown para dentro do Notion <strong>functiona</strong>! Porém, você não pode usar esse formato diretamente dentro do aplicativo, ao invés disso, use o comando <code class="lang-plaintext">/images</code>.</td>
+          <td>Copiar uma imagem para dentro do editor, no formato Markdown, funciona da maneira esperada. Para referenciar uma imagem diretamente na ferramenta use o comando <code class="lang-plaintext">/images</code>.</td>
         </tr>
         <tr>
           <td><a href="/sintaxe-estendida/#tabelas">Tabelas</a></td>
           <td class="yellow lighten-4">Parcial</td>
-          <td>Copiar e colar uma tabela formatada em Markdown para dentro do Notion <strong>functiona</strong>! Porém, você não pode formatá-las diretamente dentro do aplicativo, ao invés disso, use o comando <code class="lang-plaintext">/table-inline</code>.</td>
+          <td>Semelhante aos elementos anteriores, você pode copiar e colar a formatação de tabela Markdown para dentro do editor do Notion. Para construir uma tabela diretamente no programa use o comando <code class="lang-plaintext">/table-inline</code>.</td>
         </tr>
         <tr>
           <td><a href="/sintaxe-estendida/#bloco-codigo-cercado">Blocos de código cercado</a></td>
           <td class="green lighten-4">Sim</td>
-          <td>O realce da sintaxe não é suportado.</td>
+          <td>O Notion possui suporte ao destaque do conteúdo de dentro do bloco.</td>
         </tr>
         <tr>
           <td><a href="/sintaxe-estendida/#notas-rodape">Notas de rodapé</a></td>
@@ -240,12 +285,12 @@
         <tr>
           <td><a href="/sintaxe-estendida/#riscado">Riscado</a></td>
           <td class="yellow lighten-4">Parcial</td>
-          <td>Use apenas um til antes e depois da palavra/texto/conteúdo. <strong>Não</strong> funciona quando copiado diretamente para dentro do Notion.</td>
+          <td>Aqui tem um truque, use somente um til ao redor do conteúdo que você quer riscar, exemplo: <code class="lang-plaintext">~conteúdo riscado~</code>. Essa formatação, diferente das outras, não funciona quando copiada para dentro do editor.</td>
         </tr>
         <tr>
           <td><a href="/sintaxe-estendida/#lista-tarefas">Listas de tarefas</a></td>
           <td class="yellow lighten-4">Parcial</td>
-          <td>Copiar e colar uma lista de tarefas formatada em Markdown para dentro do Notion <strong>functiona</strong>! Porém, você não pode formatá-las diretamente dentro do aplicativo, ao invés disso, use o comando <code class="lang-plaintext">/todo</code>.</td>
+          <td>Para criar uma lista de tarefas no Notion use o comando <code class="lang-plaintext">/todo</code>. Copiar e colar a formatação Markdown para dentro do editor também funciona.</td>
         </tr>
         <tr>
           <td><a href="/sintaxe-estendida/#emojis">Emoji (copiar e colar)</a></td>
@@ -277,7 +322,7 @@
 
     <h2 id="veja-tambem">Veja também</h2>
 
-    <p><a href="https://www.notion.so/66e28cec810548c3a4061513126766b0" target="_blank">Aprenda os Atalhos do Notion</a></p>
+    <p><a href="https://www.notion.so/66e28cec810548c3a4061513126766b0" target="_blank">Aprenda os Atalhos do Notion&nbsp;<sup><i class="fas fa-external-link-alt"></i></sup></a></p>
   </div> <!-- Fim do conteúdo principal -->
 
 </div>
@@ -340,14 +385,30 @@
 </footer>
     <!--  Scripts-->
     <script src="/assets/js/bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/show-invisibles/prism-show-invisibles.min.js" integrity="sha256-1baFoczEXwdtWBiZ6gbu7W1kn6XfPgKY4LkQQYNHTkM=" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/show-invisibles/prism-show-invisibles.min.js" integrity="sha256-1baFoczEXwdtWBiZ6gbu7W1kn6XfPgKY4LkQQYNHTkM=" crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/components/prism-asciidoc.min.js" integrity="sha256-Z6qgXS53J00CrN9qHl3CxGqX2A3qs6HwGi96bnk2e4w=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/components/prism-markdown.min.js" integrity="sha256-LVbOCHxYsNr9pF5KGdB2NphtO2FKM92SGFxRkWc9Ovg=" crossorigin="anonymous"></script>
     <script src="/assets/js/search.min.js"></script>
+
+    <script src="/assets/js/vendor/jquery.lazy@1.7.9/jquery.lazy.min.js"></script>
+    <script src="/assets/js/vendor/jquery.lazy@1.7.9/jquery.lazy.youtube.min.js"></script>
+    <script src="/assets/js/vendor/jquery.lazy@1.7.9/jquery.lazy.picture.min.js"></script>
     <!-- Lightbox das imagens -->
     <script>
       $(document).ready(function(){
          $('.materialboxed').materialbox();
+
+         $('picture.lazy-img.unloaded, img.lazy-img, iframe.lazy-yt.unloaded').Lazy({
+             effect: 'fadeIn',
+             effectTime: 1000
+             // called after an element was successfully handled
+             // afterLoad: function(element) {
+             // // Remove a animação do loader da imagem
+             //     // element.height(element.closest('.img-lazy-container').find('.image-placeholder').height());
+
+             //     element.removeClass('unloaded');
+             // }
+         });
        });
       anchors.add("h2, h3, h5");
       $('#sticky-navigator').stickyNavigator();

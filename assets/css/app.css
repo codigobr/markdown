@@ -273,3 +273,35 @@ div.code-toolbar>.toolbar a, div.code-toolbar>.toolbar button, div.code-toolbar>
 .collection a.collection-item:not(.active):focus {
   text-decoration: none;
 }
+
+h3 {
+    font-size: 1.7rem;
+    margin: 4.946667rem 0 1.168rem 0;
+    color: hsl(0deg 62% 43%)!important;
+    border-bottom: 1px solid hsl(0deg 0% 80%);
+    padding-bottom: 15px;
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 110%;
+    border-bottom: 1px solid hsl(0deg 0% 80%);
+    padding-bottom: 15px;
+}
+
+h2:not(:first-child) {
+	margin: 5.373333rem 0 1.424rem 0;
+}
+
+body {
+    font-family: arial,x-locale-body,sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+#index-banner h4 {
+    line-height: 30px;
+    font-size: 1.6rem;
+}

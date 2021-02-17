@@ -21,11 +21,11 @@
     <meta name="twitter:card" content="summary">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://markdown.net.br/ferramentas/gitbook/">
-    <meta property="og:title" content="Referência do Uso do Markdown no GitBook - Guia completo do Markdown para iniciantes">
+    <meta property="og:title" content="Referência do Uso do Markdown no GitBook | Markdown">
     <meta property="og:description" content="Guia completo e grátis do Markdown para iniciantes com diversos exemplos de como usar a linguagem de marcação mais simples do mundo.">
     <meta property="og:image" content="https://markdown.net.br/assets/img/markdown.jpg">
 
-    <title>Referência do Uso do Markdown no GitBook - Guia completo do Markdown para iniciantes</title>
+    <title>Referência do Uso do Markdown no GitBook | Markdown</title>
     <!-- Favicons-->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -39,6 +39,40 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css" href="/assets/css/bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/show-invisibles/prism-show-invisibles.min.css" integrity="sha256-nOfkEPu/TzBvIxN8D/vW8weOUczzDbxRjgik/hA2hBI=" crossorigin="anonymous" />
+    <style type="text/css">
+    	.mv-40 {
+    		margin-top: 40px;
+    		margin-bottom: 40px;
+    	}
+
+    	img[src=""],
+    	img:not([src]) {
+    	  visibility: hidden;
+    	}
+
+    	.caption {
+    	    display: flex;
+    	    justify-content: center;
+    	    align-items: center;
+    	    margin: 10px 0;
+    	    color: hsl(0deg 0% 33%);
+    	    font-style: italic;
+    	    font-size: 75%;
+    	}
+
+    	picture {
+    		display: block;
+    		position: relative;
+    	}
+
+    	.cover-link {
+    		position: absolute;
+    		top: 0;
+    		bottom: 0;
+    		left: 0;
+    		right: 0;
+    	}
+    </style>
   </head>
   <body class="themes" cz-shortcut-listen="true">
     <div id="layout-problem" style="display:none;position:fixed;bottom:20px;left:5px;right:5px;z-index:9999;border-radius:10px;"><div class="layout-problem__container" style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;position:relative;"><div class="layout-problem__msg" style="background-color:white;color:#222;padding:5px 35px;border-radius:10px;display:flex;align-items:center;border:2px solid #f44336;box-shadow:1px 4px 8px 4px #0000004a;position:relative;"><div style="color:#f44336;font-size:45px;font-weight:bold;background-color:white;border-radius:50px;margin-right:20px;">!</div><p style="font-size: 18px;">Foi detectado um <strong>problema</strong> com o layout do site!<br>É recomendável desabilitar o <span class="red-text"><strong>Ad-Blocker</strong></span><br>Ou qualquer extensão que bloqueie <strong>JavaScript</strong>.</p><div id="close-error-script-bt" style="position:absolute;top:3px;right:12px;cursor:pointer;">X</div></div></div></div>
@@ -77,10 +111,7 @@
     <a href="/ferramentas/" class="waves-effect waves-blue"><i class="tiny material-icons">card_travel</i>Ferramentas</a>
   </li>
   <li class="bold white">
-    <a href="/editor/" class="waves-effect waves-blue"><i class="tiny material-icons">code</i>Editor Online</a>
-  </li>
-  <li class="bold white">
-    <a href="/sabores/" class="waves-effect waves-blue"><i class="fas fa-ice-cream"></i>Sabores</a>
+    <a href="/faq/" class="waves-effect waves-blue"><i class="tiny material-icons">question_answer</i>Perguntas e Respostas</a>
   </li>
 </ul>
     </header>
@@ -90,7 +121,7 @@
           <div class="row" style="margin-bottom: 0;">
             <div class="col s12 m8 offset-m1 xl7 offset-xl1">
               <h1>GitBook</h1>
-              <h4 class="light">O GitBook é uma solução hospedada para sites de documentação e bases de conhecimento.</h4>
+              <h4 class="light">O Gitbook é uma ferramenta online que hospeda sites de documentação com suporte ao Markdown.</h4>
               <ol class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
                 <li itemprop="itemListElement" itemscope
                     itemtype="https://schema.org/ListItem">
@@ -103,7 +134,7 @@
 </li>
 <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
 <a itemprop="item" href="/ferramentas/">
-<span itemprop="name">Ferramentas</span>
+<span itemprop="name">Editores Markdown</span>
 </a>
 <meta itemprop="position" content="2" />
 </li>
@@ -128,18 +159,40 @@
   <div class="col s12">
     <h2 id="visao-geral">Visão geral</h2>
 
-    <p>Em poucas palavras, você entra no site do GitBook e usa o editor baseado na Web para escrever sua documentação. Ou, se preferir manter o controle sobre o seu conteúdo, você pode mantê-lo em um repositório do GitHub <a href="https://docs.gitbook.com/integrations/github" target="_blank">integrado ao GitBook</a>. De qualquer forma, você pode criar diferentes páginas da Web e organizá-las em uma ordem lógica. Quando tudo estiver da maneira que você desejar, basta publicá-la em um domínio personalizado.</p>
+    <p>Por ser uma ferramenta online, o GitBook possui um editor Markdown que roda diretamente no seu navegador, assim, a ferramenta oferece bastante praticidade para você criar as suas documentações.</p>
 
-    <p>Como muitos projetos, o GitBook começou como uma cadeia de ferramentas de código aberto com uma oferta comercial, mas acabou descartando o projeto de código aberto em favor de uma nova oferta proprietária e de código fechado, hospedada exclusivamente em seu site. A <a href="https://github.com/GitbookIO/gitbook" target="_blank">cadeia de ferramentas de código aberto</a> ainda está disponível, mas como essa opção agora não é suportada, este artigo documenta apenas a nova opção hospedada.</p>
+    <p>Se você precisa de mais controle sobre o seu conteúdo, o GitBook também oferece suporte a <a href="https://docs.gitbook.com/integrations/github" target="_blank">integração com repositórios do GitHub&nbsp;<sup><i class="fas fa-external-link-alt"></i></sup></a>.</p>
 
-    <p>A vantagem do GitBook sobre uma ferramenta como o <a href="/ferramentas/docusaurus/">Docusaurus</a> é que o GitBook cuida da construção e hospedagem do site, e os controles WYSIWYG são intuitivos o suficiente para serem usados ​​pelos novatos do Markdown. No site do GitBook, o editor em tempo real oculta a sintaxe de formatação do Markdown após a digitação. O editor é um pouco esquisito, mas o site geralmente funciona tanto para especialistas em Markdown quanto para pessoas que não têm experiência com o a linguagem. Você também pode simplesmente copiar e colar texto no formato Markdown na interface do GitBook.</p>
+    <p>Com o GitBook você pode criar o seu site e, posteriormente, publicá-lo usando um domínio personalizado.</p>
 
-    <p><strong>Site</strong>: <a href="https://www.gitbook.com/" target="_blank">https://www.gitbook.com/</a></p>
+    <p>Mas nem tudo são flores, o GitBook começou como um projeto de código aberto e tinha apenas uma pequena oferta comercial para angariar fundos para a empresa.</p>
 
-    <h2 id="suporte-markdown">Suporte do Markdown no GitBook</h2>
+    <p>Hoje a ferramenta é fechada e proprietária, então, tenha isso em mente se pretende aderir ao uso do GitBook.</p>
 
-    <p>O GitBook fornece suporte para os seguintes elementos Markdown.</p>
-    <table>
+    <p>O <a href="https://github.com/GitbookIO/gitbook" target="_blank">projeto de código aberto&nbsp;<sup><i class="fas fa-external-link-alt"></i></sup></a> ainda existe e pode ser usado por qualquer pessoa, mas o GitBook não fornece mais suporte a esse projeto, por isso vou listar apenas os elementos compatíveis com a ferramenta proprietária.</p>
+
+    <p>Mesmo sendo um aplicativo fechado o GitBook ainda possui vantagens sobre outras ferramentas do tipo.</p>
+
+    <p>Por exemplo, a construção e a hospedagem do site ficam a cargo do próprio programa.</p>
+
+    <p>O GitBook fornece um editor Markdown bem intuitivo, com controles WYSIWYG fáceis de usar.</p>
+
+    <p>Assim, até usuários novatos se sentem confortáveis editando documentos Markdown.</p>
+
+    <p>Outra característica interessante da ferramenta é a ocultação das marcações do Markdown enquanto você digita.</p>
+
+    <p>O editor pode parecer estranho a princípio, mas com o tempo você pega o jeito.</p>
+
+    <p>O GitBook também é compatível com o bom e velho copiar e colar, pegue o seu conteúdo Markdown e cole diretamente na interface da ferramenta.</p>
+
+    <p>O site oficial do GitBook fica localizado no endereço <a href="https://www.gitbook.com/" target="_blank">https://www.gitbook.com/&nbsp;<sup><i class="fas fa-external-link-alt"></i></sup></a>.</p>
+
+
+    <h2 id="suporte-markdown">Suporte ao Markdown no GitBook</h2>
+
+    <p>A <a href="#tabela-1-1">Tabela 1.1</a> apresenta os elementos Markdown compatíveis com o GitBook.</p>
+
+    <table class="responsive-table" id="tabela-1-1">
       <thead>
         <tr>
           <th>Elemento</th>
@@ -216,7 +269,7 @@
         <tr>
           <td><a href="/sintaxe-estendida/#bloco-codigo-cercado">Blocos de código cercado</a></td>
           <td class="green lighten-4">Sim</td>
-          <td>O realce da sintaxe também é suportado.</td>
+          <td>Você também pode realçar a sintaxe da linguagem de programação do bloco.</td>
         </tr>
         <tr>
           <td><a href="/sintaxe-estendida/#notas-rodape">Notas de rodapé</a></td>
@@ -283,7 +336,7 @@
       <div class="collapsible-header grey lighten-4"><i class="material-icons">share</i>Compartilhar</div>
       <div class="collapsible-body">
         <div class="collection">
-          <a href="#!" class="collection-item" data-sharer="twitter" data-title="Referência do Uso do Markdown no GitBook - Guia completo do Markdown para iniciantes" data-hashtags="markdown" data-url="https://markdown.net.br/ferramentas/gitbook/">
+          <a href="#!" class="collection-item" data-sharer="twitter" data-title="Referência do Uso do Markdown no GitBook | Markdown" data-hashtags="markdown" data-url="https://markdown.net.br/ferramentas/gitbook/">
             <i class="fab fa-twitter color-twitter"></i>&nbsp;&nbsp;Compartilhar no Twitter
           </a>
           <a href="#!" class="collection-item" data-sharer="facebook" data-hashtag="markdown" data-url="https://markdown.net.br/ferramentas/gitbook/">
@@ -292,13 +345,13 @@
           <a href="#!" class="collection-item" data-sharer="linkedin" data-url="https://markdown.net.br/ferramentas/gitbook/">
             <i class="fab fa-linkedin color-linkedin"></i>&nbsp;&nbsp;Compartilhar no Linkedin
           </a>
-          <a href="#!" class="collection-item" data-sharer="email" data-title="Referência do Uso do Markdown no GitBook - Guia completo do Markdown para iniciantes" data-url="https://markdown.net.br/ferramentas/gitbook/" data-subject="Olá! Tudo bem? Achei esse guia do Markdown bem fácil de acompanhar, dá uma olhadinha quando puder. Espero que seja útil, até mais." data-to="email@provedor.com.br">
+          <a href="#!" class="collection-item" data-sharer="email" data-title="Referência do Uso do Markdown no GitBook | Markdown" data-url="https://markdown.net.br/ferramentas/gitbook/" data-subject="Olá! Tudo bem? Achei esse guia do Markdown bem fácil de acompanhar, dá uma olhadinha quando puder. Espero que seja útil, até mais." data-to="email@provedor.com.br">
             <i class="fas fa-envelope color-email"></i>&nbsp;&nbsp;Compartilhar por Email
           </a>
-          <a href="#!" class="collection-item" data-sharer="whatsapp" data-title="Referência do Uso do Markdown no GitBook - Guia completo do Markdown para iniciantes" data-url="https://markdown.net.br/ferramentas/gitbook/">
+          <a href="#!" class="collection-item" data-sharer="whatsapp" data-title="Referência do Uso do Markdown no GitBook | Markdown" data-url="https://markdown.net.br/ferramentas/gitbook/">
             <i class="fab fa-whatsapp color-whatsapp"></i>&nbsp;&nbsp;Compartilhar por Whatsapp
           </a>
-          <a href="#!" class="collection-item" data-sharer="telegram" data-title="Referência do Uso do Markdown no GitBook - Guia completo do Markdown para iniciantes" data-url="https://markdown.net.br/ferramentas/gitbook/" data-to="(00) 99999-9999">
+          <a href="#!" class="collection-item" data-sharer="telegram" data-title="Referência do Uso do Markdown no GitBook | Markdown" data-url="https://markdown.net.br/ferramentas/gitbook/" data-to="(00) 99999-9999">
             <i class="fab fa-telegram color-telegram"></i>&nbsp;&nbsp;Compartilhar por Telegram
           </a>
         </div>
@@ -336,14 +389,30 @@
 </footer>
     <!--  Scripts-->
     <script src="/assets/js/bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/show-invisibles/prism-show-invisibles.min.js" integrity="sha256-1baFoczEXwdtWBiZ6gbu7W1kn6XfPgKY4LkQQYNHTkM=" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/show-invisibles/prism-show-invisibles.min.js" integrity="sha256-1baFoczEXwdtWBiZ6gbu7W1kn6XfPgKY4LkQQYNHTkM=" crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/components/prism-asciidoc.min.js" integrity="sha256-Z6qgXS53J00CrN9qHl3CxGqX2A3qs6HwGi96bnk2e4w=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/components/prism-markdown.min.js" integrity="sha256-LVbOCHxYsNr9pF5KGdB2NphtO2FKM92SGFxRkWc9Ovg=" crossorigin="anonymous"></script>
     <script src="/assets/js/search.min.js"></script>
+
+    <script src="/assets/js/vendor/jquery.lazy@1.7.9/jquery.lazy.min.js"></script>
+    <script src="/assets/js/vendor/jquery.lazy@1.7.9/jquery.lazy.youtube.min.js"></script>
+    <script src="/assets/js/vendor/jquery.lazy@1.7.9/jquery.lazy.picture.min.js"></script>
     <!-- Lightbox das imagens -->
     <script>
       $(document).ready(function(){
          $('.materialboxed').materialbox();
+
+         $('picture.lazy-img.unloaded, img.lazy-img, iframe.lazy-yt.unloaded').Lazy({
+             effect: 'fadeIn',
+             effectTime: 1000
+             // called after an element was successfully handled
+             // afterLoad: function(element) {
+             // // Remove a animação do loader da imagem
+             //     // element.height(element.closest('.img-lazy-container').find('.image-placeholder').height());
+
+             //     element.removeClass('unloaded');
+             // }
+         });
        });
       anchors.add("h2, h3, h5");
       $('#sticky-navigator').stickyNavigator();

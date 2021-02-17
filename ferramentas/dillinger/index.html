@@ -21,11 +21,11 @@
     <meta name="twitter:card" content="summary">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://markdown.net.br/ferramentas/dillinger/">
-    <meta property="og:title" content="Referência do Uso do Markdown no Dillinger - Guia completo do Markdown para iniciantes">
+    <meta property="og:title" content="Referência do Uso do Markdown no Dillinger | Markdown">
     <meta property="og:description" content="Guia completo e grátis do Markdown para iniciantes com diversos exemplos de como usar a linguagem de marcação mais simples do mundo.">
     <meta property="og:image" content="https://markdown.net.br/assets/img/markdown.jpg">
 
-    <title>Referência do Uso do Markdown no Dillinger - Guia completo do Markdown para iniciantes</title>
+    <title>Referência do Uso do Markdown no Dillinger | Markdown</title>
     <!-- Favicons-->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -39,6 +39,40 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css" href="/assets/css/bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/show-invisibles/prism-show-invisibles.min.css" integrity="sha256-nOfkEPu/TzBvIxN8D/vW8weOUczzDbxRjgik/hA2hBI=" crossorigin="anonymous" />
+    <style type="text/css">
+    	.mv-40 {
+    		margin-top: 40px;
+    		margin-bottom: 40px;
+    	}
+
+    	img[src=""],
+    	img:not([src]) {
+    	  visibility: hidden;
+    	}
+
+    	.caption {
+    	    display: flex;
+    	    justify-content: center;
+    	    align-items: center;
+    	    margin: 10px 0;
+    	    color: hsl(0deg 0% 33%);
+    	    font-style: italic;
+    	    font-size: 75%;
+    	}
+
+    	picture {
+    		display: block;
+    		position: relative;
+    	}
+
+    	.cover-link {
+    		position: absolute;
+    		top: 0;
+    		bottom: 0;
+    		left: 0;
+    		right: 0;
+    	}
+    </style>
   </head>
   <body class="themes" cz-shortcut-listen="true">
     <div id="layout-problem" style="display:none;position:fixed;bottom:20px;left:5px;right:5px;z-index:9999;border-radius:10px;"><div class="layout-problem__container" style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;position:relative;"><div class="layout-problem__msg" style="background-color:white;color:#222;padding:5px 35px;border-radius:10px;display:flex;align-items:center;border:2px solid #f44336;box-shadow:1px 4px 8px 4px #0000004a;position:relative;"><div style="color:#f44336;font-size:45px;font-weight:bold;background-color:white;border-radius:50px;margin-right:20px;">!</div><p style="font-size: 18px;">Foi detectado um <strong>problema</strong> com o layout do site!<br>É recomendável desabilitar o <span class="red-text"><strong>Ad-Blocker</strong></span><br>Ou qualquer extensão que bloqueie <strong>JavaScript</strong>.</p><div id="close-error-script-bt" style="position:absolute;top:3px;right:12px;cursor:pointer;">X</div></div></div></div>
@@ -77,10 +111,7 @@
     <a href="/ferramentas/" class="waves-effect waves-blue"><i class="tiny material-icons">card_travel</i>Ferramentas</a>
   </li>
   <li class="bold white">
-    <a href="/editor/" class="waves-effect waves-blue"><i class="tiny material-icons">code</i>Editor Online</a>
-  </li>
-  <li class="bold white">
-    <a href="/sabores/" class="waves-effect waves-blue"><i class="fas fa-ice-cream"></i>Sabores</a>
+    <a href="/faq/" class="waves-effect waves-blue"><i class="tiny material-icons">question_answer</i>Perguntas e Respostas</a>
   </li>
 </ul>
     </header>
@@ -90,7 +121,7 @@
           <div class="row" style="margin-bottom: 0;">
             <div class="col s12 m8 offset-m1 xl7 offset-xl1">
               <h1>Dillinger</h1>
-              <h4 class="light">Dillinger é um editor online do Markdown. Como o StackEdit , ele carrega diretamente no seu navegador da web, então não há necessidade de baixar e instalar um aplicativo no seu computador.</h4>
+              <h4 class="light">O Dilliger é um editor Markdown prático, ele carrega diretamente no seu navegador, ou seja, não há a necessidade de instalar nenhum aplicativo no seu computador.</h4>
               <ol class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
                 <li itemprop="itemListElement" itemscope
                     itemtype="https://schema.org/ListItem">
@@ -103,7 +134,7 @@
 </li>
 <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
 <a itemprop="item" href="/ferramentas/">
-<span itemprop="name">Ferramentas</span>
+<span itemprop="name">Editores Markdown</span>
 </a>
 <meta itemprop="position" content="2" />
 </li>
@@ -130,20 +161,30 @@
       <img src="/assets/img/dillinger-window.png" class="materialboxed" alt="Janela do aplicativo Dillinger com alguns comandos do Markdown!">
     </div>
 
-    <h2 id="visao-geral">Visão geral</h2>
+    <h2 id="introducao">Introdução</h2>
 
-    <p>O Dillinger tem dois painéis: o editor à esquerda e a visualização em tempo real à direita. Os painéis divididos facilitam a visualização da aparência do texto no formato Markdown.</p>
+    <p>O Dillinger possui um conversor em tempo real que mostra o resultado da formatação Markdown enquanto você digita.</p>
 
-    <p>O Dillinger fornece excelente suporte a Markdown. Infelizmente, as opções de exportação não são personalizáveis ​​e os recursos para salvar os arquivos são um pouco, digamos, esquisitos. E como o Dillinger carrega no seu navegador da Web, é totalmente dependente de uma conexão com a Internet. Se a sua conexão de Internet cair ou o seu navegador da web travar, você poderá perder o seu trabalho. Por essas razões, Dillinger é melhor usado para experimentação e anotações rápidas.</p>
+    <p>A ferramenta é dividida em dois painéis, à esquerda você insere a formatação Markdown e à direita aparece a conversão em HTML.</p>
 
-    <p>O aplicativo usa o processador de Markdown <a href="https://github.com/markdown-it/markdown-it" target="_blank">markdown-it</a>.</p>
+    <p>Com essa visualização do seu documento formatado, você consegue, em tempo real, visualizar a aparência do texto final.</p>
 
-    <p><strong>Site</strong>: <a href="https://dillinger.io/" target="_blank">https://dillinger.io/</a></p>
+    <p>O suporte ao Markdown no Dillinger é excelente. A aplicação utiliza o processador Markdown <a href="https://github.com/markdown-it/markdown-it" target="_blank">makdown-it&nbsp;<sup><i class="fas fa-external-link-alt"></i></sup></a> para entender os marcadores.</p>
 
-    <h2 id="suporte-markdown">Suporte do Markdown no Dillinger</h2>
+    <p>No quesito exportação de documentos, bom, a ferramenta cumpre o seu papel, mas opções para exportar não são personalizáveis, o que pode ser um problema para usuários mais exigentes.</p>
 
-    <p>O Dillinger fornece suporte para os seguintes elementos Markdown.</p>
-    <table>
+    <p>Outro fator importante a ser notado é que o Dillinger, por ser uma ferramenta online, necessita de uma conexão com a internet. Se algo der errado como uma queda de conectividade ou até mesmo o travamento do navegador, todos o seu conteúdo formatado pode ser perdido.</p>
+
+    <p>Sabendo disso, eu recomendo que você use o Dillinger de forma mais casual, para aprender o Markdown, testar marcações, fazer prévias de formatações, anotações rápidas, etc.</p>
+
+    <p>O site oficial do Dillinger fica localizado em <a href="https://dillinger.io/" target="_blank">https://dillinger.io/&nbsp;<sup><i class="fas fa-external-link-alt"></i></sup></a>.</p>
+
+
+    <h2 id="suporte-markdown">Suporte ao Markdown no Dillinger</h2>
+
+    <p>Na <a href="#tabela-1-1">Tabela 1.1</a> você confere os elementos Markdown que são suportados pelo Dillinger.</p>
+
+    <table class="responsive-table" id="tabela-1-1">
       <thead>
         <tr>
           <th>Elemento</th>
@@ -155,7 +196,7 @@
         <tr>
           <td><a href="/sintaxe-basica/#titulos">Títulos</a></td>
           <td class="green lighten-4">Sim</td>
-          <td><a href="/sintaxe-basica/#sintaxe-alternativa">Não é compatível com a sintaxe alternativa</a></td>
+          <td>A ferramenta não fornece suporte à <a href="/sintaxe-basica/#sintaxe-alternativa">sintaxe alternativa</a> de criação de títulos/cabeçalhos.</td>
         </tr>
         <tr>
           <td><a href="/sintaxe-basica/#paragrafos">Parágrafos</a></td>
@@ -165,7 +206,7 @@
         <tr>
           <td><a href="/sintaxe-basica/#quebra-linha">Quebras de linha</a></td>
           <td class="yellow lighten-4">Parcial</td>
-          <td>Não há compatibilidade com a sintaxe Markdown de quebra de linha com um espaço em branco à direita, mas você pode pressionar o enter uma vez para obter o mesmo resultado.</td>
+          <td>Não fornece compatibilidade com o uso do espaço em branco a direta da linha para representar a quebra, para inserir uma nova linha pressione o <code class="lang-plaintext">Enter</code>.</td>
         </tr>
         <tr>
           <td><a href="/sintaxe-basica/#negrito">Negrito</a></td>
@@ -180,7 +221,7 @@
         <tr>
           <td><a href="/sintaxe-basica/#bloco-citacao">Bloco de citação</a></td>
           <td class="green lighten-4">Sim</td>
-          <td><a href="/sintaxe-basica/#bloco-citacao-aninhado">Blocos de citação aninhados</a> não são suportados.</td>
+          <td><a href="/sintaxe-basica/#bloco-citacao-aninhado">Blocos de citação aninhados</a> não são suportados pelo Dillinger.</td>
         </tr>
         <tr>
           <td><a href="/sintaxe-basica/#listas-ordenadas">Listas ordenadas</a></td>
@@ -210,7 +251,7 @@
         <tr>
           <td><a href="/sintaxe-basica/#imagens">Imagens</a></td>
           <td class="green lighten-4">Sim</td>
-          <td>Não é possível fazer upload de imagens - você precisará armazená-las em outro servidor.</td>
+          <td>Não há a possibilidade de enviar imagens para o aplicativo, você terá que armazená-las em outro servidor e usar o endereço completo da imagem no seu documento.</td>
         </tr>
         <tr>
           <td><a href="/sintaxe-estendida/#tabelas">Tabelas</a></td>
@@ -230,7 +271,7 @@
         <tr>
           <td><a href="/sintaxe-estendida/#id-titulo">Id de títulos</a></td>
           <td class="yellow lighten-4">Parcial</td>
-          <td>Gerado automaticamente. Não há como definir códigos de cabeçalho personalizados.</td>
+          <td>A identificação de título é gerada automaticamente pela ferramenta, ou seja, não há suporte para a personalização pelo usuário.</td>
         </tr>
         <tr>
           <td><a href="/sintaxe-estendida/#lista-definicoes">Listas de definições</a></td>
@@ -245,7 +286,7 @@
         <tr>
           <td><a href="/sintaxe-estendida/#lista-tarefas">Listas de tarefas</a></td>
           <td class="green lighten-4">Sim</td>
-          <td>Você não precisa usar traços. Basta usar colchetes (por exemplo, [ ]).</td>
+          <td>Não precisa colocar o traço <code class="lang-plaintext">-</code> no início da linha do elemento da lista, para criar um novo elemento somente o uso dos colchetes <code class="lang-plaintext">[]</code> já é suficiente.</td>
         </tr>
         <tr>
           <td><a href="/sintaxe-estendida/#emojis">Emoji (copiar e colar)</a></td>
@@ -275,11 +316,11 @@
       </tbody>
     </table>
 
-    <h2 id="elementos-adicionais">Suporte para elementos de sintaxe adicionais</h2>
+    <h2 id="elementos-adicionais">Elementos Markdown adicionais no Dillinger</h2>
 
-    <p>O Dillinger também é compatível com alguns elementos obscuros.</p>
+    <p>A <a href="#tabela-1-2">Tabela 1.2</a> exemplifica elementos mais obscuros do Markdown que podem ser usados no Dillinger.</p>
 
-    <table>
+    <table class="responsive-table" id="tabela-1-2">
       <thead>
         <tr>
           <th>Elemento</th>
@@ -328,7 +369,7 @@
       <div class="collapsible-header grey lighten-4"><i class="material-icons">share</i>Compartilhar</div>
       <div class="collapsible-body">
         <div class="collection">
-          <a href="#!" class="collection-item" data-sharer="twitter" data-title="Referência do Uso do Markdown no Dillinger - Guia completo do Markdown para iniciantes" data-hashtags="markdown" data-url="https://markdown.net.br/ferramentas/dillinger/">
+          <a href="#!" class="collection-item" data-sharer="twitter" data-title="Referência do Uso do Markdown no Dillinger | Markdown" data-hashtags="markdown" data-url="https://markdown.net.br/ferramentas/dillinger/">
             <i class="fab fa-twitter color-twitter"></i>&nbsp;&nbsp;Compartilhar no Twitter
           </a>
           <a href="#!" class="collection-item" data-sharer="facebook" data-hashtag="markdown" data-url="https://markdown.net.br/ferramentas/dillinger/">
@@ -337,13 +378,13 @@
           <a href="#!" class="collection-item" data-sharer="linkedin" data-url="https://markdown.net.br/ferramentas/dillinger/">
             <i class="fab fa-linkedin color-linkedin"></i>&nbsp;&nbsp;Compartilhar no Linkedin
           </a>
-          <a href="#!" class="collection-item" data-sharer="email" data-title="Referência do Uso do Markdown no Dillinger - Guia completo do Markdown para iniciantes" data-url="https://markdown.net.br/ferramentas/dillinger/" data-subject="Olá! Tudo bem? Achei esse guia do Markdown bem fácil de acompanhar, dá uma olhadinha quando puder. Espero que seja útil, até mais." data-to="email@provedor.com.br">
+          <a href="#!" class="collection-item" data-sharer="email" data-title="Referência do Uso do Markdown no Dillinger | Markdown" data-url="https://markdown.net.br/ferramentas/dillinger/" data-subject="Olá! Tudo bem? Achei esse guia do Markdown bem fácil de acompanhar, dá uma olhadinha quando puder. Espero que seja útil, até mais." data-to="email@provedor.com.br">
             <i class="fas fa-envelope color-email"></i>&nbsp;&nbsp;Compartilhar por Email
           </a>
-          <a href="#!" class="collection-item" data-sharer="whatsapp" data-title="Referência do Uso do Markdown no Dillinger - Guia completo do Markdown para iniciantes" data-url="https://markdown.net.br/ferramentas/dillinger/">
+          <a href="#!" class="collection-item" data-sharer="whatsapp" data-title="Referência do Uso do Markdown no Dillinger | Markdown" data-url="https://markdown.net.br/ferramentas/dillinger/">
             <i class="fab fa-whatsapp color-whatsapp"></i>&nbsp;&nbsp;Compartilhar por Whatsapp
           </a>
-          <a href="#!" class="collection-item" data-sharer="telegram" data-title="Referência do Uso do Markdown no Dillinger - Guia completo do Markdown para iniciantes" data-url="https://markdown.net.br/ferramentas/dillinger/" data-to="(00) 99999-9999">
+          <a href="#!" class="collection-item" data-sharer="telegram" data-title="Referência do Uso do Markdown no Dillinger | Markdown" data-url="https://markdown.net.br/ferramentas/dillinger/" data-to="(00) 99999-9999">
             <i class="fab fa-telegram color-telegram"></i>&nbsp;&nbsp;Compartilhar por Telegram
           </a>
         </div>
@@ -381,14 +422,30 @@
 </footer>
     <!--  Scripts-->
     <script src="/assets/js/bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/show-invisibles/prism-show-invisibles.min.js" integrity="sha256-1baFoczEXwdtWBiZ6gbu7W1kn6XfPgKY4LkQQYNHTkM=" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/show-invisibles/prism-show-invisibles.min.js" integrity="sha256-1baFoczEXwdtWBiZ6gbu7W1kn6XfPgKY4LkQQYNHTkM=" crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/components/prism-asciidoc.min.js" integrity="sha256-Z6qgXS53J00CrN9qHl3CxGqX2A3qs6HwGi96bnk2e4w=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/components/prism-markdown.min.js" integrity="sha256-LVbOCHxYsNr9pF5KGdB2NphtO2FKM92SGFxRkWc9Ovg=" crossorigin="anonymous"></script>
     <script src="/assets/js/search.min.js"></script>
+
+    <script src="/assets/js/vendor/jquery.lazy@1.7.9/jquery.lazy.min.js"></script>
+    <script src="/assets/js/vendor/jquery.lazy@1.7.9/jquery.lazy.youtube.min.js"></script>
+    <script src="/assets/js/vendor/jquery.lazy@1.7.9/jquery.lazy.picture.min.js"></script>
     <!-- Lightbox das imagens -->
     <script>
       $(document).ready(function(){
          $('.materialboxed').materialbox();
+
+         $('picture.lazy-img.unloaded, img.lazy-img, iframe.lazy-yt.unloaded').Lazy({
+             effect: 'fadeIn',
+             effectTime: 1000
+             // called after an element was successfully handled
+             // afterLoad: function(element) {
+             // // Remove a animação do loader da imagem
+             //     // element.height(element.closest('.img-lazy-container').find('.image-placeholder').height());
+
+             //     element.removeClass('unloaded');
+             // }
+         });
        });
       anchors.add("h2, h3, h5");
       $('#sticky-navigator').stickyNavigator();

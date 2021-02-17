@@ -21,11 +21,11 @@
     <meta name="twitter:card" content="summary">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://markdown.net.br/ferramentas/markdown-here/">
-    <meta property="og:title" content="Referência do Uso do Markdown no Markdown Here - Guia completo do Markdown para iniciantes">
+    <meta property="og:title" content="Referência do Uso do Markdown no Markdown Here | Markdown">
     <meta property="og:description" content="Guia completo e grátis do Markdown para iniciantes com diversos exemplos de como usar a linguagem de marcação mais simples do mundo.">
     <meta property="og:image" content="https://markdown.net.br/assets/img/markdown.jpg">
 
-    <title>Referência do Uso do Markdown no Markdown Here - Guia completo do Markdown para iniciantes</title>
+    <title>Referência do Uso do Markdown no Markdown Here | Markdown</title>
     <!-- Favicons-->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -39,6 +39,40 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css" href="/assets/css/bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/show-invisibles/prism-show-invisibles.min.css" integrity="sha256-nOfkEPu/TzBvIxN8D/vW8weOUczzDbxRjgik/hA2hBI=" crossorigin="anonymous" />
+    <style type="text/css">
+    	.mv-40 {
+    		margin-top: 40px;
+    		margin-bottom: 40px;
+    	}
+
+    	img[src=""],
+    	img:not([src]) {
+    	  visibility: hidden;
+    	}
+
+    	.caption {
+    	    display: flex;
+    	    justify-content: center;
+    	    align-items: center;
+    	    margin: 10px 0;
+    	    color: hsl(0deg 0% 33%);
+    	    font-style: italic;
+    	    font-size: 75%;
+    	}
+
+    	picture {
+    		display: block;
+    		position: relative;
+    	}
+
+    	.cover-link {
+    		position: absolute;
+    		top: 0;
+    		bottom: 0;
+    		left: 0;
+    		right: 0;
+    	}
+    </style>
   </head>
   <body class="themes" cz-shortcut-listen="true">
     <div id="layout-problem" style="display:none;position:fixed;bottom:20px;left:5px;right:5px;z-index:9999;border-radius:10px;"><div class="layout-problem__container" style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;position:relative;"><div class="layout-problem__msg" style="background-color:white;color:#222;padding:5px 35px;border-radius:10px;display:flex;align-items:center;border:2px solid #f44336;box-shadow:1px 4px 8px 4px #0000004a;position:relative;"><div style="color:#f44336;font-size:45px;font-weight:bold;background-color:white;border-radius:50px;margin-right:20px;">!</div><p style="font-size: 18px;">Foi detectado um <strong>problema</strong> com o layout do site!<br>É recomendável desabilitar o <span class="red-text"><strong>Ad-Blocker</strong></span><br>Ou qualquer extensão que bloqueie <strong>JavaScript</strong>.</p><div id="close-error-script-bt" style="position:absolute;top:3px;right:12px;cursor:pointer;">X</div></div></div></div>
@@ -77,10 +111,7 @@
     <a href="/ferramentas/" class="waves-effect waves-blue"><i class="tiny material-icons">card_travel</i>Ferramentas</a>
   </li>
   <li class="bold white">
-    <a href="/editor/" class="waves-effect waves-blue"><i class="tiny material-icons">code</i>Editor Online</a>
-  </li>
-  <li class="bold white">
-    <a href="/sabores/" class="waves-effect waves-blue"><i class="fas fa-ice-cream"></i>Sabores</a>
+    <a href="/faq/" class="waves-effect waves-blue"><i class="tiny material-icons">question_answer</i>Perguntas e Respostas</a>
   </li>
 </ul>
     </header>
@@ -90,7 +121,7 @@
           <div class="row" style="margin-bottom: 0;">
             <div class="col s12 m8 offset-m1 xl7 offset-xl1">
               <h1>Markdown Here</h1>
-              <h4 class="light">Markdown Here é uma extensão de navegador gratuita e de código aberto que converte o texto Markdown digitado em um formulário de um site para a formatação em rich text correta.</h4>
+              <h4 class="light">O Markdown Here é uma extensão para o Browser que permite converter um conteúdo Markdown digitado dentro de um campo de formulário do site para a formatação Rich Text.</h4>
               <ol class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
                 <li itemprop="itemListElement" itemscope
                     itemtype="https://schema.org/ListItem">
@@ -103,7 +134,7 @@
 </li>
 <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
 <a itemprop="item" href="/ferramentas/">
-<span itemprop="name">Ferramentas</span>
+<span itemprop="name">Editores Markdown</span>
 </a>
 <meta itemprop="position" content="2" />
 </li>
@@ -128,22 +159,39 @@
   <div class="col s12">
     <h2 id="visao-geral">Visão geral</h2>
 
-    <p>Essa é uma boa maneira de começar a usar o Markdown em todos os lugares em que você digita alguma coisa, seja redigindo mensagens de email no Gmail ou escrevendo postagens no WordPress. O <strong>Markdown Here</strong> pode ser considerado uma ferramenta para e-mails, mas a extensão pode ser usada com praticamente qualquer site que suporte rich text, incluindo o Evernote. Consulte a <a href="https://github.com/adam-p/markdown-here/wiki/Compatibility" target="_blank">lista de sites e serviços compatíveis</a> para obter mais informações.</p>
+    <p>A extensão Markdown Here fornece ao usuário a opção de levar o Markdown aonde ele for.</p>
 
-    Para usar o <strong>Markdown Here</strong>, após a sua instalação, comece a digitar o texto no formato Markdown em um formulário, como uma nova mensagem de e-mail no Gmail. Quando terminar de escrever a mensagem, clique com o botão direito do mouse no formulário e selecione <em>Markdown Toggle</em>, conforme mostrado na imagem abaixo. O <strong>Markdown Here</strong> converterá seu texto <strong>Markdown</strong> em <strong>rich text</strong>.
+    <p>No mínimo podemos dizer que a ferramenta é bem ambiciosa, já que, a quantidade de sites diferentes que existem por aí é astronômica, e o aplicativo se aventura em todos.</p>
+
+    <p>Em todos? Digo, os sites que fornecem suporte à formatação Rich Text, isso, aquele tipo de formatação do Microsoft Word como o negrito, itálico, sublinhado e etc.</p>
+
+    <p>Sites como o Gmail, Hotmail e WordPress são exemplos de locais onde o Markdown Here pode ser utilizado.</p>
+
+    <p>Mas não para por aí, o Markdown Here funciona até na versão web do Evernote.</p>
+
+    <p><a href="https://github.com/adam-p/markdown-here/wiki/Compatibility" target="_blank">Clicando aqui&nbsp;<sup><i class="fas fa-external-link-alt"></i></sup></a> você pode consultar uma lista de serviços compatíveis com a ferramenta (em inglês).</p>
+
+    <p>Para usar o Markdown Here, primeiro instale a extensão para o seu navegador, visite um site como o Gmail, digite o conteúdo do seu email usando a formatação Markdown, clique com o botão contrário do mouse (botão direito) dentro do formulário da mensagem e clique em Markdown Toggle.</p>
+
+    <p>Veja na imagem abaixo.</p>
 
     <div class="image-container mt-60">
       <img src="/assets/img/markdown-here-exemplo.png" class="materialboxed" alt="Markdown Here em ação convertendo o formatação de texto">
     </div>
 
-    Apesar de ser uma excelente ferramenta, o resultado da renderização pode ser inconsistente. Como o <strong>Markdown Here</strong> depende dos recursos fornecidos por qualquer editor de texto em que você esteja trabalhando, a saída renderizada varia de site para site. Sendo assim, é importante examinar o formato da sua mensagem antes de enviar um e-mail ou salvar um arquivo.
+    <p>Prontinho, o Markdown Here fará o trabalho de converter o seu conteúdo Markdown em Rich Text dentro do próprio site.</p>
 
-    <p><strong>Site</strong>: <a href="https://markdown-here.com/" target="_blank">https://markdown-here.com/</a></p>
+    <p>Claro que, pela quantidade absurda de sites que fornecem formatações diferente pode haver inconsistência no conteúdo renderizado.</p>
 
-    <h2 id="suporte-markdown">Suporte do Markdown no Markdown Here</h2>
+    <p>Sempre revise a formatação da sua mensagem, verifique se está de acordo com o que você deseja antes de enviá-la a alguém.</p>
 
-    <p>O Markdown Here fornece suporte para os seguintes elementos Markdown.</p>
-    <table>
+    <p>O site oficial do Markdown Here fica localizado em <a href="https://markdown-here.com/" target="_blank">https://markdown-here.com/&nbsp;<sup><i class="fas fa-external-link-alt"></i></sup></a>.</p>
+
+    <h2 id="suporte-markdown">Suporte ao Markdown no Markdown Here</h2>
+
+    <p>Na <a href="#tabela-1-1">Tabela 1.1</a> você confere os elementos Markdown compatíveis com o Markdown Here.</p>
+
+    <table class="responsive-table" id="tabela-1-1">
       <thead>
         <tr>
           <th>Elemento</th>
@@ -165,7 +213,7 @@
         <tr>
           <td><a href="/sintaxe-basica/#quebra-linha">Quebras de linha</a></td>
           <td class="green lighten-4">Sim</td>
-          <td>Você também pode pressionar a tecla <code class="lang-plaintext">Enter</code> uma vez para obter o mesmo resultado.</td>
+          <td>O Markdown Here é compatível com o pressionamento da tecla <code class="lang-plaintext">Enter</code> para quebrar uma linha.</td>
         </tr>
         <tr>
           <td><a href="/sintaxe-basica/#negrito">Negrito</a></td>
@@ -220,7 +268,7 @@
         <tr>
           <td><a href="/sintaxe-estendida/#bloco-codigo-cercado">Blocos de código cercado</a></td>
           <td class="green lighten-4">Sim</td>
-          <td>O realce da sintaxe também é suportado.</td>
+          <td>Realçar a sintaxe do conteúdo do bloco também é possível com o Markdown Here.</td>
         </tr>
         <tr>
           <td><a href="/sintaxe-estendida/#notas-rodape">Notas de rodapé</a></td>
@@ -277,8 +325,8 @@
 
     <h2 id="veja-tambem">Veja também</h2>
 
-    <p><a href="https://github.com/adam-p/markdown-here/wiki/Compatibility" target="_blank">Lista de Compatibilidade do Markdown Here</a></p>
-    <p><a href="https://github.com/adam-p/markdown-here" target="_blank">Repositório do Markdown Here no GitHub</a></p>
+    <p><a href="https://github.com/adam-p/markdown-here/wiki/Compatibility" target="_blank">Lista de Compatibilidade do Markdown Here (em inglês)&nbsp;<sup><i class="fas fa-external-link-alt"></i></sup></a></p>
+    <p><a href="https://github.com/adam-p/markdown-here" target="_blank">Repositório do Markdown Here no GitHub (em inglês)&nbsp;<sup><i class="fas fa-external-link-alt"></i></sup></a></p>
   </div> <!-- Fim do conteúdo principal -->
 </div>
             <div class="col-12">
@@ -287,7 +335,7 @@
       <div class="collapsible-header grey lighten-4"><i class="material-icons">share</i>Compartilhar</div>
       <div class="collapsible-body">
         <div class="collection">
-          <a href="#!" class="collection-item" data-sharer="twitter" data-title="Referência do Uso do Markdown no Markdown Here - Guia completo do Markdown para iniciantes" data-hashtags="markdown" data-url="https://markdown.net.br/ferramentas/markdown-here/">
+          <a href="#!" class="collection-item" data-sharer="twitter" data-title="Referência do Uso do Markdown no Markdown Here | Markdown" data-hashtags="markdown" data-url="https://markdown.net.br/ferramentas/markdown-here/">
             <i class="fab fa-twitter color-twitter"></i>&nbsp;&nbsp;Compartilhar no Twitter
           </a>
           <a href="#!" class="collection-item" data-sharer="facebook" data-hashtag="markdown" data-url="https://markdown.net.br/ferramentas/markdown-here/">
@@ -296,13 +344,13 @@
           <a href="#!" class="collection-item" data-sharer="linkedin" data-url="https://markdown.net.br/ferramentas/markdown-here/">
             <i class="fab fa-linkedin color-linkedin"></i>&nbsp;&nbsp;Compartilhar no Linkedin
           </a>
-          <a href="#!" class="collection-item" data-sharer="email" data-title="Referência do Uso do Markdown no Markdown Here - Guia completo do Markdown para iniciantes" data-url="https://markdown.net.br/ferramentas/markdown-here/" data-subject="Olá! Tudo bem? Achei esse guia do Markdown bem fácil de acompanhar, dá uma olhadinha quando puder. Espero que seja útil, até mais." data-to="email@provedor.com.br">
+          <a href="#!" class="collection-item" data-sharer="email" data-title="Referência do Uso do Markdown no Markdown Here | Markdown" data-url="https://markdown.net.br/ferramentas/markdown-here/" data-subject="Olá! Tudo bem? Achei esse guia do Markdown bem fácil de acompanhar, dá uma olhadinha quando puder. Espero que seja útil, até mais." data-to="email@provedor.com.br">
             <i class="fas fa-envelope color-email"></i>&nbsp;&nbsp;Compartilhar por Email
           </a>
-          <a href="#!" class="collection-item" data-sharer="whatsapp" data-title="Referência do Uso do Markdown no Markdown Here - Guia completo do Markdown para iniciantes" data-url="https://markdown.net.br/ferramentas/markdown-here/">
+          <a href="#!" class="collection-item" data-sharer="whatsapp" data-title="Referência do Uso do Markdown no Markdown Here | Markdown" data-url="https://markdown.net.br/ferramentas/markdown-here/">
             <i class="fab fa-whatsapp color-whatsapp"></i>&nbsp;&nbsp;Compartilhar por Whatsapp
           </a>
-          <a href="#!" class="collection-item" data-sharer="telegram" data-title="Referência do Uso do Markdown no Markdown Here - Guia completo do Markdown para iniciantes" data-url="https://markdown.net.br/ferramentas/markdown-here/" data-to="(00) 99999-9999">
+          <a href="#!" class="collection-item" data-sharer="telegram" data-title="Referência do Uso do Markdown no Markdown Here | Markdown" data-url="https://markdown.net.br/ferramentas/markdown-here/" data-to="(00) 99999-9999">
             <i class="fab fa-telegram color-telegram"></i>&nbsp;&nbsp;Compartilhar por Telegram
           </a>
         </div>
@@ -340,14 +388,30 @@
 </footer>
     <!--  Scripts-->
     <script src="/assets/js/bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/show-invisibles/prism-show-invisibles.min.js" integrity="sha256-1baFoczEXwdtWBiZ6gbu7W1kn6XfPgKY4LkQQYNHTkM=" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/show-invisibles/prism-show-invisibles.min.js" integrity="sha256-1baFoczEXwdtWBiZ6gbu7W1kn6XfPgKY4LkQQYNHTkM=" crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/components/prism-asciidoc.min.js" integrity="sha256-Z6qgXS53J00CrN9qHl3CxGqX2A3qs6HwGi96bnk2e4w=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/components/prism-markdown.min.js" integrity="sha256-LVbOCHxYsNr9pF5KGdB2NphtO2FKM92SGFxRkWc9Ovg=" crossorigin="anonymous"></script>
     <script src="/assets/js/search.min.js"></script>
+
+    <script src="/assets/js/vendor/jquery.lazy@1.7.9/jquery.lazy.min.js"></script>
+    <script src="/assets/js/vendor/jquery.lazy@1.7.9/jquery.lazy.youtube.min.js"></script>
+    <script src="/assets/js/vendor/jquery.lazy@1.7.9/jquery.lazy.picture.min.js"></script>
     <!-- Lightbox das imagens -->
     <script>
       $(document).ready(function(){
          $('.materialboxed').materialbox();
+
+         $('picture.lazy-img.unloaded, img.lazy-img, iframe.lazy-yt.unloaded').Lazy({
+             effect: 'fadeIn',
+             effectTime: 1000
+             // called after an element was successfully handled
+             // afterLoad: function(element) {
+             // // Remove a animação do loader da imagem
+             //     // element.height(element.closest('.img-lazy-container').find('.image-placeholder').height());
+
+             //     element.removeClass('unloaded');
+             // }
+         });
        });
       anchors.add("h2, h3, h5");
       $('#sticky-navigator').stickyNavigator();

@@ -21,11 +21,11 @@
     <meta name="twitter:card" content="summary">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://markdown.net.br/ferramentas/reddit/">
-    <meta property="og:title" content="Referência do Uso do Markdown no Reddit - Guia completo do Markdown para iniciantes">
+    <meta property="og:title" content="Reddit & Markdown: Referência Completa [Cheatsheet] | Markdown">
     <meta property="og:description" content="Guia completo e grátis do Markdown para iniciantes com diversos exemplos de como usar a linguagem de marcação mais simples do mundo.">
     <meta property="og:image" content="https://markdown.net.br/assets/img/markdown.jpg">
 
-    <title>Referência do Uso do Markdown no Reddit - Guia completo do Markdown para iniciantes</title>
+    <title>Reddit & Markdown: Referência Completa [Cheatsheet] | Markdown</title>
     <!-- Favicons-->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -39,6 +39,40 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css" href="/assets/css/bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/show-invisibles/prism-show-invisibles.min.css" integrity="sha256-nOfkEPu/TzBvIxN8D/vW8weOUczzDbxRjgik/hA2hBI=" crossorigin="anonymous" />
+    <style type="text/css">
+    	.mv-40 {
+    		margin-top: 40px;
+    		margin-bottom: 40px;
+    	}
+
+    	img[src=""],
+    	img:not([src]) {
+    	  visibility: hidden;
+    	}
+
+    	.caption {
+    	    display: flex;
+    	    justify-content: center;
+    	    align-items: center;
+    	    margin: 10px 0;
+    	    color: hsl(0deg 0% 33%);
+    	    font-style: italic;
+    	    font-size: 75%;
+    	}
+
+    	picture {
+    		display: block;
+    		position: relative;
+    	}
+
+    	.cover-link {
+    		position: absolute;
+    		top: 0;
+    		bottom: 0;
+    		left: 0;
+    		right: 0;
+    	}
+    </style>
   </head>
   <body class="themes" cz-shortcut-listen="true">
     <div id="layout-problem" style="display:none;position:fixed;bottom:20px;left:5px;right:5px;z-index:9999;border-radius:10px;"><div class="layout-problem__container" style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;position:relative;"><div class="layout-problem__msg" style="background-color:white;color:#222;padding:5px 35px;border-radius:10px;display:flex;align-items:center;border:2px solid #f44336;box-shadow:1px 4px 8px 4px #0000004a;position:relative;"><div style="color:#f44336;font-size:45px;font-weight:bold;background-color:white;border-radius:50px;margin-right:20px;">!</div><p style="font-size: 18px;">Foi detectado um <strong>problema</strong> com o layout do site!<br>É recomendável desabilitar o <span class="red-text"><strong>Ad-Blocker</strong></span><br>Ou qualquer extensão que bloqueie <strong>JavaScript</strong>.</p><div id="close-error-script-bt" style="position:absolute;top:3px;right:12px;cursor:pointer;">X</div></div></div></div>
@@ -77,10 +111,7 @@
     <a href="/ferramentas/" class="waves-effect waves-blue"><i class="tiny material-icons">card_travel</i>Ferramentas</a>
   </li>
   <li class="bold white">
-    <a href="/editor/" class="waves-effect waves-blue"><i class="tiny material-icons">code</i>Editor Online</a>
-  </li>
-  <li class="bold white">
-    <a href="/sabores/" class="waves-effect waves-blue"><i class="fas fa-ice-cream"></i>Sabores</a>
+    <a href="/faq/" class="waves-effect waves-blue"><i class="tiny material-icons">question_answer</i>Perguntas e Respostas</a>
   </li>
 </ul>
     </header>
@@ -90,7 +121,7 @@
           <div class="row" style="margin-bottom: 0;">
             <div class="col s12 m8 offset-m1 xl7 offset-xl1">
               <h1>Reddit</h1>
-              <h4 class="light">Com o Markdown, a formatação de texto no Reddit é muito mais fácil. Todos os usuários do Reddit têm a opção de escrever comentários e postagens usando a sintaxe do Markdown.</h4>
+              <h4 class="light">O Reddit é um site/fórum da internet super popular onde os usuários podem fazer postagens de diversos assuntos dentro de comunidades.</h4>
               <ol class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
                 <li itemprop="itemListElement" itemscope
                     itemtype="https://schema.org/ListItem">
@@ -103,7 +134,7 @@
 </li>
 <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
 <a itemprop="item" href="/ferramentas/">
-<span itemprop="name">Ferramentas</span>
+<span itemprop="name">Editores Markdown</span>
 </a>
 <meta itemprop="position" content="2" />
 </li>
@@ -128,24 +159,38 @@
   <div class="col s12">
     <h2 id="visao-geral">Visão geral</h2>
 
-    <p>O popular site de notícias desenvolveu seu próprio processador Markdown chamado "snoomark", que é baseado no processador de Markdown do GitHub. E o nome da criança se tornou <em>Reddit-flavored Markdown</em> (Markdown com sabor do Reddit). Para entender melhor como o Markdown funciona no Reddit, consulte <a href="https://www.reddit.com/wiki/markdown" target="_blank">este artigo</a> da wiki.</p>
+    <p>O Reddit possui um processador Markdown próprio denominado snoomark. O site desenvolveu esse processador baseado no GFM (GitHub-flavored Markdown).</p>
 
-    <h2 id="habilitando-suporte">Habilitando o suporte de Markdown</h2>
+    <p>O processador Markdown do Reddit é conhecido como Reddit-flavored Markdown.</p>
 
-    <p>Por padrão, o Reddit desativa o suporte do Markdown para novas postagens e comentários. Você pode alternar do editor de texto enriquecido (<em>rich text</em>) para Markdown clicando no link <em>Switch to markdown</em> como mostrado na imagem abaixo abaixo.</p>
+    <h2 id="habilitando-suporte">Como habilitar suporte ao Markdown no editor do Reddit</h2>
+
+    <p>O suporte ao Markdown no Reddit para inserir novas postagens está desabilitado por padrão.</p>
+
+    <p>Para habilitar o suporte ao Markdown no Reddit clique no link Switch to Markdown localizado no canto superior direito do editor.</p>
+
+    <p>Veja na imagem abaixo:</p>
 
     <div class="image-container mt-60">
-      <img src="/assets/img/reddit-window.png" class="materialboxed" alt="Ativando o Markdown no editor do Reddit!">
+    	<img src="/assets/img/reddit-window.png" class="materialboxed" alt="Ativando o Markdown no editor do Reddit!">
     </div>
 
-    <p>Para tornar essa opção permanente, ou seja, editar sempre na formatação do Markdown, basta habilitar <em>Default to Markdown</em> em <em>User Settings > Feed Settings</em>, ao fazer isso, as novas postagens, incluindo comentários, serão feitas em MD.</p>
+    <p>Com esse mesmo link você pode alternar para o editor Rich Text e vice e versa.</p>
 
-    <p><strong>Site</strong>: <a href="https://www.reddit.com/" target="_blank">https://www.reddit.com/</a></p>
+    <p>Para tornar o editor Markdown padrão no Reddit, marque a opção Default to Markdown localizada em User Settings > Feed Settings.</p>
 
-    <h2 id="suporte-markdown">Suporte do Markdown no Reddit</h2>
+    <p>A partir de agora todas as postagens, inclusive comentários, poderão ser feitos usando a sintaxe de formatação do Markdown.</p>
 
-    <p>O Reddit fornece suporte para os seguintes elementos Markdown.</p>
-    <table>
+    <p>Visite o site do Reddit em <a href="https://www.reddit.com/" target="_blank">https://www.reddit.com/&nbsp;<sup><i class="fas fa-external-link-alt"></i></sup></a>.</p>
+
+
+
+
+    <h2 id="suporte-markdown">Suporte ao Markdown no Reddit</h2>
+
+    <p>A <a href="#tabela-1-1">Tabela 1.1</a> representa os elementos compatíveis com o Reddit e algumas observações de como utilizá-los.</p>
+
+    <table class="responsive-table" id="tabela-1-1">
       <thead>
         <tr>
           <th>Elemento</th>
@@ -187,12 +232,12 @@
         <tr>
           <td><a href="/sintaxe-basica/#listas-ordenadas">Listas ordenadas</a></td>
           <td class="green lighten-4">Sim</td>
-          <td>As listas devem começar com o número <code class="lang-plaintext">1</code>. Você pode usar parenteses como a pontuação final (ou seja, <code class="lang-plaintext">1)</code> em vez de <code class="lang-plaintext">1.</code>).</td>
+          <td>Para construir listas ordenadas no editor do Reddit comece com o número 1. É possível usar parênteses para delimitar um elemento da lista ao invés do ponto, ou seja, <code class="lang-plaintext">1)</code> no lugar de <code class="lang-plaintext">1.</code>.</td>
         </tr>
         <tr>
           <td><a href="/sintaxe-basica/#listas-nao-ordenadas">Listas não ordenadas</a></td>
           <td class="yellow lighten-4">Parcial</td>
-          <td><strong>Não</strong> utilize o sinal de mais (<code class="lang-plaintext">+</code>)</td>
+          <td>O editor Markdown do Reddit NÃO é compatível com o uso do sinal de adição/mais <code class="lang-plaintext">+</code> para criar elementos dentro de listas não ordenadas.</td>
         </tr>
         <tr>
           <td><a href="/sintaxe-basica/#codigo">Código</a></td>
@@ -207,12 +252,12 @@
         <tr>
           <td><a href="/sintaxe-basica/#links">Links</a></td>
           <td class="green lighten-4">Sim</td>
-          <td>Links podem conter espaços.</td>
+          <td>O editor Markdown do Reddit permite a inserção de links contendo espaços em branco.</td>
         </tr>
         <tr>
           <td><a href="/sintaxe-basica/#imagens">Imagens</a></td>
           <td class="red lighten-4">Não</td>
-          <td>As imagens somente são suportadas no <a href="https://pt.wikipedia.org/wiki/Editor_de_texto_enriquecido" target="_blank">editor de texto enriquecido</a> (<em>rich-text editor</em>)</td>
+          <td>Infelizmente não tem suporte ao formato Markdown. Para inserir uma imagem usando o editor do Reddit é necessário alternar para o modo <a href="https://pt.wikipedia.org/wiki/Editor_de_texto_enriquecido" target="_blank">Rich Text&nbsp;<sup><i class="fas fa-external-link-alt"></i></sup></a>.</td>
         </tr>
         <tr>
           <td><a href="/sintaxe-estendida/#tabelas">Tabelas</a></td>
@@ -222,7 +267,7 @@
         <tr>
           <td><a href="/sintaxe-estendida/#bloco-codigo-cercado">Blocos de código cercado</a></td>
           <td class="green lighten-4">Sim</td>
-          <td>O realce da sintaxe <strong>NÃO</strong> é suportado.</td>
+          <td>Destacar o código fonte no formato Markdown não é suportado pelo editor do Reddit.</td>
         </tr>
         <tr>
           <td><a href="/sintaxe-estendida/#notas-rodape">Notas de rodapé</a></td>
@@ -232,7 +277,7 @@
         <tr>
           <td><a href="/sintaxe-estendida/#id-titulo">Id de títulos</a></td>
           <td class="yellow lighten-4">Parcial</td>
-          <td>Gerado automaticamente. Não há como definir códigos de cabeçalho personalizados.</td>
+          <td>O editor Markdown do Reddit gera os ids de títulos automaticamente, não é possível para o usuário especificar um id personalizado.</td>
         </tr>
         <tr>
           <td><a href="/sintaxe-estendida/#lista-definicoes">Listas de definições</a></td>
@@ -277,11 +322,11 @@
       </tbody>
     </table>
 
-    <h2 id="elementos-adicionais">Suporte para elementos de sintaxe adicionais</h2>
+    <h2 id="elementos-adicionais">Elementos Markdown adicionais no editor do Reddit</h2>
 
-    <p>O Reddit também é compatível com alguns elementos obscuros.</p>
+    <p>A <a href="#tabela-1-2">Tabela 1.2</a> mostra quais são os elementos adicionais do Markdown compatíveis com o editor do Reddit.</p>
 
-    <table class="table table-bordered" style="font-size: 14px">
+    <table class="responsive-table" id="tabela-1-2">
       <thead class="thead-light">
         <tr>
           <th>Elemento</th>
@@ -305,7 +350,7 @@
 
     <h2 id="veja-tambem">Veja também</h2>
 
-    <p><a href="https://www.reddit.com/wiki/markdown" target="_blank">Usando o Markdown no Reddit</a></p>
+    <p><a href="https://www.reddit.com/wiki/markdown" target="_blank">Usando o Markdown no Reddit&nbsp;<sup><i class="fas fa-external-link-alt"></i></sup></a></p>
   </div> <!-- Fim do conteúdo principal -->
 
 </div>
@@ -315,7 +360,7 @@
       <div class="collapsible-header grey lighten-4"><i class="material-icons">share</i>Compartilhar</div>
       <div class="collapsible-body">
         <div class="collection">
-          <a href="#!" class="collection-item" data-sharer="twitter" data-title="Referência do Uso do Markdown no Reddit - Guia completo do Markdown para iniciantes" data-hashtags="markdown" data-url="https://markdown.net.br/ferramentas/reddit/">
+          <a href="#!" class="collection-item" data-sharer="twitter" data-title="Reddit & Markdown: Referência Completa [Cheatsheet] | Markdown" data-hashtags="markdown" data-url="https://markdown.net.br/ferramentas/reddit/">
             <i class="fab fa-twitter color-twitter"></i>&nbsp;&nbsp;Compartilhar no Twitter
           </a>
           <a href="#!" class="collection-item" data-sharer="facebook" data-hashtag="markdown" data-url="https://markdown.net.br/ferramentas/reddit/">
@@ -324,13 +369,13 @@
           <a href="#!" class="collection-item" data-sharer="linkedin" data-url="https://markdown.net.br/ferramentas/reddit/">
             <i class="fab fa-linkedin color-linkedin"></i>&nbsp;&nbsp;Compartilhar no Linkedin
           </a>
-          <a href="#!" class="collection-item" data-sharer="email" data-title="Referência do Uso do Markdown no Reddit - Guia completo do Markdown para iniciantes" data-url="https://markdown.net.br/ferramentas/reddit/" data-subject="Olá! Tudo bem? Achei esse guia do Markdown bem fácil de acompanhar, dá uma olhadinha quando puder. Espero que seja útil, até mais." data-to="email@provedor.com.br">
+          <a href="#!" class="collection-item" data-sharer="email" data-title="Reddit & Markdown: Referência Completa [Cheatsheet] | Markdown" data-url="https://markdown.net.br/ferramentas/reddit/" data-subject="Olá! Tudo bem? Achei esse guia do Markdown bem fácil de acompanhar, dá uma olhadinha quando puder. Espero que seja útil, até mais." data-to="email@provedor.com.br">
             <i class="fas fa-envelope color-email"></i>&nbsp;&nbsp;Compartilhar por Email
           </a>
-          <a href="#!" class="collection-item" data-sharer="whatsapp" data-title="Referência do Uso do Markdown no Reddit - Guia completo do Markdown para iniciantes" data-url="https://markdown.net.br/ferramentas/reddit/">
+          <a href="#!" class="collection-item" data-sharer="whatsapp" data-title="Reddit & Markdown: Referência Completa [Cheatsheet] | Markdown" data-url="https://markdown.net.br/ferramentas/reddit/">
             <i class="fab fa-whatsapp color-whatsapp"></i>&nbsp;&nbsp;Compartilhar por Whatsapp
           </a>
-          <a href="#!" class="collection-item" data-sharer="telegram" data-title="Referência do Uso do Markdown no Reddit - Guia completo do Markdown para iniciantes" data-url="https://markdown.net.br/ferramentas/reddit/" data-to="(00) 99999-9999">
+          <a href="#!" class="collection-item" data-sharer="telegram" data-title="Reddit & Markdown: Referência Completa [Cheatsheet] | Markdown" data-url="https://markdown.net.br/ferramentas/reddit/" data-to="(00) 99999-9999">
             <i class="fab fa-telegram color-telegram"></i>&nbsp;&nbsp;Compartilhar por Telegram
           </a>
         </div>
@@ -368,14 +413,30 @@
 </footer>
     <!--  Scripts-->
     <script src="/assets/js/bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/show-invisibles/prism-show-invisibles.min.js" integrity="sha256-1baFoczEXwdtWBiZ6gbu7W1kn6XfPgKY4LkQQYNHTkM=" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/show-invisibles/prism-show-invisibles.min.js" integrity="sha256-1baFoczEXwdtWBiZ6gbu7W1kn6XfPgKY4LkQQYNHTkM=" crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/components/prism-asciidoc.min.js" integrity="sha256-Z6qgXS53J00CrN9qHl3CxGqX2A3qs6HwGi96bnk2e4w=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/components/prism-markdown.min.js" integrity="sha256-LVbOCHxYsNr9pF5KGdB2NphtO2FKM92SGFxRkWc9Ovg=" crossorigin="anonymous"></script>
     <script src="/assets/js/search.min.js"></script>
+
+    <script src="/assets/js/vendor/jquery.lazy@1.7.9/jquery.lazy.min.js"></script>
+    <script src="/assets/js/vendor/jquery.lazy@1.7.9/jquery.lazy.youtube.min.js"></script>
+    <script src="/assets/js/vendor/jquery.lazy@1.7.9/jquery.lazy.picture.min.js"></script>
     <!-- Lightbox das imagens -->
     <script>
       $(document).ready(function(){
          $('.materialboxed').materialbox();
+
+         $('picture.lazy-img.unloaded, img.lazy-img, iframe.lazy-yt.unloaded').Lazy({
+             effect: 'fadeIn',
+             effectTime: 1000
+             // called after an element was successfully handled
+             // afterLoad: function(element) {
+             // // Remove a animação do loader da imagem
+             //     // element.height(element.closest('.img-lazy-container').find('.image-placeholder').height());
+
+             //     element.removeClass('unloaded');
+             // }
+         });
        });
       anchors.add("h2, h3, h5");
       $('#sticky-navigator').stickyNavigator();

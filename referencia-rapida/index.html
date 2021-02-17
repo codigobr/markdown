@@ -17,15 +17,15 @@
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="author" content="Robert Salles">
     <meta name="keywords" content="Markdown, Linguagem Markdown, Sintaxe Markdown, Guia Markdown, Referência Markdown, Ajuda Markdown, Tutorial Markdown, Aprender Markdown">
-    <meta name="description" content="Guia completo e grátis do Markdown para iniciantes com diversos exemplos de como usar a linguagem de marcação mais simples do mundo.">
+    <meta name="description" content="O guia que todo programador precisa com a referência completa e rápida da sintaxe do Markdown, use esse cheatsheet para construir cabeçalhos/títulos, parágrafos, listas e muito mais.">
     <meta name="twitter:card" content="summary">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://markdown.net.br/referencia-rapida/">
-    <meta property="og:title" content="Referência rápida do Markdown - Guia completo do Markdown para iniciantes">
-    <meta property="og:description" content="Guia completo e grátis do Markdown para iniciantes com diversos exemplos de como usar a linguagem de marcação mais simples do mundo.">
+    <meta property="og:title" content="Markdown Cheatsheet: Referência Rápida para Programadores | Markdown">
+    <meta property="og:description" content="O guia que todo programador precisa com a referência completa e rápida da sintaxe do Markdown, use esse cheatsheet para construir cabeçalhos/títulos, parágrafos, listas e muito mais.">
     <meta property="og:image" content="https://markdown.net.br/assets/img/markdown.jpg">
 
-    <title>Referência rápida do Markdown - Guia completo do Markdown para iniciantes</title>
+    <title>Markdown Cheatsheet: Referência Rápida para Programadores | Markdown</title>
     <!-- Favicons-->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -39,6 +39,40 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css" href="/assets/css/bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/show-invisibles/prism-show-invisibles.min.css" integrity="sha256-nOfkEPu/TzBvIxN8D/vW8weOUczzDbxRjgik/hA2hBI=" crossorigin="anonymous" />
+    <style type="text/css">
+    	.mv-40 {
+    		margin-top: 40px;
+    		margin-bottom: 40px;
+    	}
+
+    	img[src=""],
+    	img:not([src]) {
+    	  visibility: hidden;
+    	}
+
+    	.caption {
+    	    display: flex;
+    	    justify-content: center;
+    	    align-items: center;
+    	    margin: 10px 0;
+    	    color: hsl(0deg 0% 33%);
+    	    font-style: italic;
+    	    font-size: 75%;
+    	}
+
+    	picture {
+    		display: block;
+    		position: relative;
+    	}
+
+    	.cover-link {
+    		position: absolute;
+    		top: 0;
+    		bottom: 0;
+    		left: 0;
+    		right: 0;
+    	}
+    </style>
   </head>
   <body class="themes" cz-shortcut-listen="true">
     <div id="layout-problem" style="display:none;position:fixed;bottom:20px;left:5px;right:5px;z-index:9999;border-radius:10px;"><div class="layout-problem__container" style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;position:relative;"><div class="layout-problem__msg" style="background-color:white;color:#222;padding:5px 35px;border-radius:10px;display:flex;align-items:center;border:2px solid #f44336;box-shadow:1px 4px 8px 4px #0000004a;position:relative;"><div style="color:#f44336;font-size:45px;font-weight:bold;background-color:white;border-radius:50px;margin-right:20px;">!</div><p style="font-size: 18px;">Foi detectado um <strong>problema</strong> com o layout do site!<br>É recomendável desabilitar o <span class="red-text"><strong>Ad-Blocker</strong></span><br>Ou qualquer extensão que bloqueie <strong>JavaScript</strong>.</p><div id="close-error-script-bt" style="position:absolute;top:3px;right:12px;cursor:pointer;">X</div></div></div></div>
@@ -77,10 +111,7 @@
     <a href="/ferramentas/" class="waves-effect waves-blue"><i class="tiny material-icons">card_travel</i>Ferramentas</a>
   </li>
   <li class="bold white">
-    <a href="/editor/" class="waves-effect waves-blue"><i class="tiny material-icons">code</i>Editor Online</a>
-  </li>
-  <li class="bold white">
-    <a href="/sabores/" class="waves-effect waves-blue"><i class="fas fa-ice-cream"></i>Sabores</a>
+    <a href="/faq/" class="waves-effect waves-blue"><i class="tiny material-icons">question_answer</i>Perguntas e Respostas</a>
   </li>
 </ul>
     </header>
@@ -89,8 +120,8 @@
         <div class="container">
           <div class="row" style="margin-bottom: 0;">
             <div class="col s12 m8 offset-m1 xl7 offset-xl1">
-              <h1>Referência rápida do Markdown</h1>
-              <h4 class="light">Uma referência rápida à sintaxe do Markdown.</h4>
+              <h1>Markdown Cheatsheet</h1>
+              <h4 class="light">Guia de referência rápida essencial para todo programador que trabalha com Markdown.</h4>
               <ol class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
                 <li itemprop="itemListElement" itemscope
                     itemtype="https://schema.org/ListItem">
@@ -102,7 +133,7 @@
 <i class="fas fa-chevron-right chevron-separator"></i>
 </li>
 <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-<span itemprop="name">Referência rápida do Markdown</span>
+<span itemprop="name">Markdown Cheatsheet</span>
 <meta itemprop="position" content="2" />
 </li>
 
@@ -119,13 +150,17 @@
   <div class="col s12">
     <h2 id="visao-geral">Visão geral</h2>
 
-    <p>Essa Referência rápida do Markdown fornece uma visão geral de todos os elementos que compõem a sintaxe da linguagem. O propósito da referência rápida é cobrir as formatações e elementos mais utilizados, portanto, se você precisa de mais informações, consulte nossos guias de referência <a href="/sintaxe-basica/">sintaxe básica</a> e <a href="/sintaxe-estendida/">sintaxe estendida</a>.</p>
+    <p>Precisa refrescar a memória em relação a sintaxe do Markdown? Ótimo!</p>
+
+    <p>Abaixo eu listo os elementos mais comuns e utilizados da linguagem.</p>
+
+	<p>Vale ressaltar que, aqui somente o básico do Markdown é apresentado, se precisar de mais informações dá uma olhadinhas em nossas seções de <a href="/sintaxe-basica/">sintaxe básica</a> e <a href="/sintaxe-estendida/">sintaxe estendida</a>.</p>
 
     <h2 id="sintaxe-basica">Sintaxe básica</h2>
 
-    <p>Esses são os elementos descritos no documento de design original de John Gruber. Todos os aplicativos Markdown suportam esses elementos.</p>
+    <p>Aqui onde tudo começou, disse John Gruber. Os elementos que fundamentam o Markdown são mostrados abaixo. Esse elementos de formatação foram descritos no documento original da linguagem e a grande maioria dos programas fornecem suporte eles.</p>
 
-    <table>
+    <table class="responsive-table">
       <thead>
         <tr>
           <th>Elemento</th>
@@ -190,9 +225,11 @@
 
     <h2 id="sintaxe-estendida">Sintaxe Estendida</h2>
 
-    <p>Esses elementos estendem a sintaxe básica adicionando recursos a linguagem. Nem todos os aplicativos Markdown suportam esses elementos.</p>
+    <p>Com a evolução do Markdown outros elementos foram implementados enriquecendo o leque de opções para formatar documentos. Por um lado, um pouco mais de complexidade, mas por outro, a linguagem ganhou mais recursos para a construções de documentos diversos.</p>
 
-    <table>
+    <p>Tenha em mente que, nem todos os aplicativos desenvolvidos para Markdown dão suporte à esses elementos, é sempre bom consultar a documentação do programa ou a nossa seção de <a href="/ferramentas/">ferramentas</a>.</p>
+
+    <table class="responsive-table">
       <thead>
         <tr>
           <th>Elemento</th>
@@ -261,7 +298,7 @@
       <div class="collapsible-header grey lighten-4"><i class="material-icons">share</i>Compartilhar</div>
       <div class="collapsible-body">
         <div class="collection">
-          <a href="#!" class="collection-item" data-sharer="twitter" data-title="Referência rápida do Markdown - Guia completo do Markdown para iniciantes" data-hashtags="markdown" data-url="https://markdown.net.br/referencia-rapida/">
+          <a href="#!" class="collection-item" data-sharer="twitter" data-title="Markdown Cheatsheet: Referência Rápida para Programadores | Markdown" data-hashtags="markdown" data-url="https://markdown.net.br/referencia-rapida/">
             <i class="fab fa-twitter color-twitter"></i>&nbsp;&nbsp;Compartilhar no Twitter
           </a>
           <a href="#!" class="collection-item" data-sharer="facebook" data-hashtag="markdown" data-url="https://markdown.net.br/referencia-rapida/">
@@ -270,13 +307,13 @@
           <a href="#!" class="collection-item" data-sharer="linkedin" data-url="https://markdown.net.br/referencia-rapida/">
             <i class="fab fa-linkedin color-linkedin"></i>&nbsp;&nbsp;Compartilhar no Linkedin
           </a>
-          <a href="#!" class="collection-item" data-sharer="email" data-title="Referência rápida do Markdown - Guia completo do Markdown para iniciantes" data-url="https://markdown.net.br/referencia-rapida/" data-subject="Olá! Tudo bem? Achei esse guia do Markdown bem fácil de acompanhar, dá uma olhadinha quando puder. Espero que seja útil, até mais." data-to="email@provedor.com.br">
+          <a href="#!" class="collection-item" data-sharer="email" data-title="Markdown Cheatsheet: Referência Rápida para Programadores | Markdown" data-url="https://markdown.net.br/referencia-rapida/" data-subject="Olá! Tudo bem? Achei esse guia do Markdown bem fácil de acompanhar, dá uma olhadinha quando puder. Espero que seja útil, até mais." data-to="email@provedor.com.br">
             <i class="fas fa-envelope color-email"></i>&nbsp;&nbsp;Compartilhar por Email
           </a>
-          <a href="#!" class="collection-item" data-sharer="whatsapp" data-title="Referência rápida do Markdown - Guia completo do Markdown para iniciantes" data-url="https://markdown.net.br/referencia-rapida/">
+          <a href="#!" class="collection-item" data-sharer="whatsapp" data-title="Markdown Cheatsheet: Referência Rápida para Programadores | Markdown" data-url="https://markdown.net.br/referencia-rapida/">
             <i class="fab fa-whatsapp color-whatsapp"></i>&nbsp;&nbsp;Compartilhar por Whatsapp
           </a>
-          <a href="#!" class="collection-item" data-sharer="telegram" data-title="Referência rápida do Markdown - Guia completo do Markdown para iniciantes" data-url="https://markdown.net.br/referencia-rapida/" data-to="(00) 99999-9999">
+          <a href="#!" class="collection-item" data-sharer="telegram" data-title="Markdown Cheatsheet: Referência Rápida para Programadores | Markdown" data-url="https://markdown.net.br/referencia-rapida/" data-to="(00) 99999-9999">
             <i class="fab fa-telegram color-telegram"></i>&nbsp;&nbsp;Compartilhar por Telegram
           </a>
         </div>
@@ -314,14 +351,30 @@
 </footer>
     <!--  Scripts-->
     <script src="/assets/js/bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/show-invisibles/prism-show-invisibles.min.js" integrity="sha256-1baFoczEXwdtWBiZ6gbu7W1kn6XfPgKY4LkQQYNHTkM=" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/show-invisibles/prism-show-invisibles.min.js" integrity="sha256-1baFoczEXwdtWBiZ6gbu7W1kn6XfPgKY4LkQQYNHTkM=" crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/components/prism-asciidoc.min.js" integrity="sha256-Z6qgXS53J00CrN9qHl3CxGqX2A3qs6HwGi96bnk2e4w=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/components/prism-markdown.min.js" integrity="sha256-LVbOCHxYsNr9pF5KGdB2NphtO2FKM92SGFxRkWc9Ovg=" crossorigin="anonymous"></script>
     <script src="/assets/js/search.min.js"></script>
+
+    <script src="/assets/js/vendor/jquery.lazy@1.7.9/jquery.lazy.min.js"></script>
+    <script src="/assets/js/vendor/jquery.lazy@1.7.9/jquery.lazy.youtube.min.js"></script>
+    <script src="/assets/js/vendor/jquery.lazy@1.7.9/jquery.lazy.picture.min.js"></script>
     <!-- Lightbox das imagens -->
     <script>
       $(document).ready(function(){
          $('.materialboxed').materialbox();
+
+         $('picture.lazy-img.unloaded, img.lazy-img, iframe.lazy-yt.unloaded').Lazy({
+             effect: 'fadeIn',
+             effectTime: 1000
+             // called after an element was successfully handled
+             // afterLoad: function(element) {
+             // // Remove a animação do loader da imagem
+             //     // element.height(element.closest('.img-lazy-container').find('.image-placeholder').height());
+
+             //     element.removeClass('unloaded');
+             // }
+         });
        });
       anchors.add("h2, h3, h5");
       $('#sticky-navigator').stickyNavigator();

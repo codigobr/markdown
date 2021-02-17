@@ -39,6 +39,40 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css" href="/assets/css/bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/show-invisibles/prism-show-invisibles.min.css" integrity="sha256-nOfkEPu/TzBvIxN8D/vW8weOUczzDbxRjgik/hA2hBI=" crossorigin="anonymous" />
+    <style type="text/css">
+    	.mv-40 {
+    		margin-top: 40px;
+    		margin-bottom: 40px;
+    	}
+
+    	img[src=""],
+    	img:not([src]) {
+    	  visibility: hidden;
+    	}
+
+    	.caption {
+    	    display: flex;
+    	    justify-content: center;
+    	    align-items: center;
+    	    margin: 10px 0;
+    	    color: hsl(0deg 0% 33%);
+    	    font-style: italic;
+    	    font-size: 75%;
+    	}
+
+    	picture {
+    		display: block;
+    		position: relative;
+    	}
+
+    	.cover-link {
+    		position: absolute;
+    		top: 0;
+    		bottom: 0;
+    		left: 0;
+    		right: 0;
+    	}
+    </style>
   </head>
   <body class="themes" cz-shortcut-listen="true">
     <div id="layout-problem" style="display:none;position:fixed;bottom:20px;left:5px;right:5px;z-index:9999;border-radius:10px;"><div class="layout-problem__container" style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;position:relative;"><div class="layout-problem__msg" style="background-color:white;color:#222;padding:5px 35px;border-radius:10px;display:flex;align-items:center;border:2px solid #f44336;box-shadow:1px 4px 8px 4px #0000004a;position:relative;"><div style="color:#f44336;font-size:45px;font-weight:bold;background-color:white;border-radius:50px;margin-right:20px;">!</div><p style="font-size: 18px;">Foi detectado um <strong>problema</strong> com o layout do site!<br>É recomendável desabilitar o <span class="red-text"><strong>Ad-Blocker</strong></span><br>Ou qualquer extensão que bloqueie <strong>JavaScript</strong>.</p><div id="close-error-script-bt" style="position:absolute;top:3px;right:12px;cursor:pointer;">X</div></div></div></div>
@@ -77,10 +111,7 @@
     <a href="/ferramentas/" class="waves-effect waves-blue"><i class="tiny material-icons">card_travel</i>Ferramentas</a>
   </li>
   <li class="bold white">
-    <a href="/editor/" class="waves-effect waves-blue"><i class="tiny material-icons">code</i>Editor Online</a>
-  </li>
-  <li class="bold white">
-    <a href="/sabores/" class="waves-effect waves-blue"><i class="fas fa-ice-cream"></i>Sabores</a>
+    <a href="/faq/" class="waves-effect waves-blue"><i class="tiny material-icons">question_answer</i>Perguntas e Respostas</a>
   </li>
 </ul>
     </header>
@@ -111,21 +142,21 @@
             <div class="row scrollspy">
   <div class="col s12">
     <h2 id="o-que-e-o-markdown">O que é o Markdown?</h2>
-    <p>O <code class="language-markup">Markdown</code> é uma linguagem de marcação simples e fácil de usar que você pode formatar praticamente qualquer documento.</p>
+    <p>O Markdown é uma linguagem de marcação extremamente fácil de aprender, simples de usar e eficaz para criar e formatar todo tipo de documento.</p>
   </div>
   <div class="col s12">
-    <h2 id="aprenda-os-conceitos">Aprenda os conceitos.</h2>
-    <p>Comece a usar o Markdown agora mesmo seguindo o guia de <a href="/introducao/">Introdução</a>. Ele foi projetado para todos, até para iniciantes.</p>
-  </div>
-
-  <div class="col s12">
-    <h2 id="mergulhe-na-sintaxe">Mergulhe na sintaxe.</h2>
-    <p>Seja você um iniciante no Markdown ou um profissional experiente, suas dúvidas sobre formatação e elementos serão sanadas na página de <a href="/sintaxe-basica/">sintaxe básica</a>.</p>
+    <h2 id="aprenda-os-conceitos">Conceituando o Markdown.</h2>
+    <p>Iniciando no Markdown? Não se preocupe, dá uma olhadinha no nosso guia de <a href="/introducao/">introdução</a> para ficar por dentro de como usar o MD, ele foi projetado pensando justamente em praticidade e velocidade de aprendizado.</p>
   </div>
 
   <div class="col s12">
-    <h2 id="avancando-um-pouquinho">Avançando um pouquinho.</h2>
-    <p>Precisa de mais elementos em Markdown? Sem problemas, usando a <a href="/sintaxe-estendida/">sintaxe estendida</a> você pode criar tabelas, blocos de códigos, links automáticos e muito mais.</p>
+    <h2 id="mergulhe-na-sintaxe">Como é mesmo que se faz?</h2>
+    <p>Convenhamos, mesmo com bastante experiência em qualquer linguagem, seja de programação ou marcação, sempre surge aquela dúvida em relação a sintaxe. O nosso tutorial de <a href="/sintaxe-basica/">sintaxe básica</a> ajuda você a dar aquela refrescada no jeito Markdown de formatar documentos.</p>
+  </div>
+
+  <div class="col s12">
+    <h2 id="avancando-um-pouquinho">Só isso?</h2>
+    <p>Pronto para avançar um pouquinha mais? Usando a <a href="/sintaxe-estendida/">sintaxe estendida</a> do Markdown você pode criar elementos avançados para os seus documentos como, tabelas, blocos de código e links automáticos.</p>
   </div>
 </div>
             <div class="col-12">
@@ -187,14 +218,30 @@
 </footer>
     <!--  Scripts-->
     <script src="/assets/js/bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/show-invisibles/prism-show-invisibles.min.js" integrity="sha256-1baFoczEXwdtWBiZ6gbu7W1kn6XfPgKY4LkQQYNHTkM=" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/show-invisibles/prism-show-invisibles.min.js" integrity="sha256-1baFoczEXwdtWBiZ6gbu7W1kn6XfPgKY4LkQQYNHTkM=" crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/components/prism-asciidoc.min.js" integrity="sha256-Z6qgXS53J00CrN9qHl3CxGqX2A3qs6HwGi96bnk2e4w=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/components/prism-markdown.min.js" integrity="sha256-LVbOCHxYsNr9pF5KGdB2NphtO2FKM92SGFxRkWc9Ovg=" crossorigin="anonymous"></script>
     <script src="/assets/js/search.min.js"></script>
+
+    <script src="/assets/js/vendor/jquery.lazy@1.7.9/jquery.lazy.min.js"></script>
+    <script src="/assets/js/vendor/jquery.lazy@1.7.9/jquery.lazy.youtube.min.js"></script>
+    <script src="/assets/js/vendor/jquery.lazy@1.7.9/jquery.lazy.picture.min.js"></script>
     <!-- Lightbox das imagens -->
     <script>
       $(document).ready(function(){
          $('.materialboxed').materialbox();
+
+         $('picture.lazy-img.unloaded, img.lazy-img, iframe.lazy-yt.unloaded').Lazy({
+             effect: 'fadeIn',
+             effectTime: 1000
+             // called after an element was successfully handled
+             // afterLoad: function(element) {
+             // // Remove a animação do loader da imagem
+             //     // element.height(element.closest('.img-lazy-container').find('.image-placeholder').height());
+
+             //     element.removeClass('unloaded');
+             // }
+         });
        });
       anchors.add("h2, h3, h5");
       $('#sticky-navigator').stickyNavigator();

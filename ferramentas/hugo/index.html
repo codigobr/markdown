@@ -21,11 +21,11 @@
     <meta name="twitter:card" content="summary">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://markdown.net.br/ferramentas/hugo/">
-    <meta property="og:title" content="Referência do Uso do Markdown no Hugo - Guia completo do Markdown para iniciantes">
+    <meta property="og:title" content="Referência do Uso do Markdown no Hugo | Markdown">
     <meta property="og:description" content="Guia completo e grátis do Markdown para iniciantes com diversos exemplos de como usar a linguagem de marcação mais simples do mundo.">
     <meta property="og:image" content="https://markdown.net.br/assets/img/markdown.jpg">
 
-    <title>Referência do Uso do Markdown no Hugo - Guia completo do Markdown para iniciantes</title>
+    <title>Referência do Uso do Markdown no Hugo | Markdown</title>
     <!-- Favicons-->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -39,6 +39,40 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css" href="/assets/css/bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/show-invisibles/prism-show-invisibles.min.css" integrity="sha256-nOfkEPu/TzBvIxN8D/vW8weOUczzDbxRjgik/hA2hBI=" crossorigin="anonymous" />
+    <style type="text/css">
+    	.mv-40 {
+    		margin-top: 40px;
+    		margin-bottom: 40px;
+    	}
+
+    	img[src=""],
+    	img:not([src]) {
+    	  visibility: hidden;
+    	}
+
+    	.caption {
+    	    display: flex;
+    	    justify-content: center;
+    	    align-items: center;
+    	    margin: 10px 0;
+    	    color: hsl(0deg 0% 33%);
+    	    font-style: italic;
+    	    font-size: 75%;
+    	}
+
+    	picture {
+    		display: block;
+    		position: relative;
+    	}
+
+    	.cover-link {
+    		position: absolute;
+    		top: 0;
+    		bottom: 0;
+    		left: 0;
+    		right: 0;
+    	}
+    </style>
   </head>
   <body class="themes" cz-shortcut-listen="true">
     <div id="layout-problem" style="display:none;position:fixed;bottom:20px;left:5px;right:5px;z-index:9999;border-radius:10px;"><div class="layout-problem__container" style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;position:relative;"><div class="layout-problem__msg" style="background-color:white;color:#222;padding:5px 35px;border-radius:10px;display:flex;align-items:center;border:2px solid #f44336;box-shadow:1px 4px 8px 4px #0000004a;position:relative;"><div style="color:#f44336;font-size:45px;font-weight:bold;background-color:white;border-radius:50px;margin-right:20px;">!</div><p style="font-size: 18px;">Foi detectado um <strong>problema</strong> com o layout do site!<br>É recomendável desabilitar o <span class="red-text"><strong>Ad-Blocker</strong></span><br>Ou qualquer extensão que bloqueie <strong>JavaScript</strong>.</p><div id="close-error-script-bt" style="position:absolute;top:3px;right:12px;cursor:pointer;">X</div></div></div></div>
@@ -77,10 +111,7 @@
     <a href="/ferramentas/" class="waves-effect waves-blue"><i class="tiny material-icons">card_travel</i>Ferramentas</a>
   </li>
   <li class="bold white">
-    <a href="/editor/" class="waves-effect waves-blue"><i class="tiny material-icons">code</i>Editor Online</a>
-  </li>
-  <li class="bold white">
-    <a href="/sabores/" class="waves-effect waves-blue"><i class="fas fa-ice-cream"></i>Sabores</a>
+    <a href="/faq/" class="waves-effect waves-blue"><i class="tiny material-icons">question_answer</i>Perguntas e Respostas</a>
   </li>
 </ul>
     </header>
@@ -90,7 +121,7 @@
           <div class="row" style="margin-bottom: 0;">
             <div class="col s12 m8 offset-m1 xl7 offset-xl1">
               <h1>Hugo</h1>
-              <h4 class="light">Hugo é um popular gerador de site estático escrito na linguagem de programação Go.</h4>
+              <h4 class="light">O Hugo é um gerador de sites estáticos super rápido desenvolvido com a linguagem de programação GO.</h4>
               <ol class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
                 <li itemprop="itemListElement" itemscope
                     itemtype="https://schema.org/ListItem">
@@ -103,7 +134,7 @@
 </li>
 <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
 <a itemprop="item" href="/ferramentas/">
-<span itemprop="name">Ferramentas</span>
+<span itemprop="name">Editores Markdown</span>
 </a>
 <meta itemprop="position" content="2" />
 </li>
@@ -124,15 +155,23 @@
         <!--  Outer row  -->
         <div class="row">
           <div class="section col s12 m8 offset-m1 xl7 offset-xl1">
-                          <div class="row scrollspy">
-                <div class="col s12">
-                  <h2 id="visao-geral">Visão geral</h2>
+            <div class="row scrollspy">
+	<div class="col s12">
+		<h2 id="visao-geral">Visão geral</h2>
 
-                  <p>Hugo é repleto de recursos, mas um de seus destaques é a velocidade - Hugo leva apenas alguns segundos para gerar um site com milhares de páginas. A <a href="https://www.smashingmagazine.com/2017/03/a-little-surprise-is-waiting-for-you-here/" target="_blank">Smashing Magazine</a> mudou recentemente para Hugo deixando o poderoso WordPress de lado.</p>
+		<p>O Hugo é uma ferramenta poderosa que oferece uma velocidade de compilação de sites incrível.</p>
 
-                  <p>Por padrão o Hugo tem um excelente suporte ao Markdown. Hugo usa o processador Markdown <a href="https://github.com/yuin/goldmark/" target="_blank">Goldmark</a>, que é totalmente compatível com CommonMark. Consulte as <a href="https://gohugo.io/getting-started/configuration-markup/" target="_blank">instruções de configuração</a> para saber mais sobre as extensões que você pode configurar. Você pode alterar as configurações do processador Goldmark usando o arquivo <code class="lang-plaintext">config.toml</code> como mostrado abaixo.</p>
+		<p>Para se ter ideia do seu poder, o Hugo pode processar um site com milhares de páginas em apenas alguns segundos.</p>
 
-                  <pre class="lang-javascript"><code>baseURL = "http://meusite.org/"
+		<p>Empresas como a <a href="https://www.smashingmagazine.com/2017/03/a-little-surprise-is-waiting-for-you-here/" target="_blank">Smashing Magazine&nbsp;<sup><i class="fas fa-external-link-alt"></i></sup></a> trocou o tão aclamado WordPress pelo Hugo, dada a sua capacidade de geração de sites.</p>
+
+		<p>O Hugo utiliza o processador Markdown <a href="https://github.com/yuin/goldmark/" target="_blank">Goldmark&nbsp;<sup><i class="fas fa-external-link-alt"></i></sup></a>, que possui total compatibilidade com a especificação CommonMark, sendo assim, o suporte ao Markdown no aplicativo é excelente.</p>
+
+		<p>O processador usado pelo Hugo, Goldmark, possui um arquivo chamado config.toml que permite configurar a ferramenta.</p>
+
+		<p>Segue um exemplo abaixo do arquivo de configuração:</p>
+
+		<pre class="lang-javascript"><code>baseURL = "http://meusite.org/"
 languageCode = "pt-br"
 title = "Meu Site"
 theme = "ananke"
@@ -140,187 +179,162 @@ theme = "ananke"
 [markup]
 taskLists = false</code></pre>
 
-                  <p><strong>Site</strong>: <a href="https://gohugo.io/" target="_blank">https://gohugo.io/</a></p>
+		<p>Você pode visitar o site oficial do Hugo <a href="https://gohugo.io/" target="_blank">clicando aqui&nbsp;<sup><i class="fas fa-external-link-alt"></i></sup></a>.</p>
 
-                  <h2 id="suporte-markdown">Suporte do Markdown no Hugo</h2>
-
-                  <p>O Hugo fornece suporte para os seguintes elementos Markdown.</p>
-                  <table>
-                    <thead>
-                      <tr>
-                        <th>Elemento</th>
-                        <th>Suporte</th>
-                        <th>Obs</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td><a href="/sintaxe-basica/#titulos">Títulos</a></td>
-                        <td class="green lighten-4">Sim</td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td><a href="/sintaxe-basica/#paragrafos">Parágrafos</a></td>
-                        <td class="green lighten-4">Sim</td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td><a href="/sintaxe-basica/#quebra-linha">Quebras de linha</a></td>
-                        <td class="green lighten-4">Sim</td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td><a href="/sintaxe-basica/#negrito">Negrito</a></td>
-                        <td class="green lighten-4">Sim</td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td><a href="/sintaxe-basica/#italico">Itálico</a></td>
-                        <td class="green lighten-4">Sim</td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td><a href="/sintaxe-basica/#bloco-citacao">Bloco de citação</a></td>
-                        <td class="green lighten-4">Sim</td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td><a href="/sintaxe-basica/#listas-ordenadas">Listas ordenadas</a></td>
-                        <td class="green lighten-4">Sim</td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td><a href="/sintaxe-basica/#listas-nao-ordenadas">Listas não ordenadas</a></td>
-                        <td class="green lighten-4">Sim</td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td><a href="/sintaxe-basica/#codigo">Código</a></td>
-                        <td class="green lighten-4">Sim</td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td><a href="/sintaxe-basica/#linhas-horizontais">Linhas horizontais</a></td>
-                        <td class="green lighten-4">Sim</td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td><a href="/sintaxe-basica/#links">Links</a></td>
-                        <td class="green lighten-4">Sim</td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td><a href="/sintaxe-basica/#imagens">Imagens</a></td>
-                        <td class="green lighten-4">Sim</td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td><a href="/sintaxe-estendida/#tabelas">Tabelas</a></td>
-                        <td class="green lighten-4">Sim</td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td><a href="/sintaxe-estendida/#bloco-codigo-cercado">Blocos de código cercado</a></td>
-                        <td class="green lighten-4">Sim</td>
-                        <td>O realce da sintaxe também é suportado.</td>
-                      </tr>
-                      <tr>
-                        <td><a href="/sintaxe-estendida/#notas-rodape">Notas de rodapé</a></td>
-                        <td class="green lighten-4">Sim</td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td><a href="/sintaxe-estendida/#id-titulo">Id de títulos</a></td>
-                        <td class="green lighten-4">Sim</td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td><a href="/sintaxe-estendida/#lista-definicoes">Listas de definições</a></td>
-                        <td class="green lighten-4">Sim</td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td><a href="/sintaxe-estendida/#riscado">Riscado</a></td>
-                        <td class="green lighten-4">Sim</td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td><a href="/sintaxe-estendida/#lista-tarefas">Listas de tarefas</a></td>
-                        <td class="green lighten-4">Sim</td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td><a href="/sintaxe-estendida/#emojis">Emoji (copiar e colar)</a></td>
-                        <td class="white lighten-4">Desconhecido</td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td><a href="/sintaxe-estendida/#usando-codigo-emoji">Emoji (códigos de acesso)</a></td>
-                        <td class="green lighten-4">Sim</td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td><a href="/sintaxe-estendida/#link-automatico-url">Link automático de URL</a></td>
-                        <td class="green lighten-4">Sim</td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td><a href="/sintaxe-estendida/#desativando-link-automatico">Desativar o link automático de URL</a></td>
-                        <td class="green lighten-4">Sim</td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td><a href="/sintaxe-basica/#html">HTML</a></td>
-                        <td class="green lighten-4">Sim</td>
-                        <td></td>
-                      </tr>
-                    </tbody>
-                  </table>
+		<p>Consulte também as <a href="https://gohugo.io/getting-started/configuration-markup/" target="_blank">instruções de configuração (em inglês)&nbsp;<sup><i class="fas fa-external-link-alt"></i></sup></a> e veja quais extensões são configuráveis no Goldmark.</p>
 
 
-                  <h2 id="veja-tambem">Veja também</h2>
+		<h2 id="suporte-markdown">Suporte ao Markdown no Hugo</h2>
 
-                  <p><a href="https://gohugo.io/content-management/formats/" target="_blank">Formatos de conteúdo suportados no Hugo</a></p>
-                  <p><a href="https://github.com/yuin/goldmark/" target="_blank">Repositório do Goldmark no GitHub</a></p>
-                </div> <!-- Fim do conteúdo principal -->
+		<p>Na <a href="#tabela-1-1">Tabela 1.1</a> você tem uma relação dos elementos Markdown que são compatíveis com o Hugo.</p>
 
-              </div>
-              <div class="col-12">
-                <ul class="collapsible">
-                  <li class="active">
-                    <div class="collapsible-header grey lighten-4"><i class="material-icons">share</i>Compartilhar</div>
-                    <div class="collapsible-body">
-                      <div class="collection">
-                        <a href="#!" class="collection-item" data-sharer="twitter" data-title="Referência do Uso do Markdown no Hugo!" data-hashtags="markdown" data-url="https://markdown.net.br/ferramentas/hugo/">
-                          <i class="fab fa-twitter color-twitter"></i>&nbsp;&nbsp;Compartilhar no Twitter
-                        </a>
-                        <a href="#!" class="collection-item" data-sharer="facebook" data-hashtag="markdown" data-url="https://markdown.net.br/ferramentas/hugo/">
-                          <i class="fab fa-facebook color-facebook"></i>&nbsp;&nbsp;Compartilhar no Facebook
-                        </a>
-                        <a href="#!" class="collection-item" data-sharer="linkedin" data-url="https://markdown.net.br/ferramentas/hugo/">
-                          <i class="fab fa-linkedin color-linkedin"></i>&nbsp;&nbsp;Compartilhar no Linkedin
-                        </a>
-                        <a href="#!" class="collection-item" data-sharer="email" data-title="Referência do Uso do Markdown no Hugo!" data-url="https://markdown.net.br/ferramentasghosts/" data-subject="Olá! Tudo bem? Achei esse guia do Markdown bem fácil de acompanhar, dá uma olhadinha quando puder. Espero que seja útil, até mais." data-to="email@provedor.com.br">
-                          <i class="fas fa-envelope color-email"></i>&nbsp;&nbsp;Compartilhar por Email
-                        </a>
-                        <a href="#!" class="collection-item" data-sharer="whatsapp" data-title="Referência do Uso do Markdown no Hugo!" data-url="https://markdown.net.br/ferramentas/hugo/">
-                          <i class="fab fa-whatsapp color-whatsapp"></i>&nbsp;&nbsp;Compartilhar por Whatsapp
-                        </a>
-                        <a href="#!" class="collection-item" data-sharer="telegram" data-title="Referência do Uso do Markdown no Hugo!" data-url="https://markdown.net.br/ferramentasghosts/" data-to="(00) 99999-9999">
-                          <i class="fab fa-telegram color-telegram"></i>&nbsp;&nbsp;Compartilhar por Telegram
-                        </a>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
+		<table class="responsive-table" id="tabela-1-1">
+			<thead>
+				<tr>
+					<th>Elemento</th>
+					<th>Suporte</th>
+					<th>Obs</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><a href="/sintaxe-basica/#titulos">Títulos</a></td>
+					<td class="green lighten-4">Sim</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><a href="/sintaxe-basica/#paragrafos">Parágrafos</a></td>
+					<td class="green lighten-4">Sim</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><a href="/sintaxe-basica/#quebra-linha">Quebras de linha</a></td>
+					<td class="green lighten-4">Sim</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><a href="/sintaxe-basica/#negrito">Negrito</a></td>
+					<td class="green lighten-4">Sim</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><a href="/sintaxe-basica/#italico">Itálico</a></td>
+					<td class="green lighten-4">Sim</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><a href="/sintaxe-basica/#bloco-citacao">Bloco de citação</a></td>
+					<td class="green lighten-4">Sim</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><a href="/sintaxe-basica/#listas-ordenadas">Listas ordenadas</a></td>
+					<td class="green lighten-4">Sim</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><a href="/sintaxe-basica/#listas-nao-ordenadas">Listas não ordenadas</a></td>
+					<td class="green lighten-4">Sim</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><a href="/sintaxe-basica/#codigo">Código</a></td>
+					<td class="green lighten-4">Sim</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><a href="/sintaxe-basica/#linhas-horizontais">Linhas horizontais</a></td>
+					<td class="green lighten-4">Sim</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><a href="/sintaxe-basica/#links">Links</a></td>
+					<td class="green lighten-4">Sim</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><a href="/sintaxe-basica/#imagens">Imagens</a></td>
+					<td class="green lighten-4">Sim</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><a href="/sintaxe-estendida/#tabelas">Tabelas</a></td>
+					<td class="green lighten-4">Sim</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><a href="/sintaxe-estendida/#bloco-codigo-cercado">Blocos de código cercado</a></td>
+					<td class="green lighten-4">Sim</td>
+					<td>O Hugo permite que você destaque a sintaxe da linguagem de programação do bloco.</td>
+				</tr>
+				<tr>
+					<td><a href="/sintaxe-estendida/#notas-rodape">Notas de rodapé</a></td>
+					<td class="green lighten-4">Sim</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><a href="/sintaxe-estendida/#id-titulo">Id de títulos</a></td>
+					<td class="green lighten-4">Sim</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><a href="/sintaxe-estendida/#lista-definicoes">Listas de definições</a></td>
+					<td class="green lighten-4">Sim</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><a href="/sintaxe-estendida/#riscado">Riscado</a></td>
+					<td class="green lighten-4">Sim</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><a href="/sintaxe-estendida/#lista-tarefas">Listas de tarefas</a></td>
+					<td class="green lighten-4">Sim</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><a href="/sintaxe-estendida/#emojis">Emoji (copiar e colar)</a></td>
+					<td class="white lighten-4">Desconhecido</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><a href="/sintaxe-estendida/#usando-codigo-emoji">Emoji (códigos de acesso)</a></td>
+					<td class="green lighten-4">Sim</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><a href="/sintaxe-estendida/#link-automatico-url">Link automático de URL</a></td>
+					<td class="green lighten-4">Sim</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><a href="/sintaxe-estendida/#desativando-link-automatico">Desativar o link automático de URL</a></td>
+					<td class="green lighten-4">Sim</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><a href="/sintaxe-basica/#html">HTML</a></td>
+					<td class="green lighten-4">Sim</td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+
+
+		<h2 id="veja-tambem">Veja também</h2>
+
+		<p><a href="https://gohugo.io/content-management/formats/" target="_blank">Formatos de conteúdo suportados no Hugo</a></p>
+		<p><a href="https://github.com/yuin/goldmark/" target="_blank">Repositório do Goldmark no GitHub</a></p>
+	</div> <!-- Fim do conteúdo principal -->
+
+</div>
             <div class="col-12">
   <ul class="collapsible">
     <li class="active">
       <div class="collapsible-header grey lighten-4"><i class="material-icons">share</i>Compartilhar</div>
       <div class="collapsible-body">
         <div class="collection">
-          <a href="#!" class="collection-item" data-sharer="twitter" data-title="Referência do Uso do Markdown no Hugo - Guia completo do Markdown para iniciantes" data-hashtags="markdown" data-url="https://markdown.net.br/ferramentas/hugo/">
+          <a href="#!" class="collection-item" data-sharer="twitter" data-title="Referência do Uso do Markdown no Hugo | Markdown" data-hashtags="markdown" data-url="https://markdown.net.br/ferramentas/hugo/">
             <i class="fab fa-twitter color-twitter"></i>&nbsp;&nbsp;Compartilhar no Twitter
           </a>
           <a href="#!" class="collection-item" data-sharer="facebook" data-hashtag="markdown" data-url="https://markdown.net.br/ferramentas/hugo/">
@@ -329,13 +343,13 @@ taskLists = false</code></pre>
           <a href="#!" class="collection-item" data-sharer="linkedin" data-url="https://markdown.net.br/ferramentas/hugo/">
             <i class="fab fa-linkedin color-linkedin"></i>&nbsp;&nbsp;Compartilhar no Linkedin
           </a>
-          <a href="#!" class="collection-item" data-sharer="email" data-title="Referência do Uso do Markdown no Hugo - Guia completo do Markdown para iniciantes" data-url="https://markdown.net.br/ferramentas/hugo/" data-subject="Olá! Tudo bem? Achei esse guia do Markdown bem fácil de acompanhar, dá uma olhadinha quando puder. Espero que seja útil, até mais." data-to="email@provedor.com.br">
+          <a href="#!" class="collection-item" data-sharer="email" data-title="Referência do Uso do Markdown no Hugo | Markdown" data-url="https://markdown.net.br/ferramentas/hugo/" data-subject="Olá! Tudo bem? Achei esse guia do Markdown bem fácil de acompanhar, dá uma olhadinha quando puder. Espero que seja útil, até mais." data-to="email@provedor.com.br">
             <i class="fas fa-envelope color-email"></i>&nbsp;&nbsp;Compartilhar por Email
           </a>
-          <a href="#!" class="collection-item" data-sharer="whatsapp" data-title="Referência do Uso do Markdown no Hugo - Guia completo do Markdown para iniciantes" data-url="https://markdown.net.br/ferramentas/hugo/">
+          <a href="#!" class="collection-item" data-sharer="whatsapp" data-title="Referência do Uso do Markdown no Hugo | Markdown" data-url="https://markdown.net.br/ferramentas/hugo/">
             <i class="fab fa-whatsapp color-whatsapp"></i>&nbsp;&nbsp;Compartilhar por Whatsapp
           </a>
-          <a href="#!" class="collection-item" data-sharer="telegram" data-title="Referência do Uso do Markdown no Hugo - Guia completo do Markdown para iniciantes" data-url="https://markdown.net.br/ferramentas/hugo/" data-to="(00) 99999-9999">
+          <a href="#!" class="collection-item" data-sharer="telegram" data-title="Referência do Uso do Markdown no Hugo | Markdown" data-url="https://markdown.net.br/ferramentas/hugo/" data-to="(00) 99999-9999">
             <i class="fab fa-telegram color-telegram"></i>&nbsp;&nbsp;Compartilhar por Telegram
           </a>
         </div>
@@ -373,14 +387,30 @@ taskLists = false</code></pre>
 </footer>
     <!--  Scripts-->
     <script src="/assets/js/bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/show-invisibles/prism-show-invisibles.min.js" integrity="sha256-1baFoczEXwdtWBiZ6gbu7W1kn6XfPgKY4LkQQYNHTkM=" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/show-invisibles/prism-show-invisibles.min.js" integrity="sha256-1baFoczEXwdtWBiZ6gbu7W1kn6XfPgKY4LkQQYNHTkM=" crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/components/prism-asciidoc.min.js" integrity="sha256-Z6qgXS53J00CrN9qHl3CxGqX2A3qs6HwGi96bnk2e4w=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/components/prism-markdown.min.js" integrity="sha256-LVbOCHxYsNr9pF5KGdB2NphtO2FKM92SGFxRkWc9Ovg=" crossorigin="anonymous"></script>
     <script src="/assets/js/search.min.js"></script>
+
+    <script src="/assets/js/vendor/jquery.lazy@1.7.9/jquery.lazy.min.js"></script>
+    <script src="/assets/js/vendor/jquery.lazy@1.7.9/jquery.lazy.youtube.min.js"></script>
+    <script src="/assets/js/vendor/jquery.lazy@1.7.9/jquery.lazy.picture.min.js"></script>
     <!-- Lightbox das imagens -->
     <script>
       $(document).ready(function(){
          $('.materialboxed').materialbox();
+
+         $('picture.lazy-img.unloaded, img.lazy-img, iframe.lazy-yt.unloaded').Lazy({
+             effect: 'fadeIn',
+             effectTime: 1000
+             // called after an element was successfully handled
+             // afterLoad: function(element) {
+             // // Remove a animação do loader da imagem
+             //     // element.height(element.closest('.img-lazy-container').find('.image-placeholder').height());
+
+             //     element.removeClass('unloaded');
+             // }
+         });
        });
       anchors.add("h2, h3, h5");
       $('#sticky-navigator').stickyNavigator();
