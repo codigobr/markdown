@@ -424,3 +424,17 @@
  a.sidenav-trigger.top-nav {
  	left:0;
  }
+
+ @media only screen and (max-width: 600px) {
+	 .mt-s-20 {
+	     margin-top: 20px;
+	 }
+
+	 .mt-s-30 {
+	     margin-top: 30px;
+	 }
+
+	 .mt-s-40 {
+	     margin-top: 40px;
+	 }
+ }
