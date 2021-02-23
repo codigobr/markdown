@@ -75,7 +75,6 @@
     </style>
   </head>
   <body class="themes" cz-shortcut-listen="true">
-    <div id="layout-problem" style="display:none;position:fixed;bottom:20px;left:5px;right:5px;z-index:9999;border-radius:10px;"><div class="layout-problem__container" style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;position:relative;"><div class="layout-problem__msg" style="background-color:white;color:#222;padding:5px 35px;border-radius:10px;display:flex;align-items:center;border:2px solid #f44336;box-shadow:1px 4px 8px 4px #0000004a;position:relative;"><div style="color:#f44336;font-size:45px;font-weight:bold;background-color:white;border-radius:50px;margin-right:20px;">!</div><p style="font-size: 18px;">Foi detectado um <strong>problema</strong> com o layout do site!<br>É recomendável desabilitar o <span class="red-text"><strong>Ad-Blocker</strong></span><br>Ou qualquer extensão que bloqueie <strong>JavaScript</strong>.</p><div id="close-error-script-bt" style="position:absolute;top:3px;right:12px;cursor:pointer;">X</div></div></div></div>
     <header>
       <div class="container">
   <a href="#" data-target="nav-mobile" class="top-nav sidenav-trigger waves-effect waves-light circle">
@@ -167,13 +166,13 @@
           <div class="section col s12 m8 offset-m1 xl7 offset-xl1">
             <div class="row scrollspy">
 	<div class="col s12">
-		<h2 id="visao-geral">Visão geral</h2>
+		<h2 id="intro">Visão geral</h2>
 
 		<p>Conhece o Ruby? Então, essa foi a linguagem de programação escolhida para desenvolver o Jekyll.</p>
 
 		<p>O programa é gratuito e de código aberto.</p>
 
-		<p>Dentre milhares de sites que usam o Jekyll para converterem arquivos Markdown em HTML, um deles merece destaque, o <a href="/ferramentas/github-pages/">GitHub Pages</a>.</p>
+		<p>Dentre milhares de sites que usam o Jekyll para converterem arquivos Markdown em HTML, um deles merece destaque, o <a href="/ferramentas/github-pages/" target="_blank">GitHub Pages</a>.</p>
 
 		<p>O GitHub Pages usa o Jekyll como ferramenta principal para converter arquivos Markdown em HTML em seu serviço de hospedagem de sites grátis.</p>
 
@@ -199,157 +198,157 @@ input: GFM
 auto_ids: true
 toc_levels: 1..3</code></pre>
 
-	<p>O arquivo de configuração é chamado _config.yml, você pode <a href="https://jekyllrb.com/docs/configuration/markdown/" target="_blank">clicar aqui&nbsp;<sup><i class="fas fa-external-link-alt"></i></sup></a> para saber mais sobre as configurações do Jekyll.</p>
+	<p>O arquivo de configuração é chamado <code class="lang-plaintext">_config.yml</code>, você pode <a href="https://jekyllrb.com/docs/configuration/markdown/" target="_blank">clicar aqui</a> para saber mais sobre as configurações do Jekyll.</p>
 
-	<p>Site oficial: <a href="https://jekyllrb.com/" target="_blank">https://jekyllrb.com/&nbsp;<sup><i class="fas fa-external-link-alt"></i></sup></a></p>
+	<p>Site oficial: <a href="https://jekyllrb.com/" target="_blank">https://jekyllrb.com/</a></p>
 
 
-	<h2 id="suporte-markdown">Suporte ao Markdown no Jekyll</h2>
+	<h2 id="markdown-support">Suporte ao Markdown no Jekyll</h2>
 
-	<p>A <a href="#tabela-1-1">Tabela 1.1</a> apresenta os elementos Markdown compatíveis com o Jekyll.</p>
+	<p>A <a href="#table-1-1">Tabela 1.1</a> apresenta os elementos Markdown compatíveis com o Jekyll.</p>
 
-	<table class="responsive-table" id="tabela-1-1">
+	<table class="responsive-table" id="table-1-1">
 		<thead>
 			<tr>
 				<th>Elemento</th>
 				<th>Suporte</th>
-				<th>Obs</th>
+				<th>Informação</th>
 			</tr>
 		</thead>
 		<tbody>
 			<tr>
-				<td><a href="/sintaxe-basica/#titulos">Títulos</a></td>
+				<td><a href="/sintaxe-basica/#headings" target="_blank">Títulos</a></td>
 				<td class="green lighten-4">Sim</td>
 				<td></td>
 			</tr>
 			<tr>
-				<td><a href="/sintaxe-basica/#paragrafos">Parágrafos</a></td>
+				<td><a href="/sintaxe-basica/#paragraphs" target="_blank">Parágrafos</a></td>
 				<td class="green lighten-4">Sim</td>
 				<td></td>
 			</tr>
 			<tr>
-				<td><a href="/sintaxe-basica/#quebra-linha">Quebras de linha</a></td>
+				<td><a href="/sintaxe-basica/#line-break" target="_blank">Quebras de linha</a></td>
 				<td class="green lighten-4">Sim</td>
 				<td></td>
 			</tr>
 			<tr>
-				<td><a href="/sintaxe-basica/#negrito">Negrito</a></td>
+				<td><a href="/sintaxe-basica/#bold" target="_blank">Negrito</a></td>
 				<td class="green lighten-4">Sim</td>
 				<td></td>
 			</tr>
 			<tr>
-				<td><a href="/sintaxe-basica/#italico">Itálico</a></td>
+				<td><a href="/sintaxe-basica/#italics" target="_blank">Itálico</a></td>
 				<td class="green lighten-4">Sim</td>
 				<td></td>
 			</tr>
 			<tr>
-				<td><a href="/sintaxe-basica/#bloco-citacao">Bloco de citação</a></td>
+				<td><a href="/sintaxe-basica/#blockquote" target="_blank">Blockquote</a></td>
 				<td class="green lighten-4">Sim</td>
 				<td></td>
 			</tr>
 			<tr>
-				<td><a href="/sintaxe-basica/#listas-ordenadas">Listas ordenadas</a></td>
+				<td><a href="/sintaxe-basica/#lists-ordered" target="_blank">Listas ordenadas</a></td>
 				<td class="green lighten-4">Sim</td>
 				<td></td>
 			</tr>
 			<tr>
-				<td><a href="/sintaxe-basica/#listas-nao-ordenadas">Listas não ordenadas</a></td>
+				<td><a href="/sintaxe-basica/#lists-unordered" target="_blank">Listas não ordenadas</a></td>
 				<td class="green lighten-4">Sim</td>
 				<td></td>
 			</tr>
 			<tr>
-				<td><a href="/sintaxe-basica/#codigo">Código</a></td>
+				<td><a href="/sintaxe-basica/#code" target="_blank">Código</a></td>
 				<td class="green lighten-4">Sim</td>
 				<td></td>
 			</tr>
 			<tr>
-				<td><a href="/sintaxe-basica/#linhas-horizontais">Linhas horizontais</a></td>
+				<td><a href="/sintaxe-basica/#horizontal-rule" target="_blank">Linhas horizontais</a></td>
 				<td class="green lighten-4">Sim</td>
 				<td></td>
 			</tr>
 			<tr>
-				<td><a href="/sintaxe-basica/#links">Links</a></td>
+				<td><a href="/sintaxe-basica/#links" target="_blank">Links</a></td>
 				<td class="green lighten-4">Sim</td>
 				<td></td>
 			</tr>
 			<tr>
-				<td><a href="/sintaxe-basica/#imagens">Imagens</a></td>
+				<td><a href="/sintaxe-basica/#images" target="_blank">Imagens</a></td>
 				<td class="green lighten-4">Sim</td>
 				<td></td>
 			</tr>
 			<tr>
-				<td><a href="/sintaxe-estendida/#tabelas">Tabelas</a></td>
+				<td><a href="/sintaxe-estendida/#markdown-tables" target="_blank">Tabelas</a></td>
 				<td class="green lighten-4">Sim</td>
 				<td></td>
 			</tr>
 			<tr>
-				<td><a href="/sintaxe-estendida/#bloco-codigo-cercado">Blocos de código cercado</a></td>
+				<td><a href="/sintaxe-estendida/#fenced-code-block" target="_blank">Blocos de código cercado</a></td>
 				<td class="green lighten-4">Sim</td>
 				<td>Insira a opção <code class="lang-plaintext">syntax_highlighter: rouge</code> na seção <code class="lang-plaintext">kramdown</code> do arquivo <code class="lang-plaintext">_config.yml</code> para habilitar o realce da linguagem dentro do bloco.</td>
 			</tr>
 			<tr>
-				<td><a href="/sintaxe-estendida/#notas-rodape">Notas de rodapé</a></td>
+				<td><a href="/sintaxe-estendida/#markdown-footnotes" target="_blank">Notas de rodapé</a></td>
 				<td class="green lighten-4">Sim</td>
 				<td></td>
 			</tr>
 			<tr>
-				<td><a href="/sintaxe-estendida/#id-titulo">Id de títulos</a></td>
+				<td><a href="/sintaxe-estendida/#markdown-title-id" target="_blank">Id de títulos</a></td>
 				<td class="green lighten-4">Sim</td>
 				<td></td>
 			</tr>
 			<tr>
-				<td><a href="/sintaxe-estendida/#lista-definicoes">Listas de definições</a></td>
+				<td><a href="/sintaxe-estendida/#markdown-definition-lists" target="_blank">Listas de definições</a></td>
 				<td class="green lighten-4">Sim</td>
 				<td></td>
 			</tr>
 			<tr>
-				<td><a href="/sintaxe-estendida/#riscado">Riscado</a></td>
+				<td><a href="/sintaxe-estendida/#markdown-strikethrough" target="_blank">Tachado</a></td>
 				<td class="green lighten-4">Sim</td>
 				<td>Para riscar uma palavra no Jekyll use dos tiles <code class="lang-plaintext">~~palavra~~</code> ou apenas um tile <code class="lang-plaintext">~palavra~</code> ao redor do conteúdo. Ambas sintaxes funcionam.</td>
 			</tr>
 			<tr>
-				<td><a href="/sintaxe-estendida/#lista-tarefas">Listas de tarefas</a></td>
+				<td><a href="/sintaxe-estendida/#markdown-task-lists" target="_blank">Listas de tarefas</a></td>
 				<td class="green lighten-4">Sim</td>
 				<td></td>
 			</tr>
 			<tr>
-				<td><a href="/sintaxe-estendida/#emojis">Emoji (copiar e colar)</a></td>
+				<td><a href="/sintaxe-estendida/#emojis-copy-and-paste" target="_blank">Emoji (copiar e colar)</a></td>
 				<td class="green lighten-4">Sim</td>
 				<td></td>
 			</tr>
 			<tr>
-				<td><a href="/sintaxe-estendida/#usando-codigo-emoji">Emoji (códigos de acesso)</a></td>
+				<td><a href="/sintaxe-estendida/#emojis-access-code" target="_blank">Emoji (códigos de acesso)</a></td>
 				<td class="red lighten-4">Não</td>
 				<td>O Jekyll não fornece suporte por padrão, mas você pode adicionar o plugin <a href="https://github.com/jekyll/jemoji" target="_blank">jemoji</a>.</td>
 			</tr>
 			<tr>
-				<td><a href="/sintaxe-estendida/#link-automatico-url">Link automático de URL</a></td>
+				<td><a href="/sintaxe-estendida/#markdown-auto-link" target="_blank">Link automático de URL</a></td>
 				<td class="green lighten-4">Sim</td>
 				<td></td>
 			</tr>
 			<tr>
-				<td><a href="/sintaxe-estendida/#desativando-link-automatico">Desativar o link automático de URL</a></td>
+				<td><a href="/sintaxe-estendida/#markdown-disable-auto-link" target="_blank">Desativar o link automático de URL</a></td>
 				<td class="green lighten-4">Sim</td>
 				<td></td>
 			</tr>
 			<tr>
-				<td><a href="/sintaxe-basica/#html">HTML</a></td>
+				<td><a href="/sintaxe-basica/#html" target="_blank">HTML</a></td>
 				<td class="green lighten-4">Sim</td>
 				<td></td>
 			</tr>
 		</tbody>
 	</table>
 
-	<h2 id="elementos-adicionais">Suporte para elementos de sintaxe adicionais</h2>
+	<h2 id="additional-elements">Suporte para elementos de sintaxe adicionais</h2>
 
-	<p>Na <a href="#tabela-1-2">Tabela 1.2</a> você confere elemento mais obscuros suportados pelo Jekyll.</p>
+	<p>Na <a href="#table-1-2">Tabela 1.2</a> você confere elemento mais obscuros suportados pelo Jekyll.</p>
 
-	<table class="responsive-table" id="tabela-1-2">
+	<table class="responsive-table" id="table-1-2">
 		<thead>
 			<tr>
 				<th>Elemento</th>
 				<th>Markdown</th>
-				<th>Saída renderizada</th>
+				<th>Saída</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -362,7 +361,7 @@ toc_levels: 1..3</code></pre>
 			</tbody>
 		</table>
 
-		<h2 id="veja-tambem">Veja também</h2>
+		<h2 id="see-also">Veja também</h2>
 
 		<p><a href="https://jekyllrb.com/docs/configuration/markdown/" target="_blank">Opções de configuração do Markdown no Jekyll</a></p>
 		<p><a href="https://kramdown.gettalong.org/" target="_blank">Documentação do kramdown</a></p>

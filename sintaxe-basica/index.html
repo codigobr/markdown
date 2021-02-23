@@ -75,7 +75,6 @@
     </style>
   </head>
   <body class="themes" cz-shortcut-listen="true">
-    <div id="layout-problem" style="display:none;position:fixed;bottom:20px;left:5px;right:5px;z-index:9999;border-radius:10px;"><div class="layout-problem__container" style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;position:relative;"><div class="layout-problem__msg" style="background-color:white;color:#222;padding:5px 35px;border-radius:10px;display:flex;align-items:center;border:2px solid #f44336;box-shadow:1px 4px 8px 4px #0000004a;position:relative;"><div style="color:#f44336;font-size:45px;font-weight:bold;background-color:white;border-radius:50px;margin-right:20px;">!</div><p style="font-size: 18px;">Foi detectado um <strong>problema</strong> com o layout do site!<br>É recomendável desabilitar o <span class="red-text"><strong>Ad-Blocker</strong></span><br>Ou qualquer extensão que bloqueie <strong>JavaScript</strong>.</p><div id="close-error-script-bt" style="position:absolute;top:3px;right:12px;cursor:pointer;">X</div></div></div></div>
     <header>
       <div class="container">
   <a href="#" data-target="nav-mobile" class="top-nav sidenav-trigger waves-effect waves-light circle">
@@ -158,224 +157,229 @@
           <div class="section col s12 m8 offset-m1 xl7 offset-xl1">
             <div class="row scrollspy">
     <div class="col s12">
-        <h2 id="visao-geral">Visão geral</h2>
+        <h2 id="overview">Visão geral</h2>
 
-        <p>Apesar de algumas variações, a maioria dos aplicativos fornecem suporte aos elementos básicos do Markdown. Esses elementos são essenciais para que você consiga minimamente formatar um documento. Mas não se engane, usando apenas o básico do Markdown é possível criar, inclusive, sites para a web.</p>
+        <p>Apesar de algumas variações, a maioria dos aplicativos fornecem suporte aos elementos básicos do Markdown. Esses elementos são essenciais para que você consiga formatar um documento. Mas não se engane, usando apenas o básico do Markdown é possível criar sites bem elaborados para a Web.</p>
 
-        <p>Sempre que possível, quando houver variações de sintaxe de um processador Markdown para outro, essas, serão notadas no artigo.</p>
+        <blockquote><b>NOTA</b>: Sempre que possível, quando houver variações de sintaxe de um processador Markdown para outro, essas, serão notadas no artigo.</blockquote>
 
-        <h2 id="titulos">Títulos / Cabeçalhos</h2>
+        <h2 id="headings">Títulos / Cabeçalhos</h2>
 
-        <p>Todo documento tem, ou deveria ter, um título/cabeçalho, correto? Então, vamos começar por ele.</p>
+        <p>Todo documento tem ou deveria ter um título, correto? Então, vamos começar por ele.</p>
 
-        <p>O símbolo da vez é a cerquilha <code class="lang-markdown">#</code>. Na construção do título formate o código colocando uma cerquilha no inicio da linha, demarcando o cabeçalho.</p>
+        <p>O símbolo usado para formatar um cabeçalho em Markdown é a cequilha <code class="lang-markdown">#</code>. Na construção do título formate o código colocando uma cerquilha no inicio da linha, demarcando o cabeçalho.</p>
 
         <p>Por exemplo:</p>
 
-        <pre class="lang-markdown"><code># Cabeçalho/Título de nível 1</code></pre>
+        <div class="code-example">
+	<pre class="lang-markdown"><code># Título de nível 1</code></pre>
+	<a href="/editor/?markdown=%23%20T%C3%ADtulo%20de%20n%C3%ADvel%201" target="_blank" class="test-code waves-effect waves-light btn orange darken-4 pr-25">
+	    <b><span data-str="true">Tente você mesmo</span></b>&nbsp;<i class="fas fa-external-link-alt outter-icon-code"></i>
+	</a>
+</div>
 
         <p>Será convertido para a tag <code class="lang-html">h1</code> do HTML.</p>
 
-            <p><code class="lang-markdown">&lt;h1&gt;Cabeçalho/Título de nível 1&lt;/h1&gt;</code>.</p>
+		<pre class="lang-html"><code>&lt;h1&gt;Título de nível 1&lt;/h1&gt;</code>.</pre>
 
-            <div class="image-container">
-            	<figure class="mh-0">
+        <div class="image-container">
+        	<figure class="mh-0">
 		    <picture class="lazy-img unloaded image-center">
 		    	<data-src class="responsive-img lazy-img"
-		         srcset="/assets/img/sintaxe-basica/markdown-titulos-h1-stackedit_w1280.webp 1280w,
-/assets/img/sintaxe-basica/markdown-titulos-h1-stackedit_w1126.webp 1126w,
-/assets/img/sintaxe-basica/markdown-titulos-h1-stackedit_w972.webp 972w,
-/assets/img/sintaxe-basica/markdown-titulos-h1-stackedit_w818.webp 818w,
-/assets/img/sintaxe-basica/markdown-titulos-h1-stackedit_w664.webp 664w,
-/assets/img/sintaxe-basica/markdown-titulos-h1-stackedit_w510.webp 510w,
-/assets/img/sintaxe-basica/markdown-titulos-h1-stackedit_w356.webp 356w,
-/assets/img/sintaxe-basica/markdown-titulos-h1-stackedit_w202.webp 202w"
-		         sizes="(max-width: 510px) 50vw, 510px"
+		         srcset="/assets/img/basic-syntax/markdown-h1_w1280.webp 1280w,
+/assets/img/basic-syntax/markdown-h1_w1126.webp 1126w,
+/assets/img/basic-syntax/markdown-h1_w972.webp 972w,
+/assets/img/basic-syntax/markdown-h1_w818.webp 818w,
+/assets/img/basic-syntax/markdown-h1_w664.webp 664w,
+/assets/img/basic-syntax/markdown-h1_w510.webp 510w,
+/assets/img/basic-syntax/markdown-h1_w356.webp 356w,
+/assets/img/basic-syntax/markdown-h1_w202.webp 202w"
+		         sizes="(max-width: 664px) 100vw, 664px"
 		         type="image/webp"></data-src>
 		    	<data-img class="responsive-img lazy-img"
 		        	alt="Tutorial de Markdown - Título H1 no Markdown convertido em HTML"
 		        	title="Tutorial de Markdown - Título H1 no Markdown convertido em HTML"
-		         	src="/assets/img/sintaxe-basica/markdown-titulos-h1-stackedit_w1280.png"
-		         	srcset="/assets/img/sintaxe-basica/markdown-titulos-h1-stackedit_w1280.png 1280w,
-/assets/img/sintaxe-basica/markdown-titulos-h1-stackedit_w1126.png 1126w,
-/assets/img/sintaxe-basica/markdown-titulos-h1-stackedit_w972.png 972w,
-/assets/img/sintaxe-basica/markdown-titulos-h1-stackedit_w818.png 818w,
-/assets/img/sintaxe-basica/markdown-titulos-h1-stackedit_w664.png 664w,
-/assets/img/sintaxe-basica/markdown-titulos-h1-stackedit_w510.png 510w,
-/assets/img/sintaxe-basica/markdown-titulos-h1-stackedit_w356.png 356w,
-/assets/img/sintaxe-basica/markdown-titulos-h1-stackedit_w202.png 202w"
-		         	sizes="(max-width: 510px) 50vw, 510px"></data-img>
-		        <a href="/assets/img/sintaxe-basica/markdown-titulos-h1-stackedit_w1280.png" target="_blank" class="cover-link"></a>
+		         	src="/assets/img/basic-syntax/markdown-h1_w1280.png"
+		         	srcset="/assets/img/basic-syntax/markdown-h1_w1280.png 1280w,
+/assets/img/basic-syntax/markdown-h1_w1126.png 1126w,
+/assets/img/basic-syntax/markdown-h1_w972.png 972w,
+/assets/img/basic-syntax/markdown-h1_w818.png 818w,
+/assets/img/basic-syntax/markdown-h1_w664.png 664w,
+/assets/img/basic-syntax/markdown-h1_w510.png 510w,
+/assets/img/basic-syntax/markdown-h1_w356.png 356w,
+/assets/img/basic-syntax/markdown-h1_w202.png 202w"
+		         	sizes="(max-width: 664px) 100vw, 664px"></data-img>
+		        <a href="/assets/img/basic-syntax/markdown-h1_w1280.png" target="_blank" class="cover-link"></a>
 		    </picture>
 			<figcaption class="caption">
 		    <i class="tiny material-icons">photo</i>&nbsp;<span>Título H1 no Markdown convertido em HTML</span>
 		</figcaption>
 		</figure>
-            </div>
+        </div>
 
-            <blockquote><b>NOTA</b>: A tag <code class="lang-html">&lt;h1&gt;</code> representa o título mais importante do HTML, normalmente o título do artigo.</blockquote>
+		<blockquote><b>NOTA</b>: A tag <code class="lang-html">h1</code> representa o título mais importante do HTML, normalmente o título do artigo.</blockquote>
 
-            <p>A quantidade de cerquilhas que você utiliza no inicio da linha indica o nível do cabeçalho/título, sendo assim, a formatação <code class="lang-markdown">### Meu título</code> cria um cabeçalho de nível 3.</p>
+		<p>A quantidade de cerquilhas que você utiliza no inicio da linha indica o nível do título, sendo assim, a formatação <code class="lang-markdown">### Meu título</code> cria um cabeçalho de nível 3.</p>
 
-			<p class="mv-40">
-			    <ins class="adsbygoogle"
-			         style="display:block; text-align:center;"
-			         data-ad-layout="in-article"
-			         data-ad-format="fluid"
-			         data-ad-client="ca-pub-3427355473051563"
-			         data-ad-slot="3854885260"></ins>
-			    <script>
-			         (adsbygoogle = window.adsbygoogle || []).push({});
-			    </script>
-			</p>
+		<p class="mv-40">
+		    <ins class="adsbygoogle"
+		         style="display:block; text-align:center;"
+		         data-ad-layout="in-article"
+		         data-ad-format="fluid"
+		         data-ad-client="ca-pub-3427355473051563"
+		         data-ad-slot="3854885260"></ins>
+		    <script>
+		         (adsbygoogle = window.adsbygoogle || []).push({});
+		    </script>
+		</p>
 
-            <blockquote><b>NOTA</b>: Quando falamos de nível, falamos dos títulos convertidos para HTML. No HTML os níveis de títulos vão de 1 à 6, denotados pelas tags <code class="lang-html">h1</code>, <code class="lang-html">h2</code>, <code class="lang-html">h3</code>, <code class="lang-html">h4</code>, <code class="lang-html">h5</code> & <code class="lang-html">h6</code></blockquote>
+		<blockquote><b>NOTA</b>: Quando falamos de nível, falamos dos títulos convertidos para HTML. No HTML os níveis de títulos vão de 1 à 6, denotados pelas tags <code class="lang-html">h1</code>, <code class="lang-html">h2</code>, <code class="lang-html">h3</code>, <code class="lang-html">h4</code>, <code class="lang-html">h5</code> e <code class="lang-html">h6</code></blockquote>
 
-            <p>Na <a href="#tabela-1-1">Tabela 1.1</a> você confere as sintaxes de título do Markdown e do HTML, além da saída renderizada na terceira coluna.</p>
+		<p>Na <a href="#table-1-1">Tabela 1.1</a> você confere as sintaxes de título do Markdown e do HTML, além da saída renderizada na terceira coluna.</p>
 
-            <table class="responsive-table" id="tabela-1-1">
-                <thead>
-                    <tr>
-                        <th>Markdown</th>
-                        <th>HTML</th>
-                        <th>Resultado</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td># Título de nível 1</td>
-                        <td>&lt;h1&gt;Título de nível 1&lt;/h1&gt;</td>
-                        <td class="h1-like" id="titulo-nivel-1">Título de nível 1</td>
-                    </tr>
-                    <tr>
-                        <td>## Título de nível 2</td>
-                        <td>&lt;h2&gt;Título de nível 2&lt;/h2&gt;</td>
-                        <td class="h2-like" id="titulo-nivel-2">Título de nível 2</td>
-                    </tr>
-                    <tr>
-                        <td>### Título de nível 3</td>
-                        <td>&lt;h3&gt;Título de nível 3&lt;/h3&gt;</td>
-                        <td class="h3-like" id="titulo-nivel-3">Título de nível 3</td>
-                    </tr>
-                    <tr>
-                        <td>#### Título de nível 4</td>
-                        <td>&lt;h4&gt;Título de nível 4&lt;/h4&gt;</td>
-                        <td class="h4-like" id="titulo-nivel-4">Título de nível 4</td>
-                    </tr>
-                    <tr>
-                        <td>##### Título de nível 5</td>
-                        <td>&lt;h5&gt;Título de nível 5&lt;/h5&gt;</td>
-                        <td class="-h5-like" id="titulo-nivel-5">Título de nível 5</td>
-                    </tr>
-                    <tr>
-                        <td>###### Título de nível 6</td>
-                        <td>&lt;h6&gt;Título de nível 6&lt;/h6&gt;</td>
-                        <td class="h6-like">Título de nível 6</td>
-                    </tr>
-                </tbody>
-            </table>
+        <table class="responsive-table" id="table-1-1">
+            <thead>
+                <tr>
+                    <th>Markdown</th>
+                    <th>HTML</th>
+                    <th>Resultado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td># Título de nível 1</td>
+                    <td>&lt;h1&gt;Título de nível 1&lt;/h1&gt;</td>
+                    <td class="h1-like">Título de nível 1</td>
+                </tr>
+                <tr>
+                    <td>## Título de nível 2</td>
+                    <td>&lt;h2&gt;Título de nível 2&lt;/h2&gt;</td>
+                    <td class="h2-like">Título de nível 2</td>
+                </tr>
+                <tr>
+                    <td>### Título de nível 3</td>
+                    <td>&lt;h3&gt;Título de nível 3&lt;/h3&gt;</td>
+                    <td class="h3-like">Título de nível 3</td>
+                </tr>
+                <tr>
+                    <td>#### Título de nível 4</td>
+                    <td>&lt;h4&gt;Título de nível 4&lt;/h4&gt;</td>
+                    <td class="h4-like">Título de nível 4</td>
+                </tr>
+                <tr>
+                    <td>##### Título de nível 5</td>
+                    <td>&lt;h5&gt;Título de nível 5&lt;/h5&gt;</td>
+                    <td class="-h5-like">Título de nível 5</td>
+                </tr>
+                <tr>
+                    <td>###### Título de nível 6</td>
+                    <td>&lt;h6&gt;Título de nível 6&lt;/h6&gt;</td>
+                    <td class="h6-like">Título de nível 6</td>
+                </tr>
+            </tbody>
+        </table>
 
-            <small class="caption"><i class="tiny material-icons">info</i>&nbsp;<span>Tabela 1.1 - Comparação entre títulos Markdown, títulos HTML e a renderização HTML.</span></small>
+		<small class="caption">Tabela 1.1 - Comparação entre títulos Markdown, títulos HTML e a renderização HTML.</small>
 
-            <div class="image-container">
-            	<figure class="mh-0">
+	    <div class="image-container">
+	    	<figure class="mh-0">
 		    <picture class="lazy-img unloaded image-center">
 		    	<data-src class="responsive-img lazy-img"
-		         srcset="/assets/img/sintaxe-basica/titulos-h1-h2-h3-h4-h5-h6-markdown-stackedit_w1280.webp 1280w,
-/assets/img/sintaxe-basica/titulos-h1-h2-h3-h4-h5-h6-markdown-stackedit_w1126.webp 1126w,
-/assets/img/sintaxe-basica/titulos-h1-h2-h3-h4-h5-h6-markdown-stackedit_w972.webp 972w,
-/assets/img/sintaxe-basica/titulos-h1-h2-h3-h4-h5-h6-markdown-stackedit_w818.webp 818w,
-/assets/img/sintaxe-basica/titulos-h1-h2-h3-h4-h5-h6-markdown-stackedit_w664.webp 664w,
-/assets/img/sintaxe-basica/titulos-h1-h2-h3-h4-h5-h6-markdown-stackedit_w510.webp 510w,
-/assets/img/sintaxe-basica/titulos-h1-h2-h3-h4-h5-h6-markdown-stackedit_w356.webp 356w,
-/assets/img/sintaxe-basica/titulos-h1-h2-h3-h4-h5-h6-markdown-stackedit_w202.webp 202w"
-		         sizes="(max-width: 510px) 50vw, 510px"
+		         srcset="/assets/img/basic-syntax/markdown-headings_w1280.webp 1280w,
+/assets/img/basic-syntax/markdown-headings_w1126.webp 1126w,
+/assets/img/basic-syntax/markdown-headings_w972.webp 972w,
+/assets/img/basic-syntax/markdown-headings_w818.webp 818w,
+/assets/img/basic-syntax/markdown-headings_w664.webp 664w,
+/assets/img/basic-syntax/markdown-headings_w510.webp 510w,
+/assets/img/basic-syntax/markdown-headings_w356.webp 356w,
+/assets/img/basic-syntax/markdown-headings_w202.webp 202w"
+		         sizes="(max-width: 664px) 100vw, 664px"
 		         type="image/webp"></data-src>
 		    	<data-img class="responsive-img lazy-img"
 		        	alt="Tutorial de Markdown - Títulos Markdown no StackEdit"
 		        	title="Tutorial de Markdown - Títulos Markdown no StackEdit"
-		         	src="/assets/img/sintaxe-basica/titulos-h1-h2-h3-h4-h5-h6-markdown-stackedit_w1280.png"
-		         	srcset="/assets/img/sintaxe-basica/titulos-h1-h2-h3-h4-h5-h6-markdown-stackedit_w1280.png 1280w,
-/assets/img/sintaxe-basica/titulos-h1-h2-h3-h4-h5-h6-markdown-stackedit_w1126.png 1126w,
-/assets/img/sintaxe-basica/titulos-h1-h2-h3-h4-h5-h6-markdown-stackedit_w972.png 972w,
-/assets/img/sintaxe-basica/titulos-h1-h2-h3-h4-h5-h6-markdown-stackedit_w818.png 818w,
-/assets/img/sintaxe-basica/titulos-h1-h2-h3-h4-h5-h6-markdown-stackedit_w664.png 664w,
-/assets/img/sintaxe-basica/titulos-h1-h2-h3-h4-h5-h6-markdown-stackedit_w510.png 510w,
-/assets/img/sintaxe-basica/titulos-h1-h2-h3-h4-h5-h6-markdown-stackedit_w356.png 356w,
-/assets/img/sintaxe-basica/titulos-h1-h2-h3-h4-h5-h6-markdown-stackedit_w202.png 202w"
-		         	sizes="(max-width: 510px) 50vw, 510px"></data-img>
-		        <a href="/assets/img/sintaxe-basica/titulos-h1-h2-h3-h4-h5-h6-markdown-stackedit_w1280.png" target="_blank" class="cover-link"></a>
+		         	src="/assets/img/basic-syntax/markdown-headings_w1280.png"
+		         	srcset="/assets/img/basic-syntax/markdown-headings_w1280.png 1280w,
+/assets/img/basic-syntax/markdown-headings_w1126.png 1126w,
+/assets/img/basic-syntax/markdown-headings_w972.png 972w,
+/assets/img/basic-syntax/markdown-headings_w818.png 818w,
+/assets/img/basic-syntax/markdown-headings_w664.png 664w,
+/assets/img/basic-syntax/markdown-headings_w510.png 510w,
+/assets/img/basic-syntax/markdown-headings_w356.png 356w,
+/assets/img/basic-syntax/markdown-headings_w202.png 202w"
+		         	sizes="(max-width: 664px) 100vw, 664px"></data-img>
+		        <a href="/assets/img/basic-syntax/markdown-headings_w1280.png" target="_blank" class="cover-link"></a>
 		    </picture>
 			<figcaption class="caption">
 		    <i class="tiny material-icons">photo</i>&nbsp;<span>Títulos Markdown no StackEdit</span>
 		</figcaption>
 		</figure>
-            </div>
+	    </div>
 
-            <h3 id="sintaxe-alternativa">Sintaxe alternativa</h3>
+		<h3 id="headings-alternative-syntax">Sintaxe alternativa</h3>
 
-            <p>O Markdown oferece uma sintaxe diferente para construir títulos de níveis 1 e 2. Ao invés de usar a cerquilha no início da linha, adicione abaixo do título sinais de igual <code class="lang-text">==</code> para cabeçalhos de nível 1 e sinais de menos <code class="lang-text">--</code> para cabeçalhos de nível 2.</p>
+		<p>O Markdown oferece uma sintaxe diferente para construir títulos de níveis 1 e 2. Ao invés de usar a cerquilha no início da linha, adicione abaixo do título sinais de igual <code class="lang-text">==</code> para cabeçalhos de nível 1 e sinais de menos <code class="lang-text">--</code> para cabeçalhos de nível 2.</p>
 
-            <div class="image-container">
-            	<figure class="mh-0">
+	    <div class="image-container">
+	    	<figure class="mh-0">
 		    <picture class="lazy-img unloaded image-center">
 		    	<data-src class="responsive-img lazy-img"
-		         srcset="/assets/img/sintaxe-basica/markdown-titulos-sintaxe-alternativa_w1280.webp 1280w,
-/assets/img/sintaxe-basica/markdown-titulos-sintaxe-alternativa_w1126.webp 1126w,
-/assets/img/sintaxe-basica/markdown-titulos-sintaxe-alternativa_w972.webp 972w,
-/assets/img/sintaxe-basica/markdown-titulos-sintaxe-alternativa_w818.webp 818w,
-/assets/img/sintaxe-basica/markdown-titulos-sintaxe-alternativa_w664.webp 664w,
-/assets/img/sintaxe-basica/markdown-titulos-sintaxe-alternativa_w510.webp 510w,
-/assets/img/sintaxe-basica/markdown-titulos-sintaxe-alternativa_w356.webp 356w,
-/assets/img/sintaxe-basica/markdown-titulos-sintaxe-alternativa_w202.webp 202w"
-		         sizes="(max-width: 510px) 50vw, 510px"
+		         srcset="/assets/img/basic-syntax/markdown-headings-alternative-syntax_w1280.webp 1280w,
+/assets/img/basic-syntax/markdown-headings-alternative-syntax_w1126.webp 1126w,
+/assets/img/basic-syntax/markdown-headings-alternative-syntax_w972.webp 972w,
+/assets/img/basic-syntax/markdown-headings-alternative-syntax_w818.webp 818w,
+/assets/img/basic-syntax/markdown-headings-alternative-syntax_w664.webp 664w,
+/assets/img/basic-syntax/markdown-headings-alternative-syntax_w510.webp 510w,
+/assets/img/basic-syntax/markdown-headings-alternative-syntax_w356.webp 356w,
+/assets/img/basic-syntax/markdown-headings-alternative-syntax_w202.webp 202w"
+		         sizes="(max-width: 664px) 100vw, 664px"
 		         type="image/webp"></data-src>
 		    	<data-img class="responsive-img lazy-img"
 		        	alt="Tutorial de Markdown - Sintaxe alternativa para criar títulos de nível 1 e 2"
 		        	title="Tutorial de Markdown - Sintaxe alternativa para criar títulos de nível 1 e 2"
-		         	src="/assets/img/sintaxe-basica/markdown-titulos-sintaxe-alternativa_w1280.png"
-		         	srcset="/assets/img/sintaxe-basica/markdown-titulos-sintaxe-alternativa_w1280.png 1280w,
-/assets/img/sintaxe-basica/markdown-titulos-sintaxe-alternativa_w1126.png 1126w,
-/assets/img/sintaxe-basica/markdown-titulos-sintaxe-alternativa_w972.png 972w,
-/assets/img/sintaxe-basica/markdown-titulos-sintaxe-alternativa_w818.png 818w,
-/assets/img/sintaxe-basica/markdown-titulos-sintaxe-alternativa_w664.png 664w,
-/assets/img/sintaxe-basica/markdown-titulos-sintaxe-alternativa_w510.png 510w,
-/assets/img/sintaxe-basica/markdown-titulos-sintaxe-alternativa_w356.png 356w,
-/assets/img/sintaxe-basica/markdown-titulos-sintaxe-alternativa_w202.png 202w"
-		         	sizes="(max-width: 510px) 50vw, 510px"></data-img>
-		        <a href="/assets/img/sintaxe-basica/markdown-titulos-sintaxe-alternativa_w1280.png" target="_blank" class="cover-link"></a>
+		         	src="/assets/img/basic-syntax/markdown-headings-alternative-syntax_w1280.png"
+		         	srcset="/assets/img/basic-syntax/markdown-headings-alternative-syntax_w1280.png 1280w,
+/assets/img/basic-syntax/markdown-headings-alternative-syntax_w1126.png 1126w,
+/assets/img/basic-syntax/markdown-headings-alternative-syntax_w972.png 972w,
+/assets/img/basic-syntax/markdown-headings-alternative-syntax_w818.png 818w,
+/assets/img/basic-syntax/markdown-headings-alternative-syntax_w664.png 664w,
+/assets/img/basic-syntax/markdown-headings-alternative-syntax_w510.png 510w,
+/assets/img/basic-syntax/markdown-headings-alternative-syntax_w356.png 356w,
+/assets/img/basic-syntax/markdown-headings-alternative-syntax_w202.png 202w"
+		         	sizes="(max-width: 664px) 100vw, 664px"></data-img>
+		        <a href="/assets/img/basic-syntax/markdown-headings-alternative-syntax_w1280.png" target="_blank" class="cover-link"></a>
 		    </picture>
 			<figcaption class="caption">
 		    <i class="tiny material-icons">photo</i>&nbsp;<span>Sintaxe alternativa para criar títulos de nível 1 e 2</span>
 		</figcaption>
 		</figure>
-            </div>
+	    </div>
 
-            <p>A <a href="#tabela-1-2">Tabela 1.2</a> mostra a variação da sintaxe.</p>
+        <p>A <a href="#table-1-2">Tabela 1.2</a> mostra a variação da sintaxe.</p>
 
-            <table class="responsive-table" id="tabela-1-2">
-                <thead>
-                    <tr>
-                        <th>Markdown</th>
-                        <th>HTML</th>
-                        <th>Resultado</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Título de nível 1<br>===============</td>
-                        <td>&lt;h1&gt;Título de nível 1&lt;/h1&gt;</td>
-                        <td class="h1-like" id="titulo-alternativo-nivel-1">Título de nível 1</td>
-                    </tr>
-                    <tr>
-                        <td>Título de nível 2<br>---------------</td>
-                        <td>&lt;h2&gt;Título de nível 2&lt;/h2&gt;</td>
-                        <td class="h2-like" id="titulo-alternativo-nivel-2">Título de nível 2</td>
-                    </tr>
-                </tbody>
-            </table>
+        <table class="responsive-table" id="table-1-2">
+            <thead>
+                <tr>
+                    <th>Markdown</th>
+                    <th>HTML</th>
+                    <th>Resultado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Título de nível 1<br>===============</td>
+                    <td>&lt;h1&gt;Título de nível 1&lt;/h1&gt;</td>
+                    <td class="h1-like">Título de nível 1</td>
+                </tr>
+                <tr>
+                    <td>Título de nível 2<br>---------------</td>
+                    <td>&lt;h2&gt;Título de nível 2&lt;/h2&gt;</td>
+                    <td class="h2-like">Título de nível 2</td>
+                </tr>
+            </tbody>
+        </table>
 
-            <small class="caption"><i class="tiny material-icons">info</i>&nbsp;<span>Tabela 1.2 - Sintaxe alternativa para criar títulos de níveis 1 & 2 no Markdown.</span></small>
+            <small class="caption">Tabela 1.2 - Sintaxe alternativa para criar títulos de níveis 1 e 2 no Markdown.</small>
 
             <p>Colocando apenas um sinal de igual <code class="lang-plaintext">=</code> ou um traço/sinal de menos <code class="lang-plaintext">-</code> embaixo do texto também funciona.</p>
 
@@ -383,30 +387,30 @@
             	<figure class="mh-0">
 		    <picture class="lazy-img unloaded image-center">
 		    	<data-src class="responsive-img lazy-img"
-		         srcset="/assets/img/sintaxe-basica/markdown-sintaxe-alternativa-usando-um-sinal_w1280.webp 1280w,
-/assets/img/sintaxe-basica/markdown-sintaxe-alternativa-usando-um-sinal_w1126.webp 1126w,
-/assets/img/sintaxe-basica/markdown-sintaxe-alternativa-usando-um-sinal_w972.webp 972w,
-/assets/img/sintaxe-basica/markdown-sintaxe-alternativa-usando-um-sinal_w818.webp 818w,
-/assets/img/sintaxe-basica/markdown-sintaxe-alternativa-usando-um-sinal_w664.webp 664w,
-/assets/img/sintaxe-basica/markdown-sintaxe-alternativa-usando-um-sinal_w510.webp 510w,
-/assets/img/sintaxe-basica/markdown-sintaxe-alternativa-usando-um-sinal_w356.webp 356w,
-/assets/img/sintaxe-basica/markdown-sintaxe-alternativa-usando-um-sinal_w202.webp 202w"
-		         sizes="(max-width: 510px) 50vw, 510px"
+		         srcset="/assets/img/basic-syntax/markdown-headings-alternative-syntax-2_w1280.webp 1280w,
+/assets/img/basic-syntax/markdown-headings-alternative-syntax-2_w1126.webp 1126w,
+/assets/img/basic-syntax/markdown-headings-alternative-syntax-2_w972.webp 972w,
+/assets/img/basic-syntax/markdown-headings-alternative-syntax-2_w818.webp 818w,
+/assets/img/basic-syntax/markdown-headings-alternative-syntax-2_w664.webp 664w,
+/assets/img/basic-syntax/markdown-headings-alternative-syntax-2_w510.webp 510w,
+/assets/img/basic-syntax/markdown-headings-alternative-syntax-2_w356.webp 356w,
+/assets/img/basic-syntax/markdown-headings-alternative-syntax-2_w202.webp 202w"
+		         sizes="(max-width: 664px) 100vw, 664px"
 		         type="image/webp"></data-src>
 		    	<data-img class="responsive-img lazy-img"
 		        	alt="Tutorial de Markdown - Sintaxe alternativa para títulos usando apenas um sinal"
 		        	title="Tutorial de Markdown - Sintaxe alternativa para títulos usando apenas um sinal"
-		         	src="/assets/img/sintaxe-basica/markdown-sintaxe-alternativa-usando-um-sinal_w1280.png"
-		         	srcset="/assets/img/sintaxe-basica/markdown-sintaxe-alternativa-usando-um-sinal_w1280.png 1280w,
-/assets/img/sintaxe-basica/markdown-sintaxe-alternativa-usando-um-sinal_w1126.png 1126w,
-/assets/img/sintaxe-basica/markdown-sintaxe-alternativa-usando-um-sinal_w972.png 972w,
-/assets/img/sintaxe-basica/markdown-sintaxe-alternativa-usando-um-sinal_w818.png 818w,
-/assets/img/sintaxe-basica/markdown-sintaxe-alternativa-usando-um-sinal_w664.png 664w,
-/assets/img/sintaxe-basica/markdown-sintaxe-alternativa-usando-um-sinal_w510.png 510w,
-/assets/img/sintaxe-basica/markdown-sintaxe-alternativa-usando-um-sinal_w356.png 356w,
-/assets/img/sintaxe-basica/markdown-sintaxe-alternativa-usando-um-sinal_w202.png 202w"
-		         	sizes="(max-width: 510px) 50vw, 510px"></data-img>
-		        <a href="/assets/img/sintaxe-basica/markdown-sintaxe-alternativa-usando-um-sinal_w1280.png" target="_blank" class="cover-link"></a>
+		         	src="/assets/img/basic-syntax/markdown-headings-alternative-syntax-2_w1280.png"
+		         	srcset="/assets/img/basic-syntax/markdown-headings-alternative-syntax-2_w1280.png 1280w,
+/assets/img/basic-syntax/markdown-headings-alternative-syntax-2_w1126.png 1126w,
+/assets/img/basic-syntax/markdown-headings-alternative-syntax-2_w972.png 972w,
+/assets/img/basic-syntax/markdown-headings-alternative-syntax-2_w818.png 818w,
+/assets/img/basic-syntax/markdown-headings-alternative-syntax-2_w664.png 664w,
+/assets/img/basic-syntax/markdown-headings-alternative-syntax-2_w510.png 510w,
+/assets/img/basic-syntax/markdown-headings-alternative-syntax-2_w356.png 356w,
+/assets/img/basic-syntax/markdown-headings-alternative-syntax-2_w202.png 202w"
+		         	sizes="(max-width: 664px) 100vw, 664px"></data-img>
+		        <a href="/assets/img/basic-syntax/markdown-headings-alternative-syntax-2_w1280.png" target="_blank" class="cover-link"></a>
 		    </picture>
 			<figcaption class="caption">
 		    <i class="tiny material-icons">photo</i>&nbsp;<span>Sintaxe alternativa para títulos usando apenas um sinal</span>
@@ -414,9 +418,9 @@
 		</figure>
             </div>
 
-            <h3 id="titulos-melhores-praticas">Títulos: Recomendações de uso</h3>
+            <h3 id="headings-best-practices">Títulos: melhores práticas</h3>
 
-            <p>Você pode se deparar com problemas de compatibilidade quando falamos do espaço entre a cerquilha <code class="lang-text">#</code> no inicio da linha e o texto do título/cabeçalho.</p>
+            <p>Você pode se deparar com problemas de compatibilidade quando falamos do espaço entre a cerquilha <code class="lang-text">#</code> no inicio da linha e o texto do título.</p>
 
             <p>É recomendado sempre adicionar pelo menos um espaço entre eles, além de prover uma melhor leitura do seu documento, você ainda terá mais suporte de edição entre os aplicativos Markdown.</p>
 
@@ -432,9 +436,9 @@
         	    </script>
             </p>
 
-            <p>A <a href="#tabela-1-3">Tabela 1.3</a> exemplifica a construção correta do título.</p>
+            <p>A <a href="#table-1-3">Tabela 1.3</a> exemplifica a construção correta do título.</p>
 
-            <table class="responsive-table" id="tabela-1-3">
+            <table class="responsive-table" id="table-1-3">
                 <thead>
                     <tr>
                         <th class="green-text">
@@ -455,30 +459,30 @@
                 </tbody>
             </table>
 
-            <small class="caption"><i class="tiny material-icons">info</i>&nbsp;<span>Tabela 1.3 - Uso correto na construção de títulos/cabeçalhos no Markdown.</span></small>
+            <small class="caption">Tabela 1.3 - Uso correto na construção de títulos/cabeçalhos no Markdown.</small>
 
             <div class="image-container">
             	<figure class="mh-0">
 		    <picture class="lazy-img unloaded image-center">
 		    	<data-src class="responsive-img lazy-img"
-		         srcset="/assets/img/sintaxe-basica/sintaxe-correta-para-titulos-em-markdown_w491.webp 491w,
-/assets/img/sintaxe-basica/sintaxe-correta-para-titulos-em-markdown_w418.webp 418w,
-/assets/img/sintaxe-basica/sintaxe-correta-para-titulos-em-markdown_w345.webp 345w,
-/assets/img/sintaxe-basica/sintaxe-correta-para-titulos-em-markdown_w272.webp 272w,
-/assets/img/sintaxe-basica/sintaxe-correta-para-titulos-em-markdown_w199.webp 199w"
-		         sizes="(max-width: 491px) 50vw, 491px"
+		         srcset="/assets/img/basic-syntax/markdown-headings-correct-syntax_w501.webp 501w,
+/assets/img/basic-syntax/markdown-headings-correct-syntax_w426.webp 426w,
+/assets/img/basic-syntax/markdown-headings-correct-syntax_w351.webp 351w,
+/assets/img/basic-syntax/markdown-headings-correct-syntax_w276.webp 276w,
+/assets/img/basic-syntax/markdown-headings-correct-syntax_w201.webp 201w"
+		         sizes="(max-width: 501px) 100vw, 501px"
 		         type="image/webp"></data-src>
 		    	<data-img class="responsive-img lazy-img"
 		        	alt="Tutorial de Markdown - Construindo um título em Markdown da maneira correta"
 		        	title="Tutorial de Markdown - Construindo um título em Markdown da maneira correta"
-		         	src="/assets/img/sintaxe-basica/sintaxe-correta-para-titulos-em-markdown_w491.png"
-		         	srcset="/assets/img/sintaxe-basica/sintaxe-correta-para-titulos-em-markdown_w491.png 491w,
-/assets/img/sintaxe-basica/sintaxe-correta-para-titulos-em-markdown_w418.png 418w,
-/assets/img/sintaxe-basica/sintaxe-correta-para-titulos-em-markdown_w345.png 345w,
-/assets/img/sintaxe-basica/sintaxe-correta-para-titulos-em-markdown_w272.png 272w,
-/assets/img/sintaxe-basica/sintaxe-correta-para-titulos-em-markdown_w199.png 199w"
-		         	sizes="(max-width: 491px) 50vw, 491px"></data-img>
-		        <a href="/assets/img/sintaxe-basica/sintaxe-correta-para-titulos-em-markdown_w491.png" target="_blank" class="cover-link"></a>
+		         	src="/assets/img/basic-syntax/markdown-headings-correct-syntax_w501.png"
+		         	srcset="/assets/img/basic-syntax/markdown-headings-correct-syntax_w501.png 501w,
+/assets/img/basic-syntax/markdown-headings-correct-syntax_w426.png 426w,
+/assets/img/basic-syntax/markdown-headings-correct-syntax_w351.png 351w,
+/assets/img/basic-syntax/markdown-headings-correct-syntax_w276.png 276w,
+/assets/img/basic-syntax/markdown-headings-correct-syntax_w201.png 201w"
+		         	sizes="(max-width: 501px) 100vw, 501px"></data-img>
+		        <a href="/assets/img/basic-syntax/markdown-headings-correct-syntax_w501.png" target="_blank" class="cover-link"></a>
 		    </picture>
 			<figcaption class="caption">
 		    <i class="tiny material-icons">photo</i>&nbsp;<span>Construindo um título em Markdown da maneira correta</span>
@@ -487,7 +491,7 @@
             </div>
 
 
-            <h2 id="paragrafos">Parágrafos</h2>
+            <h2 id="paragraphs">Parágrafos</h2>
 
             <p>A formatação mais simples do Markdown é a do parágrafo. Para criar um, basta separar um pedaço do texto com uma linha em branco, criando fragmentações que o processador Markdown interpretará como parágrafos.</p>
 
@@ -495,24 +499,24 @@
             	<figure class="mh-0">
 		    <picture class="lazy-img unloaded image-center">
 		    	<data-src class="responsive-img lazy-img"
-		         srcset="/assets/img/sintaxe-basica/paragrafos-em-markdown_w570.webp 570w,
-/assets/img/sintaxe-basica/paragrafos-em-markdown_w477.webp 477w,
-/assets/img/sintaxe-basica/paragrafos-em-markdown_w384.webp 384w,
-/assets/img/sintaxe-basica/paragrafos-em-markdown_w291.webp 291w,
-/assets/img/sintaxe-basica/paragrafos-em-markdown_w198.webp 198w"
-		         sizes="(max-width: 570px) 50vw, 570px"
+		         srcset="/assets/img/basic-syntax/markdown-paragraph_w579.webp 579w,
+/assets/img/basic-syntax/markdown-paragraph_w484.webp 484w,
+/assets/img/basic-syntax/markdown-paragraph_w389.webp 389w,
+/assets/img/basic-syntax/markdown-paragraph_w294.webp 294w,
+/assets/img/basic-syntax/markdown-paragraph_w199.webp 199w"
+		         sizes="(max-width: 579px) 100vw, 579px"
 		         type="image/webp"></data-src>
 		    	<data-img class="responsive-img lazy-img"
 		        	alt="Tutorial de Markdown - Parágrafos"
 		        	title="Tutorial de Markdown - Parágrafos"
-		         	src="/assets/img/sintaxe-basica/paragrafos-em-markdown_w570.png"
-		         	srcset="/assets/img/sintaxe-basica/paragrafos-em-markdown_w570.png 570w,
-/assets/img/sintaxe-basica/paragrafos-em-markdown_w477.png 477w,
-/assets/img/sintaxe-basica/paragrafos-em-markdown_w384.png 384w,
-/assets/img/sintaxe-basica/paragrafos-em-markdown_w291.png 291w,
-/assets/img/sintaxe-basica/paragrafos-em-markdown_w198.png 198w"
-		         	sizes="(max-width: 570px) 50vw, 570px"></data-img>
-		        <a href="/assets/img/sintaxe-basica/paragrafos-em-markdown_w570.png" target="_blank" class="cover-link"></a>
+		         	src="/assets/img/basic-syntax/markdown-paragraph_w579.png"
+		         	srcset="/assets/img/basic-syntax/markdown-paragraph_w579.png 579w,
+/assets/img/basic-syntax/markdown-paragraph_w484.png 484w,
+/assets/img/basic-syntax/markdown-paragraph_w389.png 389w,
+/assets/img/basic-syntax/markdown-paragraph_w294.png 294w,
+/assets/img/basic-syntax/markdown-paragraph_w199.png 199w"
+		         	sizes="(max-width: 579px) 100vw, 579px"></data-img>
+		        <a href="/assets/img/basic-syntax/markdown-paragraph_w579.png" target="_blank" class="cover-link"></a>
 		    </picture>
 			<figcaption class="caption">
 		    <i class="tiny material-icons">photo</i>&nbsp;<span>Parágrafos em Markdown</span>
@@ -520,9 +524,9 @@
 		</figure>
             </div>
 
-            <p>A <a href="#tabela-1-4">Tabela 1.4</a> mostra a sintaxe de criação de um parágrafo.</p>
+            <p>A <a href="#table-1-4">Tabela 1.4</a> mostra a sintaxe de criação de um parágrafo.</p>
 
-            <table class="responsive-table" id="tabela-1-4">
+            <table class="responsive-table" id="table-1-4">
                 <thead>
                     <tr>
                         <th>Markdown</th>
@@ -537,7 +541,7 @@
                             Aprender o Markdown é essencial para uma carreira de sucesso.
                         </td>
                         <td>&lt;p&gt;O Markdown é importante para todo programador.&lt;/p&gt;<br><br>
-                            &lt;p&gt;Aprender o Markdown é essencial para uma carreira de sucesso..&lt;p&gt;
+                            &lt;p&gt;Aprender o Markdown é essencial para uma carreira de sucesso.&lt;p&gt;
                         </td>
                         <td>
                             <p>O Markdown é importante para todo programador.</p>
@@ -547,9 +551,9 @@
                 </tbody>
             </table>
 
-            <small class="caption"><i class="tiny material-icons">info</i>&nbsp;<span>Tabela 1.4 - Sintaxe de criação de parágrafo no Markdown.</span></small>
+            <small class="caption">Tabela 1.4 - Sintaxe de criação de parágrafo no Markdown.</small>
 
-            <h3 id="paragrafos-melhores-praticas">Parágrafos: Recomendações de uso</h3>
+            <h3 id="paragraphs-best-practices">Parágrafos: melhores práticas</h3>
 
             <p>Normalmente o parágrafo fica grudado no começo da linha, isso é, evite recuá-lo usando espaços de qualquer tipo, nem espaços em branco nem tabulações.</p>
 
@@ -567,9 +571,9 @@
         	    </script>
             </p>
 
-            <p>A <a href="#tabela-1-5">Tabela 1.5</a> exemplifica o uso correto para construção de um parágrafo.</p>
+            <p>A <a href="#table-1-5">Tabela 1.5</a> exemplifica o uso correto para construção de um parágrafo.</p>
 
-            <table class="responsive-table" id="tabela-1-5">
+            <table class="responsive-table" id="table-1-5">
                 <thead>
                     <tr>
                     	<th class="green-text">
@@ -596,73 +600,73 @@
                 </tbody>
             </table>
 
-            <small class="caption"><i class="tiny material-icons">info</i>&nbsp;<span>Tabela 1.5 - O que fazer e o que não fazer ao criar um parágrafo em Markdown.</span></small>
+            <small class="caption">Tabela 1.5 - O que fazer e o que não fazer ao criar um parágrafo em Markdown.</small>
 
             <div class="image-container">
             	<figure class="mh-0">
 		    <picture class="lazy-img unloaded image-center">
 		    	<data-src class="responsive-img lazy-img"
-		         srcset="/assets/img/sintaxe-basica/paragrafos-em-markdown-sintaxe-errada_w1271.webp 1271w,
-/assets/img/sintaxe-basica/paragrafos-em-markdown-sintaxe-errada_w1118.webp 1118w,
-/assets/img/sintaxe-basica/paragrafos-em-markdown-sintaxe-errada_w965.webp 965w,
-/assets/img/sintaxe-basica/paragrafos-em-markdown-sintaxe-errada_w812.webp 812w,
-/assets/img/sintaxe-basica/paragrafos-em-markdown-sintaxe-errada_w659.webp 659w,
-/assets/img/sintaxe-basica/paragrafos-em-markdown-sintaxe-errada_w506.webp 506w,
-/assets/img/sintaxe-basica/paragrafos-em-markdown-sintaxe-errada_w353.webp 353w,
-/assets/img/sintaxe-basica/paragrafos-em-markdown-sintaxe-errada_w200.webp 200w"
-		         sizes="(max-width: 506px) 50vw, 506px"
+		         srcset="/assets/img/basic-syntax/markdown-paragraph-wrong-syntax_w1280.webp 1280w,
+/assets/img/basic-syntax/markdown-paragraph-wrong-syntax_w1126.webp 1126w,
+/assets/img/basic-syntax/markdown-paragraph-wrong-syntax_w972.webp 972w,
+/assets/img/basic-syntax/markdown-paragraph-wrong-syntax_w818.webp 818w,
+/assets/img/basic-syntax/markdown-paragraph-wrong-syntax_w664.webp 664w,
+/assets/img/basic-syntax/markdown-paragraph-wrong-syntax_w510.webp 510w,
+/assets/img/basic-syntax/markdown-paragraph-wrong-syntax_w356.webp 356w,
+/assets/img/basic-syntax/markdown-paragraph-wrong-syntax_w202.webp 202w"
+		         sizes="(max-width: 664px) 100vw, 664px"
 		         type="image/webp"></data-src>
 		    	<data-img class="responsive-img lazy-img"
 		        	alt="Tutorial de Markdown - Sintaxe errada do parágrafo"
 		        	title="Tutorial de Markdown - Sintaxe errada do parágrafo"
-		         	src="/assets/img/sintaxe-basica/paragrafos-em-markdown-sintaxe-errada_w1271.png"
-		         	srcset="/assets/img/sintaxe-basica/paragrafos-em-markdown-sintaxe-errada_w1271.png 1271w,
-/assets/img/sintaxe-basica/paragrafos-em-markdown-sintaxe-errada_w1118.png 1118w,
-/assets/img/sintaxe-basica/paragrafos-em-markdown-sintaxe-errada_w965.png 965w,
-/assets/img/sintaxe-basica/paragrafos-em-markdown-sintaxe-errada_w812.png 812w,
-/assets/img/sintaxe-basica/paragrafos-em-markdown-sintaxe-errada_w659.png 659w,
-/assets/img/sintaxe-basica/paragrafos-em-markdown-sintaxe-errada_w506.png 506w,
-/assets/img/sintaxe-basica/paragrafos-em-markdown-sintaxe-errada_w353.png 353w,
-/assets/img/sintaxe-basica/paragrafos-em-markdown-sintaxe-errada_w200.png 200w"
-		         	sizes="(max-width: 506px) 50vw, 506px"></data-img>
-		        <a href="/assets/img/sintaxe-basica/paragrafos-em-markdown-sintaxe-errada_w1271.png" target="_blank" class="cover-link"></a>
+		         	src="/assets/img/basic-syntax/markdown-paragraph-wrong-syntax_w1280.png"
+		         	srcset="/assets/img/basic-syntax/markdown-paragraph-wrong-syntax_w1280.png 1280w,
+/assets/img/basic-syntax/markdown-paragraph-wrong-syntax_w1126.png 1126w,
+/assets/img/basic-syntax/markdown-paragraph-wrong-syntax_w972.png 972w,
+/assets/img/basic-syntax/markdown-paragraph-wrong-syntax_w818.png 818w,
+/assets/img/basic-syntax/markdown-paragraph-wrong-syntax_w664.png 664w,
+/assets/img/basic-syntax/markdown-paragraph-wrong-syntax_w510.png 510w,
+/assets/img/basic-syntax/markdown-paragraph-wrong-syntax_w356.png 356w,
+/assets/img/basic-syntax/markdown-paragraph-wrong-syntax_w202.png 202w"
+		         	sizes="(max-width: 664px) 100vw, 664px"></data-img>
+		        <a href="/assets/img/basic-syntax/markdown-paragraph-wrong-syntax_w1280.png" target="_blank" class="cover-link"></a>
 		    </picture>
 			
 		</figure>
             </div>
 
-            <h2 id="quebra-linha">Quebras de linha</h2>
+            <h2 id="line-break">Quebras de linha</h2>
 
-            <p>Em HTML uma quebra de linha é representada pela tag <code class="lang-html">&lt;br&gt;</code>.</p>
+            <p>Em HTML uma quebra de linha é representada pela tag <code class="lang-html">br</code>.</p>
 
             <div class="image-container">
             	<figure class="mh-0">
 		    <picture class="lazy-img unloaded image-center">
 		    	<data-src class="responsive-img lazy-img"
-		         srcset="/assets/img/sintaxe-basica/quebra-de-linha-html_w1041.webp 1041w,
-/assets/img/sintaxe-basica/quebra-de-linha-html_w921.webp 921w,
-/assets/img/sintaxe-basica/quebra-de-linha-html_w801.webp 801w,
-/assets/img/sintaxe-basica/quebra-de-linha-html_w681.webp 681w,
-/assets/img/sintaxe-basica/quebra-de-linha-html_w561.webp 561w,
-/assets/img/sintaxe-basica/quebra-de-linha-html_w441.webp 441w,
-/assets/img/sintaxe-basica/quebra-de-linha-html_w321.webp 321w,
-/assets/img/sintaxe-basica/quebra-de-linha-html_w201.webp 201w"
-		         sizes="(max-width: 561px) 50vw, 561px"
+		         srcset="/assets/img/basic-syntax/html-line-break_w1037.webp 1037w,
+/assets/img/basic-syntax/html-line-break_w917.webp 917w,
+/assets/img/basic-syntax/html-line-break_w797.webp 797w,
+/assets/img/basic-syntax/html-line-break_w677.webp 677w,
+/assets/img/basic-syntax/html-line-break_w557.webp 557w,
+/assets/img/basic-syntax/html-line-break_w437.webp 437w,
+/assets/img/basic-syntax/html-line-break_w317.webp 317w,
+/assets/img/basic-syntax/html-line-break_w197.webp 197w"
+		         sizes="(max-width: 677px) 100vw, 677px"
 		         type="image/webp"></data-src>
 		    	<data-img class="responsive-img lazy-img"
 		        	alt="Tutorial de Markdown - Quebra de linha em HTML"
 		        	title="Tutorial de Markdown - Quebra de linha em HTML"
-		         	src="/assets/img/sintaxe-basica/quebra-de-linha-html_w1041.png"
-		         	srcset="/assets/img/sintaxe-basica/quebra-de-linha-html_w1041.png 1041w,
-/assets/img/sintaxe-basica/quebra-de-linha-html_w921.png 921w,
-/assets/img/sintaxe-basica/quebra-de-linha-html_w801.png 801w,
-/assets/img/sintaxe-basica/quebra-de-linha-html_w681.png 681w,
-/assets/img/sintaxe-basica/quebra-de-linha-html_w561.png 561w,
-/assets/img/sintaxe-basica/quebra-de-linha-html_w441.png 441w,
-/assets/img/sintaxe-basica/quebra-de-linha-html_w321.png 321w,
-/assets/img/sintaxe-basica/quebra-de-linha-html_w201.png 201w"
-		         	sizes="(max-width: 561px) 50vw, 561px"></data-img>
-		        <a href="/assets/img/sintaxe-basica/quebra-de-linha-html_w1041.png" target="_blank" class="cover-link"></a>
+		         	src="/assets/img/basic-syntax/html-line-break_w1037.png"
+		         	srcset="/assets/img/basic-syntax/html-line-break_w1037.png 1037w,
+/assets/img/basic-syntax/html-line-break_w917.png 917w,
+/assets/img/basic-syntax/html-line-break_w797.png 797w,
+/assets/img/basic-syntax/html-line-break_w677.png 677w,
+/assets/img/basic-syntax/html-line-break_w557.png 557w,
+/assets/img/basic-syntax/html-line-break_w437.png 437w,
+/assets/img/basic-syntax/html-line-break_w317.png 317w,
+/assets/img/basic-syntax/html-line-break_w197.png 197w"
+		         	sizes="(max-width: 677px) 100vw, 677px"></data-img>
+		        <a href="/assets/img/basic-syntax/html-line-break_w1037.png" target="_blank" class="cover-link"></a>
 		    </picture>
 			<figcaption class="caption">
 		    <i class="tiny material-icons">photo</i>&nbsp;<span>Quebra de linha em HTML</span>
@@ -670,11 +674,11 @@
 		</figure>
             </div>
 
-            <p>Para simular essa quebra usando a formatação Markdown insira dois ou mais espaços em branco no final da linha e pressione a tecla enter.</p>
+            <p>Para inserir uma quebra de linha no Markdown, insira dois ou mais espaços em branco no final da linha e pressione a tecla <code class="lang-plaintext">Enter</code>.</p>
 
-            <p>A <a href="#tabela-1-6">Tabela 1.6</a> mostra como gerar uma quebra de linha.</p>
+            <p>A <a href="#table-1-6">Tabela 1.6</a> mostra como gerar uma quebra de linha.</p>
 
-            <table class="responsive-table" id="tabela-1-6">
+            <table class="responsive-table" id="table-1-6">
                 <thead>
                     <tr>
                         <th>Markdown</th>
@@ -701,11 +705,11 @@
                 </tbody>
             </table>
 
-            <small class="caption"><i class="tiny material-icons">info</i>&nbsp;<span>Tabela 1.6 - Código Markdown para gerar quebra de linha.</span></small>
+            <small class="caption">Tabela 1.6 - Código Markdown para gerar quebra de linha.</small>
 
-            <h3 id="quebra-linha-melhores-praticas">Quebra de linha: Recomendações de uso</h3>
+            <h3 id="line-break-best-practices">Quebra de linha: melhores práticas</h3>
 
-            <p>O uso do espaço em branco para criar quebra de linhas, apesar de compatível com a maioria dos aplicativos, pode gerar dor de cabeça.</p>
+            <p>O uso do espaço em branco para criar quebra de linhas, apesar de compatível com a maioria dos aplicativos, pode gerar problemas de formatação.</p>
 
             <p>Seguem alguns pontos:</p>
 
@@ -726,19 +730,19 @@
                 <li class="collection-item green lighten-5">Alguns editores de texto, como o Sublime Text, têm configurações que removem os espaços em branco, antes e depois, da linha ao salvar o documento.</li>
             </ul>
 
-            <p>Percebe como isso pode ser problemático? Mas e agora?</p>
+            <p>Uma alternativa viável para evitar qualquer problema com quebra de linhas, basta usar a tag HTML <code class="lang-html">&lt;br&gt;</code> diretamente nos seus documentos.</p>
 
-            <p>Bom, existe uma alternativa viável para evitar qualquer problema com quebra de linhas, basta usar a tag HTML <code class="lang-html">&lt;br&gt;</code> diretamente nos seus documentos.</p>
+            <blockquote><b>NOTA</b>: É interessante lembrar que os aplicativos Markdown, em sua maioria, também são compatíveis com as tags em HTML, ou seja, você pode mesclar formatação Markdown com formatação HTML no mesmo documento.</blockquote>
 
-            <blockquote><b>NOTA</b>: É interessante lembrar que os aplicativos Markdown, em sua maioria, também são compatíveis com as tags em HTML, ou seja, você pode mesclar formatação Markdown com formatação HTML no seu documento.</blockquote>
+            <blockquote><b>NOTA</b>: Em alguns aplicativos somente o pressionamento da tecla <code class="lang-plaintext">Enter</code> já é suficiente para criar uma quebra de linha</blockquote>
 
-            <blockquote><b>NOTA</b>: Outro ponto a ser notado é que, em alguns aplicativos somente o pressionamento da tecla enter já é o suficiente para criar uma nova quebra de linha, além é claro, de sabores diferentes do Markdown como o CommonMark que interpretam o uso de uma barra invertida <code class="lang-text">\</code> como indicador de uma nova linha.</blockquote>
+            <blockquote><b>NOTA</b>: Variações do Markdown, como o CommonMark, interpretam o uso de uma barra invertida <code class="lang-text">\</code> como indicador de uma nova linha.</blockquote>
 
-            <p>Esses dois exemplos acima, apesar de válidos, não são recomendados pois o uso é bem específico dependendo do programa Markdown.</p>
+            <p>O pressionamento da tecla <code class="lang-plaintext">Enter</code> ou o uso da barra invertida <code class="lang-plaintext">\</code>, apesar de válidos, não são recomendados pois a compatibilidade depende do programa Markdown.</p>
 
-            <p>A <a href="#tabela-1-7">Tabela 1.7</a> mostra a sintaxe correta para criar uma nova linha.</p>
+            <p>A <a href="#table-1-7">Tabela 1.7</a> mostra a sintaxe correta para criar uma nova linha.</p>
 
-            <table class="responsive-table" id="tabela-1-7">
+            <table class="responsive-table" id="table-1-7">
                 <thead>
                     <tr>
                         <th class="green-text">
@@ -754,7 +758,7 @@
                 <tbody>
                     <tr>
                         <td>
-                            Dois espaços após a linha.<code class="lang-text">espaço</code><code class="lang-text">espaço</code><br>
+                            Dois espaços após a linha.<code class="lang-text"> </code><code class="lang-text"> </code><br>
                             Linha nova inserida.<br><br>
                             Usando a tag HTML para quebrar a linha.<code class="lang-html">&lt;br&gt;</code><br>
                             Linha nova inserida.<br><br>
@@ -762,29 +766,93 @@
                         <td>
                             Usando a barra invertida para quebrar a linha.\<br>
                             Linha nova inserida.<br><br>
-                            Quebrando a linha usando apenas o pressionamento do enter.<code class="lang-text">enter</code><br>
+                            Quebrando a linha usando apenas o pressionamento do enter.<code class="lang-text">Enter</code><br>
                             Linha nova inserida.<br><br>
                         </td>
                     </tr>
                 </tbody>
             </table>
 
-            <small class="caption"><i class="tiny material-icons">info</i>&nbsp;<span>Tabela 1.7 - Forma correta de gerar uma quebra de linha em Markdown.</span></small>
+            <small class="caption">Tabela 1.7 - Forma correta de gerar uma quebra de linha em Markdown.</small>
 
 
-            <h2 id="enfase">Ênfase</h2>
+            <h2 id="emphasis">Ênfase</h2>
 
             <p>Semelhante a um editor WYSIWYG, como o Microsoft Word, o Markdown também oferece formatações para enfatizar o texto.</p>
 
-            <p>Negrito e itálico são os destaques de texto mais aplicados em editores e no Markdown nós também podemos usá-los.</p>
+            <div class="image-container">
+            	<figure class="mh-0">
+		    <picture class="lazy-img unloaded image-center">
+		    	<data-src class="responsive-img lazy-img"
+		         srcset="/assets/img/basic-syntax/microsoft-word-emphasis-formatting_w564.webp 564w,
+/assets/img/basic-syntax/microsoft-word-emphasis-formatting_w473.webp 473w,
+/assets/img/basic-syntax/microsoft-word-emphasis-formatting_w382.webp 382w,
+/assets/img/basic-syntax/microsoft-word-emphasis-formatting_w291.webp 291w,
+/assets/img/basic-syntax/microsoft-word-emphasis-formatting_w200.webp 200w"
+		         sizes="(max-width: 564px) 100vw, 564px"
+		         type="image/webp"></data-src>
+		    	<data-img class="responsive-img lazy-img"
+		        	alt="Tutorial de Markdown - Formatação de ênfase no Microsoft Word"
+		        	title="Tutorial de Markdown - Formatação de ênfase no Microsoft Word"
+		         	src="/assets/img/basic-syntax/microsoft-word-emphasis-formatting_w564.png"
+		         	srcset="/assets/img/basic-syntax/microsoft-word-emphasis-formatting_w564.png 564w,
+/assets/img/basic-syntax/microsoft-word-emphasis-formatting_w473.png 473w,
+/assets/img/basic-syntax/microsoft-word-emphasis-formatting_w382.png 382w,
+/assets/img/basic-syntax/microsoft-word-emphasis-formatting_w291.png 291w,
+/assets/img/basic-syntax/microsoft-word-emphasis-formatting_w200.png 200w"
+		         	sizes="(max-width: 564px) 100vw, 564px"></data-img>
+		        <a href="/assets/img/basic-syntax/microsoft-word-emphasis-formatting_w564.png" target="_blank" class="cover-link"></a>
+		    </picture>
+			<figcaption class="caption">
+		    <i class="tiny material-icons">photo</i>&nbsp;<span>Formatação de ênfase no Microsoft Word</span>
+		</figcaption>
+		</figure>
+            </div>
 
-            <h3 id="negrito">Negrito em Markdown</h3>
+            <p>Dentre as formatações de ênfase mais populares, estão o negrito e o itálico, que também podem ser aplicados usando a sintaxe do Markdown.</p>
+
+            <h3 id="bold">Negrito em Markdown</h3>
 
             <p>Para formatar um texto em negrito no Markdown, coloque dois asteriscos <code class="lang-plaintext">**</code> antes do conteúdo e dois asteriscos <code class="lang-plaintext">**</code> depois do conteúdo.</p>
 
-            <p>A <a href="#tabela-1-8">Tabela 1.8</a> destaca a sintaxe correta de construção do negrito.</p>
+            <div class="image-container">
+            	<figure class="mh-0">
+		    <picture class="lazy-img unloaded image-center">
+		    	<data-src class="responsive-img lazy-img"
+		         srcset="/assets/img/basic-syntax/markdown-bold_w853.webp 853w,
+/assets/img/basic-syntax/markdown-bold_w760.webp 760w,
+/assets/img/basic-syntax/markdown-bold_w667.webp 667w,
+/assets/img/basic-syntax/markdown-bold_w574.webp 574w,
+/assets/img/basic-syntax/markdown-bold_w481.webp 481w,
+/assets/img/basic-syntax/markdown-bold_w388.webp 388w,
+/assets/img/basic-syntax/markdown-bold_w295.webp 295w,
+/assets/img/basic-syntax/markdown-bold_w202.webp 202w"
+		         sizes="(max-width: 760px) 100vw, 760px"
+		         type="image/webp"></data-src>
+		    	<data-img class="responsive-img lazy-img"
+		        	alt="Tutorial de Markdown - Negrito em Markdown"
+		        	title="Tutorial de Markdown - Negrito em Markdown"
+		         	src="/assets/img/basic-syntax/markdown-bold_w853.png"
+		         	srcset="/assets/img/basic-syntax/markdown-bold_w853.png 853w,
+/assets/img/basic-syntax/markdown-bold_w760.png 760w,
+/assets/img/basic-syntax/markdown-bold_w667.png 667w,
+/assets/img/basic-syntax/markdown-bold_w574.png 574w,
+/assets/img/basic-syntax/markdown-bold_w481.png 481w,
+/assets/img/basic-syntax/markdown-bold_w388.png 388w,
+/assets/img/basic-syntax/markdown-bold_w295.png 295w,
+/assets/img/basic-syntax/markdown-bold_w202.png 202w"
+		         	sizes="(max-width: 760px) 100vw, 760px"></data-img>
+		        <a href="/assets/img/basic-syntax/markdown-bold_w853.png" target="_blank" class="cover-link"></a>
+		    </picture>
+			<figcaption class="caption">
+		    <i class="tiny material-icons">photo</i>&nbsp;<span>Negrito em Markdown</span>
+		</figcaption>
+		</figure>
+            </div>
 
-            <table class="break-word responsive-table" id="tabela-1-8">
+            <p>A <a href="#table-1-8">Tabela 1.8</a> destaca a sintaxe correta de construção do negrito.</p>
+
+            <table class="break-word responsive-table" id="table-1-8">
                 <thead>
                     <tr>
                         <th>Markdown</th>
@@ -794,32 +862,32 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>**Essa parte do texto** ficará em negrito.</td>
-                        <td>&lt;strong&gt;Essa parte do texto&lt;/strong&gt; ficará em negrito.</td>
-                        <td><strong>Essa parte do texto</strong> ficará em negrito.</td>
+                        <td>**This part of the text** will be bold.</td>
+                        <td>&lt;strong&gt;This part of the text&lt;/strong&gt; will be bold.</td>
+                        <td><strong>This part of the text</strong> will be bold.</td>
                     </tr>
                     <tr>
-                        <td>__Essa parte do texto__ ficará em negrito.</td>
-                        <td>&lt;strong&gt;Essa parte do texto&lt;/strong&gt; ficará em negrito.</td>
-                        <td><strong>Essa parte do texto</strong> ficará em negrito.</td>
+                        <td>__This part of the text__ will be bold.</td>
+                        <td>&lt;strong&gt;This part of the text&lt;/strong&gt; will be bold.</td>
+                        <td><strong>This part of the text</strong> will be bold.</td>
                     </tr>
                     <tr>
-                        <td>Markdown**É**Fácil**De**Aprender</td>
-                        <td>Markdown&lt;strong&gt;&Eacute;&lt;/strong&gt;F&aacute;cil&lt;strong&gt;De&lt;/strong&gt;Aprender</td>
-                        <td>Markdown<strong>É</strong>Fácil<strong>De</strong>Aprender</td>
+                        <td>Markdown**Is**Easy**To**Learn</td>
+                        <td>Markdown&lt;strong&gt;Is&lt;/strong&gt;Easy&lt;strong&gt;To&lt;/strong&gt;Learn</td>
+                        <td>Markdown<strong>Is</strong>Easy<strong>To</strong>Learn</td>
                     </tr>
                 </tbody>
             </table>
 
-            <small class="caption"><i class="tiny material-icons">info</i>&nbsp;<span>Tabela 1.8 - Sintaxe para destacar conteúdo usando o negrito em Markdown.</span></small>
+            <small class="caption">Tabela 1.8 - Sintaxe para destacar conteúdo usando o negrito em Markdown.</small>
 
             <blockquote><b>NOTA</b>: Como mostrado na tabela 1.8, você pode substituir os asteriscos por sublinhados, usando dois sublinhados <code class="lang-plaintext">__</code> antes e depois do conteúdo também formata o texto em negrito no Markdown.</blockquote>
 
-            <h3 id="negrito-melhores-praticas">Negrito: Recomendações de uso</h3>
+            <h3 id="bold-best-practices">Negrito: melhores práticas</h3>
 
             <p>Tanto o uso de dois asteriscos como o de dois sublinhados podem aplicar a formatação em negrito à um conteúdo.</p>
 
-            <p>Porém, a utilização dos sublinhados em meio a uma palavra pode gerar problemas de formatação dependendo do processador Markdown, por isso, de preferência, use asteriscos.</p>
+            <p>Porém, a utilização dos sublinhados em meio a uma palavra pode gerar problemas de formatação dependendo do processador Markdown, por isso, de preferência ao uso de asteriscos.</p>
 
             <p class="mv-40">
         	    <ins class="adsbygoogle"
@@ -833,9 +901,9 @@
         	    </script>
             </p>
 
-            <p>A <a href="#tabela-1-9">Tabela 1.9</a> demonstra o uso recomendado para formatar em negrito.</p>
+            <p>A <a href="#table-1-9">Tabela 1.9</a> demonstra o uso recomendado para formatar em negrito.</p>
 
-            <table class="responsive-table" id="tabela-1-9">
+            <table class="responsive-table" id="table-1-9">
                 <thead>
                     <tr>
                         <th class="green-text">
@@ -851,24 +919,95 @@
                 <tbody>
                     <tr>
                         <td>
-                            markdown**é**simples
+                            markdown**is**simple
                         </td>
                         <td>
-                            markdown__é__simples
+                            markdown__is__simple
                         </td>
                     </tr>
                 </tbody>
             </table>
 
-            <small class="caption"><i class="tiny material-icons">info</i>&nbsp;<span>Tabela 1.9 - Sintaxe recomendada para formatar em negrito no Markdown.</span></small>
+            <small class="caption">Tabela 1.9 - Sintaxe recomendada para formatar em negrito no Markdown.</small>
 
-            <h3 id="italico">Itálico em Markdown</h3>
+            <div class="image-container">
+            	<figure class="mh-0">
+		    <picture class="lazy-img unloaded image-center">
+		    	<data-src class="responsive-img lazy-img"
+		         srcset="/assets/img/basic-syntax/markdown-bold-best-practices_w852.webp 852w,
+/assets/img/basic-syntax/markdown-bold-best-practices_w759.webp 759w,
+/assets/img/basic-syntax/markdown-bold-best-practices_w666.webp 666w,
+/assets/img/basic-syntax/markdown-bold-best-practices_w573.webp 573w,
+/assets/img/basic-syntax/markdown-bold-best-practices_w480.webp 480w,
+/assets/img/basic-syntax/markdown-bold-best-practices_w387.webp 387w,
+/assets/img/basic-syntax/markdown-bold-best-practices_w294.webp 294w,
+/assets/img/basic-syntax/markdown-bold-best-practices_w201.webp 201w"
+		         sizes="(max-width: 759px) 100vw, 759px"
+		         type="image/webp"></data-src>
+		    	<data-img class="responsive-img lazy-img"
+		        	alt="Tutorial de Markdown - Negrito no meio do conteúdo"
+		        	title="Tutorial de Markdown - Negrito no meio do conteúdo"
+		         	src="/assets/img/basic-syntax/markdown-bold-best-practices_w852.png"
+		         	srcset="/assets/img/basic-syntax/markdown-bold-best-practices_w852.png 852w,
+/assets/img/basic-syntax/markdown-bold-best-practices_w759.png 759w,
+/assets/img/basic-syntax/markdown-bold-best-practices_w666.png 666w,
+/assets/img/basic-syntax/markdown-bold-best-practices_w573.png 573w,
+/assets/img/basic-syntax/markdown-bold-best-practices_w480.png 480w,
+/assets/img/basic-syntax/markdown-bold-best-practices_w387.png 387w,
+/assets/img/basic-syntax/markdown-bold-best-practices_w294.png 294w,
+/assets/img/basic-syntax/markdown-bold-best-practices_w201.png 201w"
+		         	sizes="(max-width: 759px) 100vw, 759px"></data-img>
+		        <a href="/assets/img/basic-syntax/markdown-bold-best-practices_w852.png" target="_blank" class="cover-link"></a>
+		    </picture>
+			<figcaption class="caption">
+		    <i class="tiny material-icons">photo</i>&nbsp;<span>Negrito no meio do conteúdo</span>
+		</figcaption>
+		</figure>
+            </div>
+
+
+            <h3 id="italics">Itálico em Markdown</h3>
 
             <p>Semelhante ao negrito, a formatação em itálico no Markdown também utiliza asterisco <code class="lang-plaintext">*</code> ou sublinhado <code class="lang-plaintext">_</code>, mas, no caso do itálico, use somente um asterisco <code class="lang-plaintext">*</code> antes do conteúdo e um asterisco <code class="lang-plaintext">*</code> depois do conteúdo.</p>
 
-            <p>A <a href="#tabela-1-10">Tabela 1.10</a> contém exemplos de como aplicar itálico ao texto.</p>
+            <div class="image-container">
+            	<figure class="mh-0">
+		    <picture class="lazy-img unloaded image-center">
+		    	<data-src class="responsive-img lazy-img"
+		         srcset="/assets/img/basic-syntax/markdown-italics_w847.webp 847w,
+/assets/img/basic-syntax/markdown-italics_w755.webp 755w,
+/assets/img/basic-syntax/markdown-italics_w663.webp 663w,
+/assets/img/basic-syntax/markdown-italics_w571.webp 571w,
+/assets/img/basic-syntax/markdown-italics_w479.webp 479w,
+/assets/img/basic-syntax/markdown-italics_w387.webp 387w,
+/assets/img/basic-syntax/markdown-italics_w295.webp 295w,
+/assets/img/basic-syntax/markdown-italics_w203.webp 203w"
+		         sizes="(max-width: 755px) 100vw, 755px"
+		         type="image/webp"></data-src>
+		    	<data-img class="responsive-img lazy-img"
+		        	alt="Tutorial de Markdown - Itálico em Markdown"
+		        	title="Tutorial de Markdown - Itálico em Markdown"
+		         	src="/assets/img/basic-syntax/markdown-italics_w847.png"
+		         	srcset="/assets/img/basic-syntax/markdown-italics_w847.png 847w,
+/assets/img/basic-syntax/markdown-italics_w755.png 755w,
+/assets/img/basic-syntax/markdown-italics_w663.png 663w,
+/assets/img/basic-syntax/markdown-italics_w571.png 571w,
+/assets/img/basic-syntax/markdown-italics_w479.png 479w,
+/assets/img/basic-syntax/markdown-italics_w387.png 387w,
+/assets/img/basic-syntax/markdown-italics_w295.png 295w,
+/assets/img/basic-syntax/markdown-italics_w203.png 203w"
+		         	sizes="(max-width: 755px) 100vw, 755px"></data-img>
+		        <a href="/assets/img/basic-syntax/markdown-italics_w847.png" target="_blank" class="cover-link"></a>
+		    </picture>
+			<figcaption class="caption">
+		    <i class="tiny material-icons">photo</i>&nbsp;<span>Sintaxe da formatação em itálico no Markdown</span>
+		</figcaption>
+		</figure>
+            </div>
 
-            <table class="break-word responsive-table" id="tabela-1-10">
+            <p>A <a href="#table-1-10">Tabela 1.10</a> contém exemplos de como aplicar itálico ao texto.</p>
+
+            <table class="break-word responsive-table" id="table-1-10">
                 <thead>
                     <tr>
                         <th>Markdown</th>
@@ -878,34 +1017,43 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>*Essa parte do texto* ficará em itálico.</td>
-                        <td>&lt;em&gt;Essa parte do texto&lt;/em&gt; ficará em itálico.</td>
-                        <td><em>Essa parte do texto</em> ficará em itálico.</td>
+                        <td>*This part of the text* will be in italics.</td>
+                        <td>&lt;em&gt;This part of the text&lt;/em&gt; will be in italics.</td>
+                        <td><em>This part of the text</em> will be in italics.</td>
                     </tr>
                     <tr>
-                        <td>_Essa parte do texto_ ficará em itálico.</td>
-                        <td>&lt;em&gt;Essa parte do texto&lt;/em&gt; ficará em itálico.</td>
-                        <td><em>Essa parte do texto</em> ficará em itálico.</td>
+                        <td>_This part of the text_ will be in italics.</td>
+                        <td>&lt;em&gt;This part of the text&lt;/em&gt; will be in italics.</td>
+                        <td><em>This part of the text</em> will be in italics.</td>
                     </tr>
                     <tr>
-                        <td>Markdown*É*Fácil*De*Aprender</td>
-                        <td>Markdown&lt;em&gt;&Eacute;&lt;/em&gt;F&aacute;cil&lt;em&gt;De&lt;/em&gt;Aprender</td>
-                        <td>Markdown<em>É</em>Fácil<em>De</em>Aprender</td>
+                        <td>Markdown*Is*Easy*To*Learn</td>
+                        <td>Markdown&lt;em&gt;Is&lt;/em&gt;Easy&lt;em&gt;To&lt;/em&gt;Learn</td>
+                        <td>Markdown<em>Is</em>Easy<em>To</em>Learn</td>
                     </tr>
                 </tbody>
             </table>
 
-            <small class="caption"><i class="tiny material-icons">info</i>&nbsp;<span>Tabela 1.10 - Exemplos de como formatar um conteúdo em itálico usando Markdown.</span></small>
+            <small class="caption">Tabela 1.10 - Exemplos de como formatar um conteúdo em itálico usando Markdown.</small>
 
-            <blockquote><b>NOTA</b>: Para aplicar itálico ao meio de uma palavra em Markdown, use um asterisco antes e depois do conteúdo, exemplo: <code class="lang-markdown">Mar*kdo*wn</code>.</blockquote>
+            <p>Para aplicar itálico ao meio de uma palavra em Markdown, use um asterisco antes e depois do conteúdo.</p>
 
-            <h3 id="italico-melhores-praticas">Itálico: Recomendações de uso</h3>
+            <p>Exemplo:</p>
+
+            <div class="code-example">
+	<pre class="lang-markdown"><code>Mar*kdo*wn</code></pre>
+	<a href="/editor/?markdown=Mar%2Akdo%2Awn" target="_blank" class="test-code waves-effect waves-light btn orange darken-4 pr-25">
+	    <b><span data-str="true">Tente você mesmo</span></b>&nbsp;<i class="fas fa-external-link-alt outter-icon-code"></i>
+	</a>
+</div>
+
+            <h3 id="italics-best-practices">Itálico: melhores práticas</h3>
 
             <p>Utilize sempre um asterisco <code class="lang-plaintext">*</code> ao aplicar itálico ao meio de uma palavra, isso evitará problemas de compatibilidade com processadores Markdown.</p>
 
-            <p>A <a href="#tabela-1-11">Tabela 1.11</a> demonstra a marcação recomendada para enfatizar um conteúdo com itálico.</p>
+            <p>A <a href="#table-1-11">Tabela 1.11</a> demonstra a marcação recomendada para enfatizar um conteúdo em itálico.</p>
 
-            <table class="responsive-table" id="tabela-1-11">
+            <table class="responsive-table" id="table-1-11">
                 <thead>
                     <tr>
                         <th class="green-text">
@@ -921,19 +1069,86 @@
                 <tbody>
                     <tr>
                         <td>
-                            markdown*é*simples
+                            markdown*is*simple
                         </td>
                         <td>
-                            markdown_é_simples
+                            markdown_is_simple
                         </td>
                     </tr>
                 </tbody>
             </table>
 
-            <small class="caption"><i class="tiny material-icons">info</i>&nbsp;<span>Tabela 1.11 - Formatação recomendada para enfatizar parte de uma palavra usando itálico.</span></small>
+            <small class="caption">Tabela 1.11 - Formatação recomendada para enfatizar parte de uma palavra usando itálico.</small>
 
+            <div class="image-container">
+            	<figure class="mh-0">
+		    <picture class="lazy-img unloaded image-center">
+		    	<data-src class="responsive-img lazy-img"
+		         srcset="/assets/img/basic-syntax/markdown-italics-best-practices_w852.webp 852w,
+/assets/img/basic-syntax/markdown-italics-best-practices_w759.webp 759w,
+/assets/img/basic-syntax/markdown-italics-best-practices_w666.webp 666w,
+/assets/img/basic-syntax/markdown-italics-best-practices_w573.webp 573w,
+/assets/img/basic-syntax/markdown-italics-best-practices_w480.webp 480w,
+/assets/img/basic-syntax/markdown-italics-best-practices_w387.webp 387w,
+/assets/img/basic-syntax/markdown-italics-best-practices_w294.webp 294w,
+/assets/img/basic-syntax/markdown-italics-best-practices_w201.webp 201w"
+		         sizes="(max-width: 759px) 100vw, 759px"
+		         type="image/webp"></data-src>
+		    	<data-img class="responsive-img lazy-img"
+		        	alt="Tutorial de Markdown - Itálico em Markdown - Melhores práticas"
+		        	title="Tutorial de Markdown - Itálico em Markdown - Melhores práticas"
+		         	src="/assets/img/basic-syntax/markdown-italics-best-practices_w852.png"
+		         	srcset="/assets/img/basic-syntax/markdown-italics-best-practices_w852.png 852w,
+/assets/img/basic-syntax/markdown-italics-best-practices_w759.png 759w,
+/assets/img/basic-syntax/markdown-italics-best-practices_w666.png 666w,
+/assets/img/basic-syntax/markdown-italics-best-practices_w573.png 573w,
+/assets/img/basic-syntax/markdown-italics-best-practices_w480.png 480w,
+/assets/img/basic-syntax/markdown-italics-best-practices_w387.png 387w,
+/assets/img/basic-syntax/markdown-italics-best-practices_w294.png 294w,
+/assets/img/basic-syntax/markdown-italics-best-practices_w201.png 201w"
+		         	sizes="(max-width: 759px) 100vw, 759px"></data-img>
+		        <a href="/assets/img/basic-syntax/markdown-italics-best-practices_w852.png" target="_blank" class="cover-link"></a>
+		    </picture>
+			<figcaption class="caption">
+		    <i class="tiny material-icons">photo</i>&nbsp;<span>Itálico em Markdown - Formatar o meio da palavra.</span>
+		</figcaption>
+		</figure>
+            </div>
 
-            <h3 id="negrito-italico">Negrito & Itálico</h3>
+            <h3 id="bold-italics">Negrito e Itálico</h3>
+
+            <div class="image-container">
+            	<figure class="mh-0">
+		    <picture class="lazy-img unloaded image-center">
+		    	<data-src class="responsive-img lazy-img"
+		         srcset="/assets/img/basic-syntax/markdown-bold-italics_w850.webp 850w,
+/assets/img/basic-syntax/markdown-bold-italics_w757.webp 757w,
+/assets/img/basic-syntax/markdown-bold-italics_w664.webp 664w,
+/assets/img/basic-syntax/markdown-bold-italics_w571.webp 571w,
+/assets/img/basic-syntax/markdown-bold-italics_w478.webp 478w,
+/assets/img/basic-syntax/markdown-bold-italics_w385.webp 385w,
+/assets/img/basic-syntax/markdown-bold-italics_w292.webp 292w,
+/assets/img/basic-syntax/markdown-bold-italics_w199.webp 199w"
+		         sizes="(max-width: 757px) 100vw, 757px"
+		         type="image/webp"></data-src>
+		    	<data-img class="responsive-img lazy-img"
+		        	alt="Tutorial de Markdown - "
+		        	title="Tutorial de Markdown - "
+		         	src="/assets/img/basic-syntax/markdown-bold-italics_w850.png"
+		         	srcset="/assets/img/basic-syntax/markdown-bold-italics_w850.png 850w,
+/assets/img/basic-syntax/markdown-bold-italics_w757.png 757w,
+/assets/img/basic-syntax/markdown-bold-italics_w664.png 664w,
+/assets/img/basic-syntax/markdown-bold-italics_w571.png 571w,
+/assets/img/basic-syntax/markdown-bold-italics_w478.png 478w,
+/assets/img/basic-syntax/markdown-bold-italics_w385.png 385w,
+/assets/img/basic-syntax/markdown-bold-italics_w292.png 292w,
+/assets/img/basic-syntax/markdown-bold-italics_w199.png 199w"
+		         	sizes="(max-width: 757px) 100vw, 757px"></data-img>
+		        <a href="/assets/img/basic-syntax/markdown-bold-italics_w850.png" target="_blank" class="cover-link"></a>
+		    </picture>
+			
+		</figure>
+            </div>
 
             <p>Somente negrito ou somente itálico? Caso queira, você pode combinar as duas formatações para destacar qualquer conteúdo.</p>
 
@@ -953,9 +1168,9 @@
 
             <p>Se for enfatizar o meio de uma palavra com as duas formatações dê preferência ao uso de asteriscos, no caso, três asteriscos <code class="lang-text">***</code>.</p>
 
-            <p>A <a href="#tabela-1-12">Tabela 1.12</a> exemplifica o uso das formatações combinadas.</p>
+            <p>A <a href="#table-1-12">Tabela 1.12</a> exemplifica o uso das formatações combinadas.</p>
 
-            <table class="responsive-table" id="tabela-1-12">
+            <table class="responsive-table" id="table-1-12">
                 <thead>
                     <tr>
                         <th>Markdown</th>
@@ -965,42 +1180,77 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>***Essa parte do conteúdo*** ficará em negrito e itálico.</td>
-                        <td>&lt;strong&gt;&lt;em&gt;Essa parte do conte&uacute;do&lt;/em&gt;&lt;/strong&gt; ficará em negrito e itálico.</td>
-                        <td><strong><em>Essa parte do conteúdo</em></strong> ficará em negrito e itálico.</td>
+                        <td>***This part of the text*** will be bold and italicized.</td>
+                        <td>&lt;strong&gt;&lt;em&gt;This part of the text&lt;/em&gt;&lt;/strong&gt; will be bold and italicized.</td>
+                        <td><strong><em>This part of the text</em></strong> will be bold and italicized.</td>
                     </tr>
                     <tr>
-                        <td>Isso é realmente ___importante___.</td>
-                        <td>Isso é realmente &lt;strong&gt;&lt;em&gt;importante&lt;/em&gt;&lt;/strong&gt;.</td>
-                        <td>Isso é realmente <strong><em>importante</em></strong>.</td>
+                        <td>This is really ___important___.</td>
+                        <td>This is really &lt;strong&gt;&lt;em&gt;important&lt;/em&gt;&lt;/strong&gt;.</td>
+                        <td>This is really <strong><em>important</em></strong>.</td>
                     </tr>
                     <tr>
-                        <td>Isso é realmente __*importante*__.</td>
-                        <td>Isso é realmente &lt;strong&gt;&lt;em&gt;importante&lt;/em&gt;&lt;/strong&gt;.</td>
-                        <td>Isso é realmente <strong><em>importante</em></strong>.</td>
+                        <td>This is really __*important*__.</td>
+                        <td>This is really &lt;strong&gt;&lt;em&gt;important&lt;/em&gt;&lt;/strong&gt;.</td>
+                        <td>This is really <strong><em>important</em></strong>.</td>
                     </tr>
                     <tr>
-                        <td>Isso é realmente **_importante_**.</td>
-                        <td>Isso é realmente &lt;strong&gt;&lt;em&gt;importante&lt;/em&gt;&lt;/strong&gt;.</td>
-                        <td>Isso é realmente <strong><em>importante</em></strong>.</td>
+                        <td>This is really **_important_**.</td>
+                        <td>This is really &lt;strong&gt;&lt;em&gt;important&lt;/em&gt;&lt;/strong&gt;.</td>
+                        <td>This is really <strong><em>important</em></strong>.</td>
                     </tr>
                     <tr>
-                        <td>Esse texto é realmente ***muito***importante.</td>
-                        <td>Esse texto é realmente &lt;strong&gt;&lt;em&gt;muito&lt;/em&gt;&lt;/strong&gt;importante.</td>
-                        <td>Esse texto é realmente <strong><em>muito</em></strong>importante.</td>
+                        <td>This text is ***really***important.</td>
+                        <td>This text is &lt;strong&gt;&lt;em&gt;really&lt;/em&gt;&lt;/strong&gt;important.</td>
+                        <td>This text is <strong><em>really</em></strong>important.</td>
                     </tr>
                 </tbody>
             </table>
 
-            <small class="caption"><i class="tiny material-icons">info</i>&nbsp;<span>Tabela 1.12 - Exemplos de combinação das formatações negrito e itálico em Markdown.</span></small>
+            <small class="caption">Tabela 1.12 - Exemplos de combinação das formatações negrito e itálico em Markdown.</small>
 
-            <h3 id="negrito-italico-melhores-praticas">Negrito & Itálico: Recomendações de uso</h3>
+            <h3 id="bold-italics-best-practices">Negrito e Itálico: melhores práticas</h3>
 
             <p>Para evitar problemas de compatibilidade com aplicativos Markdown, ao destacar o meio de uma palavra, combinando negrito e itálico, dê preferência ao uso de três asteriscos.</p>
 
-            <p>A <a href="#tabela-1-13">Tabela 1.13</a> demonstra o uso indicado para combinar ambas formatações.</p>
+            <div class="image-container">
+            	<figure class="mh-0">
+		    <picture class="lazy-img unloaded image-center">
+		    	<data-src class="responsive-img lazy-img"
+		         srcset="/assets/img/basic-syntax/markdown-bold-italics-best-practices_w977.webp 977w,
+/assets/img/basic-syntax/markdown-bold-italics-best-practices_w866.webp 866w,
+/assets/img/basic-syntax/markdown-bold-italics-best-practices_w755.webp 755w,
+/assets/img/basic-syntax/markdown-bold-italics-best-practices_w644.webp 644w,
+/assets/img/basic-syntax/markdown-bold-italics-best-practices_w533.webp 533w,
+/assets/img/basic-syntax/markdown-bold-italics-best-practices_w422.webp 422w,
+/assets/img/basic-syntax/markdown-bold-italics-best-practices_w311.webp 311w,
+/assets/img/basic-syntax/markdown-bold-italics-best-practices_w200.webp 200w"
+		         sizes="(max-width: 755px) 100vw, 755px"
+		         type="image/webp"></data-src>
+		    	<data-img class="responsive-img lazy-img"
+		        	alt="Tutorial de Markdown - Negrito e itálico no Markdown - Melhores práticas"
+		        	title="Tutorial de Markdown - Negrito e itálico no Markdown - Melhores práticas"
+		         	src="/assets/img/basic-syntax/markdown-bold-italics-best-practices_w977.png"
+		         	srcset="/assets/img/basic-syntax/markdown-bold-italics-best-practices_w977.png 977w,
+/assets/img/basic-syntax/markdown-bold-italics-best-practices_w866.png 866w,
+/assets/img/basic-syntax/markdown-bold-italics-best-practices_w755.png 755w,
+/assets/img/basic-syntax/markdown-bold-italics-best-practices_w644.png 644w,
+/assets/img/basic-syntax/markdown-bold-italics-best-practices_w533.png 533w,
+/assets/img/basic-syntax/markdown-bold-italics-best-practices_w422.png 422w,
+/assets/img/basic-syntax/markdown-bold-italics-best-practices_w311.png 311w,
+/assets/img/basic-syntax/markdown-bold-italics-best-practices_w200.png 200w"
+		         	sizes="(max-width: 755px) 100vw, 755px"></data-img>
+		        <a href="/assets/img/basic-syntax/markdown-bold-italics-best-practices_w977.png" target="_blank" class="cover-link"></a>
+		    </picture>
+			<figcaption class="caption">
+		    <i class="tiny material-icons">photo</i>&nbsp;<span>Sintaxe recomendada para aplicar negrito e itálico no Markdown.</span>
+		</figcaption>
+		</figure>
+            </div>
 
-            <table class="responsive-table" id="tabela-1-13">
+            <p>A <a href="#table-1-13">Tabela 1.13</a> demonstra o uso indicado para combinar ambas formatações.</p>
+
+            <table class="responsive-table" id="table-1-13">
                 <thead>
                     <tr>
                         <th class="green-text">
@@ -1016,104 +1266,179 @@
                 <tbody>
                     <tr>
                         <td>
-                            Texto***Muito***Importante.
+                            Text***Really***Important.
                         </td>
                         <td>
-                            Texto___Muito___Importante.
+                            Text___Really___Important.
                         </td>
                     </tr>
                 </tbody>
             </table>
 
-            <small class="caption"><i class="tiny material-icons">info</i>&nbsp;<span>Tabela 1.13 - Uso recomendado da formatação Markdown para combinar negrito e itálico.</span></small>
+            <small class="caption">Tabela 1.13 - Uso recomendado da formatação Markdown para combinar negrito e itálico.</small>
 
 
-            <h2 id="bloco-citacao">Bloco de citação</h2>
+            <h2 id="blockquote">Blockquote</h2>
 
-            <p>Para marcar um conteúdo como bloco de citação no Markdown, use o sinal de maior que <code class="lang-text">></code> no começo do parágrafo.</p>
+            <p>Para marcar um conteúdo como blockquote no Markdown, use o sinal de maior que <code class="lang-text">&gt;</code> no começo do parágrafo.</p>
+
+            <div class="image-container">
+            	<figure class="mh-0">
+		    <picture class="lazy-img unloaded image-center">
+		    	<data-src class="responsive-img lazy-img"
+		         srcset="/assets/img/basic-syntax/markdown-blockquote_w1280.webp 1280w,
+/assets/img/basic-syntax/markdown-blockquote_w1126.webp 1126w,
+/assets/img/basic-syntax/markdown-blockquote_w972.webp 972w,
+/assets/img/basic-syntax/markdown-blockquote_w818.webp 818w,
+/assets/img/basic-syntax/markdown-blockquote_w664.webp 664w,
+/assets/img/basic-syntax/markdown-blockquote_w510.webp 510w,
+/assets/img/basic-syntax/markdown-blockquote_w356.webp 356w,
+/assets/img/basic-syntax/markdown-blockquote_w202.webp 202w"
+		         sizes="(max-width: 664px) 100vw, 664px"
+		         type="image/webp"></data-src>
+		    	<data-img class="responsive-img lazy-img"
+		        	alt="Tutorial de Markdown - Blockquote"
+		        	title="Tutorial de Markdown - Blockquote"
+		         	src="/assets/img/basic-syntax/markdown-blockquote_w1280.png"
+		         	srcset="/assets/img/basic-syntax/markdown-blockquote_w1280.png 1280w,
+/assets/img/basic-syntax/markdown-blockquote_w1126.png 1126w,
+/assets/img/basic-syntax/markdown-blockquote_w972.png 972w,
+/assets/img/basic-syntax/markdown-blockquote_w818.png 818w,
+/assets/img/basic-syntax/markdown-blockquote_w664.png 664w,
+/assets/img/basic-syntax/markdown-blockquote_w510.png 510w,
+/assets/img/basic-syntax/markdown-blockquote_w356.png 356w,
+/assets/img/basic-syntax/markdown-blockquote_w202.png 202w"
+		         	sizes="(max-width: 664px) 100vw, 664px"></data-img>
+		        <a href="/assets/img/basic-syntax/markdown-blockquote_w1280.png" target="_blank" class="cover-link"></a>
+		    </picture>
+			<figcaption class="caption">
+		    <i class="tiny material-icons">photo</i>&nbsp;<span>Blockquote em Markdown.</span>
+		</figcaption>
+		</figure>
+            </div>
 
             <p>Por exemplo, essa marcação Markdown:</p>
 
-            <pre class="lang-markdown"><code>&gt; Conteúdo do bloco de citação.</code></pre>
+            <pre class="lang-markdown"><code>&gt; Conteúdo do blockquote.</code></pre>
 
             <p>Resultaria nessa saída HTML:</p>
 
             <blockquote>
-                <p>Conteúdo do bloco de citação.</p>
+                <p>Conteúdo do blockquote.</p>
             </blockquote>
 
-            <h3 id="bloco-citacao-varios-paragrafos">Bloco de citação com vários parágrafos</h3>
+            <h3 id="blockquote-muiltiple-paragraphs">Blockquote com vários parágrafos</h3>
 
-            <p>Se você precisa de um bloco de citação contendo diversos parágrafos dentro dele, utilize o sinal de maior que > a frente de cada um desses parágrafos e os separe por uma linha contendo apenas o sinal de maior que.</p>
+            <p>Se você precisa de um blockquote contendo diversos parágrafos dentro dele, utilize o sinal de maior que <code class="lang-plaintext">&gt;</code> a frente de cada um desses parágrafos e os separe por uma linha contendo apenas o sinal de maior que.</p>
+
+            <div class="image-container">
+            	<figure class="mh-0">
+		    <picture class="lazy-img unloaded image-center">
+		    	<data-src class="responsive-img lazy-img"
+		         srcset="/assets/img/basic-syntax/markdown-blockquote-paragraphs_w1280.webp 1280w,
+/assets/img/basic-syntax/markdown-blockquote-paragraphs_w1126.webp 1126w,
+/assets/img/basic-syntax/markdown-blockquote-paragraphs_w972.webp 972w,
+/assets/img/basic-syntax/markdown-blockquote-paragraphs_w818.webp 818w,
+/assets/img/basic-syntax/markdown-blockquote-paragraphs_w664.webp 664w,
+/assets/img/basic-syntax/markdown-blockquote-paragraphs_w510.webp 510w,
+/assets/img/basic-syntax/markdown-blockquote-paragraphs_w356.webp 356w,
+/assets/img/basic-syntax/markdown-blockquote-paragraphs_w202.webp 202w"
+		         sizes="(max-width: 664px) 100vw, 664px"
+		         type="image/webp"></data-src>
+		    	<data-img class="responsive-img lazy-img"
+		        	alt="Tutorial de Markdown - Blockquote com vários parágrafos"
+		        	title="Tutorial de Markdown - Blockquote com vários parágrafos"
+		         	src="/assets/img/basic-syntax/markdown-blockquote-paragraphs_w1280.png"
+		         	srcset="/assets/img/basic-syntax/markdown-blockquote-paragraphs_w1280.png 1280w,
+/assets/img/basic-syntax/markdown-blockquote-paragraphs_w1126.png 1126w,
+/assets/img/basic-syntax/markdown-blockquote-paragraphs_w972.png 972w,
+/assets/img/basic-syntax/markdown-blockquote-paragraphs_w818.png 818w,
+/assets/img/basic-syntax/markdown-blockquote-paragraphs_w664.png 664w,
+/assets/img/basic-syntax/markdown-blockquote-paragraphs_w510.png 510w,
+/assets/img/basic-syntax/markdown-blockquote-paragraphs_w356.png 356w,
+/assets/img/basic-syntax/markdown-blockquote-paragraphs_w202.png 202w"
+		         	sizes="(max-width: 664px) 100vw, 664px"></data-img>
+		        <a href="/assets/img/basic-syntax/markdown-blockquote-paragraphs_w1280.png" target="_blank" class="cover-link"></a>
+		    </picture>
+			<figcaption class="caption">
+		    <i class="tiny material-icons">photo</i>&nbsp;<span>Blockquote com vários parágrafos</span>
+		</figcaption>
+		</figure>
+            </div>
 
             <blockquote><b>NOTA</b>: O sinal de maior que <code class="lang-text">></code> deve ser colocado na linha que separa os parágrafos para que o processador Markdown consiga interpretar da maneira correta a sua marcação.</blockquote>
 
             <p>Vejamos um exemplos:</p>
 
-            <pre class="lang-markdown"><code>&gt; Primeiro parágrafo do bloco de citação.
+            <pre class="lang-markdown"><code>&gt; Primeiro parágrafo do blockquote.
 &gt;
-&gt; Segundo parágrafo do bloco de citação.</code></pre>
+&gt; Segundo parágrafo do blockquote.</code></pre>
 
             <p>A saída em HTML:</p>
 
             <blockquote>
-                <p>Primeiro parágrafo do bloco de citação.</p>
-                <p>Segundo parágrafo do bloco de citação.</p>
+                <p>Primeiro parágrafo do blockquote.</p>
+                <p>Segundo parágrafo do blockquote.</p>
             </blockquote>
 
-            <h3 id="bloco-citacao-aninhado">Blocos de citação aninhados</h3>
+            <h3 id="blockquote-nested">Blockquotes aninhados</h3>
 
-            <p>Além de inserir vários parágrafos dentro de um bloco de citação você também pode aninhá-los, ou seja, inserir blocos de citação dentro de blocos de citação, complexo? Vamos simplificar.</p>
+            <p>Além de inserir vários parágrafos dentro de um blockquote você também pode aninhá-los, ou seja, inserir blockquotes dentro de blockquotes, complexo? Vamos simplificar.</p>
 
-            <p>Para criar um bloco aninhado utilize dois sinais de maior que <code class="lang-text">>></code> antes do parágrafo em questão.</p>
+            <p>Para criar um bloco aninhado utilize dois sinais de maior que <code class="lang-text">>></code> antes do parágrafo.</p>
 
-            <p>Vamos a um exemplo:</p>
+            <p>Exemplo:</p>
 
-            <pre class="lang-markdown"><code>&gt; Conteúdo do bloco de citação.
+            <pre class="lang-markdown"><code>&gt; Conteúdo do blockquote.
 &gt;
-&gt;&gt; Esse parágrafo será interpretado como um bloco de citação aninhado.</code></pre>
+&gt;&gt; Esse parágrafo será interpretado como um blockquote aninhado.</code></pre>
 
             <p>A renderização em HTML:</p>
 
             <blockquote>
-                <p>Conteúdo do bloco de citação.</p>
+                <p>Conteúdo do blockquote.</p>
                 <blockquote>
-                    <p>Esse parágrafo será interpretado como um bloco de citação aninhado.</p>
+                    <p>Esse parágrafo será interpretado como um blockquote aninhado.</p>
                 </blockquote>
             </blockquote>
 
-            <h3 id="bloco-citacao-outros-elementos">Bloco de citação com outros elementos</h3>
+            <h3 id="blockquote-other-elements">Blockquote com outros elementos</h3>
 
-            <p>A versatilidade dos blocos de citação permite a inserção de outros elementos Markdown dentro deles.</p>
+            <p>A versatilidade dos blockquotes permite a inserção de outros elementos Markdown dentro deles.</p>
 
-            <blockquote><b>NOTA</b>: Alguns elementos Markdown podem não ser renderizados corretamente quando colocados dentro de um bloco de citação, isso varia muito entre processadores Markdown.</blockquote>
+            <blockquote><b>NOTA</b>: Alguns elementos Markdown podem não ser renderizados corretamente quando colocados dentro de um blockquote, isso varia muito entre processadores Markdown.</blockquote>
 
-            <pre class="lang-markdown"><code>&gt; #### Título h4 dentro do bloco
+            <div class="code-example">
+	<pre class="lang-markdown"><code>&gt; #### Título h4 dentro do bloco
 &gt;
-&gt; - Primeiro elemento da lista dentro do bloco de citação.
-&gt; - Segundo elemento da lista dentro do bloco de citação.
+&gt; - Primeiro elemento da lista dentro do blockquote.
+&gt; - Segundo elemento da lista dentro do blockquote.
 &gt;
 &gt;  *Texto em itálico* parte do parágrafo sem formatação **texto em negrito**.</code></pre>
+	<a href="/editor/?markdown=>%20%23%23%23%23%20T%C3%ADtulo%20h4%20dentro%20do%20bloco%0D%0A>%0D%0A>%20%2D%20Primeiro%20elemento%20da%20lista%20dentro%20do%20blockquote%2E%0D%0A>%20%2D%20Segundo%20elemento%20da%20lista%20dentro%20do%20blockquote%2E%0D%0A>%0D%0A>%20%20%2ATexto%20em%20it%C3%A1lico%2A%20parte%20do%20par%C3%A1grafo%20sem%20formata%C3%A7%C3%A3o%20%2A%2Atexto%20em%20negrito%2A%2A%2E" target="_blank" class="test-code waves-effect waves-light btn orange darken-4 pr-25">
+	    <b><span data-str="true">Tente você mesmo</span></b>&nbsp;<i class="fas fa-external-link-alt outter-icon-code"></i>
+	</a>
+</div>
 
             <p>A saída em HTML:</p>
 
             <blockquote>
                 <h4>Título h4 dentro do bloco</h4>
                 <ul>
-                    <li>Primeiro elemento da lista dentro do bloco de citação.</li>
-                    <li>Segundo elemento da lista dentro do bloco de citação.</li>
+                    <li>Primeiro elemento da lista dentro do blockquote.</li>
+                    <li>Segundo elemento da lista dentro do blockquote.</li>
                 </ul>
                 <p>Texto em itálico parte do parágrafo sem formatação <strong>texto em negrito</strong>.</p>
             </blockquote>
 
 
-            <h2 id="listas">Listas</h2>
+            <h2 id="lists">Listas</h2>
 
             <p>Listas são essenciais na organização de tópicos dentro do seu documento. Uma lista facilita a visualização de elementos que possam ter relação um com o outro.</p>
 
-            <p>Para criar uma lista no Markdown nós usamos números para listas ordenadas, ou seja, em sequência e sinais de subtração/traços <code class="lang-text">-</code>, ou sinais de adição <code class="lang-text">+</code>, ou asteriscos <code class="lang-text">*</code> para listas não ordenadas.</p>
+            <p>Para criar uma lista no Markdown nós usamos números para listas ordenadas, ou seja, em sequência e traços <code class="lang-text">-</code>, ou sinais de adição <code class="lang-text">+</code>, ou asteriscos <code class="lang-text">*</code> para listas não ordenadas.</p>
 
-            <h3 id="listas-ordenadas">Listas ordenadas</h3>
+            <h3 id="lists-ordered">Listas ordenadas</h3>
 
             <p>Vamos começar ordenando os elementos da nossa lista, para isso coloque um número seguido por um ponto e o texto do elemento.</p>
 
@@ -1133,9 +1458,9 @@
 
             <blockquote><b>NOTA</b>: Para criar um elemento recuado insira uma tabulação antes do número que demarca o elemento. Em alguns processadores Markdown você também pode inserir 3 espaços antes da numeração, o resultado é semelhante, porém isso pode variar dependendo do aplicativo, na dúvida use o TAB.</blockquote>
 
-            <p>A <a href="#tabela-1-14">Tabela 1.14</a> contém diversos exemplos de como criar listar ordenadas.</p>
+            <p>A <a href="#table-1-14">Tabela 1.14</a> contém diversos exemplos de como criar listar ordenadas.</p>
 
-            <table class="responsive-table" id="tabela-1-14">
+            <table class="responsive-table" id="table-1-14">
                 <thead>
                     <tr>
                         <th>Markdown</th>
@@ -1256,9 +1581,9 @@
                 </tbody>
             </table>
 
-            <small class="caption"><i class="tiny material-icons">info</i>&nbsp;<span>Tabela 1.14 - Exemplos de como criar listas ordenadas em Markdown.</span></small>
+            <small class="caption">Tabela 1.14 - Exemplos de como criar listas ordenadas em Markdown.</small>
 
-            <h3 id="listas-nao-ordenadas">Listas não ordenadas</h3>
+            <h3 id="lists-unordered">Listas não ordenadas</h3>
 
             <p>Uma lista não ordenada é uma sequência de elementos denotados, normalmente, por algum símbolo à esquerda do elemento, isso é, não há uma sequência numérica aqui.</p>
 
@@ -1276,13 +1601,13 @@
                 </script>
             </p>
 
-            <p>Coloque um desses dois sinais antes do item da lista para demarcá-lo, seguido por um espaço em branco mais o conteúdo do elemento.</p>
+            <p>Coloque um desses dois sinais antes do item da lista para demarcá-lo, seguido por um espaço em branco e o conteúdo do elemento.</p>
 
-            <blockquote><b>NOTA</b>: Recue um elemento da lista inserindo uma TAB antes da marcação do elemento.</blockquote>
+            <blockquote><b>NOTA</b>: Recue um elemento da lista inserindo uma tabulação antes da marcação do elemento.</blockquote>
 
-            <p>A <a href="#tabela-1-15">Tabela 1.15</a> mostra como criar listas não ordenadas.</p>
+            <p>A <a href="#table-1-15">Tabela 1.15</a> mostra como criar listas não ordenadas.</p>
 
-            <table class="responsive-table" id="tabela-1-15">
+            <table class="responsive-table" id="table-1-15">
                 <thead>
                     <tr>
                         <th>Markdown</th>
@@ -1403,18 +1728,16 @@
                 </tbody>
             </table>
 
-            <small class="caption"><i class="tiny material-icons">info</i>&nbsp;<span>Tabela 1.15 - Exemplos de como criar listas não ordenadas em Markdown.</span></small>
+            <small class="caption">Tabela 1.15 - Exemplos de como criar listas não ordenadas em Markdown.</small>
 
 
-            <h3 id="listas-adicionando-elementos">Adicionando elementos</h3>
+            <h3 id="lists-adding-elements">Adicionando elementos</h3>
 
             <p>O Markdown permite que você insira outros elementos no meio de uma lista sem quebrar a sua continuidade.</p>
 
             <p>Para preservar a marcação da lista e colocar um outro elemento dentro dela, recue a marcação do elemento estranho em 4 espaços ou uma tabulação.</p>
 
-            <p>Vamos simplificar com exemplos?</p>
-
-            <h3 id="listas-paragrafos">Parágrafos</h3>
+            <h3 id="lists-paragraph">Parágrafos</h3>
 
             <pre class="lang-markdown"><code>* Esse é o primeiro elemento da lista.
 * Esse é o segundo elemento da lista.
@@ -1431,29 +1754,30 @@
                 <li>E finalmente o terceiro elemento da lista.</li>
             </ul>
 
-            <h3 id="listas-bloco-citacao">Bloco de citação</h3>
+            <h3 id="lists-blockquote">Blockquote dentro da lista</h3>
 
             <pre class="lang-markdown"><code>* Esse é o primeiro elemento da lista.
 * Esse é o segundo elemento da lista.
 
-    &gt; Bloco de citação no meio da lista.
+    &gt; Blockquote no meio da lista.
 
 * E finalmente o terceiro elemento da lista.</code></pre>
 
             <p>O resultado ficaria assim:</p>
+
             <ul>
                 <li>Esse é o primeiro elemento da lista.</li>
                 <li>
                     <p>Esse é o segundo elemento da lista.</p>
                     <blockquote>
-                        <p>Bloco de citação no meio da lista.</p>
+                        <p>Blockquote no meio da lista.</p>
                     </blockquote>
                 </li>
                 <li>E aqui está o terceiro item da lista.</li>
             </ul>
 
 
-            <h3 id="listas-bloco-codigo">Bloco de código</h3>
+            <h3 id="lists-code-block">Bloco de código</h3>
 
             <p>Ao inserir um bloco de código dentro de uma lista recue-o oito espaços ou duas tabulações.</p>
 
@@ -1466,7 +1790,7 @@
 
         &lt;html&gt;
             &lt;head&gt;
-            &lt;title&gt;Meu Site Genérico&lt;/title&gt;
+            &lt;title&gt;Título do meu site&lt;/title&gt;
         &lt;/head&gt;
 
 3. Altere o título da página.</code></pre>
@@ -1481,7 +1805,7 @@
                     <p>Localize o bloco de código mostrado abaixo:</p>
                     <pre class="lang-html"><code>&lt;html&gt;
     &lt;head&gt;
-    &lt;title&gt;Teste&lt;/title&gt;
+    &lt;title&gt;Título do meu site&lt;/title&gt;
 &lt;/head&gt;</code></pre>
                 </li>
                 <li>Altere o título da página.</li>
@@ -1489,12 +1813,12 @@
 
             <p>Perceba que a sequência numérica da lista não foi alterada mesmo com a inserção do bloco de código entre os elementos.</p>
 
-            <h3 id="listas-images">Imagens</h3>
+            <h3 id="lists-images">Imagens</h3>
 
             <pre class="lang-markdown"><code>1. Primeiro abra o arquivo do logo do Markdown.
-2. O logo é composto pela letra M e uma seta para baixo.
+2. Veja o logo do Markdown na tela.
 
-    ![Logo do Markdown](/assets/img/sintaxe-basica/markdown-logo-small.png)
+    ![Logo do Markdown](https://markdown.net.br/assets/img/basic-syntax/markdown-logo-small.png)
 
 3. Já pode fechar o arquivo.</code></pre>
 
@@ -1503,22 +1827,22 @@
             <ol>
                 <li>Primeiro abra o arquivo do logo do Markdown.</li>
                 <li>
-                    <p>O logo é composto pela letra M e uma seta para baixo.</p>
+                    <p>Veja o logo do Markdown na tela.</p>
                     <div class="image-container">
-                        <img src="/assets/img/sintaxe-basica/markdown-logo-small.png" alt="Logo do Markdown">
+                        <img src="/assets/img/basic-syntax/markdown-logo-small.png" alt="Logo do Markdown">
                     </div>
                 </li>
                 <li>Já pode fechar o arquivo.</li>
             </ol>
 
 
-            <h2 id="codigo">Código</h2>
+            <h2 id="code">Código</h2>
 
             <p>Usando o Markdown nós podemos demarcar uma parte do conteúdo como código usando crases <code class="lang-text">`</code>. Coloque uma crase antes e depois do texto que será interpretado pelo processador Markdown como código.</p>
 
-            <p>A <a href="#tabela-1-16">Tabela 1.16</a> exemplifica a formatação de código.</p>
+            <p>A <a href="#table-1-16">Tabela 1.16</a> exemplifica a formatação de código.</p>
 
-            <table class="responsive-table" id="tabela-1-16">
+            <table class="responsive-table" id="table-1-16">
                 <thead>
                     <tr>
                         <th>Markdown</th>
@@ -1528,16 +1852,16 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Digite `dir` no prompt de comando do Windows para listar os arquivos.</td>
-                        <td>Digite &lt;code&gt;dir&lt;/code&gt; no prompt de comando do Windows para listar os arquivos.</td>
-                        <td>Digite <code class="lang-text">dir</code> no prompt de comando do Windows para listar os arquivos.</td>
+                        <td>`código`.</td>
+                        <td>&lt;code&gt;código.&lt;/code&gt;</td>
+                        <td><code class="lang-text">código</code></td>
                     </tr>
                 </tbody>
             </table>
 
-            <small class="caption"><i class="tiny material-icons">info</i>&nbsp;<span>Tabela 1.16 - Sintaxe Markdown para demarcar um pedaço de código.</span></small>
+            <small class="caption">Tabela 1.16 - Sintaxe Markdown para demarcar um pedaço de código.</small>
 
-            <h3 id="escapando-crases">Escapando crases</h3>
+            <h3 id="escaping-backticks">Escapando crases</h3>
 
             <p>Você pode se deparar com a seguinte situação.</p>
 
@@ -1547,9 +1871,9 @@
 
             <p>A solução é simples, duplicar a crase inicial e a crase final que cercam o pedaço de código.</p>
 
-            <p>A <a href="#tabela-1-17">Tabela 1.17</a> mostra com mais clareza esse processo.</p>
+            <p>A <a href="#table-1-17">Tabela 1.17</a> mostra com mais clareza esse processo.</p>
 
-            <table class="responsive-table" id="tabela-1-17">
+            <table class="responsive-table" id="table-1-17">
                 <thead>
                     <tr>
                         <th>Markdown</th>
@@ -1566,10 +1890,10 @@
                 </tbody>
             </table>
 
-            <small class="caption"><i class="tiny material-icons">info</i>&nbsp;<span>Tabela 1.17 - Como escapar uma crase dentro de um pedaço de código em Markdown.</span></small>
+            <small class="caption">Tabela 1.17 - Como escapar uma crase dentro de um pedaço de código em Markdown.</small>
 
 
-            <h3 id="bloco-codigo">Bloco de código</h3>
+            <h3 id="code-block">Bloco de código</h3>
 
             <p>O Markdown permite que criemos blocos de código recuando 4 espaços ou uma tabulação.</p>
 
@@ -1587,9 +1911,9 @@
     &lt;/head&gt;
 &lt;/html&gt;</code></pre>
 
-            <p>Usando a sintaxe estendida do Markdown nós podemos criar blocos de código sem recuar espaços, para isso precisamos usar a marcação de <a href="/sintaxe-estendida/#bloco-codigo-cercado">blocos de código cercado</a>.</p>
+            <p>Usando a sintaxe estendida do Markdown nós podemos criar blocos de código sem recuar espaços, para isso precisamos usar a marcação de <a href="/sintaxe-estendida/#code-block-cercado">blocos de código cercado</a>.</p>
 
-            <h2 id="linhas-horizontais">Linhas horizontais</h2>
+            <h2 id="horizontal-rule">Linhas horizontais</h2>
 
             <p>Três asteriscos seguidos <code class="lang-text">***</code>, ou três traços <code class="lang-text">---</code>, ou três sublinhado <code class="lang-text">___</code> criam uma linha horizontal.</p>
 
@@ -1608,13 +1932,13 @@ _________________</code></pre>
             <blockquote><b>NOTA</b>: Não é necessário estipular uma quantidade máxima de caracteres para criar uma linha, desde que, você utilize no mínimo 3 e a linha só possua esses caracteres, você pode inserir a quantidade que quiser.</blockquote>
 
 
-            <h3 id="linhas-horizontais-melhores-praticas">Linhas horizontais: Recomendações de uso</h3>
+            <h3 id="horizontal-rule-best-practices">Linhas horizontais: melhores práticas</h3>
 
-            <p>Sempre adicione uma linha em branco antes e depois da marcação de linha horizontal. Isso é necessário devido a sintaxe alternativa para criação de títulos, se você colocar três traços <code class="lang-text">---</code> diretamente abaixo de uma linha com conteúdo, essa, será interpretada como um título de nível 1.</p>
+            <p>Sempre adicione uma linha em branco antes e depois da marcação de linha horizontal. Isso é necessário devido a sintaxe alternativa para criação de títulos, se você colocar três traços <code class="lang-text">---</code> diretamente abaixo de uma linha com conteúdo, essa, será interpretada como um título de nível 2.</p>
 
-            <p>A <a href="#tabela-1-18">Tabela 1.18</a> exemplifica a criação de linhas horizontais da forma correta.</p>
+            <p>A <a href="#table-1-18">Tabela 1.18</a> exemplifica a criação de linhas horizontais da forma correta.</p>
 
-            <table class="responsive-table" id="tabela-1-18">
+            <table class="responsive-table" id="table-1-18">
                 <thead>
                     <tr>
                         <th class="green-text">
@@ -1643,7 +1967,7 @@ _________________</code></pre>
                 </tbody>
             </table>
 
-            <small class="caption"><i class="tiny material-icons">info</i>&nbsp;<span>Tabela 1.18 - Forma correta de construir uma linha horizontal em Markdown.</span></small>
+            <small class="caption">Tabela 1.18 - Forma correta de construir uma linha horizontal em Markdown.</small>
 
 
 
@@ -1660,17 +1984,19 @@ _________________</code></pre>
 
             <p>Juntando tudo.</p>
 
-            <pre class="lang-markdown"><code>Visite [O Melhor Site de Markdown do Mundo](https://markdown.net.br).</code></pre>
+            <pre class="lang-markdown"><code>Visite [O Melhor Site de Markdown do mundo](https://markdown.net.br).</code></pre>
 
             <p>E a saída em HTML.</p>
 
             <p>Visite <a href="https://markdown.net.br" target="_blank">O Melhor Site de Markdown do Mundo</a></p>
 
-            <h3 id="links-adicionando-titulos">Adicionando títulos</h3>
+            <h3 id="links-adding-titles">Adicionando títulos</h3>
 
-            <p>Se você tiver um pouco de experiência com o HTML sabe que, quando o usuário coloca o mouse sobre um link na página, geralmente um pequeno pop-up apresenta um texto na tela, o que nós chamamos de título do link.</p>
+            <p>Se você tiver um pouco de experiência com o HTML sabe que, quando o usuário coloca o mouse sobre um link da página, geralmente um pequeno rótulo descrevendo o propósito do link é apresentado para o usuário.</p>
 
-            <p>Para criar esse título usando Markdown basta adicionar dentro dos parenteses do link um texto entre aspas depois da URL, exemplo:</p>
+            <p>Esse rótulo é o título do link e para criá-lo usando Markdown basta adicionar dentro dos parenteses um texto entre aspas depois da URL.</p>
+
+            <p>Exemplo:</p>
 
             <pre class="lang-markdown"><code>Visite [O Melhor Site de Markdown do Mundo](https://markdown.net.br "A referência definitiva do Markdown.").</code></pre>
 
@@ -1681,42 +2007,44 @@ _________________</code></pre>
 
             <h3 id="urls-email">URLs e endereços de email</h3>
 
-            <p>Você também pode transformar uma URL em link automaticamente colocando-a entre os sinais de menor que <code class="lang-text"><</code> e maior que <code class="lang-text">></code>.</p>
+            <p>Você também pode transformar uma URL em link automaticamente colocando-a entre os sinais de menor que <code class="lang-text">&lt;</code> e maior que <code class="lang-text">&gt;</code>.</p>
 
             <pre class="lang-markdown"><code>&lt;https://markdown.net.br&gt;
-&lt;email@exemplo.com.br&gt;</code></pre>
+&lt;email@host.com&gt;</code></pre>
 
             <p>O Resultado fica assim:</p>
 
             <p><a href="https://markdown.net.br/" target="_blank">https://markdown.net.br</a><br>
-                <a href="mailto:email@exemplo.com.br">email@exemplo.com.br</a>
+                <a href="mailto:email@exemplo.com.br">email@host.com</a>
             </p>
 
-            <h3 id="links-enfatizando">Enfatizando links</h3>
+            <h3 id="links-emphasis">Enfatizando links</h3>
 
             <p>Ao adicionar asteriscos ao redor da formatação de link, ou seja, antes dos colchetes e depois dos parenteses, você indica para o processador Markdown que aquele link deve ser enfatizado.</p>
 
             <p>Por exemplo:</p>
 
-            <pre class="lang-markdown"><code>Visite o site de *[Referência do Markdown](https://markdown.net.br)*.
-Eu recomendo o uso do mecanismo de pesquisa **[Duck Duck GO](https://duckduckgo.com/)**.</code></pre>
+            <pre class="lang-markdown"><code>Visite o site: *[Referência do Markdown](https://markdown.net.br)*.
+            Eu recomendo o mecanismo de pesquisa: **[Duck Duck GO](https://duckduckgo.com/)**.</code></pre>
 
             <p>A saída em HTML ficaria assim:</p>
 
-            <p>Visite o site de <a href="https://markdown.net.br" target="_blank">Referência do Markdown</a>
+            <p>Visite o site: <a href="https://markdown.net.br" target="_blank">Referência do Markdown</a>
                 <br>
-                Eu recomendo o uso do mecanismo de pesquisa <a href="https://duckduckgo.com/" target="_blank">Duck Duck GO</a>.
+                Eu recomendo o mecanismo de pesquisa: <a href="https://duckduckgo.com/" target="_blank">Duck Duck GO</a>.
             </p>
 
-            <p>Você também pode destacar um link usando a formatação de código, exemplo:</p>
+            <p>Você também pode destacar um link usando a formatação de código.</p>
 
-            <pre class="lang-markdown"><code>Reveja a seção de [`código`](#code).</code></pre>
+            <p>Exemplo:</p>
 
-            <p>Que seria convertido para:</p>
+            <pre class="lang-markdown"><code>Reveja a seção: [`código`](#code).</code></pre>
 
-            <p>Reveja a seção de <a href="#codigo"><code class="lang-markdown">código</code></a></p>
+            <p>Resultado:</p>
 
-            <h3 id="links-estilo-referencia">Links de estilo de referência</h3>
+            <p>Reveja a seção: <a href="#code"><code class="lang-markdown">código</code></a></p>
+
+            <h3 id="links-reference">Links de estilo de referência</h3>
 
             <p>O Markdown oferece uma sintaxe alternativa para a criação de links que permite uma visualização mais limpa do seu documento.</p>
 
@@ -1726,23 +2054,23 @@ Eu recomendo o uso do mecanismo de pesquisa **[Duck Duck GO](https://duckduckgo.
 
             <p>Como a criação desse link de referência se divide em duas partes, vamos analisar cada uma delas.</p>
 
-            <h3 id="links-formatando-primeira-parte">Primeira parte do link</h3>
+            <h3 id="links-formatting-first-part">Primeira parte do link</h3>
 
             <p>Primeiro vamos criar dois conjuntos de colchetes, dentro do primeiro coloque o texto do link, ou seja o texto que irá aparecer na página, no segundo coloque um rótulo que servirá de referência para o endereço do link:</p>
 
-            <pre class="lang-markdown"><code>[Markdown - Wikipédia][1]</code></pre>
+            <pre class="lang-markdown"><code>[Markdown - Wikipedia][1]</code></pre>
 
             <blockquote><b>NOTA</b>: O rótulo do link de referência, localizado dentro do segundo par de colchetes, pode ser qualquer coisa, números, palavras, frases, pode incluir até pontuação, fica ao seu critério, desde que a referência para o link no final do documento seja igual.</blockquote>
 
             <p>Exemplos:</p>
 
-            <pre class="lang-markdown"><code>[Markdown - Wikipédia][wiki_markdown.1]
+            <pre class="lang-markdown"><code>[Markdown - Wikipedia][wiki_markdown.1]
 [Site Oficial do John Gruber][JOHN GRUBER]</code></pre>
 
             <blockquote><b>NOTA</b>: O rótulo de referência também não diferencia maiúsculas e minúsculas, ou seja, wiki_markdown é o mesmo que WIKI_MARKDOWN.</blockquote>
 
 
-            <h3 id="links-formatando-segunda-parte">Segunda parte do link</h3>
+            <h3 id="links-formatting-second-part">Segunda parte do link</h3>
 
             <p>A segunda parte indica para onde aquele link aponta, ou seja, a URL do link.</p>
 
@@ -1750,25 +2078,25 @@ Eu recomendo o uso do mecanismo de pesquisa **[Duck Duck GO](https://duckduckgo.
 
             <ol>
                 <li>Um rótulo de referência válido de link que você criou anteriormente no seu documento, coloque ele entre colchetes, seguido por dois pontos e pelo menos um espaço em branco (por exemplo, <code class="lang-markdown">[rótulo]: </code>).</li>
-                <li>O endereço do link, opcionalmente essa URL pode estar entre os sinais de menor que < e maior que >.</li>
+                <li>O endereço do link, opcionalmente essa URL pode estar entre os sinais de menor que <code class="lang-text">&lt;</code> e maior que <code class="lang-text">&gt;</code>.</li>
                 <li>O título do link entre aspas <code class="lang-plaintext">""</code>, aspas simples <code class="lang-plaintext">''</code> ou parenteses <code class="lang-plaintext">()</code>, claro, o título é opcional.</li>
             </ol>
 
             <p>Todos os exemplos abaixo são válidos para formatar a segunda parte:</p>
 
-            <pre class="lang-markdown"><code>[1]: https://pt.wikipedia.org/wiki/Markdown
-[1]: https://pt.wikipedia.org/wiki/Markdown "Markdown - Wikipédia"
-[1]: https://pt.wikipedia.org/wiki/Markdown 'Markdown - Wikipédia'
-[1]: https://pt.wikipedia.org/wiki/Markdown (Markdown - Wikipédia)
-[1]: &lt;https://pt.wikipedia.org/wiki/Markdown&gt; "Markdown - Wikipédia"
-[1]: &lt;https://pt.wikipedia.org/wiki/Markdown&gt; 'Markdown - Wikipédia'
-[1]: &lt;https://pt.wikipedia.org/wiki/Markdown&gt; (Markdown - Wikipédia)</code></pre>
+            <pre class="lang-markdown"><code>[1]: https://en.wikipedia.org/wiki/Markdown
+[1]: https://en.wikipedia.org/wiki/Markdown "Markdown - Wikipedia"
+[1]: https://en.wikipedia.org/wiki/Markdown 'Markdown - Wikipedia'
+[1]: https://en.wikipedia.org/wiki/Markdown (Markdown - Wikipedia)
+[1]: &lt;https://en.wikipedia.org/wiki/Markdown&gt; "Markdown - Wikipedia"
+[1]: &lt;https://en.wikipedia.org/wiki/Markdown&gt; 'Markdown - Wikipedia'
+[1]: &lt;https://en.wikipedia.org/wiki/Markdown&gt; (Markdown - Wikipedia)</code></pre>
 
 
             <p>Vou ressaltar novamente que você pode colocar essa segunda parte do link em qualquer lugar do seu documento, eu adiciono no final do arquivo por questão de organização</p>
 
 
-            <h3 id="juntando-todas-pecas">Juntando todas as peças</h3>
+            <h3 id="links-all-together">Juntando todas as peças</h3>
 
             <p>Aqui eu vou apresentar para você uma situação onde o uso de links de referência pode manter o seu documento Markdown mais fácil de ler.</p>
 
@@ -1776,32 +2104,32 @@ Eu recomendo o uso do mecanismo de pesquisa **[Duck Duck GO](https://duckduckgo.
 
             <p>Em Markdown ficaria assim:</p>
 
-            <pre class="lang-markdown"><code>Para saber mais você pode consultar o artigo do Markdown na [Wikipédia](https://pt.wikipedia.org/wiki/Markdown "Markdown - Wikipédia") ou a documentação de [John Gruber](https://daringfireball.net/projects/markdown/ "Documentação Original do Markdown - em inglês.").</code></pre>
+            <pre class="lang-markdown"><code>Para saber mais você pode consultar esse artigo do Markdown: [Wikipedia](https://en.wikipedia.org/wiki/Markdown "Markdown - Wikipedia"). Ou a documentação da linguagem: [John Gruber](https://daringfireball.net/projects/markdown/ "Documentação Original do Markdown.").</code></pre>
 
-            <p>Veja que, a adição dos links dentro do próprio parágrafo pode gerar um texto mais difícil de ler, especialmente se a pessoa que estiver lendo não conhecer o Markdown.</p>
+            <p>Veja que, a adição dos links dentro do próprio parágrafo pode gerar um texto mais difícil de ser lido, especialmente se a pessoa que estiver lendo não conhecer o Markdown.</p>
 
             <p>Como os links são importantes para o contexto do parágrafo, nós não podemos removê-los, porém há uma forma mais eficaz de limpar esse parágrafo, usando links de referência.</p>
 
-            <pre class="lang-markdown"><code>Para saber mais você pode consultar o artigo do Markdown na [Wikipédia][1] ou a documentação de [John Gruber][2].
+            <pre class="lang-markdown"><code>Para saber mais você pode consultar esse artigo do Markdown: [Wikipedia][1]. Ou a documentação da linguagem: [John Gruber][2].
 
-[1]: &lt;https://pt.wikipedia.org/wiki/Markdown&gt; "Markdown - Wikipédia"
-[2]: https://daringfireball.net/projects/markdown/ "Documentação Original do Markdown - em inglês."</code></pre>
+[1]: &lt;https://en.wikipedia.org/wiki/Markdown&gt; "Markdown - Wikipedia"
+[2]: https://daringfireball.net/projects/markdown/ "Documentação Original do Markdown."</code></pre>
 
-            <blockquote><b>NOTA</b>: A colocação do sinal de menor que <code class="lang-text"><</code> e de maior que <code class="lang-text">></code> ao redor do link é opcional.</blockquote>
+            <blockquote><b>NOTA</b>: A colocação do sinal de menor que <code class="lang-text">&lt;</code> e de maior que <code class="lang-text">&gt;</code> ao redor do link é opcional.</blockquote>
 
             <p>As duas formatações acima terão resultados idênticos em HTML:</p>
 
-            <p>Para saber mais você pode consultar o artigo do Markdown na <a href="https://pt.wikipedia.org/wiki/Markdown" title="Markdown - Wikipédia" target="_blank">Wikipédia&nbsp;<sup><i class="fas fa-external-link-alt"></i></sup></a> ou a documentação de <a href="https://daringfireball.net/projects/markdown/" title="https://daringfireball.net/projects/markdown/" target="_blank">John Gruber&nbsp;<sup><i class="fas fa-external-link-alt"></i></sup></a>.</p>
+            <p>Para saber mais você pode consultar esse artigo do Markdown: <a href="https://en.wikipedia.org/wiki/Markdown" title="Markdown - Wikipedia" target="_blank">Wikipedia</a>. Ou a documentação da linguagem: <a href="https://daringfireball.net/projects/markdown/" title="Documentação Original do Markdown." target="_blank">John Gruber</a>.</p>
 
-            <h3 id="links-melhores-praticas">Links de referência: Recomendações de uso</h3>
+            <h3 id="links-best-practices">Links de referência: melhores práticas</h3>
 
             <p>Em alguns casos, você pode se deparar com espaços em branco em URLs, isso pode se tornar um problema dependo do aplicativo Markdown.</p>
 
-            <p>Para evitar anomalias na formatação, use o espaço em branco codificado <code class="lang-text">%20</code>.</p>
+            <p>Para evitar anomalias na formatação, use o espaço em branco codificado: <code class="lang-text">%20</code>.</p>
 
-            <p>A <a href="#tabela-1-19">Tabela 1.19</a> apresenta a formatação de espaço em branco em URL usando o código <code class="lang-text">%20</code></p>
+            <p>A <a href="#table-1-19">Tabela 1.19</a> apresenta a formatação de espaço em branco em URL usando codificação.</p>
 
-            <table class="responsive-table" id="tabela-1-19">
+            <table class="responsive-table" id="table-1-19">
                 <thead>
                     <tr>
                         <th class="green-text">
@@ -1817,27 +2145,27 @@ Eu recomendo o uso do mecanismo de pesquisa **[Duck Duck GO](https://duckduckgo.
                 <tbody>
                     <tr>
                         <td>
-                            [link](https://exemplo.com/minha%20pagina)
+                            [link](https://exemplo.com/my%20page)
                         </td>
                         <td>
-                            [link](https://exemplo.com/minha página)
+                            [link](https://exemplo.com/my page)
                         </td>
                     </tr>
                 </tbody>
             </table>
 
-            <small class="caption"><i class="tiny material-icons">info</i>&nbsp;<span>Tabela 1.19 - Uso do código %20 para formatar espaços em branco nas URLs.</span></small>
+            <small class="caption">Tabela 1.19 - Uso do espaço em branco codificado em URLs.</small>
 
 
-            <h2 id="imagens">Imagens</h2>
+            <h2 id="images">Imagens</h2>
 
             <p>A sintaxe do Markdown para adicionar uma imagem é a seguinte:</p>
 
             <ol>
-                <li>Um ponto de exclamação <code class="lang-text">!</code>.</li>
-                <li>O texto alternativo da imagem entre colchetes.</li>
-                <li>O endereço completo da imagem dentro de parênteses.</li>
-                <li>Título opcional entre aspas, ainda dentro do parênteses.</li>
+                <li>Um ponto de exclamação: <code class="lang-text">!</code>.</li>
+                <li>O texto alternativo da imagem entre colchetes: <code class="lang-plaintext">[]</code></li>
+                <li>O endereço completo da imagem dentro de parênteses: <code class="lang-plaintext">()</code></li>
+                <li>Título opcional entre aspas, ainda dentro do parênteses: <code class="lang-plaintext">( "")</code></li>
             </ol>
 
             <p>Exemplo:</p>
@@ -1851,7 +2179,7 @@ Eu recomendo o uso do mecanismo de pesquisa **[Duck Duck GO](https://duckduckgo.
             </div>
 
 
-            <h3 id="imagens-vinculando">Imagem & Link</h3>
+            <h3 id="images-link">Imagem e Link</h3>
 
             <p>Para usar uma imagem como link:</p>
 
@@ -1862,31 +2190,32 @@ Eu recomendo o uso do mecanismo de pesquisa **[Duck Duck GO](https://duckduckgo.
 
             <p>Exemplo:</p>
 
-            <pre class="language-markdown"><code>[![Uma pedra antiga no deserto](/assets/img/shiprock.jpg "Shiprock, Novo México por Beau Rogers")](https://www.flickr.com/photos/beaurogers/31833779864/in/photolist-Qv3rFw-34mt9F-a9Cmfy-5Ha3Zi-9msKdv-o3hgjr-hWpUte-4WMsJ1-KUQ8N-deshUb-vssBD-6CQci6-8AFCiD-zsJWT-nNfsgB-dPDwZJ-bn9JGn-5HtSXY-6CUhAL-a4UTXB-ugPum-KUPSo-fBLNm-6CUmpy-4WMsc9-8a7D3T-83KJev-6CQ2bK-nNusHJ-a78rQH-nw3NvT-7aq2qf-8wwBso-3nNceh-ugSKP-4mh4kh-bbeeqH-a7biME-q3PtTf-brFpgb-cg38zw-bXMZc-nJPELD-f58Lmo-bXMYG-bz8AAi-bxNtNT-bXMYi-bXMY6-bXMYv)</code></pre>
+            <pre class="language-markdown"><code>[![Uma pedra antiga no deserto](/assets/img/shiprock.jpg "Shiprock, New Mexico By Beau Rogers")](https://www.flickr.com/photos/beaurogers/31833779864/in/photolist-Qv3rFw-34mt9F-a9Cmfy-5Ha3Zi-9msKdv-o3hgjr-hWpUte-4WMsJ1-KUQ8N-deshUb-vssBD-6CQci6-8AFCiD-zsJWT-nNfsgB-dPDwZJ-bn9JGn-5HtSXY-6CUhAL-a4UTXB-ugPum-KUPSo-fBLNm-6CUmpy-4WMsc9-8a7D3T-83KJev-6CQ2bK-nNusHJ-a78rQH-nw3NvT-7aq2qf-8wwBso-3nNceh-ugSKP-4mh4kh-bbeeqH-a7biME-q3PtTf-brFpgb-cg38zw-bXMZc-nJPELD-f58Lmo-bXMYG-bz8AAi-bxNtNT-bXMYi-bXMY6-bXMYv)</code></pre>
 
             <p>O resultado:</p>
+
             <div class="image-container">
-                <a href="https://www.flickr.com/photos/beaurogers/31833779864/in/photolist-Qv3rFw-34mt9F-a9Cmfy-5Ha3Zi-9msKdv-o3hgjr-hWpUte-4WMsJ1-KUQ8N-deshUb-vssBD-6CQci6-8AFCiD-zsJWT-nNfsgB-dPDwZJ-bn9JGn-5HtSXY-6CUhAL-a4UTXB-ugPum-KUPSo-fBLNm-6CUmpy-4WMsc9-8a7D3T-83KJev-6CQ2bK-nNusHJ-a78rQH-nw3NvT-7aq2qf-8wwBso-3nNceh-ugSKP-4mh4kh-bbeeqH-a7biME-q3PtTf-brFpgb-cg38zw-bXMZc-nJPELD-f58Lmo-bXMYG-bz8AAi-bxNtNT-bXMYi-bXMY6-bXMYv" target="_blank"><img src="/assets/img/shiprock.jpg" alt="Uma pedra antiga no deserto" title="Shiprock, Novo México por Beau Rogers"></a>
+                <a href="https://www.flickr.com/photos/beaurogers/31833779864/in/photolist-Qv3rFw-34mt9F-a9Cmfy-5Ha3Zi-9msKdv-o3hgjr-hWpUte-4WMsJ1-KUQ8N-deshUb-vssBD-6CQci6-8AFCiD-zsJWT-nNfsgB-dPDwZJ-bn9JGn-5HtSXY-6CUhAL-a4UTXB-ugPum-KUPSo-fBLNm-6CUmpy-4WMsc9-8a7D3T-83KJev-6CQ2bK-nNusHJ-a78rQH-nw3NvT-7aq2qf-8wwBso-3nNceh-ugSKP-4mh4kh-bbeeqH-a7biME-q3PtTf-brFpgb-cg38zw-bXMZc-nJPELD-f58Lmo-bXMYG-bz8AAi-bxNtNT-bXMYi-bXMY6-bXMYv" target="_blank"><img src="/assets/img/shiprock.jpg" alt="Uma pedra antiga no deserto" title="Shiprock, New Mexico By Beau Rogers"></a>
             </div>
 
 
-            <h2 id="caracteres-escapando">Escapando caracteres</h2>
+            <h2 id="escaping-characteres">Escapando caracteres</h2>
 
-            <p>A formula mágica para escapar um caractere no Markdown é usar uma barra invertida <code class="lang-text">\</code> antes dele.</p>
+            <code class="lang-plaintext">Para escapar um caractere no Markdown, ou seja, representá-lo de forma literal no documento, insira uma barra invertida antes dele.</code>
 
             <p>Exemplo:</p>
 
-            <pre class="lang-markdown"><code>\* A barra invertida antes do asterisco faz com que o processador Markdown interprete esse linha como um parágrafo e não um elemento de uma lista.</code></pre>
+            <pre class="lang-markdown"><code>\* A barra invertida antes do asterisco faz com que o processador Markdown interprete essa linha como um parágrafo e não um elemento de uma lista.</code></pre>
 
             <p>O Resultado fica assim:</p>
 
-            <p>* A barra invertida antes do asterisco faz com que o processador Markdown interprete esse linha como um parágrafo e não um elemento de uma lista.</p>
+            <p>* A barra invertida antes do asterisco faz com que o processador Markdown interprete essa linha como um parágrafo e não um elemento de uma lista.</p>
 
-            <h3 id="caracteres-voce-pode-escapar">Caracteres que você pode escapar</h3>
+            <h3 id="characteres-table">Caracteres que você pode escapar</h3>
 
-            <p>A <a href="#tabela-1-20">Tabela 1.20</a> mostra quais são o caracteres que você pode escapar no Markdown usando a barra invertida <code class="lang-text">\</code>.</p>
+            <p>A <a href="#table-1-20">Tabela 1.20</a> mostra quais são o caracteres que você pode escapar no Markdown usando a barra invertida: <code class="lang-text">\</code>.</p>
 
-            <table class="responsive-table" id="tabela-1-20">
+            <table class="responsive-table" id="table-1-20">
                 <thead>
                     <tr>
                         <th>Caractere</th>
@@ -1900,7 +2229,7 @@ Eu recomendo o uso do mecanismo de pesquisa **[Duck Duck GO](https://duckduckgo.
                     </tr>
                     <tr>
                         <td>`</td>
-                        <td>crase (veja também <a href="#escapando-crases">escapando crases no bloco de código</a>)</td>
+                        <td>crase (veja também <a href="#escaping-backticks">escapando crases no bloco de código</a>)</td>
                     </tr>
                     <tr>
                         <td>*</td>
@@ -1924,15 +2253,15 @@ Eu recomendo o uso do mecanismo de pesquisa **[Duck Duck GO](https://duckduckgo.
                     </tr>
                     <tr>
                         <td>#</td>
-                        <td>símbolo de número/hash/cerquilha</td>
+                        <td>cerquilha</td>
                     </tr>
                     <tr>
                         <td>+</td>
-                        <td>sinal de mais/adição</td>
+                        <td>sinal de adição</td>
                     </tr>
                     <tr>
                         <td>-</td>
-                        <td>sinal de menos (hífen)/subtração</td>
+                        <td>sinal de subtração</td>
                     </tr>
                     <tr>
                         <td>.</td>
@@ -1944,14 +2273,14 @@ Eu recomendo o uso do mecanismo de pesquisa **[Duck Duck GO](https://duckduckgo.
                     </tr>
                     <tr>
                         <td>|</td>
-                        <td>barra vertical/pipe (veja também <a href="/sintaxe-estendida/#escapando-barras-verticais">escapando barras verticais em tabelas</a>)</td>
+                        <td>barra vertical (veja também <a href="/sintaxe-estendida/#escaping-vertical-bars">escapando barras verticais em tabelas</a>)</td>
                     </tr>
                 </tbody>
             </table>
 
-            <small class="caption"><i class="tiny material-icons">info</i>&nbsp;<span>Tabela 1.20 - Caracteres que pode ser escapados no Markdown usando a barra invertida.</span></small>
+            <small class="caption">Tabela 1.20 - Caracteres que pode ser escapados no Markdown usando a barra invertida.</small>
 
-            <h2 id="html">HTML & Markdown</h2>
+            <h2 id="html">HTML e Markdown</h2>
 
             <p>Programadores que já possuem experiência em HTML, as vezes mesclam as duas sintaxes no mesmo documento, ou seja, HTML e Markdown.</p>
 
@@ -1959,13 +2288,13 @@ Eu recomendo o uso do mecanismo de pesquisa **[Duck Duck GO](https://duckduckgo.
 
             <p>Coloque as tags HTML diretamente no seu documento.</p>
 
-            <pre class="lang-markdown"><code>Essa **palavra** está em negrito. Essa &lt;em&gt;palavra&lt;/em&gt; está em itálico.</code></pre>
+            <pre class="lang-markdown"><code>**negrito** &lt;em&gt;itálico&lt;/em&gt;</code></pre>
 
             <p>O Resultado fica assim:</p>
 
-            <p>Essa <b>palavra</b> está em negrito. Essa <em>palavra</em> está em itálico.</p>
+            <p><b>negrito</b> <em>itálico</em></p>
 
-            <h3 id="html-melhores-praticas">HTML & Markdown: Recomendações de uso</h3>
+            <h3 id="html-best-practices">HTML e Markdown: melhores práticas</h3>
 
             <p>É importante ressaltar que nem todos os processadores Markdown são compatíveis com as tags HTML, em alguns casos, eles oferecem suporte somente a um subconjunto dessas tags.</p>
 
@@ -1973,13 +2302,13 @@ Eu recomendo o uso do mecanismo de pesquisa **[Duck Duck GO](https://duckduckgo.
 
             <p>Não recue a linha das tags em HTML, nem com espaços em branco, nem com tabulações, isso pode interferir na formatação do elemento quando convertido.</p>
 
-            <p>Insira uma linha em branco antes e depois de elementos como <code class="lang-html">&lt;div&gt;</code>, <code class="lang-html">&lt;table&gt;</code>, <code class="lang-html">&lt;pre&gt;</code>, e <code class="lang-html">&lt;p&gt;</code></p>
+            <p>Insira uma linha em branco antes e depois de elementos de bloco, exemplo: <code class="lang-html">&lt;div&gt;</code>, <code class="lang-html">&lt;table&gt;</code>, <code class="lang-html">&lt;pre&gt;</code>, <code class="lang-html">&lt;p&gt;</code>.</p>
 
             <p>Dentro do conteúdo das tags HTML você não pode colocar marcação Markdown.</p>
 
             <p>O código abaixo não vai funcionar, pois o Markdown está dentro do bloco HTML.</p>
 
-            <pre class="lang-markdown"><code>&lt;p&gt;itálico e **negrito**&lt;/p&gt;</code></code></pre>
+            <pre class="lang-markdown"><code>&lt;p&gt;itálico **negrito**&lt;/p&gt;</code></code></pre>
         </div>
     </div>
             <div class="col-12">

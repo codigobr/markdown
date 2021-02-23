@@ -75,7 +75,6 @@
     </style>
   </head>
   <body class="themes" cz-shortcut-listen="true">
-    <div id="layout-problem" style="display:none;position:fixed;bottom:20px;left:5px;right:5px;z-index:9999;border-radius:10px;"><div class="layout-problem__container" style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;position:relative;"><div class="layout-problem__msg" style="background-color:white;color:#222;padding:5px 35px;border-radius:10px;display:flex;align-items:center;border:2px solid #f44336;box-shadow:1px 4px 8px 4px #0000004a;position:relative;"><div style="color:#f44336;font-size:45px;font-weight:bold;background-color:white;border-radius:50px;margin-right:20px;">!</div><p style="font-size: 18px;">Foi detectado um <strong>problema</strong> com o layout do site!<br>É recomendável desabilitar o <span class="red-text"><strong>Ad-Blocker</strong></span><br>Ou qualquer extensão que bloqueie <strong>JavaScript</strong>.</p><div id="close-error-script-bt" style="position:absolute;top:3px;right:12px;cursor:pointer;">X</div></div></div></div>
     <header>
       <div class="container">
   <a href="#" data-target="nav-mobile" class="top-nav sidenav-trigger waves-effect waves-light circle">
@@ -162,7 +161,7 @@
 
     <p>Precisa refrescar a memória em relação a sintaxe do Markdown? Ótimo!</p>
 
-    <p>Abaixo eu listo os elementos mais comuns e utilizados da linguagem.</p>
+    <p>Abaixo são listados os elementos mais comuns e utilizados da linguagem.</p>
 
     <p class="mv-40">
         <ins class="adsbygoogle"
@@ -176,71 +175,67 @@
         </script>
     </p>
 
-	<p>Vale ressaltar que, aqui somente o básico do Markdown é apresentado, se precisar de mais informações dá uma olhadinhas em nossas seções de <a href="/sintaxe-basica/">sintaxe básica</a> e <a href="/sintaxe-estendida/">sintaxe estendida</a>.</p>
+	<p>Vale ressaltar que, aqui somente o básico do Markdown é apresentado, se precisar de mais informações consulte as seções de <a href="/sintaxe-basica/" target="_blank">sintaxe básica</a> e <a href="/sintaxe-estendida/" target="_blank">sintaxe estendida</a>.</p>
 
     <h2 id="sintaxe-basica">Sintaxe básica</h2>
 
-    <p>Aqui onde tudo começou, disse John Gruber. Os elementos que fundamentam o Markdown são mostrados abaixo. Esse elementos de formatação foram descritos no documento original da linguagem e a grande maioria dos programas fornecem suporte eles.</p>
+    <p>Os elementos que fundamentam o Markdown são mostrados abaixo. Esse elementos de formatação foram descritos no documento original da linguagem e a grande maioria dos programas fornecem suporte eles.</p>
 
-    <table class="responsive-table">
+    <table class="striped responsive-table">
       <thead>
         <tr>
           <th>Elemento</th>
-          <th>Sintaxe do Markdown</th>
+          <th>Markdown</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td><a href="/sintaxe-basica/#titulos">Títulos</a></td>
-          <td><code># H1<br />
-    ## H2<br />
-    ### H3</code></td>
+          <td><a href="/sintaxe-basica/#headings" target="_blank">Títulos</a></td>
+          <td><pre class="lang-markdown"><code># H1
+## H2
+### H3</code></pre></td>
         </tr>
         <tr>
-          <td><a href="/sintaxe-basica/#negrito">Negrito</a></td>
-          <td><code>**texto em negrito**</code></td>
+          <td><a href="/sintaxe-basica/#bold" target="_blank">Negrito</a></td>
+          <td><pre class="lang-markdown"><code>**texto em negrito**</code></pre></td>
         </tr>
         <tr>
-          <td><a href="/sintaxe-basica/#italico">itálico</a></td>
-          <td><code>*texto em itálico*</code></td>
+          <td><a href="/sintaxe-basica/#italics" target="_blank">Itálico</a></td>
+          <td><pre class="lang-markdown"><code>*texto em itálico*</code></pre></td>
         </tr>
         <tr>
-          <td><a href="/sintaxe-basica/#bloco-citacao">Bloco de citação</a></td>
-          <td><code>&gt; bloco de citação</code></td>
+          <td><a href="/sintaxe-basica/#blockquote" target="_blank">Blockquote</a></td>
+          <td><pre class="lang-markdown"><code>&gt; Blockquote</code></pre></td>
         </tr>
         <tr>
-          <td><a href="/sintaxe-basica/#listas-ordenadas">Lista ordenada</a></td>
-          <td><code>
-    1. Primeiro item<br />
-    2. Segundo item<br />
-    3. Terceiro item<br />
-          </code></td>
+          <td><a href="/sintaxe-basica/#lists-ordered" target="_blank">Lista ordenada</a></td>
+          <td><pre class="lang-markdown"><code>1. Primeiro elemento
+2. Segundo elemento
+3. Terceiro elemento</code></pre></td>
         </tr>
         <tr>
-          <td><a href="/sintaxe-basica/#listas-nao-ordenadas">Lista não ordenada</a></td>
+          <td><a href="/sintaxe-basica/#lists-unordered" target="_blank">Lista não ordenada</a></td>
           <td>
-            <code>
-    - Primeiro item<br />
-    - Segundo item<br />
-    - Terceiro item<br />
-            </code>
+            <pre class="lang-markdown"><code>- Primeiro item
+- Segundo item
+- Terceiro item</code></pre>
           </td>
         </tr>
         <tr>
-          <td><a href="/sintaxe-basica/#codigo">Código</a></td>
-          <td><code>`código`</code></td>
+          <td><a href="/sintaxe-basica/#code" target="_blank">Código</a></td>
+          <td><pre class="lang-markdown"><code>`código`</code></pre></td>
         </tr>
         <tr>
-          <td><a href="/sintaxe-basica/#linhas-horizontais">Linha horizontal</a></td>
-          <td><code>---</code></td>
+          <td><a href="/sintaxe-basica/#horizontal-rule" target="_blank">Linha horizontal</a></td>
+          <td><pre class="lang-markdown"><code>---</code></pre></td>
         </tr>
         <tr>
-          <td><a href="/sintaxe-basica/#links">Link</a></td>
-          <td><code>[título](https://markdown.net.br)</code></td>
+          <td><a href="/sintaxe-basica/#links" target="_blank">Link</a></td>
+          <td><pre class="lang-markdown"><code>[título](https://markdown.net.br)</code></pre></td>
         </tr>
         <tr>
-          <td><a href="/sintaxe-basica/#imagens">Imagem</a></td>
-          <td><code>![texto alternativo](imagem.jpg)</code></td>
+          <td><a href="/sintaxe-basica/#images" target="_blank">Imagem</a></td>
+          <td><pre class="lang-markdown"><code>![texto alternativo](https://markdown.net.br/assets/img/markdown-logo-transparent.svg)</code></pre></td>
         </tr>
       </tbody>
     </table>
@@ -249,66 +244,70 @@
 
     <p>Com a evolução do Markdown outros elementos foram implementados enriquecendo o leque de opções para formatar documentos. Por um lado, um pouco mais de complexidade, mas por outro, a linguagem ganhou mais recursos para a construções de documentos diversos.</p>
 
-    <p>Tenha em mente que, nem todos os aplicativos desenvolvidos para Markdown dão suporte à esses elementos, é sempre bom consultar a documentação do programa ou a nossa seção de <a href="/ferramentas/">ferramentas</a>.</p>
+    <p>Tenha em mente que, nem todos os aplicativos desenvolvidos para Markdown dão suporte à esses elementos, é sempre bom consultar a documentação do programa ou a seção de <a href="/ferramentas/" target="_blank">ferramentas</a>.</p>
 
-    <table class="responsive-table">
+    <table class="striped responsive-table">
       <thead>
         <tr>
           <th>Elemento</th>
-          <th>Sintaxe do Markdown</th>
+          <th>Markdown</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td><a href="/sintaxe-estendida/#tabelas">Tabela</a></td>
-          <td><code>
-    | Sintaxe     | Descrição |<br />
-    | ----------- | --------- |<br />
-    | Cabeçalho   | Título    |<br />
-    | Parágrafo   | Texto     |
-          </code></td>
+          <td><a href="/sintaxe-estendida/#markdown-tables" target="_blank">Tabela</a></td>
+          <td>
+          	<pre class="lang-markdown"><code>| Título  | Título |
+| --------| ------ |
+| Texto   | Texto  |
+| Texto   | Texto  |
+          </code></pre></td>
         </tr>
         <tr>
-          <td><a href="/sintaxe-estendida/#bloco-codigo-cercado">Bloco de código cercado</a></td>
-          <td><code>```<br />
-    {<br />
-    &nbsp;&nbsp;"nome": "Robert",<br />
-    &nbsp;&nbsp;"sobrenome": "Salles",<br />
-    &nbsp;&nbsp;"idade": 25<br />
-    }<br />
-    ```
-          </code></td>
+          <td><a href="/sintaxe-estendida/#fenced-code-block" target="_blank">Bloco de código cercado</a></td>
+          <td>
+          	<pre class="lang-markdown"><code>```
+{
+    "nome": "Robert",
+    "sobrenome": "Salles",
+    "idade": 25
+}
+```</code></pre>
+      		</td>
         </tr>
         <tr>
-          <td><a href="/sintaxe-estendida/#notas-rodape">Nota de rodapé</a></td>
-          <td><code>
-    Aqui está uma frase com uma nota de rodapé. [^1]<br /><br />
+          <td><a href="/sintaxe-estendida/#markdown-footnotes" target="_blank">Nota de rodapé</a></td>
+          <td>
+          	<pre class="lang-markdown"><code>Aqui está uma frase com uma nota de rodapé. [^1]
 
-    [^1]: Esta é a nota de rodapé.
-          </code></td>
+[^1]: Esta é a nota de rodapé.
+          </code></pre>
+      		</td>
         </tr>
         <tr>
-          <td><a href="/sintaxe-estendida/#id-titulo">ID do título</a></td>
-          <td><code>### Meu  título {#identificacao}</code></td>
+          <td><a href="/sintaxe-estendida/#markdown-title-id" target="_blank">ID do título</a></td>
+          <td><pre class="lang-markdown"><code>### Meu  título {#id}</code></pre></td>
         </tr>
         <tr>
-          <td><a href="/sintaxe-estendida/#lista-definicoes">Lista de definições</a></td>
-          <td><code>
-    termo<br />
-    : definição
-          </code></td>
+          <td><a href="/sintaxe-estendida/#markdown-definition-lists" target="_blank">Lista de definições</a></td>
+          <td>
+          	<pre class="lang-markdown"><code>termo
+: definição
+          </code></pre>
+      		</td>
         </tr>
         <tr>
-          <td><a href="/sintaxe-estendida/#riscado">Riscado</a></td>
-          <td><code>~~A terra é plana.~~</code></td>
+          <td><a href="/sintaxe-estendida/#markdown-strikethrough" target="_blank">Tachado</a></td>
+          <td><pre class="lang-markdown"><code>~~Markdown é difícil de aprender.~~</code></pre></td>
         </tr>
         <tr>
-          <td><a href="/sintaxe-estendida/#lista-tarefas">Lista de tarefas</a></td>
-          <td><code>
-    - [x] Escreva o comunicado de imprensa<br />
-    - [ ] Atualize o site<br />
-    - [ ] Entre em contato com a mídia
-          </code></td>
+          <td><a href="/sintaxe-estendida/#markdown-task-lists" target="_blank">Lista de tarefas</a></td>
+          <td>
+          	<pre class="lang-markdown"><code>- [x] Arrumar o quarto
+- [ ] Caminha por 30 minutos
+- [ ] Atualizar o site
+          </code></pre>
+      		</td>
         </tr>
       </tbody>
     </table>

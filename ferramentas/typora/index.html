@@ -17,12 +17,12 @@
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="author" content="Robert Salles">
     <meta name="keywords" content="Markdown, Linguagem Markdown, Sintaxe Markdown, Guia Markdown, Referência Markdown, Ajuda Markdown, Tutorial Markdown, Aprender Markdown">
-    <meta name="description" content="Tutorial em português de Markdown™ completo para iniciantes com diversos exemplos de como usar a linguagem de marcação mais simples do mundo.">
+    <meta name="description" content="Tutorial de Markdown™ completo para iniciantes com diversos exemplos de como usar a linguagem de marcação mais simples do mundo.">
     <meta name="twitter:card" content="summary">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://markdown.net.br/ferramentas/typora/">
     <meta property="og:title" content="Markdown™ no Typora® - Guia Completo [Cheatsheet]">
-    <meta property="og:description" content="Tutorial em português de Markdown™ completo para iniciantes com diversos exemplos de como usar a linguagem de marcação mais simples do mundo.">
+    <meta property="og:description" content="Tutorial de Markdown™ completo para iniciantes com diversos exemplos de como usar a linguagem de marcação mais simples do mundo.">
     <meta property="og:image" content="https://markdown.net.br/assets/img/markdown.jpg">
 
     <title>Markdown™ no Typora® - Guia Completo [Cheatsheet]</title>
@@ -75,7 +75,6 @@
     </style>
   </head>
   <body class="themes" cz-shortcut-listen="true">
-    <div id="layout-problem" style="display:none;position:fixed;bottom:20px;left:5px;right:5px;z-index:9999;border-radius:10px;"><div class="layout-problem__container" style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;position:relative;"><div class="layout-problem__msg" style="background-color:white;color:#222;padding:5px 35px;border-radius:10px;display:flex;align-items:center;border:2px solid #f44336;box-shadow:1px 4px 8px 4px #0000004a;position:relative;"><div style="color:#f44336;font-size:45px;font-weight:bold;background-color:white;border-radius:50px;margin-right:20px;">!</div><p style="font-size: 18px;">Foi detectado um <strong>problema</strong> com o layout do site!<br>É recomendável desabilitar o <span class="red-text"><strong>Ad-Blocker</strong></span><br>Ou qualquer extensão que bloqueie <strong>JavaScript</strong>.</p><div id="close-error-script-bt" style="position:absolute;top:3px;right:12px;cursor:pointer;">X</div></div></div></div>
     <header>
       <div class="container">
   <a href="#" data-target="nav-mobile" class="top-nav sidenav-trigger waves-effect waves-light circle">
@@ -167,12 +166,12 @@
           <div class="section col s12 m8 offset-m1 xl7 offset-xl1">
             <div class="row scrollspy">
   <div class="col s12">
-    <h2 id="visao-geral">Visão geral</h2>
+    <h2 id="intro">Visão geral</h2>
 
     <p>O Typora é um editor de texto com suporte ao Markdown mais voltado para a edição de redações e relatórios. O uso da ferramenta para construir sites com diversos arquivos, não é o ideal.</p>
 
     <div class="image-container mv-30">
-      <img src="/assets/img/typora-editor-exemplo.png" class="materialboxed" alt="Janela do aplicativo Typora">
+      <img src="/assets/img/typora-editor-exemplo.png" class="materialboxed" alt="Janela do aplicativo Typora" title="Janela do aplicativo Typora">
     </div>
 
     <p>O programa conta com uma interface bem simples e limpa, mas não se engane, mesmo com toda simplicidade aparente, o app conta com uma enorme variedade de configurações.</p>
@@ -193,9 +192,9 @@
 
     <p>O sabor do Markdown usado na ferramenta é o GFM (GitHub-flavored Markdown).</p>
 
-    <p>Mais informações sobre o Typora podem ser obtidas no site oficial (em inglês) <a href="https://typora.io/" target="_blank">https://typora.io/&nbsp;<sup><i class="fas fa-external-link-alt"></i></sup></a>.</p>
+    <p>Mais informações sobre o Typora podem ser obtidas no site oficial <a href="https://typora.io/" target="_blank">https://typora.io/</a>.</p>
 
-    <h2 id="temas">Temas no Typora</h2>
+    <h2 id="themes">Temas no Typora</h2>
 
     <p>Quando for exportar os seus documentos usando o Typora, você pode escolher entre uma variedade enorme de temas fornecidos pela ferramenta.</p>
 
@@ -213,22 +212,24 @@
         </script>
     </p>
 
-    <p>Acesse o painel <code class="lang-plaintext">Preferences > Appearance > Themes</code> para visualizar as configurações dos temas.</p>
+    <p>Para visualizar as configurações dos temas acesse o painel: <code class="lang-plaintext">Preferences &gt; Appearance &gt; Themes</code> </p>
 
-    <h2 id="modo-restrito">Modo Restrito no Typora</h2>
+    <h2 id="restrict-mode">Modo Restrito no Typora</h2>
 
     <p>As configurações de strict mode no Typora permitem ao usuário impor certas restrições a formatação Markdown.</p>
 
-    <p>Através do menu <code class="lang-plaintext">Preferences > Markdown > Syntax Preference</code> você pode, por exemplo, indicar que, uma lista ordenada deve usar somente traços - e não asteriscos * na construção de elementos.</p>
+    <p>Você pode, por exemplo, indicar que uma lista ordenada deve usar somente traços <code class="lang-plaintext">-</code> e não asteriscos <code class="lang-plaintext">*</code> na construção de elementos.</p>
+
+    <p>Para impor restrições no Typora acesse o painel: <code class="lang-plaintext">Preferences &gt; Markdown &gt; Syntax Preference</code></p>
 
 
-    <h2 id="modo-codigo-fonte">Modo Código Fonte</h2>
+    <h2 id="source-code-mode">Modo Código Fonte</h2>
 
     <p>Às vezes o editor em tempo real do programa pode desagradar usuários mais experientes que preferem visualizar a simbologia Markdown diretamente no documento.</p>
 
-    <p>Para ativar o modo código fonte (source code mode) no Typora abra o painel <code class="lang-plaintext">View</code> e selecione a opção <code class="lang-plaintext">Source Code Mode</code>. Com isso, toda a formatação Markdown será mostrada ao usuário.</p>
+    <p>Para ativar o modo código fonte e revelar toda a formatação Markdown no Typora ative a opção: <code class="lang-plaintext">View &gt; Source Code Mode</code>.
 
-    <h2 id="opcoes-de-exportacao">Opções de exportação</h2>
+    <h2 id="exporting-options">Opções de exportação</h2>
 
     <p>Ao final da edição do documento Markdown, nós temos a opção de compartilhá-lo da maneira que ele se encontra, ou seja, com os símbolos de marcação, ou exportá-lo para um outro formato.</p>
 
@@ -246,146 +247,146 @@
         </script>
     </p>
 
-    <p>Para exportar um documento Markdown no Typora navegue até o menu <code class="lang-plaintext">File</code> e clique na opção <code class="lang-plaintext">Export</code>. Opções de exportação como DOCX do Microsoft Word e o LaTeX requerem o <a href="https://pandoc.org/" target="_blank">pandoc&nbsp;<sup><i class="fas fa-external-link-alt"></i></sup></a> instalado no seu computador.</p>
+    <p>Para exportar um documento Markdown no Typora navegue até o menu <code class="lang-plaintext">File</code> e clique na opção <code class="lang-plaintext">Export</code>. Opções de exportação como DOCX do Microsoft Word e o LaTeX requerem o <a href="https://pandoc.org/" target="_blank">Pandoc</a> instalado no seu computador.</p>
 
 
-    <h2 id="suporte-markdown">Suporte ao Markdown no Typora</h2>
+    <h2 id="markdown-support">Suporte ao Markdown no Typora</h2>
 
-    <p>A <a href="#tabela-1-1">Tabela 1.1</a> apresenta os elementos Markdown compatíveis com o Typora, além de informações importantes sobre o uso desses elementos.</p>
+    <p>A <a href="#table-1-1">Tabela 1.1</a> apresenta os elementos Markdown compatíveis com o Typora, além de informações importantes sobre o uso desses elementos.</p>
 
-    <table class="responsive-table" id="tabela-1-1">
+    <table class="responsive-table" id="table-1-1">
       <thead>
         <tr>
           <th>Elemento</th>
           <th>Suporte</th>
-          <th>Obs</th>
+          <th>Informação</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td><a href="/sintaxe-basica/#titulos">Títulos</a></td>
+          <td><a href="/sintaxe-basica/#headings" target="_blank">Títulos</a></td>
           <td class="green lighten-4">Sim</td>
           <td></td>
         </tr>
         <tr>
-          <td><a href="/sintaxe-basica/#paragrafos">Parágrafos</a></td>
+          <td><a href="/sintaxe-basica/#paragraphs" target="_blank">Parágrafos</a></td>
           <td class="green lighten-4">Sim</td>
           <td>No Typora a construção do parágrafo em Markdown é feita pressionando a tecla <code class="lang-plaintext">Enter</code> apenas uma vez ao invés de duas.</td>
         </tr>
         <tr>
-          <td><a href="/sintaxe-basica/#quebra-linha">Quebras de linha</a></td>
+          <td><a href="/sintaxe-basica/#line-break" target="_blank">Quebras de linha</a></td>
           <td class="green lighten-4">Sim</td>
           <td>Para quebrar uma linha no Typora pressione a combinação de teclas <code class="lang-plaintext">CTRL+Shift+Enter</code> no Windows ou <code class="lang-plaintext">Command+Shift+Enter</code> no Mac.</td>
         </tr>
         <tr>
-          <td><a href="/sintaxe-basica/#negrito">Negrito</a></td>
+          <td><a href="/sintaxe-basica/#bold" target="_blank">Negrito</a></td>
           <td class="green lighten-4">Sim</td>
           <td></td>
         </tr>
         <tr>
-          <td><a href="/sintaxe-basica/#italico">Itálico</a></td>
+          <td><a href="/sintaxe-basica/#italics" target="_blank">Itálico</a></td>
           <td class="green lighten-4">Sim</td>
           <td></td>
         </tr>
         <tr>
-          <td><a href="/sintaxe-basica/#bloco-citacao">Bloco de citação</a></td>
+          <td><a href="/sintaxe-basica/#blockquote" target="_blank">Blockquote</a></td>
           <td class="green lighten-4">Sim</td>
           <td></td>
         </tr>
         <tr>
-          <td><a href="/sintaxe-basica/#listas-ordenadas">Listas ordenadas</a></td>
+          <td><a href="/sintaxe-basica/#lists-ordered" target="_blank">Listas ordenadas</a></td>
           <td class="green lighten-4">Sim</td>
           <td></td>
         </tr>
         <tr>
-          <td><a href="/sintaxe-basica/#listas-nao-ordenadas">Listas não ordenadas</a></td>
+          <td><a href="/sintaxe-basica/#lists-unordered" target="_blank">Listas não ordenadas</a></td>
           <td class="green lighten-4">Sim</td>
           <td></td>
         </tr>
         <tr>
-          <td><a href="/sintaxe-basica/#codigo">Código</a></td>
+          <td><a href="/sintaxe-basica/#code" target="_blank">Código</a></td>
           <td class="green lighten-4">Sim</td>
           <td></td>
         </tr>
         <tr>
-          <td><a href="/sintaxe-basica/#linhas-horizontais">Linhas horizontais</a></td>
+          <td><a href="/sintaxe-basica/#horizontal-rule" target="_blank">Linhas horizontais</a></td>
           <td class="green lighten-4">Sim</td>
           <td></td>
         </tr>
         <tr>
-          <td><a href="/sintaxe-basica/#links">Links</a></td>
+          <td><a href="/sintaxe-basica/#links" target="_blank">Links</a></td>
           <td class="green lighten-4">Sim</td>
           <td></td>
         </tr>
         <tr>
-          <td><a href="/sintaxe-basica/#imagens">Imagens</a></td>
+          <td><a href="/sintaxe-basica/#images" target="_blank">Imagens</a></td>
           <td class="green lighten-4">Sim</td>
           <td>Usando o menu <code class="lang-plaintext">Format > Images</code> você consegue inserir imagens do seu computador no documento Markdown.</td>
         </tr>
         <tr>
-          <td><a href="/sintaxe-estendida/#tabelas">Tabelas</a></td>
+          <td><a href="/sintaxe-estendida/#markdown-tables" target="_blank">Tabelas</a></td>
           <td class="green lighten-4">Sim</td>
           <td></td>
         </tr>
         <tr>
-          <td><a href="/sintaxe-estendida/#bloco-codigo-cercado">Blocos de código cercado</a></td>
+          <td><a href="/sintaxe-estendida/#fenced-code-block" target="_blank">Blocos de código cercado</a></td>
           <td class="green lighten-4">Sim</td>
-          <td>O Typora também é compativel com o realce do conteúdo do bloco, <a href="https://support.typora.io/Code-Fences-Language-Support/" target="_blank">clique aqui para conferir (em inglês)&nbsp;<sup><i class="fas fa-external-link-alt"></i></sup></a> uma lista de linguagens compatíveis.</td>
+          <td>O Typora também é compativel com o realce do conteúdo do bloco, <a href="https://support.typora.io/Code-Fences-Language-Support/" target="_blank">clique aqui para conferir</a> uma lista de linguagens compatíveis.</td>
         </tr>
         <tr>
-          <td><a href="/sintaxe-estendida/#notas-rodape">Notas de rodapé</a></td>
+          <td><a href="/sintaxe-estendida/#markdown-footnotes" target="_blank">Notas de rodapé</a></td>
           <td class="green lighten-4">Sim</td>
           <td></td>
         </tr>
         <tr>
-          <td><a href="/sintaxe-estendida/#id-titulo">Id de títulos</a></td>
+          <td><a href="/sintaxe-estendida/#markdown-title-id" target="_blank">Id de títulos</a></td>
           <td class="yellow lighten-4">Parcial</td>
-          <td>O Typora gera ids de título automaticamente, por exemplo: se você possuir um título chamado Meu Título poderá criar um vínculo direto usando a formatação <code class="lang-plaintext">[link](#meu-titulo)</code>. Supostamente a ferramenta não permite criar identificações personalizadas. Também não se sabe o que acontece quando temos dois títulos iguais, teremos dois ids idênticos?</td>
+          <td>O Typora gera ids de título automaticamente, por exemplo: se você possuir um título chamado <code class="lang-plaintext">My Title</code> poderá criar um vínculo direto usando a formatação: <code class="lang-plaintext">[link](#my-title)</code>. Supostamente a ferramenta não permite criar identificações personalizadas. Também não se sabe o que acontece quando temos dois títulos iguais, teremos dois ids idênticos?</td>
         </tr>
         <tr>
-          <td><a href="/sintaxe-estendida/#lista-definicoes">Listas de definições</a></td>
+          <td><a href="/sintaxe-estendida/#markdown-definition-lists" target="_blank">Listas de definições</a></td>
           <td class="red lighten-4">Não</td>
           <td></td>
         </tr>
         <tr>
-          <td><a href="/sintaxe-estendida/#riscado">Riscado</a></td>
+          <td><a href="/sintaxe-estendida/#markdown-strikethrough" target="_blank">Tachado</a></td>
           <td class="green lighten-4">Sim</td>
           <td></td>
         </tr>
         <tr>
-          <td><a href="/sintaxe-estendida/#lista-tarefas">Listas de tarefas</a></td>
+          <td><a href="/sintaxe-estendida/#markdown-task-lists" target="_blank">Listas de tarefas</a></td>
           <td class="green lighten-4">Sim</td>
           <td></td>
         </tr>
         <tr>
-          <td><a href="/sintaxe-estendida/#emojis">Emoji (copiar e colar)</a></td>
+          <td><a href="/sintaxe-estendida/#emojis-copy-and-paste" target="_blank">Emoji (copiar e colar)</a></td>
           <td class="green lighten-4">Sim</td>
           <td></td>
         </tr>
         <tr>
-          <td><a href="/sintaxe-estendida/#usando-codigo-emoji">Emoji (códigos de acesso)</a></td>
+          <td><a href="/sintaxe-estendida/#emojis-access-code" target="_blank">Emoji (códigos de acesso)</a></td>
           <td class="green lighten-4">Sim</td>
           <td></td>
         </tr>
         <tr>
-          <td><a href="/sintaxe-estendida/#link-automatico-url">Link automático de URL</a></td>
+          <td><a href="/sintaxe-estendida/#markdown-auto-link" target="_blank">Link automático de URL</a></td>
           <td class="green lighten-4">Sim</td>
           <td></td>
         </tr>
         <tr>
-          <td><a href="/sintaxe-estendida/#desativando-link-automatico">Desativar o link automático de URL</a></td>
+          <td><a href="/sintaxe-estendida/#markdown-disable-auto-link" target="_blank">Desativar o link automático de URL</a></td>
           <td class="green lighten-4">Sim</td>
           <td></td>
         </tr>
         <tr>
-          <td><a href="/sintaxe-basica/#html">HTML</a></td>
+          <td><a href="/sintaxe-basica/#html" target="_blank">HTML</a></td>
           <td class="yellow lighten-4">Parcial</td>
           <td></td>
         </tr>
       </tbody>
     </table>
 
-    <h2 id="elementos-adicionais">Elementos Markdown adicionais que podem ser usados no Typora.</h2>
+    <h2 id="additional-elements">Elementos Markdown adicionais que podem ser usados no Typora.</h2>
 
     <p>O Typora é compatível com diversos elementos não tão comuns no Markdown como o realçar em linha, subscrito e sobrescrito. </p>
 
@@ -403,16 +404,16 @@
         </script>
     </p>
 
-    <p>Para habilitá-los, abra o painel Preferences e ative o elemento desejado na aba <code class="lang-plaintext">Markdown > Syntax Support</code>.</p>
+    <p>Para habilitá-los, abra o painel <code class="lang-plaintext">Preferences</code> e ative o elemento desejado na aba <code class="lang-plaintext">Markdown > Syntax Support</code>.</p>
 
-    <p>A <a href="#tabela-1-2">Tabela 1.2</a> mostra os elemetos obscuros do Markdown suportados pelo Typora.</p>
+    <p>A <a href="#table-1-2">Tabela 1.2</a> mostra os elemetos obscuros do Markdown suportados pelo Typora.</p>
 
-    <table class="responsive-table" id="tabela-1-2">
+    <table class="responsive-table" id="table-1-2">
       <thead class="thead-light">
         <tr>
           <th>Elemento</th>
           <th>Markdown</th>
-          <th>Saída renderizada</th>
+          <th>Saída</th>
         </tr>
       </thead>
       <tbody>
@@ -434,9 +435,9 @@
       </tbody>
     </table>
 
-    <h2 id="veja-tambem">Veja também</h2>
+    <h2 id="see-also">Veja também</h2>
 
-    <p><a href="https://support.typora.io/" target="_blank">Ajuda com o Typora (em inglês)&nbsp;<sup><i class="fas fa-external-link-alt"></i></sup></a></p>
+    <p><a href="https://support.typora.io/" target="_blank">Ajuda com o Typora</a></p>
   </div> <!-- Fim do conteúdo principal -->
 
 </div>

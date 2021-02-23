@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-69958365-6"></script>
+        <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-69958365-6');
+        </script>
+        <!-- Auto ads - Google -->
+        <script data-ad-client="ca-pub-3427355473051563" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!--Import Google Icon Font-->
+        <link rel="canonical" href="https://markdown.net.br/editor/">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="author" content="Robert Salles">
+        <meta name="description" content="Editor Markdown Online Grátis.">
+        <meta name="twitter:card" content="summary">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://markdown.net.br/editor/">
+        <meta property="og:title" content="Editor Markdown Online Grátis">
+        <meta property="og:description" content="Editor Markdown Online Grátis.">
+        <meta property="og:image" content="https://markdown.net.br/assets/img/markdown.jpg">
+
+        <!-- Favicons-->
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2196f3">
+        <meta name="msapplication-TileColor" content="#2196f3">
+        <!--  Android 5 Chrome Color-->
+        <meta name="theme-color" content="#2196f3">
+        <title>Editor Markdown Online Grátis</title>
+        <link rel="stylesheet" href="/assets/css/editor.css" />
+        <link rel="shortcut icon" href="https://pandao.github.io/editor.md/favicon.ico" type="image/x-icon" />
+    </head>
+    <body>
+    	<!-- //////////////////////////////////////////////////////////////////////////////////////////////// -->
+    	<div id="page-fixed-bottom-ad" class="pg-ad" style="position: fixed;bottom: 0px;left: 50%;right: 0px;text-align: center;margin: 0px 0px 0px -362px;z-index: 9999999;transition: bottom 0.75s ease 0s;background-color: rgb(255, 255, 255);width: 728px;height: 90px;border: 1px solid rgba(0, 0, 0, 0.8);" data-google-query-id="CJH-uLW4jO0CFZcyuQYduCsEwQ">
+    		<ins class="adsbygoogle"
+    		     style="display:block"
+    		     data-ad-client="ca-pub-3427355473051563"
+    		     data-ad-slot="4586829342"
+    		     data-ad-format="auto"
+    		     data-full-width-responsive="true"></ins>
+    		<script>
+    		     (adsbygoogle = window.adsbygoogle || []).push({});
+    		</script>
+    		<a id="close-fixed-ad" style="background-color: rgba(0, 0, 0, 0.6); color: rgb(255, 255, 255); display: block; width: 20px; text-align: center; font-size: 14px; line-height: 20px; border-radius: 50% 50% 0px 0px; font-family: sans-serif; position: absolute; top: -20px; right: 0px; cursor: pointer;">x</a>
+    	</div>
+    	<!-- //////////////////////////////////////////////////////////////////////////////////////////////// -->
+        <div id="layout">
+            <!-- <header>
+                <h1>FlowChart 流程图</h1>
+                <p>Based on flowchart.js：<a href="http://adrai.github.io/flowchart.js/" target="_blank">http://adrai.github.io/flowchart.js/</a></p>
+            </header> -->
+            <div id="test-editormd">
+                <textarea style="display:none;">#### Using FlowChart
+
+setting:
+
+    {
+        flowChart : true
+    }
+
+#### Example
+
+```flow
+st=>start: User login
+op=>operation: Operation
+cond=>condition: Successful Yes or No?
+e=>end: Into admin
+
+st->op->cond
+cond(yes)->e
+cond(no)->op
+```</textarea>
+            </div>
+        </div>
+
+        <script src="/assets/js/vendor/jquery-3.2.1.min.js"></script>
+        <script src="/assets/js/editor.js"></script>
+        <script type="text/javascript">
+        	$('#close-fixed-ad').click(function() {
+        		$('#page-fixed-bottom-ad').fadeOut('slow');
+        	});
+
+        	const queryString = window.location.search;
+        	const urlParams = new URLSearchParams(queryString);
+        	var markdownStr = urlParams.has("markdown") ? urlParams.get("markdown") : "Placeholder";
+
+            $(function() {
+                var testEditor = editormd("test-editormd", {
+					width: "100%",
+					autoheight: true,
+					markdown: markdownStr,
+					lang : {
+					            name : "en",
+					            description : "Open source online Markdown editor.",
+					            tocTitle    : "Table of Contents",
+					            toolbar : {
+					                undo             : "Undo(Ctrl+Z)",
+					                redo             : "Redo(Ctrl+Y)",
+					                bold             : "Bold",
+					                del              : "Strikethrough",
+					                italic           : "Italic",
+					                quote            : "Block quote",
+					                ucwords          : "Words first letter convert to uppercase",
+					                uppercase        : "Selection text convert to uppercase",
+					                lowercase        : "Selection text convert to lowercase",
+					                h1               : "Heading 1",
+					                h2               : "Heading 2",
+					                h3               : "Heading 3",
+					                h4               : "Heading 4",
+					                h5               : "Heading 5",
+					                h6               : "Heading 6",
+					                "list-ul"        : "Unordered list",
+					                "list-ol"        : "Ordered list",
+					                hr               : "Horizontal rule",
+					                link             : "Link",
+					                "reference-link" : "Reference link",
+					                image            : "Image",
+					                code             : "Code inline",
+					                "preformatted-text" : "Preformatted text / Code block (Tab indent)",
+					                "code-block"     : "Code block (Multi-languages)",
+					                table            : "Tables",
+					                datetime         : "Datetime",
+					                emoji            : "Emoji",
+					                "html-entities"  : "HTML Entities",
+					                pagebreak        : "Page break",
+					                watch            : "Unwatch",
+					                unwatch          : "Watch",
+					                preview          : "HTML Preview (Press Shift + ESC exit)",
+					                fullscreen       : "Fullscreen (Press ESC exit)",
+					                clear            : "Clear",
+					                search           : "Search",
+					                help             : "Help",
+					                info             : "About "
+					            },
+					            buttons : {
+					                enter  : "Enter",
+					                cancel : "Cancel",
+					                close  : "Close"
+					            },
+					            dialog : {
+					                link : {
+					                    title    : "Link",
+					                    url      : "Address",
+					                    urlTitle : "Title",
+					                    urlEmpty : "Error: Please fill in the link address."
+					                },
+					                referenceLink : {
+					                    title    : "Reference link",
+					                    name     : "Name",
+					                    url      : "Address",
+					                    urlId    : "ID",
+					                    urlTitle : "Title",
+					                    nameEmpty: "Error: Reference name can't be empty.",
+					                    idEmpty  : "Error: Please fill in reference link id.",
+					                    urlEmpty : "Error: Please fill in reference link url address."
+					                },
+					                image : {
+					                    title    : "Image",
+					                    url      : "Address",
+					                    link     : "Link",
+					                    alt      : "Title",
+					                    uploadButton     : "Upload",
+					                    imageURLEmpty    : "Error: picture url address can't be empty.",
+					                    uploadFileEmpty  : "Error: upload pictures cannot be empty!",
+					                    formatNotAllowed : "Error: only allows to upload pictures file, upload allowed image file format:"
+					                },
+					                preformattedText : {
+					                    title             : "Preformatted text / Codes",
+					                    emptyAlert        : "Error: Please fill in the Preformatted text or content of the codes.",
+					                    placeholder       : "coding now...."
+					                },
+					                codeBlock : {
+					                    title             : "Code block",
+					                    selectLabel       : "Languages: ",
+					                    selectDefaultText : "select a code language...",
+					                    otherLanguage     : "Other languages",
+					                    unselectedLanguageAlert : "Error: Please select the code language.",
+					                    codeEmptyAlert    : "Error: Please fill in the code content.",
+					                    placeholder       : "coding now...."
+					                },
+					                htmlEntities : {
+					                    title : "HTML Entities"
+					                },
+					                help : {
+					                    title : "Help"
+					                }
+					            }
+					        },
+					path : '/assets/js/lib/',
+					flowChart : true
+				});
+            });
+
+
+        </script>
+    </body>
+</html>
