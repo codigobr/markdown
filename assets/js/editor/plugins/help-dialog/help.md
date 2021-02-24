@@ -10,7 +10,7 @@
 
 | Atalhos do teclado                              | Descrição                                          |
 | :---------------------------------------------- | :------------------------------------------------- |
-| F9                                              | Habilitar/desabilitar a pré-visuazilação             |
+| F9                                              | Habilitar/desabilitar a pré-visualização             |
 | F10                                             | Visualizar HTML (Pressione Shift + ESC para sair)         |
 | F11                                             | Mudar para tela inteira (Pressione ESC para sair)                 |
 | Ctrl + 1~6 / Command + 1~6                      | Inserir título 1~6                                 |
