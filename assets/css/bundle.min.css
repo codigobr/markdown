@@ -408,6 +408,10 @@
  	margin: 0!important;
  }
 
+ .p-0 {
+ 	padding: 0!important;
+ }
+
  .image-container {
  	margin-top: 40px;
  	margin-bottom: 40px;
@@ -443,7 +447,7 @@
  	padding: 4.946667rem 0 1.168rem 0;
  }
 
- a[target="_blank"]:not(.test-code)::after {
+ a[target="_blank"]:not(.test-code, .cover-link)::after {
   	font-family: "Font Awesome 5 Free";
   	font-weight: 900;
   	content: "\f35d";
@@ -457,13 +461,15 @@
   }
   .code-example {
   	padding: 10px;
-  	margin: 40px 0!important;
+  	margin: 40px 0;
   	background-color: #e6e6e6;
+  }
+  td > .code-example {
+  	margin: 0;
   }
   .code-example pre[class*=language-] {
   	margin-top: 0!important;
   	margin-bottom: 15px!important;
-  	border: 2px solid #e65000;
   	border-radius: 4px;
   }
   pre[class*=language-] {
@@ -480,4 +486,36 @@
   	color: #ffffffb3;
   	position: absolute;
   	top: -5px;
+  }
+
+  .code-comparison {
+      padding: 10px 20px;
+      background-color: #fafafa;
+      border: 1px solid #cfcfcf;
+      border-radius: 2px;
+      margin-bottom: 40px;
+  }
+
+  .code-comparison > .code-example, .code-comparison pre {
+      margin-top: 0;
+  }
+
+  .code-sample {
+      background: hsl(24deg 20% 95%);
+      padding: 1em;
+      margin: .5em 0;
+      overflow: auto;
+      border: solid 1px hsl(0deg 0% 20% / 12%);
+  }
+
+  .far.fa-window-maximize {
+  	color: #666;
+  }
+
+  .fab.fa-markdown {
+  	color: #32a5d2;
+  }
+
+  .fab.fa-html5 {
+  	color:#e65000;
   }

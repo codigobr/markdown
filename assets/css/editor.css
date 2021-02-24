@@ -48,9 +48,9 @@ ul, ol {
 }
 
 body {
-    font-size: 14px;
+    /*font-size: 14px;*/
     color: #666;
-    font-family: "Microsoft YaHei", "微软雅黑", Helvetica, Tahoma, STXihei, "华文细黑", STHeiti, "Helvetica Neue", Helvetica, Tahoma, "Droid Sans", "wenquanyi micro hei", FreeSans, Arimo, Arial, SimSun, "宋体", Heiti, "黑体", sans-serif;
+    /*font-family: "Microsoft YaHei", "微软雅黑", Helvetica, Tahoma, STXihei, "华文细黑", STHeiti, "Helvetica Neue", Helvetica, Tahoma, "Droid Sans", "wenquanyi micro hei", FreeSans, Arimo, Arial, SimSun, "宋体", Heiti, "黑体", sans-serif;*/
     background: #fff;
     text-align: center;
     height: 100vh;
@@ -58,7 +58,7 @@ body {
 
 #layout {
     text-align: left;
-    height: 100vh;
+    height: calc(100vh - 100px);
 }
 
 #layout > header, .btns {
@@ -120,7 +120,8 @@ body {
   position: relative;
   margin-bottom: 15px;
   border: 1px solid #ddd;
-  font-family: "Meiryo UI", "Microsoft YaHei", "Malgun Gothic", "Segoe UI", "Trebuchet MS", Helvetica, "Monaco", monospace, Tahoma, STXihei, "华文细黑", STHeiti, "Helvetica Neue", "Droid Sans", "wenquanyi micro hei", FreeSans, Arimo, Arial, SimSun, "宋体", Heiti, "黑体", sans-serif;
+  /*font-family: "Meiryo UI", "Microsoft YaHei", "Malgun Gothic", "Segoe UI", "Trebuchet MS", Helvetica, "Monaco", monospace, Tahoma, STXihei, "华文细黑", STHeiti, "Helvetica Neue", "Droid Sans", "wenquanyi micro hei", FreeSans, Arimo, Arial, SimSun, "宋体", Heiti, "黑体", sans-serif;*/
+  font-family: monospace, sans-serif;
 }
 .editormd *, .editormd *:before, .editormd *:after {
   -webkit-box-sizing: border-box;
@@ -780,13 +781,13 @@ body {
   z-index: 10;
   float: left;
   border-right: 1px solid #ddd;
-  font-size: 14px;
+  /*font-size: 14px;*/
   font-family: "YaHei Consolas Hybrid", Consolas, "微软雅黑", "Meiryo UI", "Malgun Gothic", "Segoe UI", "Trebuchet MS", Helvetica, "Monaco", courier, monospace;
   line-height: 1.6;
   margin-top: 35px;
 }
 .editormd .CodeMirror pre {
-  font-size: 14px;
+  /*font-size: 14px;*/
   padding: 0 12px;
 }
 .editormd .CodeMirror-linenumbers {
@@ -3927,7 +3928,7 @@ body {
 
 .editormd-preview-container, .editormd-html-preview {
   text-align: left;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.6;
   padding: 20px;
   overflow: auto;

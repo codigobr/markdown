@@ -180,10 +180,10 @@
 
         <p>Será convertido para a tag <code class="lang-html">h1</code> do HTML.</p>
 
-		<pre class="lang-html"><code>&lt;h1&gt;Título de nível 1&lt;/h1&gt;</code>.</pre>
+        <pre class="lang-html"><code>&lt;h1&gt;Título de nível 1&lt;/h1&gt;</code>.</pre>
 
         <div class="image-container">
-        	<figure class="mh-0">
+            <figure class="mh-0">
 		    <picture class="lazy-img unloaded image-center">
 		    	<data-src class="responsive-img lazy-img"
 		         srcset="/assets/img/basic-syntax/markdown-h1_w1280.webp 1280w,
@@ -217,72 +217,124 @@
 		</figure>
         </div>
 
-		<blockquote><b>NOTA</b>: A tag <code class="lang-html">h1</code> representa o título mais importante do HTML, normalmente o título do artigo.</blockquote>
+        <blockquote><b>NOTA</b>: A tag <code class="lang-html">h1</code> representa o título mais importante do HTML, normalmente o título do artigo.</blockquote>
 
-		<p>A quantidade de cerquilhas que você utiliza no inicio da linha indica o nível do título, sendo assim, a formatação <code class="lang-markdown">### Meu título</code> cria um cabeçalho de nível 3.</p>
+        <p>A quantidade de cerquilhas que você utiliza no inicio da linha indica o nível do título, sendo assim, a formatação <code class="lang-markdown">### Meu título</code> cria um cabeçalho de nível 3.</p>
 
-		<p class="mv-40">
-		    <ins class="adsbygoogle"
-		         style="display:block; text-align:center;"
-		         data-ad-layout="in-article"
-		         data-ad-format="fluid"
-		         data-ad-client="ca-pub-3427355473051563"
-		         data-ad-slot="3854885260"></ins>
-		    <script>
-		         (adsbygoogle = window.adsbygoogle || []).push({});
-		    </script>
-		</p>
+        <p class="mv-40">
+            <ins class="adsbygoogle"
+                 style="display:block; text-align:center;"
+                 data-ad-layout="in-article"
+                 data-ad-format="fluid"
+                 data-ad-client="ca-pub-3427355473051563"
+                 data-ad-slot="3854885260"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </p>
 
-		<blockquote><b>NOTA</b>: Quando falamos de nível, falamos dos títulos convertidos para HTML. No HTML os níveis de títulos vão de 1 à 6, denotados pelas tags <code class="lang-html">h1</code>, <code class="lang-html">h2</code>, <code class="lang-html">h3</code>, <code class="lang-html">h4</code>, <code class="lang-html">h5</code> e <code class="lang-html">h6</code></blockquote>
+        <blockquote><b>NOTA</b>: Quando falamos de nível, falamos dos títulos convertidos para HTML. No HTML os níveis de títulos vão de 1 à 6, denotados pelas tags <code class="lang-html">h1</code>, <code class="lang-html">h2</code>, <code class="lang-html">h3</code>, <code class="lang-html">h4</code>, <code class="lang-html">h5</code> e <code class="lang-html">h6</code></blockquote>
 
-		<p>Na <a href="#table-1-1">Tabela 1.1</a> você confere as sintaxes de título do Markdown e do HTML, além da saída renderizada na terceira coluna.</p>
+        <p class="mt-60"><b>EXEMPLOS:</b></p>
 
-        <table class="responsive-table" id="table-1-1">
-            <thead>
-                <tr>
-                    <th>Markdown</th>
-                    <th>HTML</th>
-                    <th>Resultado</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td># Título de nível 1</td>
-                    <td>&lt;h1&gt;Título de nível 1&lt;/h1&gt;</td>
-                    <td class="h1-like">Título de nível 1</td>
-                </tr>
-                <tr>
-                    <td>## Título de nível 2</td>
-                    <td>&lt;h2&gt;Título de nível 2&lt;/h2&gt;</td>
-                    <td class="h2-like">Título de nível 2</td>
-                </tr>
-                <tr>
-                    <td>### Título de nível 3</td>
-                    <td>&lt;h3&gt;Título de nível 3&lt;/h3&gt;</td>
-                    <td class="h3-like">Título de nível 3</td>
-                </tr>
-                <tr>
-                    <td>#### Título de nível 4</td>
-                    <td>&lt;h4&gt;Título de nível 4&lt;/h4&gt;</td>
-                    <td class="h4-like">Título de nível 4</td>
-                </tr>
-                <tr>
-                    <td>##### Título de nível 5</td>
-                    <td>&lt;h5&gt;Título de nível 5&lt;/h5&gt;</td>
-                    <td class="-h5-like">Título de nível 5</td>
-                </tr>
-                <tr>
-                    <td>###### Título de nível 6</td>
-                    <td>&lt;h6&gt;Título de nível 6&lt;/h6&gt;</td>
-                    <td class="h6-like">Título de nível 6</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="code-comparison">
+            <p><i class="fab fa-markdown"></i>&nbsp;&nbsp;<b>Markdown</b></p>
+            <div class="code-example">
+	<pre class="lang-markdown"><code># Título de nível 1</code></pre>
+	<a href="/editor/?markdown=%23%20T%C3%ADtulo%20de%20n%C3%ADvel%201" target="_blank" class="test-code waves-effect waves-light btn orange darken-4 pr-25">
+	    <b><span data-str="true">Tente você mesmo</span></b>&nbsp;<i class="fas fa-external-link-alt outter-icon-code"></i>
+	</a>
+</div>
+            <p><i class="fab fa-html5""></i>&nbsp;&nbsp;<b>HTML</b></p>
+            <pre class="lang-html"><code>&lt;h1&gt;Título de nível 1&lt;/h1&gt;</code></pre>
+            <p><i class="far fa-window-maximize"></i>&nbsp;&nbsp;<b>Resultado</b></p>
+            <div class="code-sample">
+                <span class="h1-like">Título de nível 1</span>
+            </div>
+        </div>
 
-		<small class="caption">Tabela 1.1 - Comparação entre títulos Markdown, títulos HTML e a renderização HTML.</small>
+        <div class="code-comparison">
+            <p><i class="fab fa-markdown"></i>&nbsp;&nbsp;<b>Markdown</b></p>
+            <div class="code-example">
+	<pre class="lang-markdown"><code>## Título de nível 2</code></pre>
+	<a href="/editor/?markdown=%23%23%20T%C3%ADtulo%20de%20n%C3%ADvel%202" target="_blank" class="test-code waves-effect waves-light btn orange darken-4 pr-25">
+	    <b><span data-str="true">Tente você mesmo</span></b>&nbsp;<i class="fas fa-external-link-alt outter-icon-code"></i>
+	</a>
+</div>
+            <p><i class="fab fa-html5""></i>&nbsp;&nbsp;<b>HTML</b></p>
+            <pre class="lang-html"><code>&lt;h2&gt;Título de nível 2&lt;/h2&gt;</code></pre>
+            <p><i class="far fa-window-maximize"></i>&nbsp;&nbsp;<b>Resultado</b></p>
+            <div class="code-sample">
+                <span class="h2-like">Título de nível 2</span>
+            </div>
+        </div>
 
-	    <div class="image-container">
-	    	<figure class="mh-0">
+        <div class="code-comparison">
+            <p><i class="fab fa-markdown"></i>&nbsp;&nbsp;<b>Markdown</b></p>
+            <div class="code-example">
+	<pre class="lang-markdown"><code>### Título de nível 3</code></pre>
+	<a href="/editor/?markdown=%23%23%23%20T%C3%ADtulo%20de%20n%C3%ADvel%203" target="_blank" class="test-code waves-effect waves-light btn orange darken-4 pr-25">
+	    <b><span data-str="true">Tente você mesmo</span></b>&nbsp;<i class="fas fa-external-link-alt outter-icon-code"></i>
+	</a>
+</div>
+            <p><i class="fab fa-html5""></i>&nbsp;&nbsp;<b>HTML</b></p>
+            <pre class="lang-html"><code>&lt;h3&gt;Título de nível 3&lt;/h3&gt;</code></pre>
+            <p><i class="far fa-window-maximize"></i>&nbsp;&nbsp;<b>Resultado</b></p>
+            <div class="code-sample">
+                <span class="h3-like">Título de nível 3</span>
+            </div>
+        </div>
+
+        <div class="code-comparison">
+            <p><i class="fab fa-markdown"></i>&nbsp;&nbsp;<b>Markdown</b></p>
+            <div class="code-example">
+	<pre class="lang-markdown"><code>#### Título de nível 4</code></pre>
+	<a href="/editor/?markdown=%23%23%23%23%20T%C3%ADtulo%20de%20n%C3%ADvel%204" target="_blank" class="test-code waves-effect waves-light btn orange darken-4 pr-25">
+	    <b><span data-str="true">Tente você mesmo</span></b>&nbsp;<i class="fas fa-external-link-alt outter-icon-code"></i>
+	</a>
+</div>
+            <p><i class="fab fa-html5""></i>&nbsp;&nbsp;<b>HTML</b></p>
+            <pre class="lang-html"><code>&lt;h4&gt;Título de nível 4&lt;/h4&gt;</code></pre>
+            <p><i class="far fa-window-maximize"></i>&nbsp;&nbsp;<b>Resultado</b></p>
+            <div class="code-sample">
+                <span class="h4-like">Título de nível 4</span>
+            </div>
+        </div>
+
+        <div class="code-comparison">
+            <p><i class="fab fa-markdown"></i>&nbsp;&nbsp;<b>Markdown</b></p>
+            <div class="code-example">
+	<pre class="lang-markdown"><code>##### Título de nível 5</code></pre>
+	<a href="/editor/?markdown=%23%23%23%23%23%20T%C3%ADtulo%20de%20n%C3%ADvel%205" target="_blank" class="test-code waves-effect waves-light btn orange darken-4 pr-25">
+	    <b><span data-str="true">Tente você mesmo</span></b>&nbsp;<i class="fas fa-external-link-alt outter-icon-code"></i>
+	</a>
+</div>
+            <p><i class="fab fa-html5""></i>&nbsp;&nbsp;<b>HTML</b></p>
+            <pre class="lang-html"><code>&lt;h5&gt;Título de nível 5&lt;/h5&gt;</code></pre>
+            <p><i class="far fa-window-maximize"></i>&nbsp;&nbsp;<b>Resultado</b></p>
+            <div class="code-sample">
+                <span class="h5-like">Título de nível 5</span>
+            </div>
+        </div>
+
+        <div class="code-comparison">
+            <p><i class="fab fa-markdown"></i>&nbsp;&nbsp;<b>Markdown</b></p>
+            <div class="code-example">
+	<pre class="lang-markdown"><code>###### Título de nível 6</code></pre>
+	<a href="/editor/?markdown=%23%23%23%23%23%23%20T%C3%ADtulo%20de%20n%C3%ADvel%206" target="_blank" class="test-code waves-effect waves-light btn orange darken-4 pr-25">
+	    <b><span data-str="true">Tente você mesmo</span></b>&nbsp;<i class="fas fa-external-link-alt outter-icon-code"></i>
+	</a>
+</div>
+            <p><i class="fab fa-html5""></i>&nbsp;&nbsp;<b>HTML</b></p>
+            <pre class="lang-html"><code>&lt;h6&gt;Título de nível 6&lt;/h6&gt;</code></pre>
+            <p><i class="far fa-window-maximize"></i>&nbsp;&nbsp;<b>Resultado</b></p>
+            <div class="code-sample">
+                <span class="h6-like">Título de nível 6</span>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <figure class="mh-0">
 		    <picture class="lazy-img unloaded image-center">
 		    	<data-src class="responsive-img lazy-img"
 		         srcset="/assets/img/basic-syntax/markdown-headings_w1280.webp 1280w,
@@ -314,14 +366,14 @@
 		    <i class="tiny material-icons">photo</i>&nbsp;<span>Títulos Markdown no StackEdit</span>
 		</figcaption>
 		</figure>
-	    </div>
+        </div>
 
-		<h3 id="headings-alternative-syntax">Sintaxe alternativa</h3>
+        <h3 id="headings-alternative-syntax">Sintaxe alternativa</h3>
 
-		<p>O Markdown oferece uma sintaxe diferente para construir títulos de níveis 1 e 2. Ao invés de usar a cerquilha no início da linha, adicione abaixo do título sinais de igual <code class="lang-text">==</code> para cabeçalhos de nível 1 e sinais de menos <code class="lang-text">--</code> para cabeçalhos de nível 2.</p>
+        <p>O Markdown oferece uma sintaxe diferente para construir títulos de níveis 1 e 2. Ao invés de usar a cerquilha no início da linha, adicione abaixo do título sinais de igual <code class="lang-text">==</code> para cabeçalhos de nível 1 e sinais de menos <code class="lang-text">--</code> para cabeçalhos de nível 2.</p>
 
-	    <div class="image-container">
-	    	<figure class="mh-0">
+        <div class="image-container">
+            <figure class="mh-0">
 		    <picture class="lazy-img unloaded image-center">
 		    	<data-src class="responsive-img lazy-img"
 		         srcset="/assets/img/basic-syntax/markdown-headings-alternative-syntax_w1280.webp 1280w,
@@ -353,38 +405,51 @@
 		    <i class="tiny material-icons">photo</i>&nbsp;<span>Sintaxe alternativa para criar títulos de nível 1 e 2</span>
 		</figcaption>
 		</figure>
-	    </div>
+        </div>
 
-        <p>A <a href="#table-1-2">Tabela 1.2</a> mostra a variação da sintaxe.</p>
+        <p class="mt-60"><b>EXEMPLOS:</b></p>
 
-        <table class="responsive-table" id="table-1-2">
-            <thead>
-                <tr>
-                    <th>Markdown</th>
-                    <th>HTML</th>
-                    <th>Resultado</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Título de nível 1<br>===============</td>
-                    <td>&lt;h1&gt;Título de nível 1&lt;/h1&gt;</td>
-                    <td class="h1-like">Título de nível 1</td>
-                </tr>
-                <tr>
-                    <td>Título de nível 2<br>---------------</td>
-                    <td>&lt;h2&gt;Título de nível 2&lt;/h2&gt;</td>
-                    <td class="h2-like">Título de nível 2</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="code-comparison">
+            <p><i class="fab fa-markdown"></i>&nbsp;&nbsp;<b>Markdown</b></p>
+            <div class="code-example">
+	<pre class="lang-markdown"><code>Título de nível 1
+===============</code></pre>
+	<a href="/editor/?markdown=T%C3%ADtulo%20de%20n%C3%ADvel%201%0D%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D" target="_blank" class="test-code waves-effect waves-light btn orange darken-4 pr-25">
+	    <b><span data-str="true">Tente você mesmo</span></b>&nbsp;<i class="fas fa-external-link-alt outter-icon-code"></i>
+	</a>
+</div>
+            <p><i class="fab fa-html5""></i>&nbsp;&nbsp;<b>HTML</b></p>
+            <pre class="lang-html"><code>&lt;h1&gt;Título de nível 1&lt;/h1&gt;</code></pre>
+            <p><i class="far fa-window-maximize"></i>&nbsp;&nbsp;<b>Resultado</b></p>
+            <div class="code-sample">
+                <span class="h1-like">Título de nível 1</span>
+            </div>
+        </div>
 
-            <small class="caption">Tabela 1.2 - Sintaxe alternativa para criar títulos de níveis 1 e 2 no Markdown.</small>
+        <div class="code-comparison">
+            <p><i class="fab fa-markdown"></i>&nbsp;&nbsp;<b>Markdown</b></p>
+            <div class="code-example">
+	<pre class="lang-markdown"><code>Título de nível 2
+---------------</code></pre>
+	<a href="/editor/?markdown=T%C3%ADtulo%20de%20n%C3%ADvel%202%0D%0A%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D%2D" target="_blank" class="test-code waves-effect waves-light btn orange darken-4 pr-25">
+	    <b><span data-str="true">Tente você mesmo</span></b>&nbsp;<i class="fas fa-external-link-alt outter-icon-code"></i>
+	</a>
+</div>
+            <p><i class="fab fa-html5""></i>&nbsp;&nbsp;<b>HTML</b></p>
+            <pre class="lang-html"><code>&lt;h2&gt;Título de nível 1&lt;/h2&gt;</code></pre>
+            <p><i class="far fa-window-maximize"></i>&nbsp;&nbsp;<b>Resultado</b></p>
+            <div class="code-sample">
+                <span class="h2-like">Título de nível 2</span>
+            </div>
+        </div>
 
-            <p>Colocando apenas um sinal de igual <code class="lang-plaintext">=</code> ou um traço/sinal de menos <code class="lang-plaintext">-</code> embaixo do texto também funciona.</p>
+
+
+
+        <p>Colocando apenas um sinal de igual <code class="lang-plaintext">=</code> ou um traço/sinal de menos <code class="lang-plaintext">-</code> embaixo do texto também funciona.</p>
 
             <div class="image-container">
-            	<figure class="mh-0">
+                <figure class="mh-0">
 		    <picture class="lazy-img unloaded image-center">
 		    	<data-src class="responsive-img lazy-img"
 		         srcset="/assets/img/basic-syntax/markdown-headings-alternative-syntax-2_w1280.webp 1280w,
@@ -425,15 +490,15 @@
             <p>É recomendado sempre adicionar pelo menos um espaço entre eles, além de prover uma melhor leitura do seu documento, você ainda terá mais suporte de edição entre os aplicativos Markdown.</p>
 
             <p class="mv-40">
-        	    <ins class="adsbygoogle"
-        	         style="display:block; text-align:center;"
-        	         data-ad-layout="in-article"
-        	         data-ad-format="fluid"
-        	         data-ad-client="ca-pub-3427355473051563"
-        	         data-ad-slot="3854885260"></ins>
-        	    <script>
-        	         (adsbygoogle = window.adsbygoogle || []).push({});
-        	    </script>
+                <ins class="adsbygoogle"
+                     style="display:block; text-align:center;"
+                     data-ad-layout="in-article"
+                     data-ad-format="fluid"
+                     data-ad-client="ca-pub-3427355473051563"
+                     data-ad-slot="3854885260"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
             </p>
 
             <p>A <a href="#table-1-3">Tabela 1.3</a> exemplifica a construção correta do título.</p>
@@ -442,12 +507,12 @@
                 <thead>
                     <tr>
                         <th class="green-text">
-                        	<span class="hide-on-small-only"><i class="fas fa-thumbs-up"></i>&nbsp;&nbsp;Correto</span>
-                        	<span class="hide-on-med-and-up"><i class="fas fa-thumbs-up"></i></span>
+                            <span class="hide-on-small-only"><i class="fas fa-thumbs-up"></i>&nbsp;&nbsp;Correto</span>
+                            <span class="hide-on-med-and-up"><i class="fas fa-thumbs-up"></i></span>
                         </th>
                         <th class="red-text">
-                        	<span class="hide-on-small-only"><i class="fas fa-thumbs-down"></i>&nbsp;&nbsp;Não recomendado</span>
-                        	<span class="hide-on-med-and-up"><i class="fas fa-thumbs-down"></i></span>
+                            <span class="hide-on-small-only"><i class="fas fa-thumbs-down"></i>&nbsp;&nbsp;Não recomendado</span>
+                            <span class="hide-on-med-and-up"><i class="fas fa-thumbs-down"></i></span>
                         </th>
                     </tr>
                 </thead>
@@ -462,7 +527,7 @@
             <small class="caption">Tabela 1.3 - Uso correto na construção de títulos/cabeçalhos no Markdown.</small>
 
             <div class="image-container">
-            	<figure class="mh-0">
+                <figure class="mh-0">
 		    <picture class="lazy-img unloaded image-center">
 		    	<data-src class="responsive-img lazy-img"
 		         srcset="/assets/img/basic-syntax/markdown-headings-correct-syntax_w501.webp 501w,
@@ -496,7 +561,7 @@
             <p>A formatação mais simples do Markdown é a do parágrafo. Para criar um, basta separar um pedaço do texto com uma linha em branco, criando fragmentações que o processador Markdown interpretará como parágrafos.</p>
 
             <div class="image-container">
-            	<figure class="mh-0">
+                <figure class="mh-0">
 		    <picture class="lazy-img unloaded image-center">
 		    	<data-src class="responsive-img lazy-img"
 		         srcset="/assets/img/basic-syntax/markdown-paragraph_w579.webp 579w,
@@ -524,34 +589,32 @@
 		</figure>
             </div>
 
-            <p>A <a href="#table-1-4">Tabela 1.4</a> mostra a sintaxe de criação de um parágrafo.</p>
+            <p class="mt-60"><b>EXEMPLOS:</b></p>
 
-            <table class="responsive-table" id="table-1-4">
-                <thead>
-                    <tr>
-                        <th>Markdown</th>
-                        <th>HTML</th>
-                        <th>Resultado</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            O Markdown é importante para todo programador.<br><br>
-                            Aprender o Markdown é essencial para uma carreira de sucesso.
-                        </td>
-                        <td>&lt;p&gt;O Markdown é importante para todo programador.&lt;/p&gt;<br><br>
-                            &lt;p&gt;Aprender o Markdown é essencial para uma carreira de sucesso.&lt;p&gt;
-                        </td>
-                        <td>
-                            <p>O Markdown é importante para todo programador.</p>
-                            <p>Aprender o Markdown é essencial para uma carreira de sucesso.</p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="code-comparison">
+                <p><i class="fab fa-markdown"></i>&nbsp;&nbsp;<b>Markdown</b></p>
+                <div class="code-example">
+	<pre class="lang-markdown"><code>O Markdown é importante para todo programador.
 
-            <small class="caption">Tabela 1.4 - Sintaxe de criação de parágrafo no Markdown.</small>
+Aprender o Markdown é essencial para uma carreira de sucesso.</code></pre>
+	<a href="/editor/?markdown=O%20Markdown%20%C3%A9%20importante%20para%20todo%20programador%2E%0D%0A%0D%0AAprender%20o%20Markdown%20%C3%A9%20essencial%20para%20uma%20carreira%20de%20sucesso%2E" target="_blank" class="test-code waves-effect waves-light btn orange darken-4 pr-25">
+	    <b><span data-str="true">Tente você mesmo</span></b>&nbsp;<i class="fas fa-external-link-alt outter-icon-code"></i>
+	</a>
+</div>
+                <p><i class="fab fa-html5""></i>&nbsp;&nbsp;<b>HTML</b></p>
+
+                <pre class="lang-html"><code>&lt;p&gt;O Markdown é importante para todo programador.&lt;/p&gt;
+
+&lt;p&gt;Aprender o Markdown é essencial para uma carreira de sucesso.&lt;p&gt;</code></pre>
+
+                <p><i class="far fa-window-maximize"></i>&nbsp;&nbsp;<b>Resultado</b></p>
+                <div class="code-sample">
+                    <p>O Markdown é importante para todo programador.</p>
+                    <p>Aprender o Markdown é essencial para uma carreira de sucesso.</p>
+                </div>
+            </div>
+
+
 
             <h3 id="paragraphs-best-practices">Parágrafos: melhores práticas</h3>
 
@@ -560,15 +623,15 @@
             <blockquote><b>NOTA</b>: O parágrafo deve ser recuado quando estiver dentro de uma lista.</blockquote>
 
             <p class="mv-40">
-        	    <ins class="adsbygoogle"
-        	         style="display:block; text-align:center;"
-        	         data-ad-layout="in-article"
-        	         data-ad-format="fluid"
-        	         data-ad-client="ca-pub-3427355473051563"
-        	         data-ad-slot="3854885260"></ins>
-        	    <script>
-        	         (adsbygoogle = window.adsbygoogle || []).push({});
-        	    </script>
+                <ins class="adsbygoogle"
+                     style="display:block; text-align:center;"
+                     data-ad-layout="in-article"
+                     data-ad-format="fluid"
+                     data-ad-client="ca-pub-3427355473051563"
+                     data-ad-slot="3854885260"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
             </p>
 
             <p>A <a href="#table-1-5">Tabela 1.5</a> exemplifica o uso correto para construção de um parágrafo.</p>
@@ -576,14 +639,14 @@
             <table class="responsive-table" id="table-1-5">
                 <thead>
                     <tr>
-                    	<th class="green-text">
-                    		<span class="hide-on-small-only"><i class="fas fa-thumbs-up"></i>&nbsp;&nbsp;Correto</span>
-                    		<span class="hide-on-med-and-up"><i class="fas fa-thumbs-up"></i></span>
-                    	</th>
-                    	<th class="red-text">
-                    		<span class="hide-on-small-only"><i class="fas fa-thumbs-down"></i>&nbsp;&nbsp;Não recomendado</span>
-                    		<span class="hide-on-med-and-up"><i class="fas fa-thumbs-down"></i></span>
-                    	</th>
+                        <th class="green-text">
+                            <span class="hide-on-small-only"><i class="fas fa-thumbs-up"></i>&nbsp;&nbsp;Correto</span>
+                            <span class="hide-on-med-and-up"><i class="fas fa-thumbs-up"></i></span>
+                        </th>
+                        <th class="red-text">
+                            <span class="hide-on-small-only"><i class="fas fa-thumbs-down"></i>&nbsp;&nbsp;Não recomendado</span>
+                            <span class="hide-on-med-and-up"><i class="fas fa-thumbs-down"></i></span>
+                        </th>
                     </tr>
                 </thead>
                 <tbody>
@@ -603,7 +666,7 @@
             <small class="caption">Tabela 1.5 - O que fazer e o que não fazer ao criar um parágrafo em Markdown.</small>
 
             <div class="image-container">
-            	<figure class="mh-0">
+                <figure class="mh-0">
 		    <picture class="lazy-img unloaded image-center">
 		    	<data-src class="responsive-img lazy-img"
 		         srcset="/assets/img/basic-syntax/markdown-paragraph-wrong-syntax_w1280.webp 1280w,
@@ -640,7 +703,7 @@
             <p>Em HTML uma quebra de linha é representada pela tag <code class="lang-html">br</code>.</p>
 
             <div class="image-container">
-            	<figure class="mh-0">
+                <figure class="mh-0">
 		    <picture class="lazy-img unloaded image-center">
 		    	<data-src class="responsive-img lazy-img"
 		         srcset="/assets/img/basic-syntax/html-line-break_w1037.webp 1037w,
@@ -717,15 +780,15 @@
                 <li class="collection-item green lighten-5">Espaços em branco depois da linha são difíceis de notar.</li>
                 <li class="collection-item yellow lighten-5">Pessoas podem adicionar espaços em branco, no fim da linha, por força do hábito ou descuido.</li>
                 <li class="collection-item">
-        		    <ins class="adsbygoogle"
-        		         style="display:block; text-align:center;"
-        		         data-ad-layout="in-article"
-        		         data-ad-format="fluid"
-        		         data-ad-client="ca-pub-3427355473051563"
-        		         data-ad-slot="3854885260"></ins>
-        		    <script>
-        		         (adsbygoogle = window.adsbygoogle || []).push({});
-        		    </script>
+                    <ins class="adsbygoogle"
+                         style="display:block; text-align:center;"
+                         data-ad-layout="in-article"
+                         data-ad-format="fluid"
+                         data-ad-client="ca-pub-3427355473051563"
+                         data-ad-slot="3854885260"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
                 </li>
                 <li class="collection-item green lighten-5">Alguns editores de texto, como o Sublime Text, têm configurações que removem os espaços em branco, antes e depois, da linha ao salvar o documento.</li>
             </ul>
@@ -746,12 +809,12 @@
                 <thead>
                     <tr>
                         <th class="green-text">
-                        	<span class="hide-on-small-only"><i class="fas fa-thumbs-up"></i>&nbsp;&nbsp;Correto</span>
-                        	<span class="hide-on-med-and-up"><i class="fas fa-thumbs-up"></i></span>
+                            <span class="hide-on-small-only"><i class="fas fa-thumbs-up"></i>&nbsp;&nbsp;Correto</span>
+                            <span class="hide-on-med-and-up"><i class="fas fa-thumbs-up"></i></span>
                         </th>
                         <th class="red-text">
-                        	<span class="hide-on-small-only"><i class="fas fa-thumbs-down"></i>&nbsp;&nbsp;Não recomendado</span>
-                        	<span class="hide-on-med-and-up"><i class="fas fa-thumbs-down"></i></span>
+                            <span class="hide-on-small-only"><i class="fas fa-thumbs-down"></i>&nbsp;&nbsp;Não recomendado</span>
+                            <span class="hide-on-med-and-up"><i class="fas fa-thumbs-down"></i></span>
                         </th>
                     </tr>
                 </thead>
@@ -781,7 +844,7 @@
             <p>Semelhante a um editor WYSIWYG, como o Microsoft Word, o Markdown também oferece formatações para enfatizar o texto.</p>
 
             <div class="image-container">
-            	<figure class="mh-0">
+                <figure class="mh-0">
 		    <picture class="lazy-img unloaded image-center">
 		    	<data-src class="responsive-img lazy-img"
 		         srcset="/assets/img/basic-syntax/microsoft-word-emphasis-formatting_w564.webp 564w,
@@ -816,7 +879,7 @@
             <p>Para formatar um texto em negrito no Markdown, coloque dois asteriscos <code class="lang-plaintext">**</code> antes do conteúdo e dois asteriscos <code class="lang-plaintext">**</code> depois do conteúdo.</p>
 
             <div class="image-container">
-            	<figure class="mh-0">
+                <figure class="mh-0">
 		    <picture class="lazy-img unloaded image-center">
 		    	<data-src class="responsive-img lazy-img"
 		         srcset="/assets/img/basic-syntax/markdown-bold_w853.webp 853w,
@@ -890,15 +953,15 @@
             <p>Porém, a utilização dos sublinhados em meio a uma palavra pode gerar problemas de formatação dependendo do processador Markdown, por isso, de preferência ao uso de asteriscos.</p>
 
             <p class="mv-40">
-        	    <ins class="adsbygoogle"
-        	         style="display:block; text-align:center;"
-        	         data-ad-layout="in-article"
-        	         data-ad-format="fluid"
-        	         data-ad-client="ca-pub-3427355473051563"
-        	         data-ad-slot="3854885260"></ins>
-        	    <script>
-        	         (adsbygoogle = window.adsbygoogle || []).push({});
-        	    </script>
+                <ins class="adsbygoogle"
+                     style="display:block; text-align:center;"
+                     data-ad-layout="in-article"
+                     data-ad-format="fluid"
+                     data-ad-client="ca-pub-3427355473051563"
+                     data-ad-slot="3854885260"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
             </p>
 
             <p>A <a href="#table-1-9">Tabela 1.9</a> demonstra o uso recomendado para formatar em negrito.</p>
@@ -907,12 +970,12 @@
                 <thead>
                     <tr>
                         <th class="green-text">
-                        	<span class="hide-on-small-only"><i class="fas fa-thumbs-up"></i>&nbsp;&nbsp;Correto</span>
-                        	<span class="hide-on-med-and-up"><i class="fas fa-thumbs-up"></i></span>
+                            <span class="hide-on-small-only"><i class="fas fa-thumbs-up"></i>&nbsp;&nbsp;Correto</span>
+                            <span class="hide-on-med-and-up"><i class="fas fa-thumbs-up"></i></span>
                         </th>
                         <th class="red-text">
-                        	<span class="hide-on-small-only"><i class="fas fa-thumbs-down"></i>&nbsp;&nbsp;Não recomendado</span>
-                        	<span class="hide-on-med-and-up"><i class="fas fa-thumbs-down"></i></span>
+                            <span class="hide-on-small-only"><i class="fas fa-thumbs-down"></i>&nbsp;&nbsp;Não recomendado</span>
+                            <span class="hide-on-med-and-up"><i class="fas fa-thumbs-down"></i></span>
                         </th>
                     </tr>
                 </thead>
@@ -931,7 +994,7 @@
             <small class="caption">Tabela 1.9 - Sintaxe recomendada para formatar em negrito no Markdown.</small>
 
             <div class="image-container">
-            	<figure class="mh-0">
+                <figure class="mh-0">
 		    <picture class="lazy-img unloaded image-center">
 		    	<data-src class="responsive-img lazy-img"
 		         srcset="/assets/img/basic-syntax/markdown-bold-best-practices_w852.webp 852w,
@@ -971,7 +1034,7 @@
             <p>Semelhante ao negrito, a formatação em itálico no Markdown também utiliza asterisco <code class="lang-plaintext">*</code> ou sublinhado <code class="lang-plaintext">_</code>, mas, no caso do itálico, use somente um asterisco <code class="lang-plaintext">*</code> antes do conteúdo e um asterisco <code class="lang-plaintext">*</code> depois do conteúdo.</p>
 
             <div class="image-container">
-            	<figure class="mh-0">
+                <figure class="mh-0">
 		    <picture class="lazy-img unloaded image-center">
 		    	<data-src class="responsive-img lazy-img"
 		         srcset="/assets/img/basic-syntax/markdown-italics_w847.webp 847w,
@@ -1057,12 +1120,12 @@
                 <thead>
                     <tr>
                         <th class="green-text">
-                        	<span class="hide-on-small-only"><i class="fas fa-thumbs-up"></i>&nbsp;&nbsp;Correto</span>
-                        	<span class="hide-on-med-and-up"><i class="fas fa-thumbs-up"></i></span>
+                            <span class="hide-on-small-only"><i class="fas fa-thumbs-up"></i>&nbsp;&nbsp;Correto</span>
+                            <span class="hide-on-med-and-up"><i class="fas fa-thumbs-up"></i></span>
                         </th>
                         <th class="red-text">
-                        	<span class="hide-on-small-only"><i class="fas fa-thumbs-down"></i>&nbsp;&nbsp;Não recomendado</span>
-                        	<span class="hide-on-med-and-up"><i class="fas fa-thumbs-down"></i></span>
+                            <span class="hide-on-small-only"><i class="fas fa-thumbs-down"></i>&nbsp;&nbsp;Não recomendado</span>
+                            <span class="hide-on-med-and-up"><i class="fas fa-thumbs-down"></i></span>
                         </th>
                     </tr>
                 </thead>
@@ -1081,7 +1144,7 @@
             <small class="caption">Tabela 1.11 - Formatação recomendada para enfatizar parte de uma palavra usando itálico.</small>
 
             <div class="image-container">
-            	<figure class="mh-0">
+                <figure class="mh-0">
 		    <picture class="lazy-img unloaded image-center">
 		    	<data-src class="responsive-img lazy-img"
 		         srcset="/assets/img/basic-syntax/markdown-italics-best-practices_w852.webp 852w,
@@ -1118,7 +1181,7 @@
             <h3 id="bold-italics">Negrito e Itálico</h3>
 
             <div class="image-container">
-            	<figure class="mh-0">
+                <figure class="mh-0">
 		    <picture class="lazy-img unloaded image-center">
 		    	<data-src class="responsive-img lazy-img"
 		         srcset="/assets/img/basic-syntax/markdown-bold-italics_w850.webp 850w,
@@ -1154,17 +1217,17 @@
 
             <p>Para aplicar o negrito e o itálico simultaneamente adicione três asteriscos <code class="lang-text">***</code> ou três sublinhados <code class="lang-text">___</code> ao redor do texto a destacar.</p>
 
-			<p class="mv-40">
-			    <ins class="adsbygoogle"
-			         style="display:block; text-align:center;"
-			         data-ad-layout="in-article"
-			         data-ad-format="fluid"
-			         data-ad-client="ca-pub-3427355473051563"
-			         data-ad-slot="3854885260"></ins>
-			    <script>
-			         (adsbygoogle = window.adsbygoogle || []).push({});
-			    </script>
-			</p>
+            <p class="mv-40">
+                <ins class="adsbygoogle"
+                     style="display:block; text-align:center;"
+                     data-ad-layout="in-article"
+                     data-ad-format="fluid"
+                     data-ad-client="ca-pub-3427355473051563"
+                     data-ad-slot="3854885260"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </p>
 
             <p>Se for enfatizar o meio de uma palavra com as duas formatações dê preferência ao uso de asteriscos, no caso, três asteriscos <code class="lang-text">***</code>.</p>
 
@@ -1214,7 +1277,7 @@
             <p>Para evitar problemas de compatibilidade com aplicativos Markdown, ao destacar o meio de uma palavra, combinando negrito e itálico, dê preferência ao uso de três asteriscos.</p>
 
             <div class="image-container">
-            	<figure class="mh-0">
+                <figure class="mh-0">
 		    <picture class="lazy-img unloaded image-center">
 		    	<data-src class="responsive-img lazy-img"
 		         srcset="/assets/img/basic-syntax/markdown-bold-italics-best-practices_w977.webp 977w,
@@ -1254,12 +1317,12 @@
                 <thead>
                     <tr>
                         <th class="green-text">
-                        	<span class="hide-on-small-only"><i class="fas fa-thumbs-up"></i>&nbsp;&nbsp;Correto</span>
-                        	<span class="hide-on-med-and-up"><i class="fas fa-thumbs-up"></i></span>
+                            <span class="hide-on-small-only"><i class="fas fa-thumbs-up"></i>&nbsp;&nbsp;Correto</span>
+                            <span class="hide-on-med-and-up"><i class="fas fa-thumbs-up"></i></span>
                         </th>
                         <th class="red-text">
-                        	<span class="hide-on-small-only"><i class="fas fa-thumbs-down"></i>&nbsp;&nbsp;Não recomendado</span>
-                        	<span class="hide-on-med-and-up"><i class="fas fa-thumbs-down"></i></span>
+                            <span class="hide-on-small-only"><i class="fas fa-thumbs-down"></i>&nbsp;&nbsp;Não recomendado</span>
+                            <span class="hide-on-med-and-up"><i class="fas fa-thumbs-down"></i></span>
                         </th>
                     </tr>
                 </thead>
@@ -1283,7 +1346,7 @@
             <p>Para marcar um conteúdo como blockquote no Markdown, use o sinal de maior que <code class="lang-text">&gt;</code> no começo do parágrafo.</p>
 
             <div class="image-container">
-            	<figure class="mh-0">
+                <figure class="mh-0">
 		    <picture class="lazy-img unloaded image-center">
 		    	<data-src class="responsive-img lazy-img"
 		         srcset="/assets/img/basic-syntax/markdown-blockquote_w1280.webp 1280w,
@@ -1319,7 +1382,12 @@
 
             <p>Por exemplo, essa marcação Markdown:</p>
 
-            <pre class="lang-markdown"><code>&gt; Conteúdo do blockquote.</code></pre>
+            <div class="code-example">
+	<pre class="lang-markdown"><code>&gt; Conteúdo do blockquote.</code></pre>
+	<a href="/editor/?markdown=>%20Conte%C3%BAdo%20do%20blockquote%2E" target="_blank" class="test-code waves-effect waves-light btn orange darken-4 pr-25">
+	    <b><span data-str="true">Tente você mesmo</span></b>&nbsp;<i class="fas fa-external-link-alt outter-icon-code"></i>
+	</a>
+</div>
 
             <p>Resultaria nessa saída HTML:</p>
 
@@ -1332,7 +1400,7 @@
             <p>Se você precisa de um blockquote contendo diversos parágrafos dentro dele, utilize o sinal de maior que <code class="lang-plaintext">&gt;</code> a frente de cada um desses parágrafos e os separe por uma linha contendo apenas o sinal de maior que.</p>
 
             <div class="image-container">
-            	<figure class="mh-0">
+                <figure class="mh-0">
 		    <picture class="lazy-img unloaded image-center">
 		    	<data-src class="responsive-img lazy-img"
 		         srcset="/assets/img/basic-syntax/markdown-blockquote-paragraphs_w1280.webp 1280w,
@@ -1370,9 +1438,14 @@
 
             <p>Vejamos um exemplos:</p>
 
-            <pre class="lang-markdown"><code>&gt; Primeiro parágrafo do blockquote.
+            <div class="code-example">
+	<pre class="lang-markdown"><code>&gt; Primeiro parágrafo do blockquote.
 &gt;
 &gt; Segundo parágrafo do blockquote.</code></pre>
+	<a href="/editor/?markdown=>%20Primeiro%20par%C3%A1grafo%20do%20blockquote%2E%0D%0A>%0D%0A>%20Segundo%20par%C3%A1grafo%20do%20blockquote%2E" target="_blank" class="test-code waves-effect waves-light btn orange darken-4 pr-25">
+	    <b><span data-str="true">Tente você mesmo</span></b>&nbsp;<i class="fas fa-external-link-alt outter-icon-code"></i>
+	</a>
+</div>
 
             <p>A saída em HTML:</p>
 
@@ -1389,9 +1462,14 @@
 
             <p>Exemplo:</p>
 
-            <pre class="lang-markdown"><code>&gt; Conteúdo do blockquote.
+            <div class="code-example">
+	<pre class="lang-markdown"><code>&gt; Conteúdo do blockquote.
 &gt;
 &gt;&gt; Esse parágrafo será interpretado como um blockquote aninhado.</code></pre>
+	<a href="/editor/?markdown=>%20Conte%C3%BAdo%20do%20blockquote%2E%0D%0A>%0D%0A>>%20Esse%20par%C3%A1grafo%20ser%C3%A1%20interpretado%20como%20um%20blockquote%20aninhado%2E" target="_blank" class="test-code waves-effect waves-light btn orange darken-4 pr-25">
+	    <b><span data-str="true">Tente você mesmo</span></b>&nbsp;<i class="fas fa-external-link-alt outter-icon-code"></i>
+	</a>
+</div>
 
             <p>A renderização em HTML:</p>
 
@@ -1605,130 +1683,139 @@
 
             <blockquote><b>NOTA</b>: Recue um elemento da lista inserindo uma tabulação antes da marcação do elemento.</blockquote>
 
-            <p>A <a href="#table-1-15">Tabela 1.15</a> mostra como criar listas não ordenadas.</p>
+            <p class="mt-60"><b>EXEMPLOS:</b></p>
 
-            <table class="responsive-table" id="table-1-15">
-                <thead>
-                    <tr>
-                        <th>Markdown</th>
-                        <th>HTML</th>
-                        <th>Resultado</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            - Primeiro elemento<br>
-                            - Segundo elemento<br>
-                            - Terceiro elemento<br>
-                            - Quarto elemento
-                        </td>
-                        <td>
-                            &lt;ul&gt;<br>
-                            &lt;li&gt;Primeiro elemento&lt;/li&gt;<br>
-                            &lt;li&gt;Segundo elemento&lt;/li&gt;<br>
-                            &lt;li&gt;Terceiro elemento&lt;/li&gt;<br>
-                            &lt;li&gt;Quarto elemento&lt;/li&gt;<br>
-                            &lt;/ul&gt;
-                        </td>
-                        <td>
-                            <ul>
-                                <li>Primeiro elemento</li>
-                                <li>Segundo elemento</li>
-                                <li>Terceiro elemento</li>
-                                <li>Quarto elemento</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            * Primeiro elemento<br>
-                            * Segundo elemento<br>
-                            * Terceiro elemento<br>
-                            * Quarto elemento
-                        </td>
-                        <td>
-                            &lt;ul&gt;<br>
-                            &lt;li&gt;Primeiro elemento&lt;/li&gt;<br>
-                            &lt;li&gt;Segundo elemento&lt;/li&gt;<br>
-                            &lt;li&gt;Terceiro elemento&lt;/li&gt;<br>
-                            &lt;li&gt;Quarto elemento&lt;/li&gt;<br>
-                            &lt;/ul&gt;
-                        </td>
-                        <td>
-                            <ul>
-                                <li>Primeiro elemento</li>
-                                <li>Segundo elemento</li>
-                                <li>Terceiro elemento</li>
-                                <li>Quarto elemento</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            + Primeiro elemento<br>
-                            * Segundo elemento<br>
-                            - Terceiro elemento<br>
-                            + Quarto elemento
-                        </td>
-                        <td>
-                            &lt;ul&gt;<br>
-                            &lt;li&gt;Primeiro elemento&lt;/li&gt;<br>
-                            &lt;li&gt;Segundo elemento&lt;/li&gt;<br>
-                            &lt;li&gt;Terceiro elemento&lt;/li&gt;<br>
-                            &lt;li&gt;Quarto elemento&lt;/li&gt;<br>
-                            &lt;/ul&gt;
-                        </td>
-                        <td>
-                            <ul>
-                                <li>Primeiro elemento</li>
-                                <li>Segundo elemento</li>
-                                <li>Terceiro elemento</li>
-                                <li>Quarto elemento</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            - Primeiro elemento<br>
-                            - Segundo elemento<br>
-                            - Terceiro elemento<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;- Elemento recuado<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;- Elemento recuado<br>
-                            - Quarto elemento
-                        </td>
-                        <td>
-                            &lt;ul&gt;<br>
-                            &lt;li&gt;Primeiro elemento&lt;/li&gt;<br>
-                            &lt;li&gt;Segundo elemento&lt;/li&gt;<br>
-                            &lt;li&gt;Terceiro elemento<br>
-                            &lt;ul&gt;<br>
-                            &lt;li&gt;Elemento recuado&lt;/li&gt;<br>
-                            &lt;li&gt;Elemento recuado&lt;/li&gt;<br>
-                            &lt;/ul&gt;<br>
-                            &lt;/li&gt;<br>
-                            &lt;li&gt;Quarto elemento&lt;/li&gt;<br>
-                            &lt;/ul&gt;
-                        </td>
-                        <td>
-                            <ul>
-                                <li>Primeiro elemento</li>
-                                <li>Segundo elemento</li>
-                                <li>
-                                    Terceiro elemento
-                                    <ul>
-                                        <li>Elemento recuado</li>
-                                        <li>Elemento recuado</li>
-                                    </ul>
-                                </li>
-                                <li>Quarto elemento</li>
-                            </ul>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="code-comparison">
+                <p><i class="fab fa-markdown"></i>&nbsp;&nbsp;<b>Markdown</b></p>
+                <div class="code-example">
+	<pre class="lang-markdown"><code>- Primeiro elemento
+- Segundo elemento
+- Terceiro elemento
+- Quarto elemento</code></pre>
+	<a href="/editor/?markdown=%2D%20Primeiro%20elemento%0D%0A%2D%20Segundo%20elemento%0D%0A%2D%20Terceiro%20elemento%0D%0A%2D%20Quarto%20elemento" target="_blank" class="test-code waves-effect waves-light btn orange darken-4 pr-25">
+	    <b><span data-str="true">Tente você mesmo</span></b>&nbsp;<i class="fas fa-external-link-alt outter-icon-code"></i>
+	</a>
+</div>
+                <p><i class="fab fa-html5""></i>&nbsp;&nbsp;<b>HTML</b></p>
+                <pre class="lang-html"><code>&lt;ul&gt;
+    &lt;li&gt;Primeiro elemento&lt;/li&gt;
+    &lt;li&gt;Segundo elemento&lt;/li&gt;
+    &lt;li&gt;Terceiro elemento&lt;/li&gt;
+    &lt;li&gt;Quarto elemento&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                <p><i class="far fa-window-maximize"></i>&nbsp;&nbsp;<b>Resultado</b></p>
+                <div class="code-sample">
+                    <ul class="browser-default">
+                        <li>Primeiro elemento</li>
+                        <li>Segundo elemento</li>
+                        <li>Terceiro elemento</li>
+                        <li>Quarto elemento</li>
+                    </ul>
+                </div>
+            </div>
 
-            <small class="caption">Tabela 1.15 - Exemplos de como criar listas não ordenadas em Markdown.</small>
+            <div class="code-comparison">
+                <p><i class="fab fa-markdown"></i>&nbsp;&nbsp;<b>Markdown</b></p>
+                <div class="code-example">
+	<pre class="lang-markdown"><code>* Primeiro elemento
+* Segundo elemento
+* Terceiro elemento
+* Quarto elemento</code></pre>
+	<a href="/editor/?markdown=%2A%20Primeiro%20elemento%0D%0A%2A%20Segundo%20elemento%0D%0A%2A%20Terceiro%20elemento%0D%0A%2A%20Quarto%20elemento" target="_blank" class="test-code waves-effect waves-light btn orange darken-4 pr-25">
+	    <b><span data-str="true">Tente você mesmo</span></b>&nbsp;<i class="fas fa-external-link-alt outter-icon-code"></i>
+	</a>
+</div>
+                <p><i class="fab fa-html5""></i>&nbsp;&nbsp;<b>HTML</b></p>
+                <pre class="lang-html"><code>&lt;ul&gt;<br>
+    &lt;li&gt;Primeiro elemento&lt;/li&gt;<br>
+    &lt;li&gt;Segundo elemento&lt;/li&gt;<br>
+    &lt;li&gt;Terceiro elemento&lt;/li&gt;<br>
+    &lt;li&gt;Quarto elemento&lt;/li&gt;<br>
+&lt;/ul&gt;</code></pre>
+                <p><i class="far fa-window-maximize"></i>&nbsp;&nbsp;<b>Resultado</b></p>
+                <div class="code-sample">
+                    <ul class="browser-default">
+                        <li>Primeiro elemento</li>
+                        <li>Segundo elemento</li>
+                        <li>Terceiro elemento</li>
+                        <li>Quarto elemento</li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="code-comparison">
+                <p><i class="fab fa-markdown"></i>&nbsp;&nbsp;<b>Markdown</b></p>
+                <div class="code-example">
+	<pre class="lang-markdown"><code>+ Primeiro elemento
+* Segundo elemento
+- Terceiro elemento
++ Quarto elemento</code></pre>
+	<a href="/editor/?markdown=%2B%20Primeiro%20elemento%0D%0A%2A%20Segundo%20elemento%0D%0A%2D%20Terceiro%20elemento%0D%0A%2B%20Quarto%20elemento" target="_blank" class="test-code waves-effect waves-light btn orange darken-4 pr-25">
+	    <b><span data-str="true">Tente você mesmo</span></b>&nbsp;<i class="fas fa-external-link-alt outter-icon-code"></i>
+	</a>
+</div>
+                <p><i class="fab fa-html5""></i>&nbsp;&nbsp;<b>HTML</b></p>
+                <pre class="lang-html"><code>&lt;ul&gt;<br>
+    &lt;li&gt;Primeiro elemento&lt;/li&gt;<br>
+    &lt;li&gt;Segundo elemento&lt;/li&gt;<br>
+    &lt;li&gt;Terceiro elemento&lt;/li&gt;<br>
+    &lt;li&gt;Quarto elemento&lt;/li&gt;<br>
+&lt;/ul&gt;</code></pre>
+                <p><i class="far fa-window-maximize"></i>&nbsp;&nbsp;<b>Resultado</b></p>
+                <div class="code-sample">
+                    <ul class="browser-default">
+                        <li>Primeiro elemento</li>
+                        <li>Segundo elemento</li>
+                        <li>Terceiro elemento</li>
+                        <li>Quarto elemento</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="code-comparison">
+                <p><i class="fab fa-markdown"></i>&nbsp;&nbsp;<b>Markdown</b></p>
+                <div class="code-example">
+	<pre class="lang-markdown"><code>- Primeiro elemento
+- Segundo elemento
+- Terceiro elemento
+    - Elemento recuado
+    - Elemento recuado
+- Quarto elemento</code></pre>
+	<a href="/editor/?markdown=%2D%20Primeiro%20elemento%0D%0A%2D%20Segundo%20elemento%0D%0A%2D%20Terceiro%20elemento%0D%0A%20%20%20%20%2D%20Elemento%20recuado%0D%0A%20%20%20%20%2D%20Elemento%20recuado%0D%0A%2D%20Quarto%20elemento" target="_blank" class="test-code waves-effect waves-light btn orange darken-4 pr-25">
+	    <b><span data-str="true">Tente você mesmo</span></b>&nbsp;<i class="fas fa-external-link-alt outter-icon-code"></i>
+	</a>
+</div>
+                <p><i class="fab fa-html5""></i>&nbsp;&nbsp;<b>HTML</b></p>
+                <pre class="lang-html"><code>&lt;ul&gt;
+    &lt;li&gt;Primeiro elemento&lt;/li&gt;
+    &lt;li&gt;Segundo elemento&lt;/li&gt;
+    &lt;li&gt;Terceiro elemento
+    &lt;ul&gt;
+        &lt;li&gt;Elemento recuado&lt;/li&gt;
+        &lt;li&gt;Elemento recuado&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;Quarto elemento&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                <p><i class="far fa-window-maximize"></i>&nbsp;&nbsp;<b>Resultado</b></p>
+                <div class="code-sample">
+                    <ul class="browser-default">
+                        <li>Primeiro elemento</li>
+                        <li>Segundo elemento</li>
+                        <li>
+                            Terceiro elemento
+                            <ul class="browser-default">
+                                <li>Elemento recuado</li>
+                                <li>Elemento recuado</li>
+                            </ul>
+                        </li>
+                        <li>Quarto elemento</li>
+                    </ul>
+                </div>
+            </div>
+
+
 
 
             <h3 id="lists-adding-elements">Adicionando elementos</h3>
@@ -1739,10 +1826,15 @@
 
             <h3 id="lists-paragraph">Parágrafos</h3>
 
-            <pre class="lang-markdown"><code>* Esse é o primeiro elemento da lista.
+            <div class="code-example">
+	<pre class="lang-markdown"><code>* Esse é o primeiro elemento da lista.
 * Esse é o segundo elemento da lista.
     Um parágrafo adicionado sem quebrar a sequência da lista.
 * E finalmente o terceiro elemento da lista.</code></pre>
+	<a href="/editor/?markdown=%2A%20Esse%20%C3%A9%20o%20primeiro%20elemento%20da%20lista%2E%0D%0A%2A%20Esse%20%C3%A9%20o%20segundo%20elemento%20da%20lista%2E%0D%0A%20%20%20%20Um%20par%C3%A1grafo%20adicionado%20sem%20quebrar%20a%20sequ%C3%AAncia%20da%20lista%2E%0D%0A%2A%20E%20finalmente%20o%20terceiro%20elemento%20da%20lista%2E" target="_blank" class="test-code waves-effect waves-light btn orange darken-4 pr-25">
+	    <b><span data-str="true">Tente você mesmo</span></b>&nbsp;<i class="fas fa-external-link-alt outter-icon-code"></i>
+	</a>
+</div>
 
             <p>O resultado seria esse:</p>
             <ul>
@@ -1756,12 +1848,17 @@
 
             <h3 id="lists-blockquote">Blockquote dentro da lista</h3>
 
-            <pre class="lang-markdown"><code>* Esse é o primeiro elemento da lista.
+            <div class="code-example">
+	<pre class="lang-markdown"><code>* Esse é o primeiro elemento da lista.
 * Esse é o segundo elemento da lista.
 
     &gt; Blockquote no meio da lista.
 
 * E finalmente o terceiro elemento da lista.</code></pre>
+	<a href="/editor/?markdown=%2A%20Esse%20%C3%A9%20o%20primeiro%20elemento%20da%20lista%2E%0D%0A%2A%20Esse%20%C3%A9%20o%20segundo%20elemento%20da%20lista%2E%0D%0A%0D%0A%20%20%20%20>%20Blockquote%20no%20meio%20da%20lista%2E%0D%0A%0D%0A%2A%20E%20finalmente%20o%20terceiro%20elemento%20da%20lista%2E" target="_blank" class="test-code waves-effect waves-light btn orange darken-4 pr-25">
+	    <b><span data-str="true">Tente você mesmo</span></b>&nbsp;<i class="fas fa-external-link-alt outter-icon-code"></i>
+	</a>
+</div>
 
             <p>O resultado ficaria assim:</p>
 
@@ -1785,7 +1882,8 @@
 
             <div class="language-text highlighter-rouge">
                 <div class="highlight">
-                    <pre class="lang-markdown"><code>1. Vamos primeiro abrir nosso arquivo index.html.
+                    <div class="code-example">
+	<pre class="lang-markdown"><code>1. Vamos primeiro abrir nosso arquivo index.html.
 2. Localize o bloco de código mostrado abaixo:
 
         &lt;html&gt;
@@ -1794,6 +1892,10 @@
         &lt;/head&gt;
 
 3. Altere o título da página.</code></pre>
+	<a href="/editor/?markdown=1%2E%20Vamos%20primeiro%20abrir%20nosso%20arquivo%20index%2Ehtml%2E%0D%0A2%2E%20Localize%20o%20bloco%20de%20c%C3%B3digo%20mostrado%20abaixo:%0D%0A%0D%0A%20%20%20%20%20%20%20%20<html>%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20<head>%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20<title>T%C3%ADtulo%20do%20meu%20site<%2Ftitle>%0D%0A%20%20%20%20%20%20%20%20<%2Fhead>%0D%0A%0D%0A3%2E%20Altere%20o%20t%C3%ADtulo%20da%20p%C3%A1gina%2E" target="_blank" class="test-code waves-effect waves-light btn orange darken-4 pr-25">
+	    <b><span data-str="true">Tente você mesmo</span></b>&nbsp;<i class="fas fa-external-link-alt outter-icon-code"></i>
+	</a>
+</div>
                 </div>
             </div>
 
@@ -1815,12 +1917,17 @@
 
             <h3 id="lists-images">Imagens</h3>
 
-            <pre class="lang-markdown"><code>1. Primeiro abra o arquivo do logo do Markdown.
+            <div class="code-example">
+	<pre class="lang-markdown"><code>1. Primeiro abra o arquivo do logo do Markdown.
 2. Veja o logo do Markdown na tela.
 
     ![Logo do Markdown](https://markdown.net.br/assets/img/basic-syntax/markdown-logo-small.png)
 
 3. Já pode fechar o arquivo.</code></pre>
+	<a href="/editor/?markdown=1%2E%20Primeiro%20abra%20o%20arquivo%20do%20logo%20do%20Markdown%2E%0D%0A2%2E%20Veja%20o%20logo%20do%20Markdown%20na%20tela%2E%0D%0A%0D%0A%20%20%20%20%21[Logo%20do%20Markdown]%28https:%2F%2Fmarkdown%2Enet%2Ebr%2Fassets%2Fimg%2Fbasic%2Dsyntax%2Fmarkdown%2Dlogo%2Dsmall%2Epng%29%0D%0A%0D%0A3%2E%20J%C3%A1%20pode%20fechar%20o%20arquivo%2E" target="_blank" class="test-code waves-effect waves-light btn orange darken-4 pr-25">
+	    <b><span data-str="true">Tente você mesmo</span></b>&nbsp;<i class="fas fa-external-link-alt outter-icon-code"></i>
+	</a>
+</div>
 
             <p>A renderização em HTML ficaria assim:</p>
 
@@ -1899,10 +2006,15 @@
 
             <p>Veja o exemplo a seguir:</p>
 
-            <pre class="lang-markdown"><code>   &lt;html&gt;
+            <div class="code-example">
+	<pre class="lang-markdown"><code>    &lt;html&gt;
         &lt;head&gt;
         &lt;/head&gt;
     &lt;/html&gt;</code></pre>
+	<a href="/editor/?markdown=%20%20%20%20<html>%0D%0A%20%20%20%20%20%20%20%20<head>%0D%0A%20%20%20%20%20%20%20%20<%2Fhead>%0D%0A%20%20%20%20<%2Fhtml>" target="_blank" class="test-code waves-effect waves-light btn orange darken-4 pr-25">
+	    <b><span data-str="true">Tente você mesmo</span></b>&nbsp;<i class="fas fa-external-link-alt outter-icon-code"></i>
+	</a>
+</div>
 
             <p>O resultado:</p>
 
@@ -1919,11 +2031,16 @@
 
             <p>Uma linha deve conter apenas esses caracteres para que o processador Markdown interprete a linha horizontal da maneira correta.</p>
 
-            <pre class="lang-markdown"><code>***
+            <div class="code-example">
+	<pre class="lang-markdown"><code>***
 
 ---
 
 _________________</code></pre>
+	<a href="/editor/?markdown=%2A%2A%2A%0D%0A%0D%0A%2D%2D%2D%0D%0A%0D%0A_________________" target="_blank" class="test-code waves-effect waves-light btn orange darken-4 pr-25">
+	    <b><span data-str="true">Tente você mesmo</span></b>&nbsp;<i class="fas fa-external-link-alt outter-icon-code"></i>
+	</a>
+</div>
 
             <p>Usando qualquer um dos caracteres o resultado será o mesmo, veja abaixo.</p>
 
@@ -1942,12 +2059,12 @@ _________________</code></pre>
                 <thead>
                     <tr>
                         <th class="green-text">
-                        	<span class="hide-on-small-only"><i class="fas fa-thumbs-up"></i>&nbsp;&nbsp;Correto</span>
-                        	<span class="hide-on-med-and-up"><i class="fas fa-thumbs-up"></i></span>
+                            <span class="hide-on-small-only"><i class="fas fa-thumbs-up"></i>&nbsp;&nbsp;Correto</span>
+                            <span class="hide-on-med-and-up"><i class="fas fa-thumbs-up"></i></span>
                         </th>
                         <th class="red-text">
-                        	<span class="hide-on-small-only"><i class="fas fa-thumbs-down"></i>&nbsp;&nbsp;Não recomendado</span>
-                        	<span class="hide-on-med-and-up"><i class="fas fa-thumbs-down"></i></span>
+                            <span class="hide-on-small-only"><i class="fas fa-thumbs-down"></i>&nbsp;&nbsp;Não recomendado</span>
+                            <span class="hide-on-med-and-up"><i class="fas fa-thumbs-down"></i></span>
                         </th>
                     </tr>
                 </thead>
@@ -1984,7 +2101,12 @@ _________________</code></pre>
 
             <p>Juntando tudo.</p>
 
-            <pre class="lang-markdown"><code>Visite [O Melhor Site de Markdown do mundo](https://markdown.net.br).</code></pre>
+            <div class="code-example">
+	<pre class="lang-markdown"><code>Visite [O Melhor Site de Markdown do mundo](https://markdown.net.br).</code></pre>
+	<a href="/editor/?markdown=Visite%20[O%20Melhor%20Site%20de%20Markdown%20do%20mundo]%28https:%2F%2Fmarkdown%2Enet%2Ebr%29%2E" target="_blank" class="test-code waves-effect waves-light btn orange darken-4 pr-25">
+	    <b><span data-str="true">Tente você mesmo</span></b>&nbsp;<i class="fas fa-external-link-alt outter-icon-code"></i>
+	</a>
+</div>
 
             <p>E a saída em HTML.</p>
 
@@ -1998,7 +2120,12 @@ _________________</code></pre>
 
             <p>Exemplo:</p>
 
-            <pre class="lang-markdown"><code>Visite [O Melhor Site de Markdown do Mundo](https://markdown.net.br "A referência definitiva do Markdown.").</code></pre>
+            <div class="code-example">
+	<pre class="lang-markdown"><code>Visite [O Melhor Site de Markdown do Mundo](https://markdown.net.br "A referência definitiva do Markdown.").</code></pre>
+	<a href="/editor/?markdown=Visite%20[O%20Melhor%20Site%20de%20Markdown%20do%20Mundo]%28https:%2F%2Fmarkdown%2Enet%2Ebr%20%22A%20refer%C3%AAncia%20definitiva%20do%20Markdown%2E%22%29%2E" target="_blank" class="test-code waves-effect waves-light btn orange darken-4 pr-25">
+	    <b><span data-str="true">Tente você mesmo</span></b>&nbsp;<i class="fas fa-external-link-alt outter-icon-code"></i>
+	</a>
+</div>
 
             <p>Saída em HTML, coloque o mouse sobre o link e veja o título aparecer.</p>
 
@@ -2009,8 +2136,13 @@ _________________</code></pre>
 
             <p>Você também pode transformar uma URL em link automaticamente colocando-a entre os sinais de menor que <code class="lang-text">&lt;</code> e maior que <code class="lang-text">&gt;</code>.</p>
 
-            <pre class="lang-markdown"><code>&lt;https://markdown.net.br&gt;
+            <div class="code-example">
+	<pre class="lang-markdown"><code>&lt;https://markdown.net.br&gt;
 &lt;email@host.com&gt;</code></pre>
+	<a href="/editor/?markdown=<https:%2F%2Fmarkdown%2Enet%2Ebr>%0D%0A<email@host%2Ecom>" target="_blank" class="test-code waves-effect waves-light btn orange darken-4 pr-25">
+	    <b><span data-str="true">Tente você mesmo</span></b>&nbsp;<i class="fas fa-external-link-alt outter-icon-code"></i>
+	</a>
+</div>
 
             <p>O Resultado fica assim:</p>
 
@@ -2024,8 +2156,13 @@ _________________</code></pre>
 
             <p>Por exemplo:</p>
 
-            <pre class="lang-markdown"><code>Visite o site: *[Referência do Markdown](https://markdown.net.br)*.
-            Eu recomendo o mecanismo de pesquisa: **[Duck Duck GO](https://duckduckgo.com/)**.</code></pre>
+            <div class="code-example">
+	<pre class="lang-markdown"><code>Visite o site: *[Referência do Markdown](https://markdown.net.br)*.
+Eu recomendo o mecanismo de pesquisa: **[Duck Duck GO](https://duckduckgo.com/)**.</code></pre>
+	<a href="/editor/?markdown=Visite%20o%20site:%20%2A[Refer%C3%AAncia%20do%20Markdown]%28https:%2F%2Fmarkdown%2Enet%2Ebr%29%2A%2E%0D%0AEu%20recomendo%20o%20mecanismo%20de%20pesquisa:%20%2A%2A[Duck%20Duck%20GO]%28https:%2F%2Fduckduckgo%2Ecom%2F%29%2A%2A%2E" target="_blank" class="test-code waves-effect waves-light btn orange darken-4 pr-25">
+	    <b><span data-str="true">Tente você mesmo</span></b>&nbsp;<i class="fas fa-external-link-alt outter-icon-code"></i>
+	</a>
+</div>
 
             <p>A saída em HTML ficaria assim:</p>
 
@@ -2038,7 +2175,12 @@ _________________</code></pre>
 
             <p>Exemplo:</p>
 
-            <pre class="lang-markdown"><code>Reveja a seção: [`código`](#code).</code></pre>
+            <div class="code-example">
+	<pre class="lang-markdown"><code>Reveja a seção: [`código`](#code).</code></pre>
+	<a href="/editor/?markdown=Reveja%20a%20se%C3%A7%C3%A3o:%20[`c%C3%B3digo`]%28%23code%29%2E" target="_blank" class="test-code waves-effect waves-light btn orange darken-4 pr-25">
+	    <b><span data-str="true">Tente você mesmo</span></b>&nbsp;<i class="fas fa-external-link-alt outter-icon-code"></i>
+	</a>
+</div>
 
             <p>Resultado:</p>
 
@@ -2104,16 +2246,26 @@ _________________</code></pre>
 
             <p>Em Markdown ficaria assim:</p>
 
-            <pre class="lang-markdown"><code>Para saber mais você pode consultar esse artigo do Markdown: [Wikipedia](https://en.wikipedia.org/wiki/Markdown "Markdown - Wikipedia"). Ou a documentação da linguagem: [John Gruber](https://daringfireball.net/projects/markdown/ "Documentação Original do Markdown.").</code></pre>
+            <div class="code-example">
+	<pre class="lang-markdown"><code>Para saber mais você pode consultar esse artigo do Markdown: [Wikipedia](https://en.wikipedia.org/wiki/Markdown "Markdown - Wikipedia"). Ou a documentação da linguagem: [John Gruber](https://daringfireball.net/projects/markdown/ "Documentação Original do Markdown.").</code></pre>
+	<a href="/editor/?markdown=Para%20saber%20mais%20voc%C3%AA%20pode%20consultar%20esse%20artigo%20do%20Markdown:%20[Wikipedia]%28https:%2F%2Fen%2Ewikipedia%2Eorg%2Fwiki%2FMarkdown%20%22Markdown%20%2D%20Wikipedia%22%29%2E%20Ou%20a%20documenta%C3%A7%C3%A3o%20da%20linguagem:%20[John%20Gruber]%28https:%2F%2Fdaringfireball%2Enet%2Fprojects%2Fmarkdown%2F%20%22Documenta%C3%A7%C3%A3o%20Original%20do%20Markdown%2E%22%29%2E" target="_blank" class="test-code waves-effect waves-light btn orange darken-4 pr-25">
+	    <b><span data-str="true">Tente você mesmo</span></b>&nbsp;<i class="fas fa-external-link-alt outter-icon-code"></i>
+	</a>
+</div>
 
             <p>Veja que, a adição dos links dentro do próprio parágrafo pode gerar um texto mais difícil de ser lido, especialmente se a pessoa que estiver lendo não conhecer o Markdown.</p>
 
             <p>Como os links são importantes para o contexto do parágrafo, nós não podemos removê-los, porém há uma forma mais eficaz de limpar esse parágrafo, usando links de referência.</p>
 
-            <pre class="lang-markdown"><code>Para saber mais você pode consultar esse artigo do Markdown: [Wikipedia][1]. Ou a documentação da linguagem: [John Gruber][2].
+            <div class="code-example">
+	<pre class="lang-markdown"><code>Para saber mais você pode consultar esse artigo do Markdown: [Wikipedia][1]. Ou a documentação da linguagem: [John Gruber][2].
 
 [1]: &lt;https://en.wikipedia.org/wiki/Markdown&gt; "Markdown - Wikipedia"
 [2]: https://daringfireball.net/projects/markdown/ "Documentação Original do Markdown."</code></pre>
+	<a href="/editor/?markdown=Para%20saber%20mais%20voc%C3%AA%20pode%20consultar%20esse%20artigo%20do%20Markdown:%20[Wikipedia][1]%2E%20Ou%20a%20documenta%C3%A7%C3%A3o%20da%20linguagem:%20[John%20Gruber][2]%2E%0D%0A%0D%0A[1]:%20<https:%2F%2Fen%2Ewikipedia%2Eorg%2Fwiki%2FMarkdown>%20%22Markdown%20%2D%20Wikipedia%22%0D%0A[2]:%20https:%2F%2Fdaringfireball%2Enet%2Fprojects%2Fmarkdown%2F%20%22Documenta%C3%A7%C3%A3o%20Original%20do%20Markdown%2E%22" target="_blank" class="test-code waves-effect waves-light btn orange darken-4 pr-25">
+	    <b><span data-str="true">Tente você mesmo</span></b>&nbsp;<i class="fas fa-external-link-alt outter-icon-code"></i>
+	</a>
+</div>
 
             <blockquote><b>NOTA</b>: A colocação do sinal de menor que <code class="lang-text">&lt;</code> e de maior que <code class="lang-text">&gt;</code> ao redor do link é opcional.</blockquote>
 
@@ -2133,12 +2285,12 @@ _________________</code></pre>
                 <thead>
                     <tr>
                         <th class="green-text">
-                        	<span class="hide-on-small-only"><i class="fas fa-thumbs-up"></i>&nbsp;&nbsp;Correto</span>
-                        	<span class="hide-on-med-and-up"><i class="fas fa-thumbs-up"></i></span>
+                            <span class="hide-on-small-only"><i class="fas fa-thumbs-up"></i>&nbsp;&nbsp;Correto</span>
+                            <span class="hide-on-med-and-up"><i class="fas fa-thumbs-up"></i></span>
                         </th>
                         <th class="red-text">
-                        	<span class="hide-on-small-only"><i class="fas fa-thumbs-down"></i>&nbsp;&nbsp;Não recomendado</span>
-                        	<span class="hide-on-med-and-up"><i class="fas fa-thumbs-down"></i></span>
+                            <span class="hide-on-small-only"><i class="fas fa-thumbs-down"></i>&nbsp;&nbsp;Não recomendado</span>
+                            <span class="hide-on-med-and-up"><i class="fas fa-thumbs-down"></i></span>
                         </th>
                     </tr>
                 </thead>
@@ -2170,7 +2322,12 @@ _________________</code></pre>
 
             <p>Exemplo:</p>
 
-            <pre class="lang-markdown"><code>![Markdown é a linguagem de marcação mais simples do mundo!](/assets/img/markdown.jpg "Logo do Markdown")</code></pre>
+            <div class="code-example">
+	<pre class="lang-markdown"><code>![Markdown é a linguagem de marcação mais simples do mundo!](https://markdown.net.br/assets/img/markdown.jpg "Logo do Markdown")</code></pre>
+	<a href="/editor/?markdown=%21[Markdown%20%C3%A9%20a%20linguagem%20de%20marca%C3%A7%C3%A3o%20mais%20simples%20do%20mundo%21]%28https:%2F%2Fmarkdown%2Enet%2Ebr%2Fassets%2Fimg%2Fmarkdown%2Ejpg%20%22Logo%20do%20Markdown%22%29" target="_blank" class="test-code waves-effect waves-light btn orange darken-4 pr-25">
+	    <b><span data-str="true">Tente você mesmo</span></b>&nbsp;<i class="fas fa-external-link-alt outter-icon-code"></i>
+	</a>
+</div>
 
             <p>A conversão em HTML fica assim:</p>
 
@@ -2190,7 +2347,12 @@ _________________</code></pre>
 
             <p>Exemplo:</p>
 
-            <pre class="language-markdown"><code>[![Uma pedra antiga no deserto](/assets/img/shiprock.jpg "Shiprock, New Mexico By Beau Rogers")](https://www.flickr.com/photos/beaurogers/31833779864/in/photolist-Qv3rFw-34mt9F-a9Cmfy-5Ha3Zi-9msKdv-o3hgjr-hWpUte-4WMsJ1-KUQ8N-deshUb-vssBD-6CQci6-8AFCiD-zsJWT-nNfsgB-dPDwZJ-bn9JGn-5HtSXY-6CUhAL-a4UTXB-ugPum-KUPSo-fBLNm-6CUmpy-4WMsc9-8a7D3T-83KJev-6CQ2bK-nNusHJ-a78rQH-nw3NvT-7aq2qf-8wwBso-3nNceh-ugSKP-4mh4kh-bbeeqH-a7biME-q3PtTf-brFpgb-cg38zw-bXMZc-nJPELD-f58Lmo-bXMYG-bz8AAi-bxNtNT-bXMYi-bXMY6-bXMYv)</code></pre>
+            <div class="code-example">
+	<pre class="lang-markdown"><code>[![Uma pedra antiga no deserto](/assets/img/shiprock.jpg "Shiprock, New Mexico By Beau Rogers")](https://www.flickr.com/photos/beaurogers/31833779864/in/photolist-Qv3rFw-34mt9F-a9Cmfy-5Ha3Zi-9msKdv-o3hgjr-hWpUte-4WMsJ1-KUQ8N-deshUb-vssBD-6CQci6-8AFCiD-zsJWT-nNfsgB-dPDwZJ-bn9JGn-5HtSXY-6CUhAL-a4UTXB-ugPum-KUPSo-fBLNm-6CUmpy-4WMsc9-8a7D3T-83KJev-6CQ2bK-nNusHJ-a78rQH-nw3NvT-7aq2qf-8wwBso-3nNceh-ugSKP-4mh4kh-bbeeqH-a7biME-q3PtTf-brFpgb-cg38zw-bXMZc-nJPELD-f58Lmo-bXMYG-bz8AAi-bxNtNT-bXMYi-bXMY6-bXMYv)</code></pre>
+	<a href="/editor/?markdown=[%21[Uma%20pedra%20antiga%20no%20deserto]%28%2Fassets%2Fimg%2Fshiprock%2Ejpg%20%22Shiprock%2C%20New%20Mexico%20By%20Beau%20Rogers%22%29]%28https:%2F%2Fwww%2Eflickr%2Ecom%2Fphotos%2Fbeaurogers%2F31833779864%2Fin%2Fphotolist%2DQv3rFw%2D34mt9F%2Da9Cmfy%2D5Ha3Zi%2D9msKdv%2Do3hgjr%2DhWpUte%2D4WMsJ1%2DKUQ8N%2DdeshUb%2DvssBD%2D6CQci6%2D8AFCiD%2DzsJWT%2DnNfsgB%2DdPDwZJ%2Dbn9JGn%2D5HtSXY%2D6CUhAL%2Da4UTXB%2DugPum%2DKUPSo%2DfBLNm%2D6CUmpy%2D4WMsc9%2D8a7D3T%2D83KJev%2D6CQ2bK%2DnNusHJ%2Da78rQH%2Dnw3NvT%2D7aq2qf%2D8wwBso%2D3nNceh%2DugSKP%2D4mh4kh%2DbbeeqH%2Da7biME%2Dq3PtTf%2DbrFpgb%2Dcg38zw%2DbXMZc%2DnJPELD%2Df58Lmo%2DbXMYG%2Dbz8AAi%2DbxNtNT%2DbXMYi%2DbXMY6%2DbXMYv%29" target="_blank" class="test-code waves-effect waves-light btn orange darken-4 pr-25">
+	    <b><span data-str="true">Tente você mesmo</span></b>&nbsp;<i class="fas fa-external-link-alt outter-icon-code"></i>
+	</a>
+</div>
 
             <p>O resultado:</p>
 
@@ -2201,11 +2363,16 @@ _________________</code></pre>
 
             <h2 id="escaping-characteres">Escapando caracteres</h2>
 
-            <code class="lang-plaintext">Para escapar um caractere no Markdown, ou seja, representá-lo de forma literal no documento, insira uma barra invertida antes dele.</code>
+            <p>Para escapar um caractere no Markdown, ou seja, representá-lo de forma literal no documento, insira uma barra invertida antes dele.</p>
 
             <p>Exemplo:</p>
 
-            <pre class="lang-markdown"><code>\* A barra invertida antes do asterisco faz com que o processador Markdown interprete essa linha como um parágrafo e não um elemento de uma lista.</code></pre>
+            <div class="code-example">
+	<pre class="lang-markdown"><code>\* A barra invertida antes do asterisco faz com que o processador Markdown interprete essa linha como um parágrafo e não um elemento de uma lista.</code></pre>
+	<a href="/editor/?markdown=\%2A%20A%20barra%20invertida%20antes%20do%20asterisco%20faz%20com%20que%20o%20processador%20Markdown%20interprete%20essa%20linha%20como%20um%20par%C3%A1grafo%20e%20n%C3%A3o%20um%20elemento%20de%20uma%20lista%2E" target="_blank" class="test-code waves-effect waves-light btn orange darken-4 pr-25">
+	    <b><span data-str="true">Tente você mesmo</span></b>&nbsp;<i class="fas fa-external-link-alt outter-icon-code"></i>
+	</a>
+</div>
 
             <p>O Resultado fica assim:</p>
 
@@ -2215,7 +2382,7 @@ _________________</code></pre>
 
             <p>A <a href="#table-1-20">Tabela 1.20</a> mostra quais são o caracteres que você pode escapar no Markdown usando a barra invertida: <code class="lang-text">\</code>.</p>
 
-            <table class="responsive-table" id="table-1-20">
+            <table class="striped responsive-table" id="table-1-20">
                 <thead>
                     <tr>
                         <th>Caractere</th>
@@ -2288,7 +2455,12 @@ _________________</code></pre>
 
             <p>Coloque as tags HTML diretamente no seu documento.</p>
 
-            <pre class="lang-markdown"><code>**negrito** &lt;em&gt;itálico&lt;/em&gt;</code></pre>
+            <div class="code-example">
+	<pre class="lang-markdown"><code>**negrito** &lt;em&gt;itálico&lt;/em&gt;</code></pre>
+	<a href="/editor/?markdown=%2A%2Anegrito%2A%2A%20<em>it%C3%A1lico<%2Fem>" target="_blank" class="test-code waves-effect waves-light btn orange darken-4 pr-25">
+	    <b><span data-str="true">Tente você mesmo</span></b>&nbsp;<i class="fas fa-external-link-alt outter-icon-code"></i>
+	</a>
+</div>
 
             <p>O Resultado fica assim:</p>
 
@@ -2304,11 +2476,16 @@ _________________</code></pre>
 
             <p>Insira uma linha em branco antes e depois de elementos de bloco, exemplo: <code class="lang-html">&lt;div&gt;</code>, <code class="lang-html">&lt;table&gt;</code>, <code class="lang-html">&lt;pre&gt;</code>, <code class="lang-html">&lt;p&gt;</code>.</p>
 
-            <p>Dentro do conteúdo das tags HTML você não pode colocar marcação Markdown.</p>
+            <p>Evite colocar elementos Markdown dentro do conteúdo das tags HTML.</p>
 
-            <p>O código abaixo não vai funcionar, pois o Markdown está dentro do bloco HTML.</p>
+            <p>O código abaixo, apesar de funcionar em alguns editores, tem um mistura de sintaxe que pode gerar problemas de formatação.</p>
 
-            <pre class="lang-markdown"><code>&lt;p&gt;itálico **negrito**&lt;/p&gt;</code></code></pre>
+            <div class="code-example">
+	<pre class="lang-markdown"><code>&lt;p&gt;itálico **negrito**&lt;/p&gt;</code></pre>
+	<a href="/editor/?markdown=<p>it%C3%A1lico%20%2A%2Anegrito%2A%2A<%2Fp>" target="_blank" class="test-code waves-effect waves-light btn orange darken-4 pr-25">
+	    <b><span data-str="true">Tente você mesmo</span></b>&nbsp;<i class="fas fa-external-link-alt outter-icon-code"></i>
+	</a>
+</div>
         </div>
     </div>
             <div class="col-12">

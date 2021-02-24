@@ -38,18 +38,10 @@
     </head>
     <body>
     	<!-- //////////////////////////////////////////////////////////////////////////////////////////////// -->
-    	<div id="page-fixed-bottom-ad" class="pg-ad" style="position: fixed;bottom: 0px;left: 50%;right: 0px;text-align: center;margin: 0px 0px 0px -362px;z-index: 9999999;transition: bottom 0.75s ease 0s;background-color: rgb(255, 255, 255);width: 728px;height: 90px;border: 1px solid rgba(0, 0, 0, 0.8);" data-google-query-id="CJH-uLW4jO0CFZcyuQYduCsEwQ">
-    		<ins class="adsbygoogle"
-    		     style="display:block"
-    		     data-ad-client="ca-pub-3427355473051563"
-    		     data-ad-slot="4586829342"
-    		     data-ad-format="auto"
-    		     data-full-width-responsive="true"></ins>
-    		<script>
-    		     (adsbygoogle = window.adsbygoogle || []).push({});
-    		</script>
+    	<!-- <div id="page-fixed-bottom-ad" class="pg-ad" style="position: fixed;bottom: 0px;left: 50%;right: 0px;text-align: center;margin: 0px 0px 0px -362px;z-index: 9999999;transition: bottom 0.75s ease 0s;background-color: rgb(255, 255, 255);width: 728px;height: 90px;border: 1px solid rgba(0, 0, 0, 0.8);" data-google-query-id="CJH-uLW4jO0CFZcyuQYduCsEwQ">
+
     		<a id="close-fixed-ad" style="background-color: rgba(0, 0, 0, 0.6); color: rgb(255, 255, 255); display: block; width: 20px; text-align: center; font-size: 14px; line-height: 20px; border-radius: 50% 50% 0px 0px; font-family: sans-serif; position: absolute; top: -20px; right: 0px; cursor: pointer;">x</a>
-    	</div>
+    	</div> -->
     	<!-- //////////////////////////////////////////////////////////////////////////////////////////////// -->
         <div id="layout">
             <!-- <header>
@@ -80,8 +72,23 @@ cond(no)->op
             </div>
         </div>
 
+        <div class="bottom" style="height: 100px!important;max-height:100px;padding: 5px 0" align="center">
+            <div>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;min-width:300px;max-width:970px;width:100%;height:90px"
+                     data-ad-client="ca-pub-3427355473051563"
+                     data-ad-slot="4586829342"
+                     data-ad-format="horizontal"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        </div>
+
         <script src="/assets/js/vendor/jquery-3.2.1.min.js"></script>
-        <script src="/assets/js/editor.js"></script>
+        <script src="/assets/js/editor/editor.js"></script>
+        <script src="/assets/js/editor/langs/pt_br.js"></script>
         <script type="text/javascript">
         	$('#close-fixed-ad').click(function() {
         		$('#page-fixed-bottom-ad').fadeOut('slow');
@@ -94,107 +101,221 @@ cond(no)->op
             $(function() {
                 var testEditor = editormd("test-editormd", {
 					width: "100%",
+					placeholder: "Digite o código Markdown aqui!",
 					autoheight: true,
 					markdown: markdownStr,
-					lang : {
-					            name : "en",
-					            description : "Open source online Markdown editor.",
-					            tocTitle    : "Table of Contents",
-					            toolbar : {
-					                undo             : "Undo(Ctrl+Z)",
-					                redo             : "Redo(Ctrl+Y)",
-					                bold             : "Bold",
-					                del              : "Strikethrough",
-					                italic           : "Italic",
-					                quote            : "Block quote",
-					                ucwords          : "Words first letter convert to uppercase",
-					                uppercase        : "Selection text convert to uppercase",
-					                lowercase        : "Selection text convert to lowercase",
-					                h1               : "Heading 1",
-					                h2               : "Heading 2",
-					                h3               : "Heading 3",
-					                h4               : "Heading 4",
-					                h5               : "Heading 5",
-					                h6               : "Heading 6",
-					                "list-ul"        : "Unordered list",
-					                "list-ol"        : "Ordered list",
-					                hr               : "Horizontal rule",
-					                link             : "Link",
-					                "reference-link" : "Reference link",
-					                image            : "Image",
-					                code             : "Code inline",
-					                "preformatted-text" : "Preformatted text / Code block (Tab indent)",
-					                "code-block"     : "Code block (Multi-languages)",
-					                table            : "Tables",
-					                datetime         : "Datetime",
-					                emoji            : "Emoji",
-					                "html-entities"  : "HTML Entities",
-					                pagebreak        : "Page break",
-					                watch            : "Unwatch",
-					                unwatch          : "Watch",
-					                preview          : "HTML Preview (Press Shift + ESC exit)",
-					                fullscreen       : "Fullscreen (Press ESC exit)",
-					                clear            : "Clear",
-					                search           : "Search",
-					                help             : "Help",
-					                info             : "About "
-					            },
-					            buttons : {
-					                enter  : "Enter",
-					                cancel : "Cancel",
-					                close  : "Close"
-					            },
-					            dialog : {
-					                link : {
-					                    title    : "Link",
-					                    url      : "Address",
-					                    urlTitle : "Title",
-					                    urlEmpty : "Error: Please fill in the link address."
-					                },
-					                referenceLink : {
-					                    title    : "Reference link",
-					                    name     : "Name",
-					                    url      : "Address",
-					                    urlId    : "ID",
-					                    urlTitle : "Title",
-					                    nameEmpty: "Error: Reference name can't be empty.",
-					                    idEmpty  : "Error: Please fill in reference link id.",
-					                    urlEmpty : "Error: Please fill in reference link url address."
-					                },
-					                image : {
-					                    title    : "Image",
-					                    url      : "Address",
-					                    link     : "Link",
-					                    alt      : "Title",
-					                    uploadButton     : "Upload",
-					                    imageURLEmpty    : "Error: picture url address can't be empty.",
-					                    uploadFileEmpty  : "Error: upload pictures cannot be empty!",
-					                    formatNotAllowed : "Error: only allows to upload pictures file, upload allowed image file format:"
-					                },
-					                preformattedText : {
-					                    title             : "Preformatted text / Codes",
-					                    emptyAlert        : "Error: Please fill in the Preformatted text or content of the codes.",
-					                    placeholder       : "coding now...."
-					                },
-					                codeBlock : {
-					                    title             : "Code block",
-					                    selectLabel       : "Languages: ",
-					                    selectDefaultText : "select a code language...",
-					                    otherLanguage     : "Other languages",
-					                    unselectedLanguageAlert : "Error: Please select the code language.",
-					                    codeEmptyAlert    : "Error: Please fill in the code content.",
-					                    placeholder       : "coding now...."
-					                },
-					                htmlEntities : {
-					                    title : "HTML Entities"
-					                },
-					                help : {
-					                    title : "Help"
-					                }
-					            }
-					        },
-					path : '/assets/js/lib/',
-					flowChart : true
+					codeFold : true,
+					path : '/assets/js/editor/lib/',
+					pluginPath: "/assets/js/editor/plugins/",
+					flowChart : true,
+					searchReplace : true,
+					htmlDecode : "style,script,iframe|on*",
+					emoji : true,
+					taskList : true,
+					tocm : true,
+					tex : true,
+					flowChart : true,
+					sequenceDiagram : true,
+					fontSize: "18px",
+					// lang : {
+			  //           name : "pt_br",
+			  //           description : "Editor Markdown online.",
+			  //           tocTitle    : "Índice",
+			  //           toolbar : {
+			  //               undo             : "Desfazer(Ctrl+Z)",
+			  //               redo             : "Refazer(Ctrl+Y)",
+			  //               bold             : "Negrito",
+			  //               del              : "Tachado",
+			  //               italic           : "Itálico",
+			  //               quote            : "Blockquote",
+			  //               ucwords          : "Primeira letra das palavras convertida em maiúscula",
+			  //               uppercase        : "Texto de seleção convertido em maiúsculas",
+			  //               lowercase        : "Texto de seleção convertido em minúsculas",
+			  //               h1               : "Título 1",
+			  //               h2               : "Título 2",
+			  //               h3               : "Título 3",
+			  //               h4               : "Título 4",
+			  //               h5               : "Título 5",
+			  //               h6               : "Título 6",
+			  //               "list-ul"        : "Lista não ordenada",
+			  //               "list-ol"        : "Lista ordenada",
+			  //               hr               : "Linha horizontal",
+			  //               link             : "Link",
+			  //               "reference-link" : "Link de referência",
+			  //               image            : "Imagem",
+			  //               code             : "Código embutido",
+			  //               "preformatted-text" : "Texto pré-formatado / Bloco de código (Recuo de tabulação)",
+			  //               "code-block"     : "Bloco de código (Multi-línguas)",
+			  //               table            : "Tabelas",
+			  //               datetime         : "Data hora",
+			  //               emoji            : "Emoji",
+			  //               "html-entities"  : "Entidades HTML",
+			  //               pagebreak        : "Quebra de página",
+			  //               watch            : "Desabilitar renderização",
+			  //               unwatch          : "Visualizar renderização",
+			  //               preview          : "Visualizar HTML (Pressione Shift + ESC para sair)",
+			  //               fullscreen       : "Tela cheia (Pressione ESC para sair)",
+			  //               clear            : "Limpar",
+			  //               search           : "Procurar",
+			  //               help             : "Ajuda",
+			  //               info             : "Sobre "
+			  //           },
+			  //           buttons : {
+			  //               enter  : "Ok",
+			  //               cancel : "Cancelar",
+			  //               close  : "Fechar"
+			  //           },
+			  //           dialog : {
+			  //               link : {
+			  //                   title    : "Link",
+			  //                   url      : "Endereço",
+			  //                   urlTitle : "Título",
+			  //                   urlEmpty : "Erro: Por favor, preencha o endereço do link."
+			  //               },
+			  //               referenceLink : {
+			  //                   title    : "Link de referência",
+			  //                   name     : "Nome",
+			  //                   url      : "Endereço",
+			  //                   urlId    : "ID",
+			  //                   urlTitle : "Título",
+			  //                   nameEmpty: "Erro: o nome de referência não pode estar vazio.",
+			  //                   idEmpty  : "Erro: preencha o ID do link de referência.",
+			  //                   urlEmpty : "Erro: Por favor, preencha o endereço de url do link de referência."
+			  //               },
+			  //               image : {
+			  //                   title    : "Imagem",
+			  //                   url      : "Endereço",
+			  //                   link     : "Link",
+			  //                   alt      : "Título",
+			  //                   uploadButton     : "Envio",
+			  //                   imageURLEmpty    : "Erro: o endereço do url da imagem não pode estar vazio.",
+			  //                   uploadFileEmpty  : "Erro: o upload de fotos não pode estar vazio!",
+			  //                   formatNotAllowed : "Erro: só permite fazer upload de arquivo de imagens, formato de arquivo de imagem permitido para upload:"
+			  //               },
+			  //               preformattedText : {
+			  //                   title             : "Texto pré-formatado / Códigos",
+			  //                   emptyAlert        : "Erro: Por favor, preencha o texto pré-formatado ou conteúdo dos códigos.",
+			  //                   placeholder       : "codificando...."
+			  //               },
+			  //               codeBlock : {
+			  //                   title             : "Bloco de código",
+			  //                   selectLabel       : "Linguagens: ",
+			  //                   selectDefaultText : "selecione uma linguagem de programação...",
+			  //                   otherLanguage     : "Outras linguagens",
+			  //                   unselectedLanguageAlert : "Erro: Selecione o linguagem do código.",
+			  //                   codeEmptyAlert    : "Erro: Por favor, preencha o conteúdo do código.",
+			  //                   placeholder       : "codificando...."
+			  //               },
+			  //               htmlEntities : {
+			  //                   title : "Entidades HTML"
+			  //               },
+			  //               help : {
+			  //                   title : "Ajuda"
+			  //               }
+			  //           }
+			  //       }
+
+			  		lang : {
+			              name : "pt_br"
+			          }
+
+			        		// lang : {
+			          //           name : "en",
+			          //           description : "Editor Markdown online.",
+			          //           tocTitle    : "Índice",
+			          //           toolbar : {
+			          //               undo             : "Desfazer(Ctrl+Z)",
+			          //               redo             : "Refazer(Ctrl+Y)",
+			          //               bold             : "Negrito",
+			          //               del              : "Tachado",
+			          //               italic           : "Itálico",
+			          //               quote            : "Blockquote",
+			          //               ucwords          : "Primeira letra das palavras convertida em maiúscula",
+			          //               uppercase        : "Texto de seleção convertido em maiúsculas",
+			          //               lowercase        : "Texto de seleção convertido em minúsculas",
+			          //               h1               : "Título 1",
+			          //               h2               : "Título 2",
+			          //               h3               : "Título 3",
+			          //               h4               : "Título 4",
+			          //               h5               : "Título 5",
+			          //               h6               : "Título 6",
+			          //               "list-ul"        : "Lista não ordenada",
+			          //               "list-ol"        : "Lista ordenada",
+			          //               hr               : "Linha horizontal",
+			          //               link             : "Link",
+			          //               "reference-link" : "Link de referência",
+			          //               image            : "Imagem",
+			          //               code             : "Código embutido",
+			          //               "preformatted-text" : "Texto pré-formatado / Bloco de código (Recuo de tabulação)",
+			          //               "code-block"     : "Bloco de código (Multi-línguas)",
+			          //               table            : "Tabelas",
+			          //               datetime         : "Data hora",
+			          //               emoji            : "Emoji",
+			          //               "html-entities"  : "Entidades HTML",
+			          //               pagebreak        : "Quebra de página",
+			          //               watch            : "Desabilitar renderização",
+			          //               unwatch          : "Visualizar renderização",
+			          //               preview          : "Visualizar HTML (Pressione Shift + ESC para sair)",
+			          //               fullscreen       : "Tela cheia (Pressione ESC para sair)",
+			          //               clear            : "Limpar",
+			          //               search           : "Procurar",
+			          //               help             : "Ajuda",
+			          //               info             : "Sobre "
+			          //           },
+			          //           buttons : {
+			          //               enter  : "Ok",
+			          //               cancel : "Cancelar",
+			          //               close  : "Fechar"
+			          //           },
+			          //           dialog : {
+			          //               link : {
+			          //                   title    : "Link",
+			          //                   url      : "Endereço",
+			          //                   urlTitle : "Título",
+			          //                   urlEmpty : "Erro: Por favor, preencha o endereço do link."
+			          //               },
+			          //               referenceLink : {
+			          //                   title    : "Link de referência",
+			          //                   name     : "Nome",
+			          //                   url      : "Endereço",
+			          //                   urlId    : "ID",
+			          //                   urlTitle : "Título",
+			          //                   nameEmpty: "Erro: o nome de referência não pode estar vazio.",
+			          //                   idEmpty  : "Erro: preencha o ID do link de referência.",
+			          //                   urlEmpty : "Erro: Por favor, preencha o endereço de url do link de referência."
+			          //               },
+			          //               image : {
+			          //                   title    : "Imagem",
+			          //                   url      : "Endereço",
+			          //                   link     : "Link",
+			          //                   alt      : "Título",
+			          //                   uploadButton     : "Envio",
+			          //                   imageURLEmpty    : "Erro: o endereço do url da imagem não pode estar vazio.",
+			          //                   uploadFileEmpty  : "Erro: o upload de fotos não pode estar vazio!",
+			          //                   formatNotAllowed : "Erro: só permite fazer upload de arquivo de imagens, formato de arquivo de imagem permitido para upload:"
+			          //               },
+			          //               preformattedText : {
+			          //                   title             : "Texto pré-formatado / Códigos",
+			          //                   emptyAlert        : "Erro: Por favor, preencha o texto pré-formatado ou conteúdo dos códigos.",
+			          //                   placeholder       : "codificando...."
+			          //               },
+			          //               codeBlock : {
+			          //                   title             : "Bloco de código",
+			          //                   selectLabel       : "Linguagens: ",
+			          //                   selectDefaultText : "selecione uma linguagem de programação...",
+			          //                   otherLanguage     : "Outras linguagens",
+			          //                   unselectedLanguageAlert : "Erro: Selecione o linguagem do código.",
+			          //                   codeEmptyAlert    : "Erro: Por favor, preencha o conteúdo do código.",
+			          //                   placeholder       : "codificando...."
+			          //               },
+			          //               htmlEntities : {
+			          //                   title : "Entidades HTML"
+			          //               },
+			          //               help : {
+			          //                   title : "Ajuda"
+			          //               }
+			          //           }
+			          //       }
 				});
             });
 
