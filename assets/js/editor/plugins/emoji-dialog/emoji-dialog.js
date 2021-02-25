@@ -149,14 +149,17 @@
 				});
 			}
 
-			var category = ["Github emoji", "Twemoji", "Font awesome", "Editor.md logo"];
+            var category = ["Github emoji", "Twemoji", "Font awesome", "Editor.md logo"];
+			// var category = ["Github emoji", "Twemoji", "Font awesome"];
 			var tab      = dialog.find("." + classPrefix + "tab");
 
 			if (tab.html() === "")
 			{
 				var head = "<ul class=\"" + classPrefix + "tab-head\">";
 
-				for (var i = 0; i<4; i++) {
+                for (var i = 0; i<4; i++) {
+                    if (category[i] === "Editor.md logo")
+                        continue;
 					var active = (i === 0) ? " class=\"active\"" : "";
 					head += "<li" + active + "><a href=\"javascript:;\">" + category[i] + "</a></li>";
 				}
