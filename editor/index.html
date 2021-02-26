@@ -34,21 +34,11 @@
         <!--  Android 5 Chrome Color-->
         <meta name="theme-color" content="#2196f3">
         <title>Editor Markdown Online Grátis</title>
-        <link rel="stylesheet" href="/assets/css/editor.css" />
+        <link rel="stylesheet" href="/assets/markeditor/css/markeditor.css" />
     </head>
     <body>
-    	<!-- //////////////////////////////////////////////////////////////////////////////////////////////// -->
-    	<!-- <div id="page-fixed-bottom-ad" class="pg-ad" style="position: fixed;bottom: 0px;left: 50%;right: 0px;text-align: center;margin: 0px 0px 0px -362px;z-index: 9999999;transition: bottom 0.75s ease 0s;background-color: rgb(255, 255, 255);width: 728px;height: 90px;border: 1px solid rgba(0, 0, 0, 0.8);" data-google-query-id="CJH-uLW4jO0CFZcyuQYduCsEwQ">
-
-    		<a id="close-fixed-ad" style="background-color: rgba(0, 0, 0, 0.6); color: rgb(255, 255, 255); display: block; width: 20px; text-align: center; font-size: 14px; line-height: 20px; border-radius: 50% 50% 0px 0px; font-family: sans-serif; position: absolute; top: -20px; right: 0px; cursor: pointer;">x</a>
-    	</div> -->
-    	<!-- //////////////////////////////////////////////////////////////////////////////////////////////// -->
         <div id="layout">
-            <!-- <header>
-                <h1>FlowChart 流程图</h1>
-                <p>Based on flowchart.js：<a href="http://adrai.github.io/flowchart.js/" target="_blank">http://adrai.github.io/flowchart.js/</a></p>
-            </header> -->
-            <div id="test-editormd">
+            <div id="markeditor">
                 <textarea style="display:none;"></textarea>
             </div>
         </div>
@@ -68,26 +58,22 @@
         </div>
 
         <script src="/assets/js/vendor/jquery-3.2.1.min.js"></script>
-        <script src="/assets/js/editor/editor.js"></script>
-        <script src="/assets/js/editor/langs/pt_br.js"></script>
+        <script src="/assets/markeditor/js/markeditor.js"></script>
+        <script src="/assets/markeditor/js/langs/pt_br.js"></script>
         <script type="text/javascript">
-        	$('#close-fixed-ad').click(function() {
-        		$('#page-fixed-bottom-ad').fadeOut('slow');
-        	});
-
         	const queryString = window.location.search;
         	const urlParams = new URLSearchParams(queryString);
         	var markdownStr = urlParams.has("markdown") ? urlParams.get("markdown") : "";
 
             $(function() {
-                var testEditor = editormd("test-editormd", {
+                var testEditor = editormd("markeditor", {
 					width: "100%",
 					placeholder: "Digite o código Markdown aqui!",
 					autoheight: true,
 					markdown: markdownStr,
 					codeFold : true,
-					path : '/assets/js/editor/lib/',
-					pluginPath: "/assets/js/editor/plugins/",
+					path : '/assets/markeditor/js/lib/',
+					pluginPath: "/assets/markeditor/js/plugins/",
 					flowChart : true,
 					searchReplace : true,
 					htmlDecode : "style,script,iframe|on*",
@@ -104,8 +90,6 @@
                     }
 				});
             });
-
-
         </script>
     </body>
 </html>

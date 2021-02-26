@@ -237,6 +237,11 @@
  margin-top: 30px!important;
 }
 
+/*margem inferior*/
+.mb-0 {
+    margin-bottom: 0!important;
+}
+
 /*margem vertical*/
 .mv-30 {
   margin-top: 30px!important;
@@ -448,7 +453,7 @@
  	padding: 4.946667rem 0 1.168rem 0;
  }
 
- a[target="_blank"]:not(.test-code, .cover-link)::after {
+ a[target="_blank"]:not(.test-code, .cover-link, .image-link)::after {
   	font-family: "Font Awesome 5 Free";
   	font-weight: 900;
   	content: "\f35d";
