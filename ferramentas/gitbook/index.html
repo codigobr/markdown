@@ -2,9 +2,12 @@
 <html lang="pt-br">
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-69958365-6"></script>
+
+<!--     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-69958365-6"></script>
     <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-69958365-6');
-    </script>
+    </script> -->
+
+
     <!-- Auto ads - Google -->
     <script data-ad-client="ca-pub-3427355473051563" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <!--Import Google Icon Font-->
@@ -87,13 +90,7 @@
     <img src="https://markdown.net.br/assets/img/markdown-logo-transparent.svg" height="100">
     </a>
   </li>
-  <li class="push-it-down"></li>
-  <li class="search white">
-    <div class="search-wrapper">
-      <input id="search" placeholder="Buscar"><i class="material-icons">search</i>
-      <div class="search-results"></div>
-    </div>
-  </li>
+  <!-- <li class="push-it-down"></li> -->
   <li class="bold white">
     <a href="/introducao/" class="waves-effect waves-blue"><i class="tiny material-icons">child_care</i>Introdução</a>
   </li>
@@ -148,14 +145,7 @@
               </ol>
             </div>
             <div class="col s12 m5 l4 mt-s-30" align="center">
-            	<!-- square-fixed-300-250 -->
-            	<ins class="adsbygoogle"
-            	     style="display:inline-block;width:300px;height:250px"
-            	     data-ad-client="ca-pub-3427355473051563"
-            	     data-ad-slot="1035906960"></ins>
-            	<script>
-            	     (adsbygoogle = window.adsbygoogle || []).push({});
-            	</script>
+
             </div>
           </div>
         </div>
@@ -163,7 +153,8 @@
       <div class="container">
         <!--  Outer row  -->
         <div class="row">
-          <div class="section col s12 m8 offset-m1 xl7 offset-xl1">
+          <div class="section col s12 m10 offset-m1 xl7 offset-xl1">
+
             <div class="row scrollspy">
   <div class="col s12">
     <h2 id="intro">Visão geral</h2>
@@ -172,17 +163,7 @@
 
     <p>Se você precisa de mais controle sobre o seu conteúdo, o GitBook também oferece suporte a <a href="https://docs.gitbook.com/integrations/github" target="_blank">integração com repositórios do GitHub</a>.</p>
 
-    <p class="mv-40">
-        <ins class="adsbygoogle"
-             style="display:block; text-align:center;"
-             data-ad-layout="in-article"
-             data-ad-format="fluid"
-             data-ad-client="ca-pub-3427355473051563"
-             data-ad-slot="3854885260"></ins>
-        <script>
-             (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-    </p>
+    
 
     <p>Com o GitBook você pode criar o seu site e posteriormente publicá-lo usando um domínio personalizado.</p>
 
@@ -192,17 +173,7 @@
 
     <p>O <a href="https://github.com/GitbookIO/gitbook" target="_blank">projeto de código aberto</a> ainda existe e pode ser usado por qualquer pessoa, mas o GitBook não fornece mais suporte a esse projeto, por isso serão listados apenas os elementos Markdown compatíveis com a ferramenta proprietária.</p>
 
-    <p class="mv-40">
-        <ins class="adsbygoogle"
-             style="display:block; text-align:center;"
-             data-ad-layout="in-article"
-             data-ad-format="fluid"
-             data-ad-client="ca-pub-3427355473051563"
-             data-ad-slot="3854885260"></ins>
-        <script>
-             (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-    </p>
+    
 
     <p>Mesmo sendo um aplicativo fechado o GitBook ainda possui vantagens sobre outras ferramentas do tipo.</p>
 
@@ -214,17 +185,7 @@
 
     <p>Outra característica interessante da ferramenta é a ocultação das marcações do Markdown enquanto você digita.</p>
 
-    <p class="mv-40">
-        <ins class="adsbygoogle"
-             style="display:block; text-align:center;"
-             data-ad-layout="in-article"
-             data-ad-format="fluid"
-             data-ad-client="ca-pub-3427355473051563"
-             data-ad-slot="3854885260"></ins>
-        <script>
-             (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-    </p>
+    
 
     <p>O editor pode parecer estranho a princípio, mas com o tempo você pega o jeito.</p>
 
@@ -405,9 +366,17 @@
   </ul>
 </div>
           </div>
-          <!-- Table of contents -->
-          <div class="col hide-on-small-only m3 xl3 offset-xl1">
-            <div class="toc-wrapper" id="sticky-navigator">
+          <!-- Sidebar -->
+          <div class="col s12 m10 offset-m1 xl4">
+            <div class="search__container">
+                <script async src="https://cse.google.com/cse.js?cx=2fd568b76bc12a851"></script>
+                <div class="gcse-search"></div>
+            </div>
+            <div class="toc-wrapper__container">
+                <div class="toc-title">— Nessa Página</div>
+                <div class="toc-wrapper__elements">
+                    <ul data-toc data-toc-headings="h2,h3"></ul>
+                </div>
             </div>
           </div>
           <!-- Table of contents -->
@@ -442,6 +411,7 @@
     <script src="/assets/js/vendor/jquery.lazy@1.7.9/jquery.lazy.min.js"></script>
     <script src="/assets/js/vendor/jquery.lazy@1.7.9/jquery.lazy.youtube.min.js"></script>
     <script src="/assets/js/vendor/jquery.lazy@1.7.9/jquery.lazy.picture.min.js"></script>
+    <script src="/assets/js/vendor/jquery.toc@0.0.4/jquery.toc.min.js"></script>
     <!-- Lightbox das imagens -->
     <script>
       $(document).ready(function(){
@@ -460,7 +430,7 @@
          });
        });
       anchors.add("h2, h3, h5");
-      $('#sticky-navigator').stickyNavigator();
+
     </script>
     <!-- Twitter Button -->
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
